@@ -15,8 +15,16 @@ public struct Theme: Codable, Equatable {
     
     var id: String
     var button: KeyboardStyle.Button?
+    var shiftButton: KeyboardStyle.Background?
+    var backspaceButton: KeyboardStyle.Background?
+    var keyboardTypeButton: KeyboardStyle.Background?
+    var spaceButton: KeyboardStyle.Background?
+    var primaryButton: KeyboardStyle.Background?
+    var emojiButton: KeyboardStyle.Background?
+    var specialKey: String?
     var edgeInsets: CodableUIEdgeInsets?
     var background: KeyboardStyle.Background?
+    var gifBackground: String?
     var actionCallout: KeyboardStyle.ActionCallout?
     var inputCallout: KeyboardStyle.InputCallout?
     var sound: SoundModel?
@@ -34,8 +42,16 @@ public struct Theme: Codable, Equatable {
     private enum CodingKeys: String, CodingKey {
         case id = "id"
         case button = "button"
+        case shiftButton = "shiftButton"
+        case backspaceButton = "backspaceButton"
+        case keyboardTypeButton = "keyboardTypeButton"
+        case spaceButton = "spaceButton"
+        case primaryButton = "primaryButton"
+        case emojiButton = "emojiButton"
+        case specialKey = "specialKey"
         case edgeInsets = "edgeInsets"
         case background = "background"
+        case gifBackground = "gifBackground"
         case actionCallout = "actionCallout"
         case inputCallout = "inputCallout"
         case sound = "sound"
@@ -56,8 +72,16 @@ public struct Theme: Codable, Equatable {
         
         self.id                     = try values.decode(String.self, forKey: .id)
         self.button                 = try values.decodeIfPresent(KeyboardStyle.Button.self, forKey: .button)
+        self.shiftButton            = try values.decodeIfPresent(KeyboardStyle.Background.self, forKey: .shiftButton)
+        self.backspaceButton        = try values.decodeIfPresent(KeyboardStyle.Background.self, forKey: .backspaceButton)
+        self.keyboardTypeButton     = try values.decodeIfPresent(KeyboardStyle.Background.self, forKey: .keyboardTypeButton)
+        self.spaceButton            = try values.decodeIfPresent(KeyboardStyle.Background.self, forKey: .spaceButton)
+        self.primaryButton          = try values.decodeIfPresent(KeyboardStyle.Background.self, forKey: .primaryButton)
+        self.emojiButton            = try values.decodeIfPresent(KeyboardStyle.Background.self, forKey: .emojiButton)
+        self.specialKey             = try values.decodeIfPresent(String.self, forKey: .specialKey)
         self.edgeInsets             = try values.decodeIfPresent(CodableUIEdgeInsets.self, forKey: .edgeInsets)
         self.background             = try values.decodeIfPresent(KeyboardStyle.Background.self, forKey: .background)
+        self.gifBackground          = try values.decodeIfPresent(String.self, forKey: .gifBackground)
         self.sound                  = try values.decodeIfPresent(SoundModel.self, forKey: .sound)
         self.buttonNeonAnimation    = try values.decodeIfPresent([AnimationValueObject].self, forKey: .buttonNeonAnimation)
         self.backgroundNeonAnimation = try values.decodeIfPresent([AnimationValueObject].self, forKey: .backgroundNeonAnimation)
@@ -84,8 +108,16 @@ public struct Theme: Codable, Equatable {
 //        encode for save theme data
         try container.encodeIfPresent(id, forKey: .id)
         try container.encodeIfPresent(button, forKey: .button)
+        try container.encodeIfPresent(shiftButton, forKey: .shiftButton)
+        try container.encodeIfPresent(backspaceButton, forKey: .backspaceButton)
+        try container.encodeIfPresent(keyboardTypeButton, forKey: .keyboardTypeButton)
+        try container.encodeIfPresent(spaceButton, forKey: .spaceButton)
+        try container.encodeIfPresent(primaryButton, forKey: .primaryButton)
+        try container.encodeIfPresent(emojiButton, forKey: .emojiButton)
+        try container.encodeIfPresent(specialKey, forKey: .specialKey)
         try container.encodeIfPresent(edgeInsets, forKey: .edgeInsets)
         try container.encodeIfPresent(background, forKey: .background)
+        try container.encodeIfPresent(gifBackground, forKey: .gifBackground)
         try container.encodeIfPresent(buttonNeonAnimation, forKey: .buttonNeonAnimation)
         try container.encodeIfPresent(backgroundNeonAnimation, forKey: .backgroundNeonAnimation)
         try container.encodeIfPresent(neonPermission, forKey: .neonPermission)
@@ -116,6 +148,13 @@ public struct Theme: Codable, Equatable {
     init(
         id: String,
         button: KeyboardStyle.Button,
+        shiftButton: KeyboardStyle.Background? = nil,
+        backspaceButton: KeyboardStyle.Background? = nil,
+        keyboardTypeButton: KeyboardStyle.Background? = nil,
+        spaceButton: KeyboardStyle.Background? = nil,
+        primaryButton: KeyboardStyle.Background? = nil,
+        emojiButton: KeyboardStyle.Background? = nil,
+        specialKey: String? = nil,
         background: KeyboardStyle.Background,
         actionCallout: KeyboardStyle.ActionCallout = .bright,
         inputCallout: KeyboardStyle.InputCallout = .bright,
@@ -132,6 +171,13 @@ public struct Theme: Codable, Equatable {
     ) {
         self.id = id
         self.button = button
+        self.shiftButton = shiftButton
+        self.backspaceButton = backspaceButton
+        self.keyboardTypeButton = keyboardTypeButton
+        self.spaceButton = spaceButton
+        self.primaryButton = primaryButton
+        self.emojiButton = primaryButton
+        self.specialKey = specialKey
         self.background = background
         self.actionCallout = actionCallout
         self.inputCallout = inputCallout

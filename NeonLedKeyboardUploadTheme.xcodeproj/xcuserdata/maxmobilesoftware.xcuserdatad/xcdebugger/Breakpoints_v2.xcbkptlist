@@ -18,6 +18,38 @@
             endingLineNumber = "426"
             landmarkName = "Preview"
             landmarkType = "14">
+            <Locations>
+               <Location
+                  uuid = "56F058D6-F008-41C3-B245-1CAAC31DD77F - de65008b1f9b2417"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NeonLedKeyboardUploadTheme.GradientPhotoTheme_Previews.Preview.init() -&gt; NeonLedKeyboardUploadTheme.GradientPhotoTheme_Previews.Preview"
+                  moduleName = "NeonLedKeyboardUploadTheme"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/maxmobilesoftware/Documents/code/Keyboard/Product/NeonLedKeyboardEditTheme/NeonLedKeyboardUploadTheme/Theme/Gradient/GradientPhotoTheme.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "426"
+                  endingLineNumber = "426"
+                  offsetFromSymbolStart = "56">
+               </Location>
+               <Location
+                  uuid = "56F058D6-F008-41C3-B245-1CAAC31DD77F - 69c5ea1d37a06154"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "default argument 0 of NeonLedKeyboardUploadTheme.GradientPhotoTheme_Previews.Preview.init(theme: NeonLedKeyboardUploadTheme.Theme, controller: NeonLedKeyboardUploadTheme.KeyboardInputViewController) -&gt; NeonLedKeyboardUploadTheme.GradientPhotoTheme_Previews.Preview"
+                  moduleName = "NeonLedKeyboardUploadTheme"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/maxmobilesoftware/Documents/code/Keyboard/Product/NeonLedKeyboardEditTheme/NeonLedKeyboardUploadTheme/Theme/Gradient/GradientPhotoTheme.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "36">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

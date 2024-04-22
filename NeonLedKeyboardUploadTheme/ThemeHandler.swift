@@ -124,6 +124,7 @@ struct ThemeHandler {
                 print(error)
                 return
             }
+            print("save success: \(nameFile)")
         }
     }
 }

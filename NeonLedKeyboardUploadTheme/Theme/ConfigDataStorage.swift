@@ -16,7 +16,7 @@ struct ConfigDataStorage {
         /// just accept encode for id, name, imagePreview of theme
 //        ThemeHandler.shared.saveThemeSection(themeSections)
         /// accept encode all variable of theme
-//        ThemeHandler.shared.createThemeFolder(themeSections)
+        ThemeHandler.shared.createThemeFolder(themeSections)
     }
     
     var themeSections: [ThemeSection] = [
