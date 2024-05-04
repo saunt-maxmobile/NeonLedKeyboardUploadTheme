@@ -176,7 +176,7 @@ public struct Theme: Codable, Equatable {
         self.keyboardTypeButton = keyboardTypeButton
         self.spaceButton = spaceButton
         self.primaryButton = primaryButton
-        self.emojiButton = primaryButton
+        self.emojiButton = emojiButton
         self.specialKey = specialKey
         self.background = background
         self.actionCallout = actionCallout
