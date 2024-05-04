@@ -30,6 +30,9 @@ public struct SystemKeyboardItem<Content: View>: View {
      */
     init(
         item: KeyboardLayout.Item,
+        row: Int = 0,
+        column: Int = 0,
+        specialKey: String? = nil,
         actionHandler: KeyboardActionHandler,
         styleProvider: KeyboardStyleProvider,
         keyboardContext: KeyboardContext,
@@ -42,6 +45,9 @@ public struct SystemKeyboardItem<Content: View>: View {
         content: Content
     ) {
         self.item = item
+        self.row = row
+        self.column = column
+        self.specialKey = specialKey
         self.actionHandler = actionHandler
         self.styleProvider = styleProvider
         self._keyboardContext = ObservedObject(wrappedValue: keyboardContext)
@@ -56,6 +62,9 @@ public struct SystemKeyboardItem<Content: View>: View {
     }
     
     private let item: KeyboardLayout.Item
+    private let row: Int
+    private let column: Int
+    private let specialKey: String?
     private let actionHandler: KeyboardActionHandler
     private let styleProvider: KeyboardStyleProvider
     private let calloutContext: CalloutContext?
@@ -108,22 +117,10 @@ public struct SystemKeyboardItem<Content: View>: View {
             }
         }
         .overlay(alignment: .topTrailing) {
-//            Text("\(specialCharacter)")
-//                .font(.system(size: 12))
-//                .foregroundColor(buttonStyle.foregroundColor)
-//                .offset(x: -5, y: 5)
-//                .onAppear {
-//                    switch item.action {
-//                    case .character(_):
-//                        let firstAction = calloutContext?.actionContext.actionProvider?.calloutActions(for: item.action).first
-//                        switch firstAction {
-//                        case .character(let characacter):
-//                            specialCharacter = characacter
-//                        default: break
-//                        }
-//                    default: break
-//                    }
-//                }
+            Text("\(specialCharacter)")
+                .font(.system(size: 12))
+                .foregroundColor(buttonStyle.foregroundColor)
+                .offset(x: -5, y: 5)
         }
     }
     
@@ -134,7 +131,27 @@ public struct SystemKeyboardItem<Content: View>: View {
     private var buttonStyle: KeyboardStyle.Button {
         var style = item.action.isSpacer ? .spacer : styleProvider.buttonStyle(for: item.action, isPressed: isPressed)
         
+        let opacity = style.background?.opacity ?? 0
+        
+        if case .character = item.action, let _ = specialKey {
+            if let image = UIImage(named: getImageOfIndex()) {
+                style.background = .image(image.pngData() ?? Data(), contentMode: .fit)
+            } else {
+                style.background = .image(UIImage(named: getNormalImage())?.pngData() ?? Data(), contentMode: .fit)
+            }
+        }
+        
+        style.background?.opacity = opacity
+        
         if overlayKeyboard {
+            if neonPermission.disableNeonCharacter && neonPermission.disableNeonButton && !neonPermission.disableNeonBorder {
+                style.background = .color(.clear)
+                style.foregroundColor = .clear
+            } else
+            if !neonPermission.disableNeonCharacter && !neonPermission.disableNeonButton && neonPermission.disableNeonBorder {
+                style.background = .color(.clear)
+                style.foregroundColor = .clear
+            } else
             if neonPermission.disableNeonCharacter {
                 if !neonPermission.disableNeonButton {
                     style.background = .color(.clear)
@@ -155,5 +172,14 @@ public struct SystemKeyboardItem<Content: View>: View {
         }
         
         return style
+    }
+    
+    private func getImageOfIndex() -> String {
+        guard let specialKey else { return "" }
+        return "\(specialKey).\(row).\(column)"
+    }
+    
+    private func getNormalImage() -> String {
+        return "\(specialKey ?? "").Normal"
     }
 }

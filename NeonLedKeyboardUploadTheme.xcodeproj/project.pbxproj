@@ -39,6 +39,7 @@
 		834EC9B52B5E6284001517C8 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 834EC9B42B5E6284001517C8 /* FirebaseStorageCombine-Community */; };
 		834EC9B82B5E62A5001517C8 /* Zip in Frameworks */ = {isa = PBXBuildFile; productRef = 834EC9B72B5E62A5001517C8 /* Zip */; };
 		834EC9BA2B5E62E7001517C8 /* AppConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834EC9B92B5E62E7001517C8 /* AppConfiguration.swift */; };
+		836B68B12BE5F7FA00F569D6 /* CuteTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836B68B02BE5F7FA00F569D6 /* CuteTheme.swift */; };
 		838550262B58DB39007599A5 /* ThemeObject+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838550242B58DB39007599A5 /* ThemeObject+CoreDataClass.swift */; };
 		838550272B58DB39007599A5 /* ThemeObject+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838550252B58DB39007599A5 /* ThemeObject+CoreDataProperties.swift */; };
 		838550292B58DBB9007599A5 /* InputSuggestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838550282B58DBB9007599A5 /* InputSuggestion.swift */; };
@@ -289,6 +290,7 @@
 		834EC97A2B5E6191001517C8 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		834EC97C2B5E61CC001517C8 /* FileManager+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileManager+Extension.swift"; sourceTree = "<group>"; };
 		834EC9B92B5E62E7001517C8 /* AppConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfiguration.swift; sourceTree = "<group>"; };
+		836B68B02BE5F7FA00F569D6 /* CuteTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuteTheme.swift; sourceTree = "<group>"; };
 		838550242B58DB39007599A5 /* ThemeObject+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ThemeObject+CoreDataClass.swift"; sourceTree = "<group>"; };
 		838550252B58DB39007599A5 /* ThemeObject+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ThemeObject+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		838550282B58DBB9007599A5 /* InputSuggestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputSuggestion.swift; sourceTree = "<group>"; };
@@ -636,6 +638,14 @@
 				834EC97C2B5E61CC001517C8 /* FileManager+Extension.swift */,
 			);
 			path = Core;
+			sourceTree = "<group>";
+		};
+		836B68AF2BE5F7E600F569D6 /* Cute */ = {
+			isa = PBXGroup;
+			children = (
+				836B68B02BE5F7FA00F569D6 /* CuteTheme.swift */,
+			);
+			path = Cute;
 			sourceTree = "<group>";
 		};
 		838550372B58DDA2007599A5 /* View */ = {
@@ -1175,6 +1185,7 @@
 		83A95EB32B58CEEF007D3F58 /* Theme */ = {
 			isa = PBXGroup;
 			children = (
+				836B68AF2BE5F7E600F569D6 /* Cute */,
 				83A95EB42B58CEEF007D3F58 /* Gradient */,
 				83A95EB72B58CEEF007D3F58 /* Color */,
 				83A95EBA2B58CEEF007D3F58 /* Portrait */,
@@ -1256,7 +1267,6 @@
 				F7B7E085BD14B84AA3790AD3 /* Pods-NeonLedKeyboardUploadTheme.debug.xcconfig */,
 				BE72FE3B55D5D55BA68D46AE /* Pods-NeonLedKeyboardUploadTheme.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -1539,6 +1549,7 @@
 				8385503D2B58DE0D007599A5 /* AnimatedGradient.swift in Sources */,
 				83A95E6B2B58CC2A007D3F58 /* KeyboardPreviews+Callouts.swift in Sources */,
 				83A95C912B58C7C1007D3F58 /* NeonPermission.swift in Sources */,
+				836B68B12BE5F7FA00F569D6 /* CuteTheme.swift in Sources */,
 				83A95DD12B58CC2A007D3F58 /* KeyboardButton+Shadow.swift in Sources */,
 				8385503F2B58DF90007599A5 /* KeyboardLocale+Extension.swift in Sources */,
 				83A95E0A2B58CC2A007D3F58 /* HapticFeedback+Configuration.swift in Sources */,

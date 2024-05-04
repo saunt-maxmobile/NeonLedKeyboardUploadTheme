@@ -44,6 +44,7 @@ public struct SystemKeyboard<
     public init(
         state: Keyboard.KeyboardState,
         services: Keyboard.KeyboardServices,
+        layoutConfig: KeyboardLayout.Configuration? = nil,
         renderBackground: Bool = true,
         themeObject: [ThemeObject]? = nil,
         myPastes: [MyPaste]? = nil,
@@ -52,6 +53,7 @@ public struct SystemKeyboard<
         animationValueObjects: [AnimationValueObject]? = nil,
         duration: Double = 5,
         effect: EffectModel? = nil,
+        specialKey: String? = nil,
         disableTopButton: Bool = false,
         @ViewBuilder buttonContent: @escaping ButtonContentBuilder,
         @ViewBuilder buttonView: @escaping ButtonViewBuilder,
@@ -62,7 +64,7 @@ public struct SystemKeyboard<
             layout: services.layoutProvider.keyboardLayout(for: state.keyboardContext),
             actionHandler: services.actionHandler,
             styleProvider: services.styleProvider,
-//            theme: state.keyboardTheme,
+            layoutConfig: layoutConfig,
             themeObject: themeObject,
             myPastes: myPastes,
             neonPermision: neonPermission,
@@ -70,9 +72,11 @@ public struct SystemKeyboard<
             animationValueObjects: animationValueObjects,
             duration: duration,
             effect: effect,
+            specialKey: specialKey,
             keyboardContext: state.keyboardContext,
             autocompleteContext: state.autocompleteContext,
             calloutContext: state.calloutContext,
+            feedbackConfiguration: state.feedbackConfiguration,
             renderBackground: renderBackground,
             disableTopButton: disableTopButton,
             buttonContent: buttonContent,
@@ -102,7 +106,7 @@ public struct SystemKeyboard<
         layout: KeyboardLayout,
         actionHandler: KeyboardActionHandler,
         styleProvider: KeyboardStyleProvider,
-//        theme: Theme,
+        layoutConfig: KeyboardLayout.Configuration? = nil,
         themeObject: [ThemeObject]?,
         myPastes: [MyPaste]?,
         neonPermision: NeonPermission,
@@ -110,9 +114,11 @@ public struct SystemKeyboard<
         animationValueObjects: [AnimationValueObject]?,
         duration: Double,
         effect: EffectModel?,
+        specialKey: String?,
         keyboardContext: KeyboardContext,
         autocompleteContext: AutocompleteContext,
         calloutContext: CalloutContext?,
+        feedbackConfiguration: FeedbackConfiguration,
         renderBackground: Bool = true,
         disableTopButton: Bool = false,
         @ViewBuilder buttonContent: @escaping ButtonContentBuilder,
@@ -121,7 +127,7 @@ public struct SystemKeyboard<
         @ViewBuilder toolbar: @escaping ToolbarBuilder
     ) {
         self.layout = layout
-        self.layoutConfig = .standard(for: keyboardContext)
+        self.layoutConfig = layoutConfig ?? .standard(for: keyboardContext)
         self.actionHandler = actionHandler
         self.styleProvider = styleProvider
         self.renderBackground = renderBackground
@@ -142,6 +148,7 @@ public struct SystemKeyboard<
         self.animationValueObjects = animationValueObjects
         self.duration = duration
         self.effect = effect
+        self.specialKey = specialKey
         self.disableTopButton = disableTopButton
     }
 
@@ -226,6 +233,7 @@ public struct SystemKeyboard<
     private let animationValueObjects: [AnimationValueObject]?
     private let duration: Double
     private let effect: EffectModel?
+    private let specialKey: String?
     private let tabbarHeight: CGFloat = 50
     private let disableTopButton: Bool
 
@@ -358,11 +366,25 @@ private extension SystemKeyboard {
 //    MARK: SystemkeyboardOverlay
     func systemKeyboardOverlay(for size: CGSize, enableAction: Bool = false, overlayKeyboard:Bool = false) -> some View {
         VStack(spacing: 0) {
-            ForEach(Array(layout.itemRows.enumerated()), id: \.offset) { itemRow in
+            ForEach(Array(layout.itemRows.enumerated()).map({ $0 }).indices, id: \.self) { row in
                 HStack (spacing: 0) {
-                    ForEach(Array(itemRow.element.enumerated()), id: \.offset) { item in
-//                        buttonView(for: item.element, size: size, enableAction: enableAction, overlayKeyboard: overlayKeyboard)
-                        SystemKeyboardItem(item: item.element, actionHandler: actionHandler, styleProvider: styleProvider, keyboardContext: keyboardContext, calloutContext: calloutContext, keyboardWidth: size.width, inputWidth: layout.inputWidth(for: size.width), overlayKeyboard: overlayKeyboard, neonPermission: neonPermission, enableAction: enableAction, content: buttonContent(for: item.element))
+                    ForEach(layout.itemRows[row].indices, id: \.self) { column in
+                        SystemKeyboardItem(
+                            item: layout.itemRows[row][column],
+                            row: row,
+                            column: column,
+                            specialKey: specialKey,
+                            actionHandler: actionHandler,
+                            styleProvider: styleProvider,
+                            keyboardContext: keyboardContext,
+                            calloutContext: calloutContext,
+                            keyboardWidth: size.width,
+                            inputWidth: layout.inputWidth(for: size.width),
+                            overlayKeyboard: overlayKeyboard,
+                            neonPermission: neonPermission,
+                            enableAction: enableAction,
+                            content: buttonContent(for: layout.itemRows[row][column])
+                        )
                     }
                 }
             }

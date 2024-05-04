@@ -29,6 +29,8 @@ struct KeyboardValue {
     
     var keyboardLocale: KeyboardLocale = .english
     
+    var haptic: Bool = false
+    
 //    var showPopupKey: Bool {
 //        set {
 //            sharedDefault.set(newValue, forKey: Constant.SHOW_POPUP_PRESS_KEY)

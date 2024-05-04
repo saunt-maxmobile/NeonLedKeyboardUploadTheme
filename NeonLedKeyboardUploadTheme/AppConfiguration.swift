@@ -12,3 +12,9 @@ final class AppConfiguration: NSObject {
     
     let themeSectionJson = "ThemeSection.json"
 }
+
+class Constant {
+    static let APP_GROUP = "group.com.maxmobile.NeonLedKeyboardUploadTheme"
+    static let KEYBOARD_EXTENSION = "com.maxmobile.NeonLedKeyboard.NeonLedKeyboardExtensionUploadTheme"
+    static let SHOW_SPECIAL_KEY = "SHOW_SPECIAL_KEY" 
+}
