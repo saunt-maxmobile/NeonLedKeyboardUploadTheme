@@ -26,6 +26,7 @@ struct ConfigDataStorage {
 //        .init(name: "Neon", themes: [.neonCyber, .neonWaves, .neonCyberRoll, .neonColourPower, .neonWater, .neonPoly, .neonOcean, .neonDarkLeaf, .neonMysticJungle, .neonRoofNeon, .neonSummitNeon, .neonGlass, .neonLed, .neonLine, .neonVortexGalaxy, .neonSpread, .neonFutiristicNight, .neonFantasyNight, .neonMargicCircle, .neonMagicLight, .neonJungle, .neonPlasticBling, .neonGlossiness, .neonLustre, .neonBalloons, .neonTriangleNeon]),
 //        .init(name: "Colorfull", themes: [.colorfullColorPaint, .colorfullTwirl, .colorfullUniverse, .colorfullLiquid, .colorfullCloud, .colorfullFlower, .colorfullLowPoly, .colorfullTropical, .colorfullWavesStrip, .colorfullColorCurve, .colorfullCubes]),
 //        .init(name: "Portrait", themes: [.portraitBossDog, .portraitLionKing, .portraitRobotic, .portraitNeonCat, .portraitNeonDog, .portraitLlama, .portraitNeonTiger, .portraitMonkeyFashion])
+        .init(name: "Cute", themes: [.cuteRainbow1, .cuteFrog, .cuteRabbit, .cuteDog, .cuteParrot, .cuteRabbit2, .cuteShibaInu, .cuteAnimal, .cuteCatlook, .cutePinkStar, .cuteGreenGrass, .cuteDusk, .cuteSpring, .cuteCat, .cutePixal, .cuteFrogKey, .cuteHorror, .cuteRainbow, .cutePanda, .cuteCatGarden, .cuteRabbitCute, .cuteZodiac, .cuteNeonChill, .cuteBeerRabbit, .cuteCapypara, .cuteCatBlackWhite])
     ]
     
     var themeAuto: [ThemeAuto] = [

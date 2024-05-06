@@ -9,7 +9,7 @@ import Foundation
 import SwiftUI
 
 extension Theme {
-    static var cuteRainbow: Theme = .init(
+    static var cuteRainbow1: Theme = .init(
         id: "43b753fa-2559-4058-b6f6-a55f4a1b9e38",
         button: .init(
             background: .image(UIImage(named: "Keyboard.Key.Rainbow1.Normal")?.pngData() ?? Data(), contentMode: .stretch),
@@ -262,7 +262,7 @@ extension Theme {
     )
     
     static var cuteSpring: Theme = .init(
-        id: "6907ff8d-5b9f-490f-ad8e-f1573b5354de",
+        id: "94825414-3414-420c-a4ad-88d458c58a7b",
         button: .init(
             background: .image(UIImage(named: "Keyboard.Key.Spring.Normal")?.pngData() ?? Data(), contentMode: .stretch),
             foregroundColor: Color.black,
@@ -281,13 +281,271 @@ extension Theme {
         preview: .image(UIImage(named: "Keyboard.Key.Spring.Background")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
         name: "cuteSpring"
     )
+    
+    static var cuteCat: Theme = .init(
+        id: "8650bd8f-09b6-4613-8ad7-2ba8b3c8e62d",
+        button: .init(
+            background: .image(UIImage(named: "Keyboard.Key.Cat.Normal")?.pngData() ?? Data(), contentMode: .stretch),
+            foregroundColor: Color.black,
+            font: .body
+        ),
+        shiftButton: .image(UIImage(named: "Keyboard.Key.Cat.Shift"), contentMode: .stretch),
+        backspaceButton: .image(UIImage(named: "Keyboard.Key.Cat.Backspace"), contentMode: .stretch),
+        keyboardTypeButton: .image(UIImage(named: "Keyboard.Key.Cat.KeyboardType"), contentMode: .stretch),
+        spaceButton: .image(UIImage(named: "Keyboard.Key.Cat.Space"), contentMode: .stretch),
+        primaryButton: .image(UIImage(named: "Keyboard.Key.Cat.Primary"), contentMode: .stretch),
+        emojiButton: .image(UIImage(named: "Keyboard.Key.Cat.Emoji"), contentMode: .stretch),
+        specialKey: "Keyboard.Key.Cat",
+        background: .image(UIImage(named: "Keyboard.Key.Cat.Background")?.jpegData(compressionQuality: 0.1) ?? Data()),
+        actionCallout: .bright,
+        inputCallout: .bright,
+        preview: .image(UIImage(named: "Keyboard.Key.Cat.Background")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        name: "cuteCat"
+    )
+    
+    static var cutePixal: Theme = .init(
+        id: "4aa89fd4-c67e-4679-a5d8-542070b34835",
+        button: .init(
+            background: .image(UIImage(named: "Keyboard.Key.Pixal.Normal")?.pngData() ?? Data(), contentMode: .stretch),
+            foregroundColor: Color.black,
+            font: .body
+        ),
+        shiftButton: .image(UIImage(named: "Keyboard.Key.Pixal.Shift"), contentMode: .stretch),
+        backspaceButton: .image(UIImage(named: "Keyboard.Key.Pixal.Backspace"), contentMode: .stretch),
+        keyboardTypeButton: .image(UIImage(named: "Keyboard.Key.Pixal.KeyboardType"), contentMode: .stretch),
+        spaceButton: .image(UIImage(named: "Keyboard.Key.Pixal.Space"), contentMode: .stretch),
+        primaryButton: .image(UIImage(named: "Keyboard.Key.Pixal.Primary"), contentMode: .stretch),
+        emojiButton: .image(UIImage(named: "Keyboard.Key.Pixal.Normal"), contentMode: .stretch),
+        specialKey: "Keyboard.Key.Pixal",
+        background: .image(UIImage(named: "Keyboard.Key.Pixal.Background")?.jpegData(compressionQuality: 0.1) ?? Data()),
+        actionCallout: .bright,
+        inputCallout: .bright,
+        preview: .image(UIImage(named: "Keyboard.Key.Pixal.Background")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        name: "cutePixal"
+    )
+    
+    static var cuteFrogKey: Theme = .init(
+        id: "dd9c9a73-9f7b-47f1-ad19-ba1eee480e77",
+        button: .init(
+            background: .image(UIImage(named: "Keyboard.Key.FrogKey.Normal")?.pngData() ?? Data(), contentMode: .stretch),
+            foregroundColor: Color.black,
+            font: .body
+        ),
+        shiftButton: .image(UIImage(named: "Keyboard.Key.FrogKey.Shift"), contentMode: .stretch),
+        backspaceButton: .image(UIImage(named: "Keyboard.Key.FrogKey.Backspace"), contentMode: .stretch),
+        keyboardTypeButton: .image(UIImage(named: "Keyboard.Key.FrogKey.KeyboardType"), contentMode: .stretch),
+        spaceButton: .image(UIImage(named: "Keyboard.Key.FrogKey.Space"), contentMode: .stretch),
+        primaryButton: .image(UIImage(named: "Keyboard.Key.FrogKey.Primary"), contentMode: .stretch),
+        emojiButton: .image(UIImage(named: "Keyboard.Key.FrogKey.Emoji"), contentMode: .stretch),
+        specialKey: "Keyboard.Key.FrogKey",
+        background: .image(UIImage(named: "Keyboard.Key.FrogKey.Background")?.jpegData(compressionQuality: 0.1) ?? Data()),
+        actionCallout: .bright,
+        inputCallout: .bright,
+        preview: .image(UIImage(named: "Keyboard.Key.FrogKey.Background")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        name: "cuteFrogKey"
+    )
+    
+    static var cuteHorror: Theme = .init(
+        id: "563c912c-7799-4a57-a3fc-c658f761bcd3",
+        button: .init(
+            background: .image(UIImage(named: "Keyboard.Key.Horror.Normal")?.pngData() ?? Data(), contentMode: .stretch),
+            foregroundColor: Color.black,
+            font: .body
+        ),
+        shiftButton: .image(UIImage(named: "Keyboard.Key.Horror.Shift"), contentMode: .stretch),
+        backspaceButton: .image(UIImage(named: "Keyboard.Key.Horror.Backspace"), contentMode: .stretch),
+        keyboardTypeButton: .image(UIImage(named: "Keyboard.Key.Horror.KeyboardType"), contentMode: .stretch),
+        spaceButton: .image(UIImage(named: "Keyboard.Key.Horror.Space"), contentMode: .stretch),
+        primaryButton: .image(UIImage(named: "Keyboard.Key.Horror.Primary"), contentMode: .stretch),
+        emojiButton: .image(UIImage(named: "Keyboard.Key.Horror.Emoji"), contentMode: .stretch),
+        specialKey: "Keyboard.Key.Horror",
+        background: .image(UIImage(named: "Keyboard.Key.Horror.Background")?.jpegData(compressionQuality: 0.1) ?? Data()),
+        actionCallout: .bright,
+        inputCallout: .bright,
+        preview: .image(UIImage(named: "Keyboard.Key.Horror.Background")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        name: "cuteHorror"
+    )
+    
+    static var cuteRainbow: Theme = .init(
+        id: "a4e42cc6-b35b-4490-aecf-c6e36d9d8b55",
+        button: .init(
+            background: .image(UIImage(named: "Keyboard.Key.Rainbow.Normal")?.pngData() ?? Data(), contentMode: .stretch),
+            foregroundColor: Color.black,
+            font: .body
+        ),
+        shiftButton: .image(UIImage(named: "Keyboard.Key.Rainbow.Shift"), contentMode: .stretch),
+        backspaceButton: .image(UIImage(named: "Keyboard.Key.Rainbow.Backspace"), contentMode: .stretch),
+        keyboardTypeButton: .image(UIImage(named: "Keyboard.Key.Rainbow.KeyboardType"), contentMode: .stretch),
+        spaceButton: .image(UIImage(named: "Keyboard.Key.Rainbow.Space"), contentMode: .stretch),
+        primaryButton: .image(UIImage(named: "Keyboard.Key.Rainbow.Primary"), contentMode: .stretch),
+        emojiButton: .image(UIImage(named: "Keyboard.Key.Rainbow.Emoji"), contentMode: .stretch),
+        specialKey: "Keyboard.Key.Rainbow",
+        background: .image(UIImage(named: "Keyboard.Key.Rainbow.Background")?.jpegData(compressionQuality: 0.1) ?? Data()),
+        actionCallout: .bright,
+        inputCallout: .bright,
+        preview: .image(UIImage(named: "Keyboard.Key.Rainbow.Background")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        name: "cuteRainbow"
+    )
+    
+    static var cutePanda: Theme = .init(
+        id: "a4e42cc6-b35b-4490-aecf-c6e36d9d8b55",
+        button: .init(
+            background: .image(UIImage(named: "Keyboard.Key.Panda.Normal")?.pngData() ?? Data(), contentMode: .stretch),
+            foregroundColor: Color.black,
+            font: .body
+        ),
+        shiftButton: .image(UIImage(named: "Keyboard.Key.Panda.Shift"), contentMode: .stretch),
+        backspaceButton: .image(UIImage(named: "Keyboard.Key.Panda.Backspace"), contentMode: .stretch),
+        keyboardTypeButton: .image(UIImage(named: "Keyboard.Key.Panda.KeyboardType"), contentMode: .stretch),
+        spaceButton: .image(UIImage(named: "Keyboard.Key.Panda.Space"), contentMode: .stretch),
+        primaryButton: .image(UIImage(named: "Keyboard.Key.Panda.Primary"), contentMode: .stretch),
+        emojiButton: .image(UIImage(named: "Keyboard.Key.Panda.Normal"), contentMode: .stretch),
+        specialKey: "Keyboard.Key.Panda",
+        background: .image(UIImage(named: "Keyboard.Key.Panda.Background")?.jpegData(compressionQuality: 0.1) ?? Data()),
+        actionCallout: .bright,
+        inputCallout: .bright,
+        preview: .image(UIImage(named: "Keyboard.Key.Panda.Background")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        name: "cutePanda"
+    )
+    
+    static var cuteCatGarden: Theme = .init(
+        id: "65569958-90da-45ef-b925-96a95ab722d6",
+        button: .init(
+            background: .image(UIImage(named: "Keyboard.Key.CatGarden.Normal")?.pngData() ?? Data(), contentMode: .stretch),
+            foregroundColor: Color.black,
+            font: .body
+        ),
+        shiftButton: .image(UIImage(named: "Keyboard.Key.CatGarden.Shift"), contentMode: .stretch),
+        backspaceButton: .image(UIImage(named: "Keyboard.Key.CatGarden.Backspace"), contentMode: .stretch),
+        keyboardTypeButton: .image(UIImage(named: "Keyboard.Key.CatGarden.KeyboardType"), contentMode: .stretch),
+        spaceButton: .image(UIImage(named: "Keyboard.Key.CatGarden.Space"), contentMode: .stretch),
+        primaryButton: .image(UIImage(named: "Keyboard.Key.CatGarden.Primary"), contentMode: .stretch),
+        emojiButton: .image(UIImage(named: "Keyboard.Key.CatGarden.Emoji"), contentMode: .stretch),
+        specialKey: "Keyboard.Key.CatGarden",
+        background: .image(UIImage(named: "Keyboard.Key.CatGarden.Background")?.jpegData(compressionQuality: 0.1) ?? Data()),
+        actionCallout: .bright,
+        inputCallout: .bright,
+        preview: .image(UIImage(named: "Keyboard.Key.CatGarden.Background")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        name: "cuteCatGarden"
+    )
+    
+    static var cuteRabbitCute: Theme = .init(
+        id: "e0f6b2fc-ed6e-42b7-a024-828c6d33473b",
+        button: .init(
+            background: .image(UIImage(named: "Keyboard.Key.RabbitCute.Normal")?.pngData() ?? Data(), contentMode: .stretch),
+            foregroundColor: Color.black,
+            font: .body
+        ),
+        shiftButton: .image(UIImage(named: "Keyboard.Key.RabbitCute.Shift"), contentMode: .stretch),
+        backspaceButton: .image(UIImage(named: "Keyboard.Key.RabbitCute.Backspace"), contentMode: .stretch),
+        keyboardTypeButton: .image(UIImage(named: "Keyboard.Key.RabbitCute.KeyboardType"), contentMode: .stretch),
+        spaceButton: .image(UIImage(named: "Keyboard.Key.RabbitCute.Space"), contentMode: .stretch),
+        primaryButton: .image(UIImage(named: "Keyboard.Key.RabbitCute.Primary"), contentMode: .stretch),
+        emojiButton: .image(UIImage(named: "Keyboard.Key.RabbitCute.Emoji"), contentMode: .stretch),
+        specialKey: "Keyboard.Key.RabbitCute",
+        background: .image(UIImage(named: "Keyboard.Key.RabbitCute.Background")?.jpegData(compressionQuality: 0.1) ?? Data()),
+        actionCallout: .bright,
+        inputCallout: .bright,
+        preview: .image(UIImage(named: "Keyboard.Key.RabbitCute.Background")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        name: "cuteRabbitCute"
+    )
+    
+    static var cuteZodiac: Theme = .init(
+        id: "9dc0cf82-0479-47e0-ad84-9abed89a4647",
+        button: .init(
+            background: .image(UIImage(named: "Keyboard.Key.Zodiac.Normal")?.pngData() ?? Data(), contentMode: .stretch),
+            foregroundColor: Color.black,
+            font: .body
+        ),
+        specialKey: "Keyboard.Key.Zodiac",
+        background: .image(UIImage(named: "Keyboard.Key.Zodiac.Background")?.jpegData(compressionQuality: 0.1) ?? Data()),
+        actionCallout: .bright,
+        inputCallout: .bright,
+        preview: .image(UIImage(named: "Keyboard.Key.Zodiac.Background")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        name: "cuteZodiac"
+    )
+    
+    static var cuteNeonChill: Theme = .init(
+        id: "1b18a9a4-731b-41cb-8a52-114077ec9538",
+        button: .init(
+            background: .image(UIImage(named: "Keyboard.Key.NeonChill.Normal")?.pngData() ?? Data(), contentMode: .stretch),
+            foregroundColor: Color.black,
+            font: .body
+        ),
+        specialKey: "Keyboard.Key.NeonChill",
+        background: .image(UIImage(named: "Keyboard.Key.NeonChill.Background")?.jpegData(compressionQuality: 0.1) ?? Data()),
+        actionCallout: .bright,
+        inputCallout: .bright,
+        preview: .image(UIImage(named: "Keyboard.Key.NeonChill.Background")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        name: "cuteNeonChill"
+    )
+    
+    static var cuteBeerRabbit: Theme = .init(
+        id: "5890bfbc-9205-4113-bea1-004054f7fde7",
+        button: .init(
+            background: .image(UIImage(named: "Keyboard.Key.Beer&Rabbit.Normal")?.pngData() ?? Data(), contentMode: .stretch),
+            foregroundColor: Color.black,
+            font: .body
+        ),
+        shiftButton: .image(UIImage(named: "Keyboard.Key.Beer&Rabbit.Shift"), contentMode: .stretch),
+        backspaceButton: .image(UIImage(named: "Keyboard.Key.Beer&Rabbit.Backspace"), contentMode: .stretch),
+        keyboardTypeButton: .image(UIImage(named: "Keyboard.Key.Beer&Rabbit.KeyboardType"), contentMode: .stretch),
+        spaceButton: .image(UIImage(named: "Keyboard.Key.Beer&Rabbit.Space"), contentMode: .stretch),
+        primaryButton: .image(UIImage(named: "Keyboard.Key.Beer&Rabbit.Primary"), contentMode: .stretch),
+        specialKey: "Keyboard.Key.Beer&Rabbit",
+        background: .image(UIImage(named: "Keyboard.Key.Beer&Rabbit.Background")?.jpegData(compressionQuality: 0.1) ?? Data()),
+        actionCallout: .bright,
+        inputCallout: .bright,
+        preview: .image(UIImage(named: "Keyboard.Key.Beer&Rabbit.Background")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        name: "cuteBeer&Rabbit"
+    )
+    
+    static var cuteCapypara: Theme = .init(
+        id: "5890bfbc-9205-4113-bea1-004054f7fde7",
+        button: .init(
+            background: .image(UIImage(named: "Keyboard.Key.Capypara.Normal")?.pngData() ?? Data(), contentMode: .stretch),
+            foregroundColor: Color.black,
+            font: .body
+        ),
+        shiftButton: .image(UIImage(named: "Keyboard.Key.Capypara.Shift"), contentMode: .stretch),
+        backspaceButton: .image(UIImage(named: "Keyboard.Key.Capypara.Backspace"), contentMode: .stretch),
+        keyboardTypeButton: .image(UIImage(named: "Keyboard.Key.Capypara.KeyboardType"), contentMode: .stretch),
+        spaceButton: .image(UIImage(named: "Keyboard.Key.Capypara.Space"), contentMode: .stretch),
+        primaryButton: .image(UIImage(named: "Keyboard.Key.Capypara.Primary"), contentMode: .stretch),
+        specialKey: "Keyboard.Key.Capypara",
+        background: .image(UIImage(named: "Keyboard.Key.Capypara.Background")?.jpegData(compressionQuality: 0.1) ?? Data()),
+        actionCallout: .bright,
+        inputCallout: .bright,
+        preview: .image(UIImage(named: "Keyboard.Key.Capypara.Background")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        name: "cuteCapypara"
+    )
+    
+    static var cuteCatBlackWhite: Theme = .init(
+        id: "5890bfbc-9205-4113-bea1-004054f7fde7",
+        button: .init(
+            background: .image(UIImage(named: "Keyboard.Key.CatBlack&White.Normal")?.pngData() ?? Data(), contentMode: .stretch),
+            foregroundColor: Color.black,
+            font: .body
+        ),
+        shiftButton: .image(UIImage(named: "Keyboard.Key.CatBlack&White.Shift"), contentMode: .stretch),
+        backspaceButton: .image(UIImage(named: "Keyboard.Key.CatBlack&White.Backspace"), contentMode: .stretch),
+        keyboardTypeButton: .image(UIImage(named: "Keyboard.Key.CatBlack&White.KeyboardType"), contentMode: .stretch),
+        spaceButton: .image(UIImage(named: "Keyboard.Key.CatBlack&White.Space"), contentMode: .stretch),
+        primaryButton: .image(UIImage(named: "Keyboard.Key.CatBlack&White.Primary"), contentMode: .stretch),
+        specialKey: "Keyboard.Key.CatBlack&White",
+        background: .image(UIImage(named: "Keyboard.Key.CatBlack&White.Background")?.jpegData(compressionQuality: 0.1) ?? Data()),
+        actionCallout: .bright,
+        inputCallout: .bright,
+        preview: .image(UIImage(named: "Keyboard.Key.CatBlack&White.Background")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        name: "cuteCatBlack&White"
+    )
 }
 
 struct CuteTheme_Previews: PreviewProvider {
 
     struct Preview: View {
         
-        var theme: Theme = .cuteSpring
+        var theme: Theme = .cuteCatBlackWhite
 
         var controller: KeyboardInputViewController = {
             let controller = KeyboardInputViewController.preview
@@ -297,7 +555,7 @@ struct CuteTheme_Previews: PreviewProvider {
 //                .init(text: "Baz")
             ]
             
-            let theme: Theme = .cuteSpring
+            let theme: Theme = .cuteCatBlackWhite
             
             controller.services.styleProvider = CustomStyleProvider(
                 button: theme.button,
