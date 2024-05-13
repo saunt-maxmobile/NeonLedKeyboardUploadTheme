@@ -145,7 +145,7 @@ extension Theme {
     
     static var colorfullTropical: Theme = .init(id: "F7C7E5E9-CD1E-434D-A7E4-6289F333CFBE",
         button: .init(
-            background: .color(Color(hex: "#3300FF")!.opacity(0.8)),
+            background: .color(Color(hex: "#3300FF").opacity(0.8)),
             foregroundColor: .white,
             font: .body,
             cornerRadius: 25,
@@ -162,11 +162,11 @@ extension Theme {
     
     static var colorfullWavesStrip: Theme = .init(id: "39D4702F-50F0-4DB1-97E4-428D24DFA38E",
         button: .init(
-            background: .color(Color(hex: "#FF94AE")!.opacity(0.8)),
+            background: .color(Color(hex: "#FF94AE").opacity(0.8)),
             foregroundColor: .white,
             font: .body,
             cornerRadius: 25,
-            border: .init(color: Color(hex: "#FF94AE")!, size: 2),
+            border: .init(color: Color(hex: "#FF94AE"), size: 2),
             shapeType: .HEXAGON
         ),
         background: .image(UIImage(named: "colorfullWavesStrip")?.jpegData(compressionQuality: 0.1) ?? Data()),
@@ -198,7 +198,7 @@ extension Theme {
     
     static var colorfullCubes: Theme = .init(id: "08CCB351-5BC6-4809-822F-9F22872CDA10",
         button: .init(
-            background: .color(Color(hex: "#B6F364")!.opacity(0.6)),
+            background: .color(Color(hex: "#B6F364").opacity(0.6)),
             foregroundColor: .white,
             font: .body,
             cornerRadius: 25,

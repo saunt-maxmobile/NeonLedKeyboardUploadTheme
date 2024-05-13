@@ -610,7 +610,7 @@ extension SystemKeyboard {
                         VStack {
                             Circle()
                                 .frame(width: 50)
-                                .foregroundColor(Color(hex: "565C63")!)
+                                .foregroundColor(Color(hex: "565C63"))
                                 .overlay {
                                     ZStack {
                                         Image("Keyboard.Setting.ShowSpecialCharacter")
@@ -638,7 +638,7 @@ extension SystemKeyboard {
                         VStack {
                             Circle()
                                 .frame(width: 50)
-                                .foregroundColor(Color(hex: "565C63")!)
+                                .foregroundColor(Color(hex: "565C63"))
                                 .overlay {
                                     ZStack {
                                         Image("Keyboard.Setting.ShowSuggestion")
@@ -667,7 +667,7 @@ extension SystemKeyboard {
                         VStack {
                             Circle()
                                 .frame(width: 50)
-                                .foregroundColor(Color(hex: "565C63")!)
+                                .foregroundColor(Color(hex: "565C63"))
                                 .overlay {
                                     ZStack {
                                         Image("Keyboard.Setting.AutoComplete")
@@ -694,7 +694,7 @@ extension SystemKeyboard {
                         VStack {
                             Circle()
                                 .frame(width: 50)
-                                .foregroundColor(Color(hex: "565C63")!)
+                                .foregroundColor(Color(hex: "565C63"))
                                 .overlay {
                                     ZStack {
                                         Image("Keyboard.Setting.AutoCapitalization")
@@ -721,7 +721,7 @@ extension SystemKeyboard {
                         VStack {
                             Circle()
                                 .frame(width: 50)
-                                .foregroundColor(Color(hex: "565C63")!)
+                                .foregroundColor(Color(hex: "565C63"))
                                 .overlay {
                                     ZStack {
                                         Image("Keyboard.Setting.DoubleSpace")
@@ -747,7 +747,7 @@ extension SystemKeyboard {
                         VStack {
                             Circle()
                                 .frame(width: 50)
-                                .foregroundColor(Color(hex: "565C63")!)
+                                .foregroundColor(Color(hex: "565C63"))
                                 .overlay {
                                     ZStack {
                                         Image("Keyboard.Setting.Sound")

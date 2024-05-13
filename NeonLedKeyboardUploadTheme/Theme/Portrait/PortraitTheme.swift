@@ -49,7 +49,7 @@ extension Theme {
     
     static var portraitRobotic: Theme = .init(id: "793F0F2F-01DF-49D4-8900-032CD2DF111A",
         button: .init(
-            background: .color(Color(hex: "#4200FF")!),
+            background: .color(Color(hex: "#4200FF").opacity(0.15)),
             foregroundColor: .white,
             font: .custom("SairaStencilOne", size: 18),
             cornerRadius: 0,
@@ -60,9 +60,13 @@ extension Theme {
         inputCallout: .neon,
         
         neonPermission: .init(disableNeonButton: true),
-//        disableNeonAnimationButton: true,
         durationAnimation: 6,
-        neonLinearAnimation: .radial(nil),
+        neonLinearAnimation: .radial([
+            Color(hex: "#4200FF"),
+            Color(hex: "#4200FF"),
+            .clear,
+            .clear
+        ]),
         preview: .image(UIImage(named: "portraitRoboticPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
         name: "portraitRobotic"
     )
@@ -111,12 +115,11 @@ extension Theme {
             foregroundColor: .white,
             font: .custom("SairaStencilOne", size: 18),
             cornerRadius: 10,
-            border: .init(color: .white, size: 2)
+            border: .init(color: .clear, size: 0)
         ),
         background: .image(UIImage(named: "portraitLlama")?.jpegData(compressionQuality: 0.1) ?? Data()),
         actionCallout: .neon,
         inputCallout: .neon,
-        
         durationAnimation: 6,
         neonLinearAnimation: .LTR(nil, 5),
         preview: .image(UIImage(named: "portraitLlamaPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
@@ -143,7 +146,7 @@ extension Theme {
     
     static var portraitMonkeyFashion: Theme = .init(id: "D6078748-72D6-404F-84B7-64AD04CD52E4",
         button: .init(
-            background: .color(Color(hex: "#FFDE00")!.opacity(0.5)),
+            background: .color(Color(hex: "#FFDE00").opacity(0.5)),
             foregroundColor: .white,
             font: .custom("SairaStencilOne", size: 18),
             cornerRadius: 10,
@@ -167,7 +170,7 @@ struct PortraitTheme_Previews: PreviewProvider {
         var controller: KeyboardInputViewController = {
             let controller = KeyboardInputViewController.preview
             
-            let theme = Theme.portraitMonkeyFashion
+            let theme = Theme.portraitRobotic
             
             controller.services.styleProvider = CustomKeyStyleProvider(buttonStyle: theme.button, actionCallout: theme.actionCallout ?? .bright, inputCallout: theme.inputCallout ?? .bright, keyboardContext: controller.state.keyboardContext)
             

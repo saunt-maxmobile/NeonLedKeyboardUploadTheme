@@ -13,7 +13,7 @@ extension Theme {
     static var photoCloud: Theme = .init(id: "D84DB27E-1937-4414-901C-92DD404E00E4",
         button: .init(
             background: .color(Color.white.opacity(0.3)),
-            foregroundColor: Color(hex: "#E43977")!,
+            foregroundColor: Color(hex: "#E43977"),
             font: .body,
             cornerRadius: 8,
             border: .init(color: .white, size: 2)
@@ -41,10 +41,10 @@ extension Theme {
     static var photoDarkPurple: Theme = .init(id: "44173D04-49E2-4540-B010-732C6F83D539",
         button: .init(
             background: .color(Color.clear),
-            foregroundColor: Color(hex: "EE82FF")!,
+            foregroundColor: Color(hex: "EE82FF"),
             font: .body,
             cornerRadius: 8,
-            border: .init(color: Color(hex: "EE82FF")!, size: 1)
+            border: .init(color: Color(hex: "EE82FF"), size: 1)
         ),
         background: .image(UIImage(named: "photoDarkPurple")?.jpegData(compressionQuality: 0.1) ?? Data()),
         
@@ -54,8 +54,8 @@ extension Theme {
     
     static var photoPinkCream: Theme = .init(id: "FD495C1E-A549-4866-B930-5908571C24EC",
         button: .init(
-            background: .color(Color(hex: "FF94AE")!.opacity(0.3)),
-            foregroundColor: Color(hex: "DE0B57")!,
+            background: .color(Color(hex: "FF94AE").opacity(0.3)),
+            foregroundColor: Color(hex: "DE0B57"),
             font: .body,
             cornerRadius: 8,
             border: .init(color: Color.white, size: 1)
@@ -69,10 +69,10 @@ extension Theme {
     static var photoBlueGlitter: Theme = .init(id: "CA2255AA-4F39-40DD-9EEC-C22C94C96A71",
         button: .init(
             background: .color(.clear),
-            foregroundColor: Color(hex: "#0F73AC")!,
+            foregroundColor: Color(hex: "#0F73AC"),
             font: .body,
             cornerRadius: 8,
-            border: .init(color: Color(hex: "#5AB9EF")!, size: 1)
+            border: .init(color: Color(hex: "#5AB9EF"), size: 1)
         ),
         background: .image(UIImage(named: "photoBlueGlitter")?.jpegData(compressionQuality: 0.1) ?? Data()),
         
@@ -82,7 +82,7 @@ extension Theme {
     
     static var photoGalaxy: Theme = .init(id: "E4B393C8-D371-4252-8746-A7FBF7DD34F9",
         button: .init(
-            background: .color(Color(hex: "3C00BC")!.opacity(0.5)),
+            background: .color(Color(hex: "3C00BC").opacity(0.5)),
             foregroundColor: Color.white,
             font: .body,
             cornerRadius: 8,
@@ -111,7 +111,7 @@ extension Theme {
     static var photoColor: Theme = .init(id: "16174B42-E522-4C16-A59F-B1F01571ADE6",
         button: .init(
             background: .color(.white.opacity(0.3)),
-            foregroundColor: Color(hex: "882CE3")!,
+            foregroundColor: Color(hex: "882CE3"),
             font: .body,
             cornerRadius: 8,
             border: .init(color: .white, size: 1)
@@ -139,7 +139,7 @@ extension Theme {
     static var photoSkyfull: Theme = .init(id: "A19CB387-A3E8-4C83-8E20-2540179AAC77",
         button: .init(
             background: .color(.white.opacity(0.4)),
-            foregroundColor: Color(hex: "008585")!,
+            foregroundColor: Color(hex: "008585"),
             font: .body,
             cornerRadius: 8,
             border: .init(color: .white, size: 1)
@@ -241,10 +241,10 @@ extension Theme {
     static var photoMajesticGalaxy: Theme = .init(id: "47A9D805-D400-4A0C-89D3-F7A3234D9AF1",
         button: .init(
             background: .color(.clear),
-            foregroundColor: Color(hex: "#00F0FF")!,
+            foregroundColor: Color(hex: "#00F0FF"),
             font: .body,
             cornerRadius: 10,
-            border: .init(color: Color(hex: "#4C3CFF")!, size: 2)
+            border: .init(color: Color(hex: "#4C3CFF"), size: 2)
         ),
         background: .image(UIImage(named: "photoMajesticGalaxy")?.jpegData(compressionQuality: 0.1) ?? Data()),
         actionCallout: .bright,
@@ -257,7 +257,7 @@ extension Theme {
     static var photoColorWaves: Theme = .init(id: "3D81027A-7128-4B50-8ED2-EDF475DD48B2",
         button: .init(
             background: .color(.white),
-            foregroundColor: Color(hex: "#00F0FF")!,
+            foregroundColor: Color(hex: "#00F0FF"),
             font: .body,
             cornerRadius: 18,
             border: .init(color: .clear, size: 0)
@@ -277,10 +277,10 @@ extension Theme {
     static var photoBlurBokeh: Theme = .init(id: "F5102FDC-2AA1-48F9-8B3B-2B691B787134",
         button: .init(
             background: .color(.black.opacity(0.6)),
-            foregroundColor: Color(hex: "#80FE02")!,
+            foregroundColor: Color(hex: "#80FE02"),
             font: .body,
             cornerRadius: 18,
-            border: .init(color: Color(hex: "#FFC700")!, size: 3)
+            border: .init(color: Color(hex: "#FFC700"), size: 3)
         ),
         background: .image(UIImage(named: "photoBlurBokeh")?.jpegData(compressionQuality: 0.1) ?? Data()),
         actionCallout: .bright,
@@ -317,7 +317,7 @@ extension Theme {
     static var photoFantasticStrip: Theme = .init(id: "DB86F942-023C-4D9F-AE37-F2B02B065D22",
         button: .init(
             background: .color(.clear),
-            foregroundColor: Color(hex: "#000AFF")!,
+            foregroundColor: Color(hex: "#000AFF"),
             font: .body,
             cornerRadius: 16,
             border: .init(color: .white.opacity(0.7), size: 2)
@@ -333,10 +333,10 @@ extension Theme {
     static var photoFriendlyLemur: Theme = .init(id: "B117322F-BA89-451F-B321-D4376720C182",
         button: .init(
             background: .color(.clear),
-            foregroundColor: Color(hex: "#FFD746")!,
+            foregroundColor: Color(hex: "#FFD746"),
             font: .body,
             cornerRadius: 10,
-            border: .init(color: Color(hex: "#FFD746")!, size: 1)
+            border: .init(color: Color(hex: "#FFD746"), size: 1)
         ),
         background: .image(UIImage(named: "photoFriendlyLemur")?.jpegData(compressionQuality: 0.1) ?? Data()),
         actionCallout: .bright,
@@ -349,10 +349,10 @@ extension Theme {
     static var photoFunnyHorse: Theme = .init(id: "346BDB1D-C71E-4A36-9D0B-57ADDD147069",
         button: .init(
             background: .color(.clear),
-            foregroundColor: Color(hex: "#00F0FF")!,
+            foregroundColor: Color(hex: "#00F0FF"),
             font: .body,
             cornerRadius: 10,
-            border: .init(color: Color(hex: "#00F0FF")!, size: 1)
+            border: .init(color: Color(hex: "#00F0FF"), size: 1)
         ),
         background: .image(UIImage(named: "photoFunnyHorse")?.jpegData(compressionQuality: 0.1) ?? Data()),
         actionCallout: .bright,
@@ -365,10 +365,10 @@ extension Theme {
     static var photoCuteCorgi: Theme = .init(id: "8A379A49-71A2-4B79-82B2-F0A116A3B847",
         button: .init(
             background: .color(.clear),
-            foregroundColor: Color(hex: "#FFD746")!,
+            foregroundColor: Color(hex: "#FFD746"),
             font: .body,
             cornerRadius: 10,
-            border: .init(color: Color(hex: "#FF984C")!, size: 2)
+            border: .init(color: Color(hex: "#FF984C"), size: 2)
         ),
         background: .image(UIImage(named: "photoCuteCorgi")?.jpegData(compressionQuality: 0.1) ?? Data()),
         actionCallout: .bright,
@@ -381,10 +381,10 @@ extension Theme {
     static var photoCoolCat: Theme = .init(id: "78DF0732-8700-4CB0-880F-65C0DF0F17CF",
         button: .init(
             background: .color(.clear),
-            foregroundColor: Color(hex: "#00F0FF")!,
+            foregroundColor: Color(hex: "#00F0FF"),
             font: .body,
             cornerRadius: 10,
-            border: .init(color: Color(hex: "#FF984C")!, size: 1)
+            border: .init(color: Color(hex: "#FF984C"), size: 1)
         ),
         background: .image(UIImage(named: "photoCoolCat")?.jpegData(compressionQuality: 0.1) ?? Data()),
         actionCallout: .bright,
@@ -397,10 +397,10 @@ extension Theme {
     static var photoLoverDog: Theme = .init(id: "9D1D0816-136B-432C-81D9-146E96351F4B",
         button: .init(
             background: .color(.clear),
-            foregroundColor: Color(hex: "#729D39")!,
+            foregroundColor: Color(hex: "#729D39"),
             font: .body,
             cornerRadius: 10,
-            border: .init(color: Color(hex: "#729D39")!, size: 2)
+            border: .init(color: Color(hex: "#729D39"), size: 2)
         ),
         background: .image(UIImage(named: "photoLoverDog")?.jpegData(compressionQuality: 0.1) ?? Data()),
         actionCallout: .bright,
@@ -413,10 +413,10 @@ extension Theme {
     static var photoPuppy: Theme = .init(id: "BC4A4FFA-83D8-4D7E-89BE-63825494F364",
         button: .init(
             background: .color(.clear),
-            foregroundColor: Color(hex: "#FFFFFF")!,
+            foregroundColor: Color(hex: "#FFFFFF"),
             font: .body,
             cornerRadius: 10,
-            border: .init(color: Color(hex: "#FFFFFF")!.opacity(0.5), size: 1)
+            border: .init(color: Color(hex: "#FFFFFF").opacity(0.5), size: 1)
         ),
         background: .image(UIImage(named: "photoPuppy")?.jpegData(compressionQuality: 0.1) ?? Data()),
         actionCallout: .bright,

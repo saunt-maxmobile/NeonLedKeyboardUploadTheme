@@ -29,10 +29,10 @@ extension Theme {
     static var gradientPhotoRomantic: Theme = .init(id: "DF83DD37-7238-4691-B04E-02E19087DC4B",
         button: .init(
             background: .color(.white.opacity(0.3)),
-            foregroundColor: Color(hex: "#FF37EB")!,
+            foregroundColor: Color(hex: "#FF37EB"),
             font: .body,
             cornerRadius: 8,
-            border: .init(color: Color(hex: "#FF78E9")!, size: 2)
+            border: .init(color: Color(hex: "#FF78E9"), size: 2)
         ),
         background: .image(UIImage(named: "gradientPhotoRomantic")?.jpegData(compressionQuality: 0.3) ?? Data()),
         
@@ -42,7 +42,7 @@ extension Theme {
     
     static var gradientPhotoUnicorn: Theme = .init(id: "B5678ADD-3D7D-4EF6-BB45-A7076C4E7E08",
         button: .init(
-            background: .color(Color(hex: "#7D00C5")!.opacity(0.6)),
+            background: .color(Color(hex: "#7D00C5").opacity(0.6)),
             foregroundColor: Color.white,
             font: .body,
             cornerRadius: 8,
@@ -56,7 +56,7 @@ extension Theme {
     
     static var gradientPhotoGillter: Theme = .init(id: "91869E51-A506-4B64-B52D-64CD55D40D35",
         button: .init(
-            background: .color(Color(hex: "#7D00C5")!.opacity(0.6)),
+            background: .color(Color(hex: "#7D00C5").opacity(0.6)),
             foregroundColor: Color.white,
             font: .body,
             cornerRadius: 8,
@@ -77,7 +77,7 @@ extension Theme {
     
     static var gradientPhotoColorfull: Theme = .init(id: "84D40263-085D-4F1C-AAB8-C5593B350A82",
         button: .init(
-            background: .color(Color(hex: "#7D00C5")!.opacity(0.6)),
+            background: .color(Color(hex: "#7D00C5").opacity(0.6)),
             foregroundColor: Color.white,
             font: .body,
             cornerRadius: 8,
@@ -135,7 +135,7 @@ extension Theme {
             foregroundColor: Color.white,
             font: .body,
             cornerRadius: 10,
-            border: .init(color: Color(hex: "#000AFF")!, size: 1)
+            border: .init(color: Color(hex: "#000AFF"), size: 1)
         ),
         background: .image(UIImage(named: "gradientPopPoly")?.jpegData(compressionQuality: 0.1) ?? Data()),
         actionCallout: .bright,
@@ -147,7 +147,7 @@ extension Theme {
     static var gradientHologram: Theme = .init(id: "D3DF0848-065B-4BB4-BC0A-806D086A2233",
         button: .init(
             background: .color(.white.opacity(0.5)),
-            foregroundColor: Color(hex: "#FA00FF")!,
+            foregroundColor: Color(hex: "#FA00FF"),
             font: .body,
             cornerRadius: 10,
             border: .init(color: .clear, size: 0)
@@ -172,10 +172,10 @@ extension Theme {
         inputCallout: .neon,
         durationAnimation: 5,
         neonLinearAnimation: .radial(
-            [Color(hex: "FF984C")!,
-             Color(hex: "FF984C")!,
-             Color(hex: "00FFFF")!,
-             Color(hex: "00FFFF")!,
+            [Color(hex: "FF984C"),
+             Color(hex: "FF984C"),
+             Color(hex: "00FFFF"),
+             Color(hex: "00FFFF"),
              .clear
             ]),
         preview: .image(UIImage(named: "gradientVividBlurredPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
@@ -295,8 +295,8 @@ extension Theme {
         neonLinearAnimation: .radial(
             [.white,
              .white,
-             Color(hex: "80FE02")!,
-             Color(hex: "80FE02")!,
+             Color(hex: "80FE02"),
+             Color(hex: "80FE02"),
              .clear
             ]),
         preview: .image(UIImage(named: "gradientAuroraPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
@@ -306,7 +306,7 @@ extension Theme {
     static var gradientYellowFruits: Theme = .init(
         id: "98D016CD-4008-47B6-890B-D0FAE379D910",
         button: .init(
-            background: .color(Color(hex: "24B600")!.opacity(0.6)),
+            background: .color(Color(hex: "24B600").opacity(0.6)),
             foregroundColor: .white,
             font: .body,
             cornerRadius: 25,
@@ -330,8 +330,8 @@ extension Theme {
     static var gradientPurpleVivid: Theme = .init(
         id: "A1BF1457-0B14-4D92-BCAD-27541CE214DE",
         button: .init(
-            background: .color(Color(hex: "#0500FF")!.opacity(0.5)),
-            foregroundColor: Color(hex: "#FEF635")!,
+            background: .color(Color(hex: "#0500FF").opacity(0.5)),
+            foregroundColor: Color(hex: "#FEF635"),
             font: .body,
             cornerRadius: 25,
             border: .init(color: .clear, size: 0),
@@ -396,8 +396,8 @@ extension Theme {
     
     static var gradientCinema: Theme = .init(id: "597DA35E-DBE2-4C59-A1EB-36DBD7D469F2",
         button: .init(
-            background: .color(Color(hex: "#34FE02")!),
-            foregroundColor: Color(hex: "#2D5A00")!,
+            background: .color(Color(hex: "#34FE02")),
+            foregroundColor: Color(hex: "#2D5A00"),
             font: .body,
             cornerRadius: 25,
             border: .init(color: .clear, size: 0)

@@ -170,7 +170,7 @@ extension Theme {
             foregroundColor: Color.white,
             font: .body,
             cornerRadius: 8,
-            border: .init(color: Color(hex: "#FF00F5")!, size: 2)
+            border: .init(color: Color(hex: "#FF00F5"), size: 2)
         ),
         background: .image(UIImage(named: "neonDarkLeaf")?.jpegData(compressionQuality: 0.1) ?? Data()),
         durationAnimation: 1,
@@ -187,10 +187,10 @@ extension Theme {
         id: "BB5F120B-B615-4349-BF75-630D8DB7B868",
         button: .init(
             background: .color(.clear),
-            foregroundColor: Color(hex: "#00FFFF")!,
+            foregroundColor: Color(hex: "#00FFFF"),
             font: .body,
             cornerRadius: 8,
-            border: .init(color: Color(hex: "#7636FF")!, size: 2)
+            border: .init(color: Color(hex: "#7636FF"), size: 2)
         ),
         background: .image(UIImage(named: "neonMysticJungle")?.jpegData(compressionQuality: 0.1) ?? Data()),
         durationAnimation: 2,
@@ -202,18 +202,18 @@ extension Theme {
         id: "7F5BE9DA-E02D-4F77-B4BE-10DF47C05E19",
         button: .init(
             background: .color(.clear),
-            foregroundColor: Color(hex: "#00FFFF")!,
+            foregroundColor: Color(hex: "#00FFFF"),
             font: .body,
             cornerRadius: 8,
-            border: .init(color: Color(hex: "#7636FF")!, size: 2)
+            border: .init(color: Color(hex: "#7636FF"), size: 2)
         ),
         background: .image(UIImage(named: "neonRoofNeon")?.jpegData(compressionQuality: 0.1) ?? Data()),
         durationAnimation: 3,
         neonLinearAnimation: .radial(
-            [Color(hex: "FFFFFF")!,
-             Color(hex: "00FFFF")!,
-             Color(hex: "FF00D6")!,
-             Color(hex: "FEF635")!,
+            [Color(hex: "FFFFFF"),
+             Color(hex: "00FFFF"),
+             Color(hex: "FF00D6"),
+             Color(hex: "FEF635"),
             ]),
         preview: .image(UIImage(named: "neonRoofNeonPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
         name: "neonRoofNeon"
@@ -223,10 +223,10 @@ extension Theme {
         id: "74A9F132-EB0A-4518-BBCC-50BC116AA9D0",
         button: .init(
             background: .color(.clear),
-            foregroundColor: Color(hex: "#00FFFF")!,
+            foregroundColor: Color(hex: "#00FFFF"),
             font: .body,
             cornerRadius: 8,
-            border: .init(color: Color(hex: "#7636FF")!, size: 2)
+            border: .init(color: Color(hex: "#7636FF"), size: 2)
         ),
         background: .image(UIImage(named: "neonSummitNeon")?.jpegData(compressionQuality: 0.1) ?? Data()),
         
@@ -240,10 +240,10 @@ extension Theme {
         id: "557F8294-F880-4A78-8A0F-E8A3AF0F23C5",
         button: .init(
             background: .color(.clear),
-            foregroundColor: Color(hex: "#00F0FF")!,
+            foregroundColor: Color(hex: "#00F0FF"),
             font: .body,
             cornerRadius: 8,
-            border: .init(color: Color(hex: "#000AFF")!, size: 2)
+            border: .init(color: Color(hex: "#000AFF"), size: 2)
         ),
         background: .image(UIImage(named: "neonGlass")?.jpegData(compressionQuality: 0.1) ?? Data()),
         preview: .image(UIImage(named: "neonGlassPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
@@ -419,7 +419,7 @@ extension Theme {
     static var neonMagicLight: Theme = .init(
         id: "1A18A62A-8B79-42A2-BA95-F6CA68997B9F",
         button: .init(
-            background: .color(Color(hex: "#000AFF")!),
+            background: .color(Color(hex: "#000AFF")),
             foregroundColor: Color.white,
             font: .body,
             cornerRadius: 25,

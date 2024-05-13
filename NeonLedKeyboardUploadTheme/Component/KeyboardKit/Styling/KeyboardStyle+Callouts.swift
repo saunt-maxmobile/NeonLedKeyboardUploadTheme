@@ -236,9 +236,9 @@ public extension KeyboardStyle.ActionCallout {
     static var neon: KeyboardStyle.ActionCallout = .init(
         callout: .init(
             backgroundColor: .black.opacity(0.3),
-            borderColor: Color(hex: "5C5C5E")!,
+            borderColor: Color(hex: "5C5C5E"),
             shadowColor: .clear,
-            textColor: Color(hex: "E5E5E5")!,
+            textColor: Color(hex: "E5E5E5"),
             border: .init(color: .yellow, size: 2)
         ),
         selectedBackgroundColor: .black.opacity(0.6),
@@ -248,7 +248,7 @@ public extension KeyboardStyle.ActionCallout {
     static var bright: KeyboardStyle.ActionCallout = .init(
         callout: .init(
             backgroundColor: Color("standardButtonBackground"),
-            borderColor: Color(hex: "C6C7CD") ?? Color("standardButtonBackground"),
+            borderColor: Color(hex: "C6C7CD"),
             shadowColor: .clear
         ),
         selectedBackgroundColor: Color(hex: "CECDD4"),
@@ -257,10 +257,10 @@ public extension KeyboardStyle.ActionCallout {
     
     static let dark: KeyboardStyle.ActionCallout = .init(
         callout: .init(
-            backgroundColor: Color(hex: "5C5C5E")!,
-            borderColor: Color(hex: "5C5C5E")!,
+            backgroundColor: Color(hex: "5C5C5E"),
+            borderColor: Color(hex: "5C5C5E"),
             shadowColor: .clear,
-            textColor: Color(hex: "E5E5E5")!
+            textColor: Color(hex: "E5E5E5")
         ),
         selectedBackgroundColor: Color(hex: "7B7B7E"),
         selectedForegroundColor: Color.white
@@ -290,7 +290,7 @@ public extension KeyboardStyle.InputCallout {
     static var bright: KeyboardStyle.InputCallout = .init(
         callout: .init(
             backgroundColor: Color("standardButtonBackground"),
-            borderColor: Color(hex: "C6C7CD") ?? Color("standardButtonBackground"),
+            borderColor: Color(hex: "C6C7CD"),
             shadowColor: .clear,
             hiddeen: true
         )
@@ -298,10 +298,10 @@ public extension KeyboardStyle.InputCallout {
     
     static var dark: KeyboardStyle.InputCallout = .init(
         callout: .init(
-            backgroundColor: Color(hex: "888888")!,
-            borderColor: Color(hex: "888888")!,
+            backgroundColor: Color(hex: "888888"),
+            borderColor: Color(hex: "888888"),
             shadowColor: .clear,
-            textColor: Color(hex: "B6B6B6")!,
+            textColor: Color(hex: "B6B6B6"),
             hiddeen: true
         )
     )

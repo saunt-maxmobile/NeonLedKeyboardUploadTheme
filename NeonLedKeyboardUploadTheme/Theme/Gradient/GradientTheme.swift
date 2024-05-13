@@ -18,7 +18,7 @@ extension Theme {
             cornerRadius: 8,
             border: .init(color: .clear, size: 0)
         ),
-        background: .init(backgroundGradient: [Color(hex: "FFDA50")!, Color(hex: "FF46DA")!]),
+        background: .init(backgroundGradient: [Color(hex: "FFDA50"), Color(hex: "FF46DA")]),
         
         preview: .image(UIImage(named: "gradientPinkPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
         name: "gradientPink"

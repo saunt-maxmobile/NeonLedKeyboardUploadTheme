@@ -8,12 +8,12 @@
 import Foundation
 import SwiftUI
 
-public struct Theme: Codable, Equatable {
+public struct Theme: Codable, Equatable, Identifiable {
     public static func == (lhs: Theme, rhs: Theme) -> Bool {
         return lhs.id == rhs.id
     }
     
-    var id: String
+    public var id: String
     var button: KeyboardStyle.Button?
     var shiftButton: KeyboardStyle.Background?
     var backspaceButton: KeyboardStyle.Background?
@@ -22,6 +22,8 @@ public struct Theme: Codable, Equatable {
     var primaryButton: KeyboardStyle.Background?
     var emojiButton: KeyboardStyle.Background?
     var specialKey: String?
+    var showSpaceTitle: Bool? = true
+    var showPrimaryTitle: Bool? = true
     var edgeInsets: CodableUIEdgeInsets?
     var background: KeyboardStyle.Background?
     var gifBackground: String?
@@ -49,6 +51,8 @@ public struct Theme: Codable, Equatable {
         case primaryButton = "primaryButton"
         case emojiButton = "emojiButton"
         case specialKey = "specialKey"
+        case showSpaceTitle = "showSpaceTitle"
+        case showPrimaryTitle = "showPrimaryTitle"
         case edgeInsets = "edgeInsets"
         case background = "background"
         case gifBackground = "gifBackground"
@@ -79,6 +83,8 @@ public struct Theme: Codable, Equatable {
         self.primaryButton          = try values.decodeIfPresent(KeyboardStyle.Background.self, forKey: .primaryButton)
         self.emojiButton            = try values.decodeIfPresent(KeyboardStyle.Background.self, forKey: .emojiButton)
         self.specialKey             = try values.decodeIfPresent(String.self, forKey: .specialKey)
+        self.showSpaceTitle         = try values.decodeIfPresent(Bool.self, forKey: .showSpaceTitle)
+        self.showPrimaryTitle       = try values.decodeIfPresent(Bool.self, forKey: .showPrimaryTitle)
         self.edgeInsets             = try values.decodeIfPresent(CodableUIEdgeInsets.self, forKey: .edgeInsets)
         self.background             = try values.decodeIfPresent(KeyboardStyle.Background.self, forKey: .background)
         self.gifBackground          = try values.decodeIfPresent(String.self, forKey: .gifBackground)
@@ -100,12 +106,6 @@ public struct Theme: Codable, Equatable {
     public func encode(to encoder: Encoder) throws {
         var container = encoder.container(keyedBy: CodingKeys.self)
         
-//        encode for save theme Section
-//        try container.encodeIfPresent(id, forKey: .id)
-//        try container.encodeIfPresent(name, forKey: .name)
-//        try container.encodeIfPresent(imagePreview, forKey: .imagePreview)
-        
-//        encode for save theme data
         try container.encodeIfPresent(id, forKey: .id)
         try container.encodeIfPresent(button, forKey: .button)
         try container.encodeIfPresent(shiftButton, forKey: .shiftButton)
@@ -115,6 +115,8 @@ public struct Theme: Codable, Equatable {
         try container.encodeIfPresent(primaryButton, forKey: .primaryButton)
         try container.encodeIfPresent(emojiButton, forKey: .emojiButton)
         try container.encodeIfPresent(specialKey, forKey: .specialKey)
+        try container.encodeIfPresent(showSpaceTitle, forKey: .showSpaceTitle)
+        try container.encodeIfPresent(showPrimaryTitle, forKey: .showPrimaryTitle)
         try container.encodeIfPresent(edgeInsets, forKey: .edgeInsets)
         try container.encodeIfPresent(background, forKey: .background)
         try container.encodeIfPresent(gifBackground, forKey: .gifBackground)
@@ -155,6 +157,8 @@ public struct Theme: Codable, Equatable {
         primaryButton: KeyboardStyle.Background? = nil,
         emojiButton: KeyboardStyle.Background? = nil,
         specialKey: String? = nil,
+        showSpaceTitle: Bool = true,
+        showPrimaryTitle: Bool = true,
         background: KeyboardStyle.Background,
         actionCallout: KeyboardStyle.ActionCallout = .bright,
         inputCallout: KeyboardStyle.InputCallout = .bright,
@@ -176,8 +180,10 @@ public struct Theme: Codable, Equatable {
         self.keyboardTypeButton = keyboardTypeButton
         self.spaceButton = spaceButton
         self.primaryButton = primaryButton
-        self.emojiButton = emojiButton
+        self.emojiButton = primaryButton
         self.specialKey = specialKey
+        self.showSpaceTitle = showSpaceTitle
+        self.showPrimaryTitle = showPrimaryTitle
         self.background = background
         self.actionCallout = actionCallout
         self.inputCallout = inputCallout
@@ -271,7 +277,7 @@ extension Theme {
         actionCallout: .init(
             callout: .init(
                 backgroundColor: Color("standardButtonBackground"),
-                borderColor: Color(hex: "C6C7CD") ?? Color("standardButtonBackground"),
+                borderColor: Color(hex: "C6C7CD"),
                 shadowColor: .clear
             ),
             selectedBackgroundColor: Color(hex: "CECDD4"),
@@ -280,7 +286,7 @@ extension Theme {
         inputCallout: .init(
             callout: .init(
                 backgroundColor: Color("standardButtonBackground"),
-                borderColor: Color(hex: "C6C7CD") ?? Color("standardButtonBackground"),
+                borderColor: Color(hex: "C6C7CD") ,
                 shadowColor: .clear,
                 hiddeen: true
             )
@@ -292,30 +298,30 @@ extension Theme {
     static var dark: Theme = .init(
         id: "1475559E-760C-473A-A42A-819973E88AC8",
         button: .init(
-            background: .color(Color(hex: "373A3F")!),
-            foregroundColor: Color(hex: "E1E1E1")!,
+            background: .color(Color(hex: "373A3F")),
+            foregroundColor: Color(hex: "E1E1E1"),
             font: .body,
             cornerRadius: 10,
-            border: .init(color: Color(hex: "373A3F")!, size: 1),
+            border: .init(color: Color(hex: "373A3F"), size: 1),
             shadow: .init(color: .clear, size: 0)
         ),
-        background: .color(Color(hex: "181B22")!),
+        background: .color(Color(hex: "181B22")),
         actionCallout: .init(
             callout: .init(
-                backgroundColor: Color(hex: "5C5C5E")!,
-                borderColor: Color(hex: "5C5C5E")!,
+                backgroundColor: Color(hex: "5C5C5E"),
+                borderColor: Color(hex: "5C5C5E"),
                 shadowColor: .clear,
-                textColor: Color(hex: "E5E5E5")!
+                textColor: Color(hex: "E5E5E5")
             ),
             selectedBackgroundColor: Color(hex: "7B7B7E"),
             selectedForegroundColor: Color.white
         ),
         inputCallout: .init(
             callout: .init(
-                backgroundColor: Color(hex: "888888")!,
-                borderColor: Color(hex: "888888")!,
+                backgroundColor: Color(hex: "888888"),
+                borderColor: Color(hex: "888888"),
                 shadowColor: .clear,
-                textColor: Color(hex: "B6B6B6")!,
+                textColor: Color(hex: "B6B6B6"),
                 hiddeen: true
             )
         ),
@@ -337,9 +343,9 @@ extension Theme {
         actionCallout: .init(
             callout: .init(
                 backgroundColor: .black.opacity(0.3),
-                borderColor: Color(hex: "5C5C5E")!,
+                borderColor: Color(hex: "5C5C5E"),
                 shadowColor: .clear,
-                textColor: Color(hex: "E5E5E5")!,
+                textColor: Color(hex: "E5E5E5"),
                 border: .init(color: .yellow, size: 2)
             ),
             selectedBackgroundColor: .black.opacity(0.6),
