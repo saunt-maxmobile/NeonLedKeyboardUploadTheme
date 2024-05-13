@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+import SwiftUI
 
 struct CodableUIEdgeInsets: Codable {
     let top: CGFloat
@@ -26,6 +27,13 @@ struct CodableUIEdgeInsets: Codable {
         self.left = insets.left
         self.bottom = insets.bottom
         self.right = insets.right
+    }
+    
+    init(_ insets: EdgeInsets) {
+        self.top = insets.top
+        self.left = insets.leading
+        self.bottom = insets.bottom
+        self.right = insets.trailing
     }
 
     var uiEdgeInsets: UIEdgeInsets {

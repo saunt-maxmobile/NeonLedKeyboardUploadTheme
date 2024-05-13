@@ -159,6 +159,7 @@ public struct Theme: Codable, Equatable, Identifiable {
         specialKey: String? = nil,
         showSpaceTitle: Bool = true,
         showPrimaryTitle: Bool = true,
+        edgeInsets: CodableUIEdgeInsets? = nil,
         background: KeyboardStyle.Background,
         actionCallout: KeyboardStyle.ActionCallout = .bright,
         inputCallout: KeyboardStyle.InputCallout = .bright,
@@ -184,6 +185,7 @@ public struct Theme: Codable, Equatable, Identifiable {
         self.specialKey = specialKey
         self.showSpaceTitle = showSpaceTitle
         self.showPrimaryTitle = showPrimaryTitle
+        self.edgeInsets = edgeInsets
         self.background = background
         self.actionCallout = actionCallout
         self.inputCallout = inputCallout

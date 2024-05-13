@@ -13,7 +13,7 @@ extension Theme {
         button: .init(
             background: .color(.clear),
             foregroundColor: .white,
-            font: .custom("Rye", size: 18),
+            font: .custom("Rye-Regular", size: 18),
             cornerRadius: 0,
             border: .init(color: .clear, size: 0)
         ),
@@ -21,10 +21,18 @@ extension Theme {
         actionCallout: .neon,
         inputCallout: .neon,
         
-        neonPermission: .init(disableNeonCharacter: true),
+//        neonPermission: .init(disableNeonCharacter: true),
 //        disableNeonAnimationCharacter: true,
         durationAnimation: 4,
-        neonLinearAnimation: .radial(nil),
+        neonLinearAnimation: .radial([
+            Color(hex: "FFD746"),
+            Color(hex: "FFD746"),
+            Color(hex: "FFFFFF"),
+            Color(hex: "4200FF"),
+            Color(hex: "00F0FF"),
+            Color(hex: "00F0FF"),
+            .clear
+        ]),
         preview: .image(UIImage(named: "portraitBossDogPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
         name: "portraitBossDog"
     )
@@ -33,16 +41,22 @@ extension Theme {
         button: .init(
             background: .color(.clear),
             foregroundColor: .white,
-            font: .custom("Poppins", size: 18),
-            cornerRadius: 0,
+            font: .custom("Poppins-Medium", size: 18),
+            cornerRadius: 6,
             border: .init(color: .white, size: 1)
         ),
         background: .image(UIImage(named: "portraitLionKing")?.jpegData(compressionQuality: 0.1) ?? Data()),
         actionCallout: .neon,
         inputCallout: .neon,
         
-        durationAnimation: 6,
-        neonLinearAnimation: .radial(nil),
+        durationAnimation: 3,
+        neonLinearAnimation: .radial([
+            Color(hex: "00F0FF"),
+            Color(hex: "FF00F5"),
+            Color(hex: "FFD746"),
+            Color(hex: "FFFFFF"),
+            .clear
+        ]),
         preview: .image(UIImage(named: "portraitLionKingPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
         name: "portraitLionKing"
     )
@@ -51,7 +65,7 @@ extension Theme {
         button: .init(
             background: .color(Color(hex: "#4200FF").opacity(0.15)),
             foregroundColor: .white,
-            font: .custom("SairaStencilOne", size: 18),
+            font: .custom("SairaStencilOne-Regular", size: 18),
             cornerRadius: 0,
             border: .init(color: .clear, size: 0)
         ),
@@ -62,9 +76,10 @@ extension Theme {
         neonPermission: .init(disableNeonButton: true),
         durationAnimation: 6,
         neonLinearAnimation: .radial([
-            Color(hex: "#4200FF"),
-            Color(hex: "#4200FF"),
-            .clear,
+            Color(hex: "#FF00D6"),
+            Color(hex: "#FF00D6"),
+            Color(hex: "#00F0FF"),
+            Color(hex: "#00F0FF"),
             .clear
         ]),
         preview: .image(UIImage(named: "portraitRoboticPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
@@ -75,7 +90,7 @@ extension Theme {
         button: .init(
             background: .color(.clear),
             foregroundColor: .white,
-            font: .custom("Poppins", size: 18),
+            font: .custom("Poppins-Medium", size: 18),
             cornerRadius: 0,
             border: .init(color: .clear, size: 0)
         ),
@@ -86,7 +101,12 @@ extension Theme {
         neonPermission: .init(disableNeonButton: true),
 //        disableNeonAnimationButton: true,
         durationAnimation: 6,
-        neonLinearAnimation: .radial(nil),
+        neonLinearAnimation: .radial([
+            Color(hex: "FF00D6"),
+            Color(hex: "#FFFFFF"),
+            Color(hex: "00F0FF"),
+            .clear
+        ]),
         preview: .image(UIImage(named: "portraitNeonCatPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
         name: "portraitNeonCat"
     )
@@ -95,7 +115,7 @@ extension Theme {
         button: .init(
             background: .color(.clear),
             foregroundColor: .white,
-            font: .custom("Poppins", size: 18),
+            font: .custom("Poppins-Medium", size: 18),
             cornerRadius: 10,
             border: .init(color: .white, size: 2)
         ),
@@ -104,7 +124,13 @@ extension Theme {
         inputCallout: .neon,
         
         durationAnimation: 6,
-        neonLinearAnimation: .radial(nil),
+        neonLinearAnimation: .radial([
+            Color(hex: "00F0FF"),
+            Color(hex: "FF00F5"),
+            Color(hex: "FFD746"),
+            Color(hex: "FF00F5"),
+            .clear
+        ]),
         preview: .image(UIImage(named: "portraitNeonDogPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
         name: "portraitNeonDog"
     )
@@ -113,7 +139,7 @@ extension Theme {
         button: .init(
             background: .color(.clear),
             foregroundColor: .white,
-            font: .custom("SairaStencilOne", size: 18),
+            font: .custom("SairaStencilOne-Regular", size: 18),
             cornerRadius: 10,
             border: .init(color: .clear, size: 0)
         ),
@@ -121,7 +147,13 @@ extension Theme {
         actionCallout: .neon,
         inputCallout: .neon,
         durationAnimation: 6,
-        neonLinearAnimation: .LTR(nil, 5),
+        neonLinearAnimation: .LTR([
+            Color(hex: "FF00D6"),
+            Color(hex: "FFE600"),
+            Color(hex: "00F0FF"),
+            Color(hex: "000AFF"),
+            Color(hex: "FF00D6"),
+        ], 3),
         preview: .image(UIImage(named: "portraitLlamaPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
         name: "portraitLlama"
     )
@@ -130,7 +162,7 @@ extension Theme {
         button: .init(
             background: .color(.clear),
             foregroundColor: .white,
-            font: .custom("SairaStencilOne", size: 18),
+            font: .custom("SairaStencilOne-Regular", size: 18),
             cornerRadius: 10,
             border: .init(color: .white, size: 2)
         ),
@@ -139,25 +171,41 @@ extension Theme {
         inputCallout: .neon,
         
         durationAnimation: 6,
-        neonLinearAnimation: .LTR(nil, 5),
+        neonLinearAnimation: .LTR([
+            Color(hex: "46FF64"),
+            Color(hex: "FFDE00"),
+            Color(hex: "FD0000"),
+            Color(hex: "FF00F5"),
+            Color(hex: "00F0FF"),
+            Color(hex: "1400FF"),
+            Color(hex: "46FF64"),
+        ], 5),
         preview: .image(UIImage(named: "portraitNeonTigerPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
         name: "portraitNeonTiger"
     )
     
-    static var portraitMonkeyFashion: Theme = .init(id: "D6078748-72D6-404F-84B7-64AD04CD52E4",
+    static var portraitMonkeyFashion: Theme = .init(
+        id: "D6078748-72D6-404F-84B7-64AD04CD52E4",
         button: .init(
             background: .color(Color(hex: "#FFDE00").opacity(0.5)),
-            foregroundColor: .white,
-            font: .custom("SairaStencilOne", size: 18),
+            foregroundColor: .white.opacity(0.3),
+            font: .custom("Inter-Medium", size: 18),
             cornerRadius: 10,
             border: .init(color: .clear, size: 0)
         ),
         background: .image(UIImage(named: "portraitMonkeyFashion")?.jpegData(compressionQuality: 0.1) ?? Data()),
         actionCallout: .neon,
         inputCallout: .neon,
-        
+        neonPermission: .init(disableNeonCharacter: true),
         durationAnimation: 6,
-        neonLinearAnimation: .LTR(nil, 5),
+        neonLinearAnimation: .radial([
+            Color(hex: "FFDE00"),
+//            Color(hex: "FFDE00"),
+            .white,
+//            .white,
+            .clear,
+//            .clear,
+        ]),
         preview: .image(UIImage(named: "portraitMonkeyFashionPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
         name: "portraitMonkeyFashion"
     )
@@ -166,16 +214,22 @@ extension Theme {
 struct PortraitTheme_Previews: PreviewProvider {
 
     struct Preview: View {
-
+        
+        var theme: Theme = .portraitMonkeyFashion
+        
         var controller: KeyboardInputViewController = {
             let controller = KeyboardInputViewController.preview
+            controller.state.autocompleteContext.suggestions = [
+                //                .init(text: "Foo"),
+                //                .init(text: "Bar", isAutocorrect: true),
+                //                .init(text: "Baz")
+            ]
             
-            let theme = Theme.portraitRobotic
+            let theme: Theme = .portraitMonkeyFashion
             
             controller.services.styleProvider = CustomKeyStyleProvider(buttonStyle: theme.button, actionCallout: theme.actionCallout ?? .bright, inputCallout: theme.inputCallout ?? .bright, keyboardContext: controller.state.keyboardContext)
             
-//            controller.state.keyboardTheme = theme
-            
+            controller.state.keyboardContext.setLocale(.kurdish_sorani_pc)
             return controller
         }()
         
@@ -192,20 +246,27 @@ struct PortraitTheme_Previews: PreviewProvider {
             SystemKeyboard(
                 state: controller.state,
                 services: controller.services,
+                themeObject: [],
+                neonPermission: theme.neonPermission ?? .init(),
+                neonLinearAnimation: theme.neonLinearAnimation ?? .none,
+                animationValueObjects: theme.buttonNeonAnimation,
                 buttonContent: { $0.view },
                 buttonView: { $0.view },
                 emojiKeyboard: { $0.view },
                 toolbar: { $0.view }
             )
         }
-
+        
         var body: some View {
             VStack(spacing: 10) {
                 Group {
-                    
                     SystemKeyboard(
                         state: controller.state,
                         services: controller.services,
+                        themeObject: [],
+                        neonPermission: theme.neonPermission ?? .init(),
+                        neonLinearAnimation: theme.neonLinearAnimation ?? .none,
+                        animationValueObjects: theme.buttonNeonAnimation,
                         buttonContent: { param in
                             switch param.item.action {
                             case .backspace:
@@ -228,13 +289,11 @@ struct PortraitTheme_Previews: PreviewProvider {
                         toolbar: { $0.view }
                     )
                 }
-                .background(
-//                    controller.state.keyboardTheme.background.backgroundView
-                )
+                .background(theme.background?.backgroundView)
             }
         }
     }
-
+    
     static var previews: some View {
         Preview()
     }

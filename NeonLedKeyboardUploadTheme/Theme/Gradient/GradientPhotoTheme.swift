@@ -21,7 +21,14 @@ extension Theme {
         
         neonPermission: .init(disableNeonButton: true),
 //        disableNeonAnimationButton: true,
-        neonLinearAnimation: .LTR(nil, 3),
+        neonLinearAnimation: .LTR([
+            Color(hex: "#BD00FF"),
+            Color(hex: "#04A5FF"),
+            Color(hex: "#00C514"),
+            Color(hex: "#F7CD62"),
+            Color(hex: "#FF1212"),
+            Color(hex: "#BD00FF")
+        ], 2),
         preview: .image(UIImage(named: "gradientPhotoRainbowPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
         name: "gradientPhotoRainbow"
     )
@@ -46,7 +53,7 @@ extension Theme {
             foregroundColor: Color.white,
             font: .body,
             cornerRadius: 8,
-            border: .init(color: Color.white, size: 1)
+            border: .init(color: Color.white, size: 2)
         ),
         background: .image(UIImage(named: "gradientPhotoUnicorn")?.jpegData(compressionQuality: 0.2) ?? Data()),
         
@@ -70,7 +77,7 @@ extension Theme {
             [Color(red: 0, green: 0.94, blue: 1),
              Color(red: 0.98, green: 0, blue: 1),
              Color(red: 0, green: 0.94, blue: 1)
-            ], 3),
+            ], 2),
         preview: .image(UIImage(named: "gradientPhotoGillterPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
         name: "gradientPhotoGillter"
     )
@@ -106,8 +113,8 @@ extension Theme {
         button: .init(
             background: .color(.white.opacity(0.3 )),
             foregroundColor: Color.white,
-            font: .body,
-            cornerRadius: 25,
+            font: .custom("Roboto-Medium", size: 18),
+            cornerRadius: 8,
             border: .init(color: .white.opacity(0.8), size: 1)
         ),
         background: .image(UIImage(named: "gradientRiver")?.jpegData(compressionQuality: 0.1) ?? Data()),
@@ -133,7 +140,7 @@ extension Theme {
         button: .init(
             background: .color(.clear),
             foregroundColor: Color.white,
-            font: .body,
+            font: .custom("Roboto-Medium", size: 18),
             cornerRadius: 10,
             border: .init(color: Color(hex: "#000AFF"), size: 1)
         ),
@@ -148,7 +155,7 @@ extension Theme {
         button: .init(
             background: .color(.white.opacity(0.5)),
             foregroundColor: Color(hex: "#FA00FF"),
-            font: .body,
+            font: .custom("Roboto-Medium", size: 18),
             cornerRadius: 10,
             border: .init(color: .clear, size: 0)
         ),
@@ -163,7 +170,7 @@ extension Theme {
         button: .init(
             background: .color(.clear),
             foregroundColor: .white,
-            font: .body,
+            font: .custom("Roboto-Medium", size: 18),
             cornerRadius: 10,
             border: .init(color: .white, size: 1)
         ),
@@ -186,7 +193,7 @@ extension Theme {
         button: .init(
             background: .color(.clear),
             foregroundColor: .white,
-            font: .body,
+            font: .custom("Roboto-Medium", size: 18),
             cornerRadius: 10,
             border: .init(color: .white, size: 5),
             shapeType: .HEXAGON
@@ -209,7 +216,7 @@ extension Theme {
         button: .init(
             background: .color(.white),
             foregroundColor: .white,
-            font: .body,
+            font: .custom("Roboto-Medium", size: 18),
             cornerRadius: 10,
             border: .init(color: .clear, size: 0)
         ),
@@ -235,7 +242,7 @@ extension Theme {
         button: .init(
             background: .color(.white),
             foregroundColor: .white,
-            font: .body,
+            font: .custom("Roboto-Medium", size: 18),
             cornerRadius: 25,
             border: .init(color: .clear, size: 0),
             shapeType: .CIRCLE
@@ -248,10 +255,10 @@ extension Theme {
         neonLinearAnimation: .LTR(
             [Color(red: 0, green: 1, blue: 1),
              Color(red: 1, green: 0, blue: 0.96),
-             Color(red: 0, green: 1, blue: 1),
+//             Color(red: 0, green: 1, blue: 1),
              Color(red: 1, green: 0.48, blue: 0),
              Color(red: 0, green: 1, blue: 1),
-            ], 5),
+            ], 3),
         preview: .image(UIImage(named: "gradientVortexPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
         name: "gradientVortex"
     )
@@ -261,7 +268,7 @@ extension Theme {
         button: .init(
             background: .color(.clear),
             foregroundColor: .white,
-            font: .body,
+            font: .custom("Roboto-Medium", size: 18),
             cornerRadius: 25,
             border: .init(color: .white, size: 2)
         ),
@@ -284,9 +291,9 @@ extension Theme {
         button: .init(
             background: .color(.clear),
             foregroundColor: .white,
-            font: .body,
+            font: .custom("Roboto-Medium", size: 18),
             cornerRadius: 10,
-            border: .init(color: .white, size: 1)
+            border: .init(color: .white, size: 2)
         ),
         background: .image(UIImage(named: "gradientAurora")?.jpegData(compressionQuality: 0.1) ?? Data()),
         actionCallout: .neon,
@@ -295,6 +302,7 @@ extension Theme {
         neonLinearAnimation: .radial(
             [.white,
              .white,
+             Color(hex: "80FE02"),
              Color(hex: "80FE02"),
              Color(hex: "80FE02"),
              .clear
@@ -308,7 +316,7 @@ extension Theme {
         button: .init(
             background: .color(Color(hex: "24B600").opacity(0.6)),
             foregroundColor: .white,
-            font: .body,
+            font: .custom("Roboto-Medium", size: 18),
             cornerRadius: 25,
             border: .init(color: .white.opacity(0.6), size: 2),
             shapeType: .CIRCLE
@@ -320,7 +328,9 @@ extension Theme {
         durationAnimation: 5,
         neonLinearAnimation: .LTR(
             [Color(red: 1, green: 0.48, blue: 0),
+             Color(red: 1, green: 0.48, blue: 0),
              .white,
+             Color(red: 1, green: 0.48, blue: 0),
              Color(red: 1, green: 0.48, blue: 0),
             ], 5),
         preview: .image(UIImage(named: "gradientYellowFruitsPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
@@ -332,7 +342,7 @@ extension Theme {
         button: .init(
             background: .color(Color(hex: "#0500FF").opacity(0.5)),
             foregroundColor: Color(hex: "#FEF635"),
-            font: .body,
+            font: .custom("Roboto-Medium", size: 18),
             cornerRadius: 25,
             border: .init(color: .clear, size: 0),
             shapeType: .CIRCLE
@@ -349,11 +359,12 @@ extension Theme {
         button: .init(
             background: .color(Color.white.opacity(0.7)),
             foregroundColor: .white,
-            font: .body,
+            font: .custom("Roboto-Medium", size: 18),
             cornerRadius: 12,
             border: .init(color: .white, size: 5),
             shapeType: .HEXAGON
         ),
+        edgeInsets: CodableUIEdgeInsets(top: 3, left: 1, bottom: 3, right: 1),
         background: .image(UIImage(named: "gradientHexagonBlurred")?.jpegData(compressionQuality: 0.1) ?? Data()),
         actionCallout: .neon,
         inputCallout: .neon,
@@ -363,20 +374,22 @@ extension Theme {
             [Color(red: 1, green: 0.48, blue: 0),
              Color(red: 1, green: 0, blue: 0.72),
              Color(red: 1, green: 0.48, blue: 0),
-            ], 2),
+            ], 3),
         preview: .image(UIImage(named: "gradientHexagonBlurredPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
         name: "gradientHexagonBlurred"
     )
     
-    static var gradientCircleBlurred: Theme = .init(id: "68F46045-8663-488B-AC5C-6513F841DDCD",
+    static var gradientCircleBlurred: Theme = .init(
+        id: "68F46045-8663-488B-AC5C-6513F841DDCD",
         button: .init(
             background: .color(.white),
             foregroundColor: .white,
-            font: .body,
+            font: .custom("Roboto-Medium", size: 18),
             cornerRadius: 25,
             border: .init(color: .clear, size: 0),
             shapeType: .CIRCLE
         ),
+        edgeInsets: CodableUIEdgeInsets(top: 3, left: 1, bottom: 3, right: 1),
         background: .image(UIImage(named: "gradientCircleBlurred")?.jpegData(compressionQuality: 0.1) ?? Data()),
         actionCallout: .neon,
         inputCallout: .neon,
@@ -398,7 +411,7 @@ extension Theme {
         button: .init(
             background: .color(Color(hex: "#34FE02")),
             foregroundColor: Color(hex: "#2D5A00"),
-            font: .body,
+            font: .custom("Roboto-Medium", size: 18),
             cornerRadius: 25,
             border: .init(color: .clear, size: 0)
         ),

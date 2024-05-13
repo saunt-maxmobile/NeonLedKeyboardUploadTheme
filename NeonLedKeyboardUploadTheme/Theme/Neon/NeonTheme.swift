@@ -20,17 +20,17 @@ extension Theme {
         ),
         background: .image(UIImage(named: "neonCyber")?.jpegData(compressionQuality: 0.1) ?? Data()),
         buttonNeonAnimation: [
-            .init(colors: ["#00FF00", "#FF00F5", "#00FFFF", "#FF00F5"], .right, .conic),
-            .init(colors: ["#FF00F5", "#00FFFF", "#FF00F5", "#00FF00"], .down, .conic),
-            .init(colors: ["#00FFFF", "#FF00F5", "#00FF00", "#FF00F5"], .left, .conic),
-            .init(colors: ["#FF00F5", "#00FF00", "#FF00F5", "#00FFFF"], .up, .conic),
+            .init(colors: ["#00FFFF", "#FF00F5", "#00FFFF", "#FF00F5"], .right, .conic),
+            .init(colors: ["#00FFFF", "#FF00F5", "#00FFFF", "#FF00F5"], .down, .conic),
+            .init(colors: ["#00FFFF", "#FF00F5", "#00FFFF", "#FF00F5"], .left, .conic),
+            .init(colors: ["#00FFFF", "#FF00F5", "#00FFFF", "#FF00F5"], .up, .conic),
         ],
-        durationAnimation: 1,
+        durationAnimation: 2,
         preview: .image(UIImage(named: "neonCyberPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
         name: "neonCyber"
     )
     
-    static var neonWaves: Theme = .init(
+    static var neonWaves : Theme = .init(
         id: "223B39DC-FBE5-4F8C-B3DE-9232F9AA7B60",
         button: .init(
             background: .color(.clear),
@@ -41,14 +41,10 @@ extension Theme {
         ),
         background: .image(UIImage(named: "neonWaves")?.jpegData(compressionQuality: 0.1) ?? Data()),
         buttonNeonAnimation: [
-            .init(colors: ["#00FFFF", "#01FFE1", "#BD00FF", "#01FFE1", "#33FF00", "#FEF635", "#EB6300"], .right, .conic),
-            .init(colors: ["#01FFE1", "#BD00FF" , "#01FFE1", "#33FF00", "#FEF635", "#EB6300", "#00FFFF"], .downRight, .conic),
-            .init(colors: ["#BD00FF", "#01FFE1", "#33FF00", "#FEF635", "#EB6300", "#00FFFF", "#01FFE1"], .down, .conic),
-            .init(colors: ["#01FFE1", "#33FF00", "#FEF635", "#EB6300", "#00FFFF", "#01FFE1", "#BD00FF"], .downLeft, .conic),
-            .init(colors: ["#33FF00", "#FEF635", "#EB6300", "#00FFFF", "#01FFE1", "#BD00FF", "#01FFE1", ], .left, .conic),
-            .init(colors: ["#FEF635", "#EB6300", "#00FFFF", "#01FFE1", "#BD00FF", "#01FFE1", "#33FF00", ], .upLeft, .conic),
-            .init(colors: ["#EB6300", "#00FFFF", "#01FFE1", "#BD00FF", "#01FFE1", "#33FF00", "#FEF635", ], .up, .conic),
-            .init(colors: ["#00FFFF", "#01FFE1", "#BD00FF", "#01FFE1", "#33FF00", "#FEF635", "#EB6300", ], .upRight, .conic),
+            .init(colors: ["#00FFFF", "#01FFE1", "#BD00FF", "#01FFE1", "33FF00", "FEF635", "EB6300"], .right, .conic),
+            .init(colors: ["#00FFFF", "#01FFE1", "#BD00FF", "#01FFE1", "33FF00", "FEF635", "EB6300"], .down, .conic),
+            .init(colors: ["#00FFFF", "#01FFE1", "#BD00FF", "#01FFE1", "33FF00", "FEF635", "EB6300"], .left, .conic),
+            .init(colors: ["#00FFFF", "#01FFE1", "#BD00FF", "#01FFE1", "33FF00", "FEF635", "EB6300"], .up, .conic),
         ],
         durationAnimation: 1,
         preview: .image(UIImage(named: "neonWavesPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
@@ -66,10 +62,10 @@ extension Theme {
         ),
         background: .image(UIImage(named: "neonCyberRoll")?.jpegData(compressionQuality: 0.1) ?? Data()),
         buttonNeonAnimation: [
-            .init(colors: ["#FFFFFF", "#35DAFE", "#FFFFFF", "#FF00D6"], .right, .conic),
-            .init(colors: ["#35DAFE", "#FFFFFF", "#FF00D6", "#FFFFFF"], .down, .conic),
-            .init(colors: ["#FFFFFF", "#FF00D6", "#FFFFFF", "#35DAFE"], .left, .conic),
-            .init(colors: ["#FF00D6", "#FFFFFF", "#35DAFE", "#FFFFFF"], .up, .conic),
+            .init(colors: ["#FFFFFF", "#35DAFE", "#FF00D6"], .right, .conic),
+            .init(colors: ["#FFFFFF", "#35DAFE", "#FF00D6"], .down, .conic),
+            .init(colors: ["#FFFFFF", "#35DAFE", "#FF00D6"], .left, .conic),
+            .init(colors: ["#FFFFFF", "#35DAFE", "#FF00D6"], .up, .conic),
         ],
         durationAnimation: 1,
         preview: .image(UIImage(named: "neonCyberRollPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
@@ -87,13 +83,13 @@ extension Theme {
         ),
         background: .image(UIImage(named: "neonColourPower")?.jpegData(compressionQuality: 0.1) ?? Data()),
         durationAnimation: 3,
-        neonLinearAnimation: .LTR(
-            [Color(red: 0, green: 1, blue: 1),
-             .white,
-             Color(red: 1, green: 0.72, blue: 0),
-             Color(red: 1, green: 0, blue: 0.84),
-             Color(red: 0, green: 1, blue: 1),
-            ], 3),
+        neonLinearAnimation: .LTR([
+            Color(hex: "00FFFF"),
+            Color(hex: "FFFFFF"),
+            Color(hex: "#FFB800"),
+            Color(hex: "#FF00D6"),
+            Color(hex: "00FFFF"),
+        ], 3),
         preview: .image(UIImage(named: "neonColourPowerPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
         name: "neonColourPower"
     )
@@ -129,13 +125,13 @@ extension Theme {
         ),
         background: .image(UIImage(named: "neonPoly")?.jpegData(compressionQuality: 0.1) ?? Data()),
         durationAnimation: 3,
-        neonLinearAnimation: .radial(
-            [Color(red: 1, green: 0, blue: 0.72),
-             .white,
-             Color(red: 0, green: 0.34, blue: 1),
-             Color(red: 0, green: 1, blue: 1),
-             .clear
-            ]),
+        neonLinearAnimation: .LTR([
+            Color(hex: "FF00B8"),
+            Color(hex: "FFFFFF"),
+            Color(hex: "0057FF"),
+            Color(hex: "00FFFF"),
+            Color(hex: "FF00B8"),
+        ], 3),
         preview: .image(UIImage(named: "neonPolyPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
         name: "neonPoly"
     )
@@ -151,12 +147,12 @@ extension Theme {
         ),
         background: .image(UIImage(named: "neonOcean")?.jpegData(compressionQuality: 0.1) ?? Data()),
         durationAnimation: 3,
-        neonLinearAnimation: .radial(
-            [Color(red: 1, green: 0, blue: 0.96),
-             Color(red: 0, green: 1, blue: 1),
-             Color(red: 0.54, green: 0.24, blue: 1),
-             .clear
-            ]),
+        neonLinearAnimation: .LTR([
+            Color(hex: "FF00F5"),
+            Color(hex: "00FFFF"),
+            Color(hex: "8A3EFF"),
+            Color(hex: "FF00F5"),
+        ], 3),
         preview: .image(UIImage(named: "neonOceanPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
         name: "neonOcean"
     )
@@ -580,7 +576,7 @@ struct NeonTheme_Previews: PreviewProvider {
     
     struct Preview: View {
         
-        let theme: Theme = .neonTriangleNeon
+        let theme: Theme = .neonOcean
         
         var controller: KeyboardInputViewController = {
             let controller = KeyboardInputViewController.preview
@@ -590,7 +586,7 @@ struct NeonTheme_Previews: PreviewProvider {
                 //                .init(text: "Baz")
             ]
             
-            let theme: Theme = .neonTriangleNeon
+            let theme: Theme = .neonOcean
             
             controller.services.styleProvider = CustomKeyStyleProvider(buttonStyle: theme.button, actionCallout: theme.actionCallout ?? .bright, inputCallout: theme.inputCallout ?? .bright, keyboardContext: controller.state.keyboardContext)
             

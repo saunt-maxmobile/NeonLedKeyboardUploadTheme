@@ -55,7 +55,7 @@ extension Theme {
     
     static var colorOcean: Theme = .init(id: "E2B5EB86-F27F-41CE-B52C-EA7437A82B7B",
         button: .init(
-            background: .color(Color(hex: "#006660").opacity(0.5)),
+            background: .color(Color(hex: "#006660").opacity(0.3)),
             foregroundColor: Color.white,
             font: .body,
             cornerRadius: 8,
@@ -183,32 +183,18 @@ extension Theme {
 struct ColorTheme_Previews: PreviewProvider {
 
     struct Preview: View {
-
+        
+        var theme: Theme = .colorHot
+        
         var controller: KeyboardInputViewController = {
             let controller = KeyboardInputViewController.preview
             controller.state.autocompleteContext.suggestions = [
-//                .init(text: "Foo"),
-//                .init(text: "Bar", isAutocorrect: true),
-//                .init(text: "Baz")
+                //                .init(text: "Foo"),
+                //                .init(text: "Bar", isAutocorrect: true),
+                //                .init(text: "Baz")
             ]
             
-            let theme: Theme = .init(id: UUID().uuidString,
-                button: .init(
-                    background: .color(.blue),
-                    foregroundColor: .white,
-                    font: .custom("Poppins", size: 18),
-                    cornerRadius: 10,
-                    border: .init(color: .white, size: 5)
-                ),
-                background: .color(.red),
-                actionCallout: .neon,
-                inputCallout: .neon,
-                
-                durationAnimation: 6,
-                neonLinearAnimation: .radial(nil),
-                preview: .image(UIImage(named: "portraitNeonDogPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
-                name: "Poppins"
-            )
+            let theme: Theme = .colorHot
             
             controller.services.styleProvider = CustomKeyStyleProvider(buttonStyle: theme.button, actionCallout: theme.actionCallout ?? .bright, inputCallout: theme.inputCallout ?? .bright, keyboardContext: controller.state.keyboardContext)
             
@@ -230,18 +216,16 @@ struct ColorTheme_Previews: PreviewProvider {
                 state: controller.state,
                 services: controller.services,
                 themeObject: [],
-                neonPermission: .init(
-                    disableNeonCharacter: true,
-                    disableNeonBorder: true,
-                    disableNeonButton: true
-                ),
+                neonPermission: theme.neonPermission ?? .init(),
+                neonLinearAnimation: theme.neonLinearAnimation ?? .none,
+                animationValueObjects: theme.buttonNeonAnimation,
                 buttonContent: { $0.view },
                 buttonView: { $0.view },
                 emojiKeyboard: { $0.view },
                 toolbar: { $0.view }
             )
         }
-
+        
         var body: some View {
             VStack(spacing: 10) {
                 Group {
@@ -249,12 +233,9 @@ struct ColorTheme_Previews: PreviewProvider {
                         state: controller.state,
                         services: controller.services,
                         themeObject: [],
-                        neonPermission: .init(
-                            disableNeonCharacter: true,
-                            disableNeonBorder: true
-//                            disableNeonButton: true
-                        ),
-                        neonLinearAnimation: .LTR(nil,3),
+                        neonPermission: theme.neonPermission ?? .init(),
+                        neonLinearAnimation: theme.neonLinearAnimation ?? .none,
+                        animationValueObjects: theme.buttonNeonAnimation,
                         buttonContent: { param in
                             switch param.item.action {
                             case .backspace:
@@ -277,12 +258,11 @@ struct ColorTheme_Previews: PreviewProvider {
                         toolbar: { $0.view }
                     )
                 }
-                .background(Color.red)
-//                .background(controller.state.keyboardTheme.background.backgroundView)
+                .background(theme.background?.backgroundView)
             }
         }
     }
-
+    
     static var previews: some View {
         Preview()
     }

@@ -121,16 +121,22 @@ extension Theme {
 struct Gradient_Previews: PreviewProvider {
 
     struct Preview: View {
+        
+        var theme: Theme = .gradientGreen
 
         var controller: KeyboardInputViewController = {
             let controller = KeyboardInputViewController.preview
+            controller.state.autocompleteContext.suggestions = [
+//                .init(text: "Foo"),
+//                .init(text: "Bar", isAutocorrect: true),
+//                .init(text: "Baz")
+            ]
             
-            let theme = Theme.gradientGreen
+            let theme: Theme = .gradientGreen
             
             controller.services.styleProvider = CustomKeyStyleProvider(buttonStyle: theme.button, actionCallout: theme.actionCallout ?? .bright, inputCallout: theme.inputCallout ?? .bright, keyboardContext: controller.state.keyboardContext)
             
-//            controller.state.keyboardTheme = theme
-            
+            controller.state.keyboardContext.setLocale(.kurdish_sorani_pc)
             return controller
         }()
         
@@ -147,6 +153,10 @@ struct Gradient_Previews: PreviewProvider {
             SystemKeyboard(
                 state: controller.state,
                 services: controller.services,
+                themeObject: [],
+                neonPermission: theme.neonPermission ?? .init(),
+                neonLinearAnimation: theme.neonLinearAnimation ?? .none,
+                animationValueObjects: theme.buttonNeonAnimation,
                 buttonContent: { $0.view },
                 buttonView: { $0.view },
                 emojiKeyboard: { $0.view },
@@ -157,10 +167,13 @@ struct Gradient_Previews: PreviewProvider {
         var body: some View {
             VStack(spacing: 10) {
                 Group {
-                    
                     SystemKeyboard(
                         state: controller.state,
                         services: controller.services,
+                        themeObject: [],
+                        neonPermission: theme.neonPermission ?? .init(),
+                        neonLinearAnimation: theme.neonLinearAnimation ?? .none,
+                        animationValueObjects: theme.buttonNeonAnimation,
                         buttonContent: { param in
                             switch param.item.action {
                             case .backspace:
@@ -183,9 +196,7 @@ struct Gradient_Previews: PreviewProvider {
                         toolbar: { $0.view }
                     )
                 }
-                .background(
-//                    controller.state.keyboardTheme.background.backgroundView
-                )
+                .background(theme.background?.backgroundView)
             }
         }
     }

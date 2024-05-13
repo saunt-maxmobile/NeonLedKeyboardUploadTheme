@@ -25,6 +25,11 @@
 		831A60C72BF1EF4E0015F305 /* TwinkleStar-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 831A60C62BF1EF4E0015F305 /* TwinkleStar-Regular.ttf */; };
 		831A60C92BF1F0DB0015F305 /* Gaegu-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 831A60C82BF1F0DB0015F305 /* Gaegu-Regular.ttf */; };
 		831A60CB2BF1F1C20015F305 /* ElsieSwashCaps-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 831A60CA2BF1F1C20015F305 /* ElsieSwashCaps-Regular.ttf */; };
+		831A60CD2BF205DE0015F305 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 831A60CC2BF205DE0015F305 /* Roboto-Medium.ttf */; };
+		831A60CF2BF2175B0015F305 /* Rye-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 831A60CE2BF2175B0015F305 /* Rye-Regular.ttf */; };
+		831A60D12BF2183D0015F305 /* SairaStencilOne-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 831A60D02BF2183D0015F305 /* SairaStencilOne-Regular.ttf */; };
+		831A60D32BF219180015F305 /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 831A60D22BF219180015F305 /* Poppins-Medium.ttf */; };
+		831A60D52BF21ABC0015F305 /* Inter-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 831A60D42BF21ABC0015F305 /* Inter-Medium.ttf */; };
 		834EC9792B5E614D001517C8 /* ThemeHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834EC9782B5E614D001517C8 /* ThemeHandler.swift */; };
 		834EC97B2B5E6191001517C8 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834EC97A2B5E6191001517C8 /* String+Extension.swift */; };
 		834EC97D2B5E61CC001517C8 /* FileManager+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834EC97C2B5E61CC001517C8 /* FileManager+Extension.swift */; };
@@ -323,6 +328,11 @@
 		831A60C62BF1EF4E0015F305 /* TwinkleStar-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TwinkleStar-Regular.ttf"; sourceTree = "<group>"; };
 		831A60C82BF1F0DB0015F305 /* Gaegu-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gaegu-Regular.ttf"; sourceTree = "<group>"; };
 		831A60CA2BF1F1C20015F305 /* ElsieSwashCaps-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ElsieSwashCaps-Regular.ttf"; sourceTree = "<group>"; };
+		831A60CC2BF205DE0015F305 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		831A60CE2BF2175B0015F305 /* Rye-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rye-Regular.ttf"; sourceTree = "<group>"; };
+		831A60D02BF2183D0015F305 /* SairaStencilOne-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SairaStencilOne-Regular.ttf"; sourceTree = "<group>"; };
+		831A60D22BF219180015F305 /* Poppins-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Medium.ttf"; sourceTree = "<group>"; };
+		831A60D42BF21ABC0015F305 /* Inter-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Medium.ttf"; sourceTree = "<group>"; };
 		834EC9782B5E614D001517C8 /* ThemeHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeHandler.swift; sourceTree = "<group>"; };
 		834EC97A2B5E6191001517C8 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		834EC97C2B5E61CC001517C8 /* FileManager+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileManager+Extension.swift"; sourceTree = "<group>"; };
@@ -673,17 +683,22 @@
 				831A60AE2BF1BDC20015F305 /* ArchitectsDaughter-Regular.ttf */,
 				831A60B02BF1BF850015F305 /* AveriaSansLibre-Regular.ttf */,
 				831A60BE2BF1C9BA0015F305 /* BalsamiqSans-Regular.ttf */,
+				831A60CA2BF1F1C20015F305 /* ElsieSwashCaps-Regular.ttf */,
 				831A60A82BF1B92D0015F305 /* EncodeSansSemiExpanded-Medium.ttf */,
 				831A60BC2BF1C7E70015F305 /* fontspring-demo-ceraroundpro-regular.otf */,
+				831A60C82BF1F0DB0015F305 /* Gaegu-Regular.ttf */,
 				831A60C22BF1D1230015F305 /* GamjaFlower-Regular.ttf */,
 				831A60A32BF1AFCD0015F305 /* HachiMaruPop-Regular.ttf */,
-				831A60CA2BF1F1C20015F305 /* ElsieSwashCaps-Regular.ttf */,
 				831A60AC2BF1BB280015F305 /* IndieFlower-Regular.ttf */,
 				831A60B62BF1C45D0015F305 /* Mali-Regular.ttf */,
-				831A60C82BF1F0DB0015F305 /* Gaegu-Regular.ttf */,
 				831A60C02BF1CF020015F305 /* minecraft_font.ttf */,
 				831A60C42BF1D1EE0015F305 /* Nunito-Medium.ttf */,
 				831A60BA2BF1C6870015F305 /* PlayfairDisplay-Regular.ttf */,
+				831A60D22BF219180015F305 /* Poppins-Medium.ttf */,
+				831A60D42BF21ABC0015F305 /* Inter-Medium.ttf */,
+				831A60CC2BF205DE0015F305 /* Roboto-Medium.ttf */,
+				831A60CE2BF2175B0015F305 /* Rye-Regular.ttf */,
+				831A60D02BF2183D0015F305 /* SairaStencilOne-Regular.ttf */,
 				831A60B82BF1C59C0015F305 /* Sansation_Regular.ttf */,
 				831A60B42BF1C2F20015F305 /* SansitaSwashed-Regular.ttf */,
 				831A60AA2BF1BA510015F305 /* Schoolbell-Regular.ttf */,
@@ -1497,6 +1512,7 @@
 				83A95E002B58CC2A007D3F58 /* Images.xcassets in Resources */,
 				831A60B52BF1C2F20015F305 /* SansitaSwashed-Regular.ttf in Resources */,
 				831A60A92BF1B92D0015F305 /* EncodeSansSemiExpanded-Medium.ttf in Resources */,
+				831A60D32BF219180015F305 /* Poppins-Medium.ttf in Resources */,
 				83A95DFF2B58CC2A007D3F58 /* PreviewImages.xcassets in Resources */,
 				831A60CB2BF1F1C20015F305 /* ElsieSwashCaps-Regular.ttf in Resources */,
 				831A60C92BF1F0DB0015F305 /* Gaegu-Regular.ttf in Resources */,
@@ -1508,12 +1524,16 @@
 				83A95AB82B58C65F007D3F58 /* GoogleService-Info.plist in Resources */,
 				831A60BD2BF1C7E70015F305 /* fontspring-demo-ceraroundpro-regular.otf in Resources */,
 				831A60AF2BF1BDC20015F305 /* ArchitectsDaughter-Regular.ttf in Resources */,
+				831A60D12BF2183D0015F305 /* SairaStencilOne-Regular.ttf in Resources */,
 				831A60C72BF1EF4E0015F305 /* TwinkleStar-Regular.ttf in Resources */,
 				831A60A42BF1AFCD0015F305 /* HachiMaruPop-Regular.ttf in Resources */,
+				831A60CF2BF2175B0015F305 /* Rye-Regular.ttf in Resources */,
 				831A60B12BF1BF850015F305 /* AveriaSansLibre-Regular.ttf in Resources */,
 				83A95E012B58CC2A007D3F58 /* Emojis.md in Resources */,
 				831A60B72BF1C45D0015F305 /* Mali-Regular.ttf in Resources */,
 				831A60AB2BF1BA510015F305 /* Schoolbell-Regular.ttf in Resources */,
+				831A60CD2BF205DE0015F305 /* Roboto-Medium.ttf in Resources */,
+				831A60D52BF21ABC0015F305 /* Inter-Medium.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

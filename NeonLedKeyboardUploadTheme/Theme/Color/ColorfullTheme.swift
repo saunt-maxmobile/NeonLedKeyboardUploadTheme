@@ -24,7 +24,12 @@ extension Theme {
         neonPermission: .init(disableNeonCharacter: true),
 //        disableNeonAnimationCharacter: true,
         durationAnimation: 5,
-        neonLinearAnimation: .radial(nil),
+        neonLinearAnimation: .radial([
+            Color(hex: "#000AFF"),
+            Color(hex: "#000AFF"),
+            Color(hex: "#FFFFFF"),
+            .clear
+        ]),
         preview: .image(UIImage(named: "colorfullColorPaintPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
         name: "colorfullColorPaint"
     )
@@ -34,7 +39,7 @@ extension Theme {
             background: .color(.clear),
             foregroundColor: Color.white,
             font: .body,
-            cornerRadius: 25,
+            cornerRadius: 12,
             border: .init(color: .white, size: 2)
         ),
         background: .image(UIImage(named: "colorfullTwirl")?.jpegData(compressionQuality: 0.1) ?? Data()),
@@ -45,22 +50,28 @@ extension Theme {
         name: "colorfullTwirl"
     )
     
-    static var colorfullUniverse: Theme = .init(id: "F0CFEDC8-E9EB-4095-A2F9-14F6E0AE7D40",
+    static var colorfullUniverse: Theme = .init(
+        id: "F0CFEDC8-E9EB-4095-A2F9-14F6E0AE7D40",
         button: .init(
             background: .color(.clear),
             foregroundColor: Color.white,
             font: .body,
             cornerRadius: 25,
-            border: .init(color: .white, size: 2),
+            border: .init(color: .white, size: 5),
             shapeType: .HEXAGON
         ),
+        edgeInsets: .init(top: 3, left: 1, bottom: 3, right: 1),
         background: .image(UIImage(named: "colorfullUniverse")?.jpegData(compressionQuality: 0.1) ?? Data()),
         actionCallout: .neon,
         inputCallout: .neon,
         
         neonPermission: .init(disableNeonCharacter: true),
-//        disableNeonAnimationCharacter: true,
-        buttonNeonAnimation: NeonStyle.colorRotate4Conic.getStyle(),
+        buttonNeonAnimation: [
+            .init(colors: ["#FFFFFF", "#FF00D6", "#000AFF"], .right, .conic),
+            .init(colors: ["#FFFFFF", "#FF00D6", "#000AFF"], .down, .conic),
+            .init(colors: ["#FFFFFF", "#FF00D6", "#000AFF"], .left, .conic),
+            .init(colors: ["#FFFFFF", "#FF00D6", "#000AFF"], .up, .conic),
+        ],
         durationAnimation: 1,
         preview: .image(UIImage(named: "colorfullUniversePreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
         name: "colorfullUniverse"
@@ -82,7 +93,13 @@ extension Theme {
         neonPermission: .init(disableNeonButton: true),
 //        disableNeonAnimationButton: true,
         durationAnimation: 3,
-        neonLinearAnimation: .LTR(nil, 5),
+        neonLinearAnimation: .LTR([
+            Color(hex: "729D39"),
+            Color(hex: "#FF7A00"),
+            Color(hex: "729D39"),
+            Color(hex: "FF00D6"),
+            Color(hex: "729D39"),
+        ], 3),
         preview: .image(UIImage(named: "colorfullLiquidPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
         name: "colorfullLiquid"
     )
@@ -102,7 +119,11 @@ extension Theme {
         neonPermission: .init(disableNeonButton: true),
 //        disableNeonAnimationButton: true,
         durationAnimation: 3,
-        neonLinearAnimation: .LTR(nil, 5),
+        neonLinearAnimation: .LTR([
+            Color(hex: "#00C2FF"),
+            Color(hex: "##000AFF"),
+            Color(hex: "#00C2FF"),
+        ], 2),
         preview: .image(UIImage(named: "colorfullCloudPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
         name: "colorfullCloud"
     )
@@ -122,7 +143,14 @@ extension Theme {
         neonPermission: .init(disableNeonCharacter: true),
 //        disableNeonAnimationCharacter: true,
         durationAnimation: 3,
-        neonLinearAnimation: .radial(nil),
+        neonLinearAnimation: .radial([
+            Color(hex: "FEF635"),
+            Color(hex: "FEF635"),
+            Color(hex: "FA00FF"),
+            Color(hex: "FA00FF"),
+            Color(hex: "#FA00FF"),
+            .clear
+        ]),
         preview: .image(UIImage(named: "colorfullFlowerPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
         name: "colorfullFlower"
     )
@@ -160,7 +188,8 @@ extension Theme {
         name: "colorfullTropical"
     )
     
-    static var colorfullWavesStrip: Theme = .init(id: "39D4702F-50F0-4DB1-97E4-428D24DFA38E",
+    static var colorfullWavesStrip: Theme = .init(
+        id: "39D4702F-50F0-4DB1-97E4-428D24DFA38E",
         button: .init(
             background: .color(Color(hex: "#FF94AE").opacity(0.8)),
             foregroundColor: .white,
@@ -169,6 +198,7 @@ extension Theme {
             border: .init(color: Color(hex: "#FF94AE"), size: 2),
             shapeType: .HEXAGON
         ),
+        edgeInsets: .init(top: 3, left: 1, bottom: 3, right: 1),
         background: .image(UIImage(named: "colorfullWavesStrip")?.jpegData(compressionQuality: 0.1) ?? Data()),
         actionCallout: .bright,
         inputCallout: .bright,
@@ -182,7 +212,7 @@ extension Theme {
             background: .color(.white.opacity(0.8)),
             foregroundColor: .white,
             font: .body,
-            cornerRadius: 25,
+            cornerRadius: 12,
             border: .init(color: .clear, size: 0)
         ),
         background: .image(UIImage(named: "colorfullColorCurve")?.jpegData(compressionQuality: 0.1) ?? Data()),
@@ -191,7 +221,15 @@ extension Theme {
         
         neonPermission: .init(disableNeonButton: true),
 //        disableNeonAnimationButton: true,
-        neonLinearAnimation: .radial(nil),
+        neonLinearAnimation: .radial([
+            Color(hex: "000AFF"),
+            Color(hex: "000AFF"),
+            Color(hex: "FA00FF"),
+            Color(hex: "FA00FF"),
+            Color(hex: "#FF9500"),
+            Color(hex: "#FF9500"),
+            .clear
+        ]),
         preview: .image(UIImage(named: "colorfullColorCurvePreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
         name: "colorfullColorCurve"
     )
@@ -201,7 +239,7 @@ extension Theme {
             background: .color(Color(hex: "#B6F364").opacity(0.6)),
             foregroundColor: .white,
             font: .body,
-            cornerRadius: 25,
+            cornerRadius: 12,
             border: .init(color: .clear, size: 0)
         ),
         background: .image(UIImage(named: "colorfullCubes")?.jpegData(compressionQuality: 0.1) ?? Data()),
@@ -210,7 +248,12 @@ extension Theme {
         
         neonPermission: .init(disableNeonCharacter: true),
 //        disableNeonAnimationCharacter: true,
-        neonLinearAnimation: .radial(nil),
+        neonLinearAnimation: .radial([
+            Color(hex: "FFFFFF").opacity(0.6),
+            Color(hex: "B6F364").opacity(0.6),
+            Color(hex: "B6F364").opacity(0.6),
+            .clear
+        ]),
         preview: .image(UIImage(named: "colorfullCubesPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
         name: "colorfullCubes"
     )
@@ -219,32 +262,18 @@ extension Theme {
 struct ColorfullTheme_Previews: PreviewProvider {
 
     struct Preview: View {
-
+        
+        var theme: Theme = .colorfullCubes
+        
         var controller: KeyboardInputViewController = {
             let controller = KeyboardInputViewController.preview
             controller.state.autocompleteContext.suggestions = [
-//                .init(text: "Foo"),
-//                .init(text: "Bar", isAutocorrect: true),
-//                .init(text: "Baz")
+                //                .init(text: "Foo"),
+                //                .init(text: "Bar", isAutocorrect: true),
+                //                .init(text: "Baz")
             ]
             
-            let theme: Theme = .init(id: UUID().uuidString,
-                button: .init(
-                    background: .color(.blue),
-                    foregroundColor: .white,
-                    font: .custom("Poppins", size: 18),
-                    cornerRadius: 10,
-                    border: .init(color: .white, size: 5)
-                ),
-                background: .color(.red),
-                actionCallout: .neon,
-                inputCallout: .neon,
-                
-                durationAnimation: 6,
-                neonLinearAnimation: .radial(nil),
-                preview: .image(UIImage(named: "portraitNeonDogPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
-                name: "Poppins"
-            )
+            let theme: Theme = .colorfullCubes
             
             controller.services.styleProvider = CustomKeyStyleProvider(buttonStyle: theme.button, actionCallout: theme.actionCallout ?? .bright, inputCallout: theme.inputCallout ?? .bright, keyboardContext: controller.state.keyboardContext)
             
@@ -266,18 +295,16 @@ struct ColorfullTheme_Previews: PreviewProvider {
                 state: controller.state,
                 services: controller.services,
                 themeObject: [],
-                neonPermission: .init(
-                    disableNeonCharacter: true,
-                    disableNeonBorder: true,
-                    disableNeonButton: true
-                ),
+                neonPermission: theme.neonPermission ?? .init(),
+                neonLinearAnimation: theme.neonLinearAnimation ?? .none,
+                animationValueObjects: theme.buttonNeonAnimation,
                 buttonContent: { $0.view },
                 buttonView: { $0.view },
                 emojiKeyboard: { $0.view },
                 toolbar: { $0.view }
             )
         }
-
+        
         var body: some View {
             VStack(spacing: 10) {
                 Group {
@@ -285,12 +312,9 @@ struct ColorfullTheme_Previews: PreviewProvider {
                         state: controller.state,
                         services: controller.services,
                         themeObject: [],
-                        neonPermission: .init(
-                            disableNeonCharacter: true,
-                            disableNeonBorder: true
-//                            disableNeonButton: true
-                        ),
-                        neonLinearAnimation: .LTR(nil,3),
+                        neonPermission: theme.neonPermission ?? .init(),
+                        neonLinearAnimation: theme.neonLinearAnimation ?? .none,
+                        animationValueObjects: theme.buttonNeonAnimation,
                         buttonContent: { param in
                             switch param.item.action {
                             case .backspace:
@@ -313,12 +337,11 @@ struct ColorfullTheme_Previews: PreviewProvider {
                         toolbar: { $0.view }
                     )
                 }
-                .background(Color.red)
-//                .background(controller.state.keyboardTheme.background.backgroundView)
+                .background(theme.background?.backgroundView)
             }
         }
     }
-
+    
     static var previews: some View {
         Preview()
     }
