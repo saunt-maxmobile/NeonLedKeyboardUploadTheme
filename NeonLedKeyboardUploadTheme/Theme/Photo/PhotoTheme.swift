@@ -14,7 +14,7 @@ extension Theme {
         button: .init(
             background: .color(Color.white.opacity(0.3)),
             foregroundColor: Color(hex: "#E43977"),
-            font: .body,
+            font: .custom("Inter-Medium", size: 18),
             cornerRadius: 8,
             border: .init(color: .white, size: 2)
         ),
@@ -28,7 +28,7 @@ extension Theme {
         button: .init(
             background: .color(Color.white.opacity(0.3)),
             foregroundColor: Color.white,
-            font: .body,
+            font: .custom("Inter-Medium", size: 18),
             cornerRadius: 8,
             border: .init(color: .white, size: 2)
         ),
@@ -42,9 +42,9 @@ extension Theme {
         button: .init(
             background: .color(Color.clear),
             foregroundColor: Color(hex: "EE82FF"),
-            font: .body,
+            font: .custom("Inter-Medium", size: 18),
             cornerRadius: 8,
-            border: .init(color: Color(hex: "EE82FF"), size: 1)
+            border: .init(color: Color(hex: "EE82FF"), size: 2)
         ),
         background: .image(UIImage(named: "photoDarkPurple")?.jpegData(compressionQuality: 0.1) ?? Data()),
         
@@ -56,7 +56,7 @@ extension Theme {
         button: .init(
             background: .color(Color(hex: "FF94AE").opacity(0.3)),
             foregroundColor: Color(hex: "DE0B57"),
-            font: .body,
+            font: .custom("Inter-Medium", size: 18),
             cornerRadius: 8,
             border: .init(color: Color.white, size: 1)
         ),
@@ -70,9 +70,9 @@ extension Theme {
         button: .init(
             background: .color(.clear),
             foregroundColor: Color(hex: "#0F73AC"),
-            font: .body,
+            font: .custom("Inter-Medium", size: 18),
             cornerRadius: 8,
-            border: .init(color: Color(hex: "#5AB9EF"), size: 1)
+            border: .init(color: Color(hex: "#5AB9EF"), size: 2)
         ),
         background: .image(UIImage(named: "photoBlueGlitter")?.jpegData(compressionQuality: 0.1) ?? Data()),
         
@@ -84,7 +84,7 @@ extension Theme {
         button: .init(
             background: .color(Color(hex: "3C00BC").opacity(0.5)),
             foregroundColor: Color.white,
-            font: .body,
+            font: .custom("Inter-Medium", size: 18),
             cornerRadius: 8,
             border: .init(color: .clear, size: 0)
         ),
@@ -98,7 +98,7 @@ extension Theme {
         button: .init(
             background: .color(.clear),
             foregroundColor: Color.white,
-            font: .body,
+            font: .custom("Inter-Medium", size: 18),
             cornerRadius: 8,
             border: .init(color: .white, size: 1)
         ),
@@ -112,7 +112,7 @@ extension Theme {
         button: .init(
             background: .color(.white.opacity(0.3)),
             foregroundColor: Color(hex: "882CE3"),
-            font: .body,
+            font: .custom("Inter-Medium", size: 18),
             cornerRadius: 8,
             border: .init(color: .white, size: 1)
         ),
@@ -126,7 +126,7 @@ extension Theme {
         button: .init(
             background: .color(.clear),
             foregroundColor: Color.white,
-            font: .body,
+            font: .custom("Inter-Medium", size: 18),
             cornerRadius: 8,
             border: .init(color: .white, size: 1)
         ),
@@ -140,7 +140,7 @@ extension Theme {
         button: .init(
             background: .color(.white.opacity(0.4)),
             foregroundColor: Color(hex: "008585"),
-            font: .body,
+            font: .custom("Inter-Medium", size: 18),
             cornerRadius: 8,
             border: .init(color: .white, size: 1)
         ),
@@ -154,7 +154,7 @@ extension Theme {
         button: .init(
             background: .color(.clear),
             foregroundColor: Color.white,
-            font: .body,
+            font: .custom("Inter-Medium", size: 18),
             cornerRadius: 8,
             border: .init(color: .clear, size: 0)
         ),
@@ -168,7 +168,7 @@ extension Theme {
         button: .init(
             background: .color(.clear),
             foregroundColor: Color.white,
-            font: .body,
+            font: .custom("Inter-Medium", size: 18),
             cornerRadius: 8,
             border: .init(color: .white, size: 1)
         ),
@@ -180,9 +180,9 @@ extension Theme {
     
     static var photoCool: Theme = .init(id: "1676BB63-E017-46B4-AB91-9E04850F7A6D",
         button: .init(
-            background: .color(.black.opacity(0.5)),
+            background: .color(.black.opacity(0.2)),
             foregroundColor: Color.white,
-            font: .body,
+            font: .custom("Inter-Medium", size: 18),
             cornerRadius: 8,
             border: .init(color: .clear, size: 0)
         ),
@@ -196,7 +196,7 @@ extension Theme {
         button: .init(
             background: .color(.clear),
             foregroundColor: Color.white,
-            font: .body,
+            font: .custom("Inter-Medium", size: 18),
             cornerRadius: 8,
             border: .init(color: .clear, size: 0)
         ),
@@ -210,7 +210,7 @@ extension Theme {
         button: .init(
             background: .color(.clear),
             foregroundColor: Color.white,
-            font: .body,
+            font: .custom("Inter-Medium", size: 18),
             cornerRadius: 8,
             border: .init(color: .clear, size: 0)
         ),
@@ -226,7 +226,7 @@ extension Theme {
         button: .init(
             background: .color(.clear),
             foregroundColor: Color.white,
-            font: .body,
+            font: .custom("Inter-Medium", size: 18),
             cornerRadius: 10,
             border: .init(color: .white, size: 1)
         ),
@@ -242,7 +242,7 @@ extension Theme {
         button: .init(
             background: .color(.clear),
             foregroundColor: Color(hex: "#00F0FF"),
-            font: .body,
+            font: .custom("Inter-Medium", size: 18),
             cornerRadius: 10,
             border: .init(color: Color(hex: "#4C3CFF"), size: 2)
         ),
@@ -257,19 +257,14 @@ extension Theme {
     static var photoColorWaves: Theme = .init(id: "3D81027A-7128-4B50-8ED2-EDF475DD48B2",
         button: .init(
             background: .color(.white),
-            foregroundColor: Color(hex: "#00F0FF"),
-            font: .body,
+            foregroundColor: Color(hex: "#FF00D6"),
+            font: .custom("Inter-Medium", size: 18),
             cornerRadius: 18,
             border: .init(color: .clear, size: 0)
         ),
         background: .image(UIImage(named: "photoColorWaves")?.jpegData(compressionQuality: 0.1) ?? Data()),
         actionCallout: .bright,
         inputCallout: .bright,
-        
-        neonPermission: .init(disableNeonButton: true),
-//        disableNeonAnimationButton: true,
-        durationAnimation: 3,
-        neonLinearAnimation: .radial(nil),
         preview: .image(UIImage(named: "photoColorWavesPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
         name: "photoColorWaves"
     )
@@ -278,18 +273,13 @@ extension Theme {
         button: .init(
             background: .color(.black.opacity(0.6)),
             foregroundColor: Color(hex: "#80FE02"),
-            font: .body,
-            cornerRadius: 18,
+            font: .custom("Inter-Medium", size: 18),
+            cornerRadius: 12,
             border: .init(color: Color(hex: "#FFC700"), size: 3)
         ),
         background: .image(UIImage(named: "photoBlurBokeh")?.jpegData(compressionQuality: 0.1) ?? Data()),
         actionCallout: .bright,
         inputCallout: .bright,
-        
-        neonPermission: .init(disableNeonButton: true),
-//        disableNeonAnimationButton: true,
-        durationAnimation: 3,
-        neonLinearAnimation: .radial(nil),
         preview: .image(UIImage(named: "photoBlurBokehPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
         name: "photoBlurBokeh"
     )
@@ -298,18 +288,22 @@ extension Theme {
         button: .init(
             background: .color(.white.opacity(0.4)),
             foregroundColor: .white,
-            font: .body,
-            cornerRadius: 16,
+            font: .custom("Inter-Medium", size: 18),
+            cornerRadius: 12,
             border: .init(color: .clear, size: 0)
         ),
         background: .image(UIImage(named: "photoPeculiarCircle")?.jpegData(compressionQuality: 0.1) ?? Data()),
         actionCallout: .neon,
         inputCallout: .neon,
-        
         neonPermission: .init(disableNeonButton: true),
-//        disableNeonAnimationButton: true,
         durationAnimation: 3,
-        neonLinearAnimation: .radial(nil),
+        neonLinearAnimation: .radial([
+            Color(hex: "#FFFFFF"),
+            Color(hex: "#FFFFFF"),
+            Color(hex: "#000AFF"),
+            Color(hex: "#000AFF"),
+            .clear
+        ]),
         preview: .image(UIImage(named: "photoPeculiarCirclePreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
         name: "photoPeculiarCircle"
     )
@@ -318,8 +312,8 @@ extension Theme {
         button: .init(
             background: .color(.clear),
             foregroundColor: Color(hex: "#000AFF"),
-            font: .body,
-            cornerRadius: 16,
+            font: .custom("Inter-Medium", size: 18),
+            cornerRadius: 12,
             border: .init(color: .white.opacity(0.7), size: 2)
         ),
         background: .image(UIImage(named: "photoFantasticStrip")?.jpegData(compressionQuality: 0.1) ?? Data()),
@@ -334,7 +328,7 @@ extension Theme {
         button: .init(
             background: .color(.clear),
             foregroundColor: Color(hex: "#FFD746"),
-            font: .body,
+            font: .custom("Inter-Medium", size: 18),
             cornerRadius: 10,
             border: .init(color: Color(hex: "#FFD746"), size: 1)
         ),
@@ -350,7 +344,7 @@ extension Theme {
         button: .init(
             background: .color(.clear),
             foregroundColor: Color(hex: "#00F0FF"),
-            font: .body,
+            font: .custom("Inter-Medium", size: 18),
             cornerRadius: 10,
             border: .init(color: Color(hex: "#00F0FF"), size: 1)
         ),
@@ -366,7 +360,7 @@ extension Theme {
         button: .init(
             background: .color(.clear),
             foregroundColor: Color(hex: "#FFD746"),
-            font: .body,
+            font: .custom("Inter-Medium", size: 18),
             cornerRadius: 10,
             border: .init(color: Color(hex: "#FF984C"), size: 2)
         ),
@@ -382,7 +376,7 @@ extension Theme {
         button: .init(
             background: .color(.clear),
             foregroundColor: Color(hex: "#00F0FF"),
-            font: .body,
+            font: .custom("Inter-Medium", size: 18),
             cornerRadius: 10,
             border: .init(color: Color(hex: "#FF984C"), size: 1)
         ),
@@ -398,7 +392,7 @@ extension Theme {
         button: .init(
             background: .color(.clear),
             foregroundColor: Color(hex: "#729D39"),
-            font: .body,
+            font: .custom("Inter-Medium", size: 18),
             cornerRadius: 10,
             border: .init(color: Color(hex: "#729D39"), size: 2)
         ),
@@ -414,7 +408,7 @@ extension Theme {
         button: .init(
             background: .color(.clear),
             foregroundColor: Color(hex: "#FFFFFF"),
-            font: .body,
+            font: .custom("Inter-Medium", size: 18),
             cornerRadius: 10,
             border: .init(color: Color(hex: "#FFFFFF").opacity(0.5), size: 1)
         ),
@@ -430,32 +424,18 @@ extension Theme {
 struct PhotoTheme_Previews: PreviewProvider {
 
     struct Preview: View {
-
+        
+        let theme: Theme = .photoFunnyHorse
+        
         var controller: KeyboardInputViewController = {
             let controller = KeyboardInputViewController.preview
             controller.state.autocompleteContext.suggestions = [
-//                .init(text: "Foo"),
-//                .init(text: "Bar", isAutocorrect: true),
-//                .init(text: "Baz")
+                //                .init(text: "Foo"),
+                //                .init(text: "Bar", isAutocorrect: true),
+                //                .init(text: "Baz")
             ]
             
-            let theme: Theme = .init(id: UUID().uuidString,
-                button: .init(
-                    background: .color(.blue),
-                    foregroundColor: .white,
-                    font: .custom("Poppins", size: 18),
-                    cornerRadius: 10,
-                    border: .init(color: .white, size: 5)
-                ),
-                background: .color(.red),
-                actionCallout: .neon,
-                inputCallout: .neon,
-                
-                durationAnimation: 6,
-                neonLinearAnimation: .radial(nil),
-                preview: .image(UIImage(named: "portraitNeonDogPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
-                name: "Poppins"
-            )
+            let theme: Theme = .photoFunnyHorse
             
             controller.services.styleProvider = CustomKeyStyleProvider(buttonStyle: theme.button, actionCallout: theme.actionCallout ?? .bright, inputCallout: theme.inputCallout ?? .bright, keyboardContext: controller.state.keyboardContext)
             
@@ -488,7 +468,7 @@ struct PhotoTheme_Previews: PreviewProvider {
                 toolbar: { $0.view }
             )
         }
-
+        
         var body: some View {
             VStack(spacing: 10) {
                 Group {
@@ -496,12 +476,10 @@ struct PhotoTheme_Previews: PreviewProvider {
                         state: controller.state,
                         services: controller.services,
                         themeObject: [],
-                        neonPermission: .init(
-                            disableNeonCharacter: true,
-                            disableNeonBorder: true
-//                            disableNeonButton: true
-                        ),
-                        neonLinearAnimation: .LTR(nil, 3),
+                        neonPermission: theme.neonPermission ?? .init(),
+                        neonLinearAnimation: theme.neonLinearAnimation ?? .none,
+                        animationValueObjects: theme.buttonNeonAnimation,
+                        duration: theme.durationAnimation ?? 0,
                         buttonContent: { param in
                             switch param.item.action {
                             case .backspace:
@@ -524,12 +502,12 @@ struct PhotoTheme_Previews: PreviewProvider {
                         toolbar: { $0.view }
                     )
                 }
-                .background(Color.red)
-//                .background(controller.state.keyboardTheme.background.backgroundView)
+                .background(theme.background?.backgroundView)
+                //                .background(controller.state.keyboardTheme.background.backgroundView)
             }
         }
     }
-
+    
     static var previews: some View {
         Preview()
     }

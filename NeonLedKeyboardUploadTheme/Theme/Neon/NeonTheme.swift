@@ -164,7 +164,7 @@ extension Theme {
         button: .init(
             background: .color(.clear),
             foregroundColor: Color.white,
-            font: .body,
+            font: .custom("Inter-Medium", size: 18),
             cornerRadius: 8,
             border: .init(color: Color(hex: "#FF00F5"), size: 2)
         ),
@@ -184,7 +184,7 @@ extension Theme {
         button: .init(
             background: .color(.clear),
             foregroundColor: Color(hex: "#00FFFF"),
-            font: .body,
+            font: .custom("Inter-Medium", size: 18),
             cornerRadius: 8,
             border: .init(color: Color(hex: "#7636FF"), size: 2)
         ),
@@ -199,7 +199,7 @@ extension Theme {
         button: .init(
             background: .color(.clear),
             foregroundColor: Color(hex: "#00FFFF"),
-            font: .body,
+            font: .custom("Inter-Medium", size: 18),
             cornerRadius: 8,
             border: .init(color: Color(hex: "#7636FF"), size: 2)
         ),
@@ -218,16 +218,13 @@ extension Theme {
     static var neonSummitNeon: Theme = .init(
         id: "74A9F132-EB0A-4518-BBCC-50BC116AA9D0",
         button: .init(
-            background: .color(.clear),
+            background: .color(Color(hex: "#000AFF").opacity(0.3)),
             foregroundColor: Color(hex: "#00FFFF"),
-            font: .body,
+            font: .custom("Inter-Medium", size: 18),
             cornerRadius: 8,
-            border: .init(color: Color(hex: "#7636FF"), size: 2)
+            border: .init(color: Color(hex: "#00FFFF"), size: 2)
         ),
         background: .image(UIImage(named: "neonSummitNeon")?.jpegData(compressionQuality: 0.1) ?? Data()),
-        
-        durationAnimation: 5,
-        neonLinearAnimation: .TTB(nil, 3),
         preview: .image(UIImage(named: "neonSummitNeonPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
         name: "neonSummitNeon"
     )
@@ -237,7 +234,7 @@ extension Theme {
         button: .init(
             background: .color(.clear),
             foregroundColor: Color(hex: "#00F0FF"),
-            font: .body,
+            font: .custom("Inter-Medium", size: 18),
             cornerRadius: 8,
             border: .init(color: Color(hex: "#000AFF"), size: 2)
         ),
@@ -251,7 +248,7 @@ extension Theme {
         button: .init(
             background: .color(.clear),
             foregroundColor: Color.white,
-            font: .body,
+            font: .custom("Inter-Medium", size: 18),
             cornerRadius: 8,
             border: .init(color: Color.white, size: 1)
         ),
@@ -275,7 +272,7 @@ extension Theme {
         button: .init(
             background: .color(.clear),
             foregroundColor: Color.white,
-            font: .body,
+            font: .custom("Inter-Medium", size: 18),
             cornerRadius: 8,
             border: .init(color: Color.white, size: 1)
         ),
@@ -297,9 +294,9 @@ extension Theme {
         button: .init(
             background: .color(.clear),
             foregroundColor: Color.white,
-            font: .body,
+            font: .custom("Inter-Medium", size: 18),
             cornerRadius: 8,
-            border: .init(color: Color.white, size: 1)
+            border: .init(color: Color.white, size: 2)
         ),
         background: .image(UIImage(named: "neonVortexGalaxy")?.jpegData(compressionQuality: 0.1) ?? Data()),
         actionCallout: .bright,
@@ -313,8 +310,8 @@ extension Theme {
         button: .init(
             background: .color(.white),
             foregroundColor: Color.white,
-            font: .body,
-            cornerRadius: 8,
+            font: .custom("Inter-Medium", size: 18),
+            cornerRadius: 25,
             border: .init(color: Color.clear, size: 0)
         ),
         background: .image(UIImage(named: "neonSpread")?.jpegData(compressionQuality: 0.1) ?? Data()),
@@ -339,7 +336,7 @@ extension Theme {
         button: .init(
             background: .color(.clear),
             foregroundColor: Color.white,
-            font: .body,
+            font: .custom("Inter-Medium", size: 18),
             cornerRadius: 8,
             border: .init(color: Color.clear, size: 0)
         ),
@@ -364,7 +361,7 @@ extension Theme {
         button: .init(
             background: .color(.clear),
             foregroundColor: Color.white,
-            font: .body,
+            font: .custom("Inter-Medium", size: 18),
             cornerRadius: 8,
             border: .init(color: Color.clear, size: 0)
         ),
@@ -388,24 +385,20 @@ extension Theme {
         button: .init(
             background: .color(.clear),
             foregroundColor: Color.white,
-            font: .body,
+            font: .custom("Inter-Medium", size: 18),
             cornerRadius: 25,
             border: .init(color: Color.white, size: 5),
             shapeType: .HEXAGON
         ),
+        edgeInsets: .init(top: 3, left: 1, bottom: 3, right: 1),
         background: .image(UIImage(named: "neonMargicCircle")?.jpegData(compressionQuality: 0.1) ?? Data()),
         actionCallout: .neon,
         inputCallout: .neon,
         buttonNeonAnimation: [
             .init(colors: ["#00F0FF", "#FFFFFF", "#FA00FF"], .right, .conic),
-            .init(colors: ["#FFFFFF", "#FA00FF", "#00F0FF", ], .downRight, .conic),
-            .init(colors: ["#FA00FF", "#00F0FF", "#FFFFFF", ], .down, .conic),
-            .init(colors: ["#00F0FF", "#FFFFFF", "#FA00FF", ], .downLeft, .conic),
-            .init(colors: ["#FFFFFF", "#FA00FF", "#00F0FF", ], .left, .conic),
-            .init(colors: ["#FA00FF", "#00F0FF", "#FFFFFF", ], .upLeft, .conic),
-            .init(colors: ["#00F0FF", "#FFFFFF", "#FA00FF", ], .up, .conic),
-            .init(colors: ["#FFFFFF", "#FA00FF", "#00F0FF", ], .upRight, .conic),
-            
+            .init(colors: ["#00F0FF", "#FFFFFF", "#FA00FF"], .down, .conic),
+            .init(colors: ["#00F0FF", "#FFFFFF", "#FA00FF" ], .left, .conic),
+            .init(colors: ["#00F0FF", "#FFFFFF", "#FA00FF" ], .up, .conic),
         ],
         durationAnimation: 1,
         preview: .image(UIImage(named: "neonMargicCirclePreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
@@ -417,11 +410,12 @@ extension Theme {
         button: .init(
             background: .color(Color(hex: "#000AFF")),
             foregroundColor: Color.white,
-            font: .body,
+            font: .custom("Inter-Medium", size: 18),
             cornerRadius: 25,
             border: .init(color: Color.white, size: 3),
             shapeType: .CIRCLE
         ),
+        edgeInsets: .init(top: 3, left: 1, bottom: 3, right: 1),
         background: .image(UIImage(named: "neonMagicLight")?.jpegData(compressionQuality: 0.1) ?? Data()),
         actionCallout: .bright,
         inputCallout: .bright,
@@ -434,7 +428,7 @@ extension Theme {
         button: .init(
             background: .color(.clear),
             foregroundColor: Color.white,
-            font: .body,
+            font: .custom("Inter-Medium", size: 18),
             cornerRadius: 10,
             border: .init(color: Color.white, size: 1)
         ),
@@ -457,11 +451,12 @@ extension Theme {
         button: .init(
             background: .color(.white),
             foregroundColor: Color.white,
-            font: .body,
+            font: .custom("Inter-Medium", size: 18),
             cornerRadius: 10,
             border: .init(color: .clear, size: 0),
             shapeType: .CIRCLE
         ),
+        edgeInsets: .init(top: 3, left: 1, bottom: 3, right: 1),
         background: .image(UIImage(named: "neonPlastic")?.jpegData(compressionQuality: 0.1) ?? Data()),
         actionCallout: .neon,
         inputCallout: .neon,
@@ -482,7 +477,7 @@ extension Theme {
         button: .init(
             background: .color(.clear),
             foregroundColor: Color.white,
-            font: .body,
+            font: .custom("Inter-Medium", size: 18),
             cornerRadius: 10,
             border: .init(color: .white, size: 1)
         ),
@@ -507,7 +502,7 @@ extension Theme {
         button: .init(
             background: .color(.white.opacity(0.3)),
             foregroundColor: Color.white,
-            font: .body,
+            font: .custom("Inter-Medium", size: 18),
             cornerRadius: 25,
             border: .init(color: .white.opacity(0.8), size: 1)
         ),
@@ -515,7 +510,7 @@ extension Theme {
         actionCallout: .neon,
         inputCallout: .neon,
         neonPermission: .init(disableNeonButton: true),
-        durationAnimation: 5,
+        durationAnimation: 3,
         neonLinearAnimation: .radial(
             [Color(red: 1, green: 0, blue: 0.96),
              Color(red: 1, green: 0, blue: 0.96),
@@ -532,11 +527,12 @@ extension Theme {
         button: .init(
             background: .color(Color(red: 0.8, green: 0, blue: 1).opacity(0.5)),
             foregroundColor: Color.white,
-            font: .body,
+            font: .custom("Inter-Medium", size: 18),
             cornerRadius: 25,
             border: .init(color: .clear, size: 0),
             shapeType: .CIRCLE
         ),
+        edgeInsets: .init(top: 3, left: 1, bottom: 3, right: 1),
         background: .image(UIImage(named: "neonBalloons")?.jpegData(compressionQuality: 0.1) ?? Data()),
         actionCallout: .bright,
         inputCallout: .bright,
@@ -549,22 +545,20 @@ extension Theme {
         button: .init(
             background: .color(.white),
             foregroundColor: Color.white,
-            font: .body,
+            font: .custom("Inter-Medium", size: 18),
             cornerRadius: 25,
             border: .init(color: .clear, size: 0)
         ),
         background: .image(UIImage(named: "neonTriangleNeon")?.jpegData(compressionQuality: 0.1) ?? Data()),
         actionCallout: .neon,
         inputCallout: .neon,
-        
-        neonPermission: .init(disableNeonCharacter: true),
+        neonPermission: .init(disableNeonCharacter: true), 
+        durationAnimation: 3,
         neonLinearAnimation: .radial(
-            [Color(red: 1, green: 0, blue: 0.84),
-             Color(red: 1, green: 0, blue: 0.84),
-             Color(red: 0, green: 1, blue: 1),
-             Color(red: 0, green: 1, blue: 1),
-             Color(red: 0, green: 0.04, blue: 1),
-             Color(red: 0, green: 0.04, blue: 1),
+            [Color(hex: "#00F0FF"),
+             Color(hex: "#00F0FF"),
+             Color(hex: "#FA00FF"),
+             Color(hex: "#FA00FF"),
              .clear
             ]),
         preview: .image(UIImage(named: "neonTriangleNeonPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
@@ -576,7 +570,7 @@ struct NeonTheme_Previews: PreviewProvider {
     
     struct Preview: View {
         
-        let theme: Theme = .neonOcean
+        let theme: Theme = .neonTriangleNeon
         
         var controller: KeyboardInputViewController = {
             let controller = KeyboardInputViewController.preview
@@ -586,7 +580,7 @@ struct NeonTheme_Previews: PreviewProvider {
                 //                .init(text: "Baz")
             ]
             
-            let theme: Theme = .neonOcean
+            let theme: Theme = .neonTriangleNeon
             
             controller.services.styleProvider = CustomKeyStyleProvider(buttonStyle: theme.button, actionCallout: theme.actionCallout ?? .bright, inputCallout: theme.inputCallout ?? .bright, keyboardContext: controller.state.keyboardContext)
             

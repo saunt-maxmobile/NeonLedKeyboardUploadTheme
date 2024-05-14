@@ -106,6 +106,10 @@ public struct Theme: Codable, Equatable, Identifiable {
     public func encode(to encoder: Encoder) throws {
         var container = encoder.container(keyedBy: CodingKeys.self)
         
+//        try container.encodeIfPresent(id, forKey: .id)
+//        try container.encodeIfPresent(name, forKey: .name)
+//        try container.encodeIfPresent(imagePreview, forKey: .imagePreview)
+        
         try container.encodeIfPresent(id, forKey: .id)
         try container.encodeIfPresent(button, forKey: .button)
         try container.encodeIfPresent(shiftButton, forKey: .shiftButton)

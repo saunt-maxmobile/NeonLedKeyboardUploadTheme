@@ -44,6 +44,7 @@ struct ThemeHandler {
         _themeSectionRef.putData(data) { metadata, error in
             guard metadata != nil else {
                 // Uh-oh, an error occurred!
+                print("error")
                 print(error)
                 return
             }

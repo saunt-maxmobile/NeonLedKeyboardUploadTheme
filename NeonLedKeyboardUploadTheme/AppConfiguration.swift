@@ -11,6 +11,10 @@ final class AppConfiguration: NSObject {
     static let shared: AppConfiguration = AppConfiguration()
     
     let themeSectionJson = "ThemeSection.json"
+    
+    func getThemeSectionJson(_ version: String) -> String {
+        return "ThemeSection\(version).json"
+    }
 }
 
 class Constant {

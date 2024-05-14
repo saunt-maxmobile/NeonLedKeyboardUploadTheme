@@ -27,10 +27,42 @@
             filePath = "NeonLedKeyboardUploadTheme/Theme/Neon/NeonTheme.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "579"
-            endingLineNumber = "579"
+            startingLineNumber = "573"
+            endingLineNumber = "573"
             landmarkName = "Preview"
             landmarkType = "14">
+            <Locations>
+               <Location
+                  uuid = "6DFC1AE5-F8A8-433E-B903-6B930F3E3CE1 - 4c580ca984b05615"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NeonLedKeyboardUploadTheme.NeonTheme_Previews.Preview.init() -&gt; NeonLedKeyboardUploadTheme.NeonTheme_Previews.Preview"
+                  moduleName = "NeonLedKeyboardUploadTheme"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/maxmobilesoftware/Documents/code/Keyboard/Product/NeonLedKeyboardEditTheme/NeonLedKeyboardUploadTheme/Theme/Neon/NeonTheme.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "573"
+                  endingLineNumber = "573"
+                  offsetFromSymbolStart = "56">
+               </Location>
+               <Location
+                  uuid = "6DFC1AE5-F8A8-433E-B903-6B930F3E3CE1 - 6ac9ef402be7e498"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NeonLedKeyboardUploadTheme.NeonTheme_Previews.Preview.init(controller: NeonLedKeyboardUploadTheme.KeyboardInputViewController) -&gt; NeonLedKeyboardUploadTheme.NeonTheme_Previews.Preview"
+                  moduleName = "NeonLedKeyboardUploadTheme"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/maxmobilesoftware/Documents/code/Keyboard/Product/NeonLedKeyboardEditTheme/NeonLedKeyboardUploadTheme/Theme/Neon/NeonTheme.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "573"
+                  endingLineNumber = "573"
+                  offsetFromSymbolStart = "40">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
