@@ -259,28 +259,305 @@ extension Theme {
     )
 }
 
-struct ColorfullTheme_Previews: PreviewProvider {
+extension Theme {
+    static var colorfullMyosotis: Theme = .init(
+        id: "01HY2NE8HWN2TKB31KJ34EAT0Y",
+        button: .init(
+            background: .image(UIImage(named: "colorfullMyosotis.Normal")?.pngData() ?? Data(), contentMode: .stretch),
+            foregroundColor: Color(hex: "#0047D0"),
+            font: .custom("Roboto-Medium", size: 18),
+            cornerRadius: 8
+        ),
+        shiftButton: .color(.init(hex: "#0085FF")),
+        backspaceButton: .color(.init(hex: "#BBE7FF")),
+        keyboardTypeButton: .color(.init(hex: "#0085FF")),
+        spaceButton: .color(.init(hex: "#7BC0FF")),
+        primaryButton: .color(.init(hex: "#BBE7FF")),
+        emojiButton: .color(.init(hex: "#0085FF")),
+        specialKey: "colorfullMyosotis",
+        showSpaceTitle: false,
+        showPrimaryTitle: false,
+        background: .color(.white),
+        actionCallout: .bright,
+        inputCallout: .bright,
+        preview: .image(UIImage(named: "colorfullMyosotis.KeyboardPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        name: "colorfullMyosotis"
+    )
+    
+    static var colorfullLavender: Theme = .init(
+        id: "01HY2Q8V2QJVAXEHSTCY7R040N",
+        button: .init(
+            background: .image(UIImage(named: "colorfullLavender.Normal")?.pngData() ?? Data(), contentMode: .stretch),
+            foregroundColor: Color(hex: "#0047D0"),
+            font: .custom("Roboto-Medium", size: 18),
+            cornerRadius: 8
+        ),
+        shiftButton: .color(.init(hex: "#8A3EFF")),
+        backspaceButton: .color(.init(hex: "#E4D3FF")),
+        keyboardTypeButton: .color(.init(hex: "#8A3EFF")),
+        spaceButton: .color(.init(hex: "#C49EFF")),
+        primaryButton: .color(.init(hex: "#E4D3FF")),
+        emojiButton: .color(.init(hex: "#8A3EFF")),
+        specialKey: "colorfullLavender",
+        showSpaceTitle: false,
+        showPrimaryTitle: false,
+        background: .color(.white),
+        actionCallout: .bright,
+        inputCallout: .bright,
+        preview: .image(UIImage(named: "colorfullLavender.KeyboardPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        name: "colorfullLavender"
+    )
+    
+    static var colorfullHibicus: Theme = .init(
+        id: "01HY2QTHDBZGCNGMHJWCV3HXHE",
+        button: .init(
+            background: .image(UIImage(named: "colorfullHibicus.Normal")?.pngData() ?? Data(), contentMode: .stretch),
+            foregroundColor: .white,
+            font: .custom("Roboto-Medium", size: 18),
+            cornerRadius: 8
+        ),
+        shiftButton: .color(.init(hex: "#2CCDFF")),
+        backspaceButton: .color(.init(hex: "#FF95A6")),
+        keyboardTypeButton: .color(.init(hex: "#2CCDFF")),
+        spaceButton: .color(.init(hex: "#FFC450")),
+        primaryButton: .color(.init(hex: "#FF95A6")),
+        emojiButton: .color(.init(hex: "#2CCDFF")),
+        specialKey: "colorfullHibicus",
+        showSpaceTitle: false,
+        showPrimaryTitle: false,
+        background: .color(.white),
+        actionCallout: .bright,
+        inputCallout: .bright,
+        preview: .image(UIImage(named: "colorfullHibicus.KeyboardPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        name: "colorfullHibicus"
+    )
+    
+    static var colorfullMangosteen: Theme = .init(
+        id: "01HY2R8BQK1WT6KF2ZSSF4NG8G",
+        button: .init(
+            background: .image(UIImage(named: "colorfullMangosteen.Normal")?.pngData() ?? Data(), contentMode: .stretch),
+            foregroundColor: .white,
+            font: .custom("Roboto-Medium", size: 18),
+            cornerRadius: 8
+        ),
+        shiftButton: .color(.init(hex: "#FF00F5")),
+        backspaceButton: .color(.init(hex: "#8A3EFF")),
+        keyboardTypeButton: .color(.init(hex: "#FF00F5")),
+        spaceButton: .color(.init(hex: "#00A3FF")),
+        primaryButton: .color(.init(hex: "#8A3EFF")),
+        emojiButton: .color(.init(hex: "#FF00F5")),
+        specialKey: "colorfullMangosteen",
+        showSpaceTitle: false,
+        showPrimaryTitle: false,
+        background: .color(.init(hex: "#000577")),
+        actionCallout: .bright,
+        inputCallout: .bright,
+        preview: .image(UIImage(named: "colorfullMangosteen.KeyboardPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        name: "colorfullMangosteen"
+    )
+    
+    static var colorfullSky: Theme = .init(
+        id: "01HY2RSA3QE14CD4KF0JRTQ44F",
+        button: .init(
+            background: .image(UIImage(named: "colorfullSky.Normal")?.pngData() ?? Data(), contentMode: .stretch),
+            foregroundColor: .init(hex: "#000AFF"),
+            font: .custom("Roboto-Medium", size: 18),
+            cornerRadius: 8
+        ),
+        shiftButton: .color(.init(hex: "#3B7EFF")),
+        backspaceButton: .color(.init(hex: "#3B7EFF")),
+        keyboardTypeButton: .color(.init(hex: "#66BFFF")),
+        spaceButton: .color(.init(hex: "#FBFBFB")),
+        primaryButton: .color(.init(hex: "#66BFFF")),
+        emojiButton: .color(.init(hex: "#66BFFF")),
+        specialKey: "colorfullSky",
+        showSpaceTitle: false,
+        showPrimaryTitle: false,
+        background: .color(.init(hex: "#000577")),
+        actionCallout: .bright,
+        inputCallout: .bright,
+        preview: .image(UIImage(named: "colorfullSky.KeyboardPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        name: "colorfullSky"
+    )
+    
+    static var colorfullDarkNight: Theme = .init(
+        id: "01HY2SCT68PJNMJRH03849493S",
+        button: .init(
+            background: .image(UIImage(named: "colorfullDarkNight.Normal")?.pngData() ?? Data(), contentMode: .stretch),
+            foregroundColor: .init(hex: "#FFFFFF"),
+            font: .custom("Roboto-Medium", size: 18),
+            cornerRadius: 8
+        ),
+        shiftButton: .color(.init(hex: "#00102F")),
+        backspaceButton: .color(.init(hex: "#00102F")),
+        keyboardTypeButton: .color(.init(hex: "#105DF4")),
+        spaceButton: .color(.init(hex: "#00102F")),
+        primaryButton: .color(.init(hex: "#105DF4")),
+        emojiButton: .color(.init(hex: "#105DF4")),
+        specialKey: "colorfullDarkNight",
+        showSpaceTitle: false,
+        showPrimaryTitle: false,
+        background: .color(.init(hex: "#1C2D4E")),
+        actionCallout: .bright,
+        inputCallout: .bright,
+        preview: .image(UIImage(named: "colorfullDarkNight.KeyboardPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        name: "colorfullDarkNight"
+    )
+    
+    static var colorfullMatcha: Theme = .init(
+        id: "01HY2TFF4RYCF1QN69W1EC3GQY",
+        button: .init(
+            background: .image(UIImage(named: "colorfullMatcha.Normal")?.pngData() ?? Data(), contentMode: .stretch),
+            foregroundColor: .init(hex: "#355E00"),
+            font: .custom("Roboto-Medium", size: 18),
+            cornerRadius: 8
+        ),
+        shiftButton: .color(.init(hex: "#90B46A")),
+        backspaceButton: .color(.init(hex: "#90B46A")),
+        keyboardTypeButton: .color(.init(hex: "#90B46A")),
+        spaceButton: .color(.init(hex: "##DBE2D3")),
+        primaryButton: .color(.init(hex: "#90B46A")),
+        emojiButton: .color(.init(hex: "#90B46A")),
+        specialKey: "colorfullMatcha",
+        showSpaceTitle: false,
+        showPrimaryTitle: false,
+        edgeInsets: .init(top: 3, left: 1, bottom: 3, right: 1),
+        background: .color(.init(hex: "#FFFFFF")),
+        actionCallout: .bright,
+        inputCallout: .bright,
+        preview: .image(UIImage(named: "colorfullMatcha.KeyboardPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        name: "colorfullMatcha"
+    )
+    
+    static var colorfullTulips: Theme = .init(
+        id: "01HY2XXXE129S7MEHJAD31NM0D",
+        button: .init(
+            background: .image(UIImage(named: "colorfullTulips.Normal")?.pngData() ?? Data(), contentMode: .stretch),
+            foregroundColor: .init(hex: "#002ABF"),
+            font: .custom("Roboto-Medium", size: 18),
+            cornerRadius: 8
+        ),
+        shiftButton: .color(.init(hex: "#74DBAF")),
+        backspaceButton: .color(.init(hex: "#74DBAF")),
+        keyboardTypeButton: .color(.init(hex: "#74DBAF")),
+        spaceButton: .color(.init(hex: "#74DBAF")),
+        primaryButton: .color(.init(hex: "#74DBAF")),
+        emojiButton: .color(.init(hex: "#74DBAF")),
+        specialKey: "colorfullTulips",
+        showSpaceTitle: false,
+        showPrimaryTitle: false,
+        background: .color(.init(hex: "#FFFFFF")),
+        actionCallout: .bright,
+        inputCallout: .bright,
+        preview: .image(UIImage(named: "colorfullTulips.KeyboardPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        name: "colorfullTulips"
+    )
+    
+    static var colorfullCentaurea: Theme = .init(
+        id: "01HY2XY4JD0FWQ3TQJ73M56Y96",
+        button: .init(
+            background: .image(UIImage(named: "colorfullCentaurea.Normal")?.pngData() ?? Data(), contentMode: .stretch),
+            foregroundColor: .init(hex: "#FFFFFF"),
+            font: .custom("Roboto-Medium", size: 18),
+            cornerRadius: 8
+        ),
+        shiftButton: .color(.init(hex: "#000AFF")),
+        backspaceButton: .color(.init(hex: "#000AFF")),
+        keyboardTypeButton: .color(.init(hex: "#000AFF")),
+        spaceButton: .color(.init(hex: "#000AFF")),
+        primaryButton: .color(.init(hex: "#000AFF")),
+        emojiButton: .color(.init(hex: "#000AFF")),
+        specialKey: "colorfullCentaurea",
+        showSpaceTitle: false,
+        showPrimaryTitle: false,
+        background: .color(.init(hex: "#2B136D")),
+        actionCallout: .bright,
+        inputCallout: .bright,
+        preview: .image(UIImage(named: "colorfullCentaurea.KeyboardPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        name: "colorfullCentaurea"
+    )
+    
+    static var colorfullIris: Theme = .init(
+        id: "01HY2XY9A7VQP6FB5WJR71EVG5",
+        button: .init(
+            background: .color(.init(hex: "#EFF0FF")),
+            foregroundColor: .init(hex: "#000AFF"),
+            font: .custom("Roboto-Medium", size: 18),
+            cornerRadius: 8
+        ),
+        shiftButton: .color(.init(hex: "#3B7EFF")),
+        backspaceButton: .color(.init(hex: "#3B7EFF")),
+        keyboardTypeButton: .color(.init(hex: "#66BFFF")),
+        spaceButton: .color(.init(hex: "#EFF0FF")),
+        primaryButton: .color(.init(hex: "#66BFFF")),
+        emojiButton: .color(.init(hex: "#66BFFF")),
+        showSpaceTitle: false,
+        showPrimaryTitle: false,
+        background: .color(.init(hex: "#000AFF")),
+        actionCallout: .bright,
+        inputCallout: .bright,
+        preview: .image(UIImage(named: "colorfullIris.KeyboardPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        name: "colorfullIris"
+    )
+    
+    static var colorfullRainbow: Theme = .init(
+        id: "01HY2XY9A7VQP6FB5WJR71EVG5",
+        button: .init(
+            background: .image(UIImage(named: "colorfullRainbow.Normal")?.pngData() ?? Data(), contentMode: .stretch),
+            foregroundColor: .init(hex: "#434689"),
+            font: .custom("Roboto-Medium", size: 18),
+            cornerRadius: 8
+        ),
+        shiftButton: .color(.init(hex: "#5ADACB")),
+        backspaceButton: .color(.init(hex: "#5ADACB")),
+        keyboardTypeButton: .color(.init(hex: "#51B6FF")),
+        spaceButton: .color(.init(hex: "#51B6FF")),
+        primaryButton: .color(.init(hex: "#51B6FF")),
+        emojiButton: .color(.init(hex: "#51B6FF")),
+        specialKey: "colorfullRainbow",
+        showSpaceTitle: false,
+        showPrimaryTitle: false,
+        background: .color(.init(hex: "#FFFFFF")),
+        actionCallout: .bright,
+        inputCallout: .bright,
+        preview: .image(UIImage(named: "colorfullRainbow.KeyboardPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        name: "colorfullRainbow"
+    )
+}
+
+struct Colorfull_Previews: PreviewProvider {
 
     struct Preview: View {
-        
-        var theme: Theme = .colorfullCubes
-        
+
+        var theme: Theme = .colorfullIris
+
         var controller: KeyboardInputViewController = {
             let controller = KeyboardInputViewController.preview
             controller.state.autocompleteContext.suggestions = [
-                //                .init(text: "Foo"),
-                //                .init(text: "Bar", isAutocorrect: true),
-                //                .init(text: "Baz")
+//                .init(text: "Foo"),
+//                .init(text: "Bar", isAutocorrect: true),
+//                .init(text: "Baz")
             ]
-            
-            let theme: Theme = .colorfullCubes
-            
-            controller.services.styleProvider = CustomKeyStyleProvider(buttonStyle: theme.button, actionCallout: theme.actionCallout ?? .bright, inputCallout: theme.inputCallout ?? .bright, keyboardContext: controller.state.keyboardContext)
-            
-            controller.state.keyboardContext.setLocale(.kurdish_sorani_pc)
+
+            let theme: Theme = .colorfullIris
+
+            controller.services.styleProvider = CustomStyleProvider(
+                button: theme.button,
+                shiftButton: theme.shiftButton,
+                backspaceButton: theme.backspaceButton,
+                keyboardTypeButton: theme.keyboardTypeButton,
+                spaceButton: theme.spaceButton,
+                primaryButton: theme.primaryButton,
+                emojiButton: theme.emojiButton,
+                actionCallout: theme.actionCallout,
+                inputCallout: theme.inputCallout,
+                keyboardContext: controller.state.keyboardContext
+            )
+
+            controller.state.keyboardContext.setLocale(.english)
             return controller
         }()
-        
+
         var emojiKeyboard: some View {
             Button {
                 controller.state.keyboardContext.keyboardType = .alphabetic(.lowercased)
@@ -289,7 +566,7 @@ struct ColorfullTheme_Previews: PreviewProvider {
                     .overlay(Text("Not implemented"))
             }
         }
-        
+
         var keyboard: some View {
             SystemKeyboard(
                 state: controller.state,
@@ -304,7 +581,7 @@ struct ColorfullTheme_Previews: PreviewProvider {
                 toolbar: { $0.view }
             )
         }
-        
+
         var body: some View {
             VStack(spacing: 10) {
                 Group {
@@ -315,33 +592,21 @@ struct ColorfullTheme_Previews: PreviewProvider {
                         neonPermission: theme.neonPermission ?? .init(),
                         neonLinearAnimation: theme.neonLinearAnimation ?? .none,
                         animationValueObjects: theme.buttonNeonAnimation,
-                        buttonContent: { param in
-                            switch param.item.action {
-                            case .backspace:
-                                Image(systemName: "trash").foregroundColor(Color.red)
-                            default: param.view
-                            }
-                        },
-                        buttonView: { param in
-                            switch param.item.action {
-                            case .space:
-                                Text("This is a space bar replacement")
-                                    .frame(maxWidth: .infinity)
-                                    .multilineTextAlignment(.center)
-                            default: param.view
-                            }
-                        },
-                        emojiKeyboard: { _ in
-                            emojiKeyboard
-                        },
+                        effect: theme.effect,
+                        specialKey: theme.specialKey,
+                        buttonContent: { $0.view },
+                        buttonView: { $0.view },
+                        emojiKeyboard: { $0.view },
                         toolbar: { $0.view }
                     )
                 }
                 .background(theme.background?.backgroundView)
+
+                theme.preview?.backgroundView
             }
         }
     }
-    
+
     static var previews: some View {
         Preview()
     }

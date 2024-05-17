@@ -185,7 +185,7 @@ public struct Theme: Codable, Equatable, Identifiable {
         self.keyboardTypeButton = keyboardTypeButton
         self.spaceButton = spaceButton
         self.primaryButton = primaryButton
-        self.emojiButton = primaryButton
+        self.emojiButton = emojiButton
         self.specialKey = specialKey
         self.showSpaceTitle = showSpaceTitle
         self.showPrimaryTitle = showPrimaryTitle

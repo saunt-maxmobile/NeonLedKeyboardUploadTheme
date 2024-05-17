@@ -402,7 +402,7 @@ extension Theme {
     )
     
     static var cuteRainbowGarden: Theme = .init(
-        id: "a4e42cc6-b35b-4490-aecf-c6e36d9d8b55",
+        id: "01HY2ZX8CEJY3E69Z01B2YV1TP",
         button: .init(
             background: .image(UIImage(named: "Keyboard.Key.Rainbow.Normal")?.pngData() ?? Data(), contentMode: .stretch),
             foregroundColor: Color(hex: "#FF706C"),
@@ -600,7 +600,7 @@ struct CuteTheme_Previews: PreviewProvider {
 
     struct Preview: View {
         
-        var theme: Theme = .cuteSereniKeys
+        var theme: Theme = .cuteHungryPandas
 
         var controller: KeyboardInputViewController = {
             let controller = KeyboardInputViewController.preview
@@ -610,7 +610,7 @@ struct CuteTheme_Previews: PreviewProvider {
 //                .init(text: "Baz")
             ]
             
-            let theme: Theme = .cuteSereniKeys
+            let theme: Theme = .cuteHungryPandas
             
             controller.services.styleProvider = CustomStyleProvider(
                 button: theme.button,
