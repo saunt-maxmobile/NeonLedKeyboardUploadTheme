@@ -153,14 +153,14 @@ extension Theme {
         button: .init(
             background: .image(UIImage(named: "Keyboard.Key.ShibaInu.Normal")?.pngData() ?? Data(), contentMode: .stretch),
             foregroundColor: Color(hex: "403131"),
-            font: .body
+            font: .custom("RoadRage", size: 15)
         ),
-        shiftButton: .image(UIImage(named: "Keyboard.Key.ShibaInu.Shift"), contentMode: .stretch),
-        backspaceButton: .image(UIImage(named: "Keyboard.Key.ShibaInu.Backspace"), contentMode: .stretch),
-        keyboardTypeButton: .image(UIImage(named: "Keyboard.Key.ShibaInu.KeyboardType"), contentMode: .stretch),
+        shiftButton: .image(UIImage(named: "Keyboard.Key.ShibaInu.Shift"), contentMode: .fit),
+        backspaceButton: .image(UIImage(named: "Keyboard.Key.ShibaInu.Backspace"), contentMode: .fit),
+        keyboardTypeButton: .image(UIImage(named: "Keyboard.Key.ShibaInu.KeyboardType"), contentMode: .fit),
         spaceButton: .image(UIImage(named: "Keyboard.Key.ShibaInu.Space"), contentMode: .fit),
         primaryButton: .image(UIImage(named: "Keyboard.Key.ShibaInu.Primary"), contentMode: .fit),
-        emojiButton: .image(UIImage(named: "Keyboard.Key.ShibaInu.Normal"), contentMode: .stretch),
+        emojiButton: .image(UIImage(named: "Keyboard.Key.ShibaInu.Normal"), contentMode: .fit),
         specialKey: "Keyboard.Key.ShibaInu",
         showSpaceTitle: false,
         showPrimaryTitle: false,
@@ -337,14 +337,10 @@ extension Theme {
         button: .init(
             background: .image(UIImage(named: "Keyboard.Key.Pixal.Normal")?.pngData() ?? Data(), contentMode: .stretch),
             foregroundColor: Color.black,
-            font: .custom("minecraft_font", size: 18)
+            font: .custom("Minecraft", size: 18)
         ),
-        shiftButton: .image(UIImage(named: "Keyboard.Key.Pixal.Shift"), contentMode: .stretch),
-        backspaceButton: .image(UIImage(named: "Keyboard.Key.Pixal.Backspace"), contentMode: .stretch),
-        keyboardTypeButton: .image(UIImage(named: "Keyboard.Key.Pixal.KeyboardType"), contentMode: .stretch),
         spaceButton: .image(UIImage(named: "Keyboard.Key.Pixal.Space"), contentMode: .stretch),
         primaryButton: .image(UIImage(named: "Keyboard.Key.Pixal.Primary"), contentMode: .stretch),
-        emojiButton: .image(UIImage(named: "Keyboard.Key.Pixal.Normal"), contentMode: .stretch),
         specialKey: "Keyboard.Key.Pixal",
         showSpaceTitle: false,
         showPrimaryTitle: false,
@@ -359,8 +355,8 @@ extension Theme {
         id: "dd9c9a73-9f7b-47f1-ad19-ba1eee480e77",
         button: .init(
             background: .image(UIImage(named: "Keyboard.Key.FrogKey.Normal")?.pngData() ?? Data(), contentMode: .stretch),
-            foregroundColor: Color.black,
-            font: .body
+            foregroundColor: Color(hex: "#E97CAB"),
+            font: .custom("AveriaSansLibre-Regular", size: 18)
         ),
         shiftButton: .image(UIImage(named: "Keyboard.Key.FrogKey.Shift"), contentMode: .stretch),
         backspaceButton: .image(UIImage(named: "Keyboard.Key.FrogKey.Backspace"), contentMode: .stretch),
@@ -383,7 +379,7 @@ extension Theme {
         button: .init(
             background: .image(UIImage(named: "Keyboard.Key.Horror.Normal")?.pngData() ?? Data(), contentMode: .stretch),
             foregroundColor: Color.black,
-            font: .body
+            font: .custom("Creepster-Regular", size: 18)
         ),
         shiftButton: .image(UIImage(named: "Keyboard.Key.Horror.Shift"), contentMode: .stretch),
         backspaceButton: .image(UIImage(named: "Keyboard.Key.Horror.Backspace"), contentMode: .stretch),
@@ -397,7 +393,7 @@ extension Theme {
         background: .image(UIImage(named: "Keyboard.Key.Horror.Background")?.jpegData(compressionQuality: 0.1) ?? Data()),
         actionCallout: .bright,
         inputCallout: .bright,
-        preview: .image(UIImage(named: "Keyboard.Key.Horror.KeyboardPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        preview: .image(UIImage(named: "cuteScreamboardPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
         name: "cuteScreamboard"
     )
     
@@ -459,7 +455,7 @@ extension Theme {
         keyboardTypeButton: .image(UIImage(named: "Keyboard.Key.CatGarden.KeyboardType"), contentMode: .stretch),
         spaceButton: .image(UIImage(named: "Keyboard.Key.CatGarden.Space"), contentMode: .stretch),
         primaryButton: .image(UIImage(named: "Keyboard.Key.CatGarden.Primary"), contentMode: .stretch),
-        emojiButton: .image(UIImage(named: "Keyboard.Key.CatGarden.Primary"), contentMode: .fit),
+        emojiButton: .image(UIImage(named: "Keyboard.Key.CatGarden.Emoji"), contentMode: .fit),
         specialKey: "Keyboard.Key.CatGarden",
         showSpaceTitle: false,
         showPrimaryTitle: false,
@@ -497,7 +493,7 @@ extension Theme {
         id: "9dc0cf82-0479-47e0-ad84-9abed89a4647",
         button: .init(
             background: .image(UIImage(named: "Keyboard.Key.Zodiac.Normal")?.pngData() ?? Data(), contentMode: .stretch),
-            foregroundColor: Color.black,
+            foregroundColor: .white,
             font: .custom("EncodeSansSemiExpanded-Medium", size: 18)
         ),
         primaryButton: .image(UIImage(named: "Keyboard.Key.Zodiac.Primary"), contentMode: .fit),
@@ -600,7 +596,7 @@ struct CuteTheme_Previews: PreviewProvider {
 
     struct Preview: View {
         
-        var theme: Theme = .cuteHungryPandas
+        var theme: Theme = .cutePurplePixel
 
         var controller: KeyboardInputViewController = {
             let controller = KeyboardInputViewController.preview
@@ -610,7 +606,7 @@ struct CuteTheme_Previews: PreviewProvider {
 //                .init(text: "Baz")
             ]
             
-            let theme: Theme = .cuteHungryPandas
+            let theme: Theme = .cutePurplePixel
             
             controller.services.styleProvider = CustomStyleProvider(
                 button: theme.button,

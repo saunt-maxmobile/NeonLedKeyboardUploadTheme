@@ -62,6 +62,7 @@
 		834EC9B52B5E6284001517C8 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 834EC9B42B5E6284001517C8 /* FirebaseStorageCombine-Community */; };
 		834EC9B82B5E62A5001517C8 /* Zip in Frameworks */ = {isa = PBXBuildFile; productRef = 834EC9B72B5E62A5001517C8 /* Zip */; };
 		834EC9BA2B5E62E7001517C8 /* AppConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834EC9B92B5E62E7001517C8 /* AppConfiguration.swift */; };
+		8360A6182BF76A1D00A04B16 /* Creepster-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8360A6172BF76A1D00A04B16 /* Creepster-Regular.ttf */; };
 		836B68B12BE5F7FA00F569D6 /* CuteTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836B68B02BE5F7FA00F569D6 /* CuteTheme.swift */; };
 		838550262B58DB39007599A5 /* ThemeObject+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838550242B58DB39007599A5 /* ThemeObject+CoreDataClass.swift */; };
 		838550272B58DB39007599A5 /* ThemeObject+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838550252B58DB39007599A5 /* ThemeObject+CoreDataProperties.swift */; };
@@ -77,6 +78,7 @@
 		8385503D2B58DE0D007599A5 /* AnimatedGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8385503C2B58DE0D007599A5 /* AnimatedGradient.swift */; };
 		8385503F2B58DF90007599A5 /* KeyboardLocale+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8385503E2B58DF90007599A5 /* KeyboardLocale+Extension.swift */; };
 		838550412B58E010007599A5 /* CustomStyleProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838550402B58E010007599A5 /* CustomStyleProvider.swift */; };
+		83A7D6CA2BFAEAE000AB4053 /* Road_Rage.otf in Resources */ = {isa = PBXBuildFile; fileRef = 83A7D6C92BFAEAE000AB4053 /* Road_Rage.otf */; };
 		83A95AAA2B58C610007D3F58 /* NeonLedKeyboardUploadThemeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A95AA92B58C610007D3F58 /* NeonLedKeyboardUploadThemeApp.swift */; };
 		83A95AAC2B58C610007D3F58 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A95AAB2B58C610007D3F58 /* ContentView.swift */; };
 		83A95AAE2B58C611007D3F58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83A95AAD2B58C611007D3F58 /* Assets.xcassets */; };
@@ -337,6 +339,7 @@
 		834EC97A2B5E6191001517C8 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		834EC97C2B5E61CC001517C8 /* FileManager+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileManager+Extension.swift"; sourceTree = "<group>"; };
 		834EC9B92B5E62E7001517C8 /* AppConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfiguration.swift; sourceTree = "<group>"; };
+		8360A6172BF76A1D00A04B16 /* Creepster-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Creepster-Regular.ttf"; sourceTree = "<group>"; };
 		836B68B02BE5F7FA00F569D6 /* CuteTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuteTheme.swift; sourceTree = "<group>"; };
 		838550242B58DB39007599A5 /* ThemeObject+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ThemeObject+CoreDataClass.swift"; sourceTree = "<group>"; };
 		838550252B58DB39007599A5 /* ThemeObject+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ThemeObject+CoreDataProperties.swift"; sourceTree = "<group>"; };
@@ -351,6 +354,7 @@
 		8385503C2B58DE0D007599A5 /* AnimatedGradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedGradient.swift; sourceTree = "<group>"; };
 		8385503E2B58DF90007599A5 /* KeyboardLocale+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KeyboardLocale+Extension.swift"; sourceTree = "<group>"; };
 		838550402B58E010007599A5 /* CustomStyleProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomStyleProvider.swift; sourceTree = "<group>"; };
+		83A7D6C92BFAEAE000AB4053 /* Road_Rage.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Road_Rage.otf; sourceTree = "<group>"; };
 		83A95AA62B58C610007D3F58 /* NeonLedKeyboardUploadTheme.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NeonLedKeyboardUploadTheme.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83A95AA92B58C610007D3F58 /* NeonLedKeyboardUploadThemeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeonLedKeyboardUploadThemeApp.swift; sourceTree = "<group>"; };
 		83A95AAB2B58C610007D3F58 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -703,6 +707,8 @@
 				831A60B42BF1C2F20015F305 /* SansitaSwashed-Regular.ttf */,
 				831A60AA2BF1BA510015F305 /* Schoolbell-Regular.ttf */,
 				831A60C62BF1EF4E0015F305 /* TwinkleStar-Regular.ttf */,
+				8360A6172BF76A1D00A04B16 /* Creepster-Regular.ttf */,
+				83A7D6C92BFAEAE000AB4053 /* Road_Rage.otf */,
 			);
 			path = Font;
 			sourceTree = "<group>";
@@ -1515,6 +1521,7 @@
 				831A60D32BF219180015F305 /* Poppins-Medium.ttf in Resources */,
 				83A95DFF2B58CC2A007D3F58 /* PreviewImages.xcassets in Resources */,
 				831A60CB2BF1F1C20015F305 /* ElsieSwashCaps-Regular.ttf in Resources */,
+				83A7D6CA2BFAEAE000AB4053 /* Road_Rage.otf in Resources */,
 				831A60C92BF1F0DB0015F305 /* Gaegu-Regular.ttf in Resources */,
 				83A95DFD2B58CC2A007D3F58 /* Localizable.strings in Resources */,
 				831A60AD2BF1BB280015F305 /* IndieFlower-Regular.ttf in Resources */,
@@ -1532,6 +1539,7 @@
 				83A95E012B58CC2A007D3F58 /* Emojis.md in Resources */,
 				831A60B72BF1C45D0015F305 /* Mali-Regular.ttf in Resources */,
 				831A60AB2BF1BA510015F305 /* Schoolbell-Regular.ttf in Resources */,
+				8360A6182BF76A1D00A04B16 /* Creepster-Regular.ttf in Resources */,
 				831A60CD2BF205DE0015F305 /* Roboto-Medium.ttf in Resources */,
 				831A60D52BF21ABC0015F305 /* Inter-Medium.ttf in Resources */,
 			);
