@@ -501,7 +501,7 @@ extension Theme {
     )
     
     static var colorfullRainbow: Theme = .init(
-        id: "01HY2XY9A7VQP6FB5WJR71EVG5",
+        id: "01HYFJD9488EBWVAYJ5E7KZD2V",
         button: .init(
             background: .image(UIImage(named: "colorfullRainbow.Normal")?.pngData() ?? Data(), contentMode: .stretch),
             foregroundColor: .init(hex: "#434689"),

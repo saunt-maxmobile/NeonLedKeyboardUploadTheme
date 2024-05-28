@@ -128,7 +128,7 @@ extension Theme {
     static var cuteLazyRabbit: Theme = .init(
         id: "9635be73-17e0-4072-a6f3-eebaaa3c567f",
         button: .init(
-            background: .image(UIImage(named: "Keyboard.Key.Parrot.Normal")?.pngData() ?? Data(), contentMode: .stretch),
+            background: .image(UIImage(named: "Keyboard.Key.Rabbit2.Normal")?.pngData() ?? Data(), contentMode: .stretch),
             foregroundColor: Color.black,
             font: .custom("ArchitectsDaughter-Regular", size: 18)
         ),
@@ -136,8 +136,8 @@ extension Theme {
         backspaceButton: .image(UIImage(named: "Keyboard.Key.Rabbit2.Backspace"), contentMode: .stretch),
         keyboardTypeButton: .image(UIImage(named: "Keyboard.Key.Rabbit2.KeyboardType"), contentMode: .stretch),
         spaceButton: .image(UIImage(named: "Keyboard.Key.Rabbit2.Space"), contentMode: .stretch),
-        primaryButton: .image(UIImage(named: "Keyboard.Key.Rabbit2.Primary"), contentMode: .fit),
-        emojiButton: .image(UIImage(named: "Keyboard.Key.Rabbit2.Emoji"), contentMode: .stretch),
+        primaryButton: .image(UIImage(named: "Keyboard.Key.Rabbit2.Primary"), contentMode: .stretch),
+        emojiButton: .image(UIImage(named: "Keyboard.Key.Rabbit2.Emoji"), contentMode: .fit),
         specialKey: "Keyboard.Key.Rabbit2",
         showSpaceTitle: false,
         showPrimaryTitle: false,
@@ -228,7 +228,7 @@ extension Theme {
         backspaceButton: .image(UIImage(named: "Keyboard.Key.PinkStar.Func"), contentMode: .stretch),
         keyboardTypeButton: .image(UIImage(named: "Keyboard.Key.PinkStar.Func"), contentMode: .stretch),
         spaceButton: .image(UIImage(named: "Keyboard.Key.PinkStar.Space"), contentMode: .stretch),
-        primaryButton: .image(UIImage(named: "Keyboard.Key.PinkStar.Primary"), contentMode: .fit),
+        primaryButton: .image(UIImage(named: "Keyboard.Key.PinkStar.Primary"), contentMode: .stretch),
         emojiButton: .image(UIImage(named: "Keyboard.Key.PinkStar.Emoji"), contentMode: .stretch),
         specialKey: "Keyboard.Key.PinkStar",
         showSpaceTitle: false,
@@ -317,11 +317,11 @@ extension Theme {
             font: .body
         ),
         shiftButton: .image(UIImage(named: "Keyboard.Key.Cat.Shift"), contentMode: .stretch),
-        backspaceButton: .image(UIImage(named: "Keyboard.Key.Cat.Backspace"), contentMode: .stretch),
-        keyboardTypeButton: .image(UIImage(named: "Keyboard.Key.Cat.KeyboardType"), contentMode: .stretch),
+        backspaceButton: .image(UIImage(named: "Keyboard.Key.Cat.Backspace"), contentMode: .fit),
+        keyboardTypeButton: .image(UIImage(named: "Keyboard.Key.Cat.KeyboardType"), contentMode: .fit),
         spaceButton: .image(UIImage(named: "Keyboard.Key.Cat.Space"), contentMode: .fit),
         primaryButton: .image(UIImage(named: "Keyboard.Key.Cat.Primary"), contentMode: .fit),
-        emojiButton: .image(UIImage(named: "Keyboard.Key.Cat.Emoji"), contentMode: .stretch),
+        emojiButton: .image(UIImage(named: "Keyboard.Key.Cat.Emoji"), contentMode: .fit),
         specialKey: "Keyboard.Key.Cat",
         showSpaceTitle: false,
         showPrimaryTitle: false,
@@ -337,10 +337,10 @@ extension Theme {
         button: .init(
             background: .image(UIImage(named: "Keyboard.Key.Pixal.Normal")?.pngData() ?? Data(), contentMode: .stretch),
             foregroundColor: Color.black,
-            font: .custom("Minecraft", size: 18)
+            font: .custom("Minecraft", size: 12)
         ),
         spaceButton: .image(UIImage(named: "Keyboard.Key.Pixal.Space"), contentMode: .stretch),
-        primaryButton: .image(UIImage(named: "Keyboard.Key.Pixal.Primary"), contentMode: .stretch),
+        primaryButton: .image(UIImage(named: "Keyboard.Key.Pixal.Primary"), contentMode: .fit),
         specialKey: "Keyboard.Key.Pixal",
         showSpaceTitle: false,
         showPrimaryTitle: false,
@@ -360,10 +360,10 @@ extension Theme {
         ),
         shiftButton: .image(UIImage(named: "Keyboard.Key.FrogKey.Shift"), contentMode: .stretch),
         backspaceButton: .image(UIImage(named: "Keyboard.Key.FrogKey.Backspace"), contentMode: .stretch),
-        keyboardTypeButton: .image(UIImage(named: "Keyboard.Key.FrogKey.KeyboardType"), contentMode: .stretch),
-        spaceButton: .image(UIImage(named: "Keyboard.Key.FrogKey.Space"), contentMode: .stretch),
-        primaryButton: .image(UIImage(named: "Keyboard.Key.FrogKey.Primary"), contentMode: .stretch),
-        emojiButton: .image(UIImage(named: "Keyboard.Key.FrogKey.Emoji"), contentMode: .stretch),
+        keyboardTypeButton: .image(UIImage(named: "Keyboard.Key.FrogKey.KeyboardType"), contentMode: .fit),
+        spaceButton: .image(UIImage(named: "Keyboard.Key.FrogKey.Space"), contentMode: .fit),
+        primaryButton: .image(UIImage(named: "Keyboard.Key.FrogKey.Primary"), contentMode: .fit),
+        emojiButton: .image(UIImage(named: "Keyboard.Key.FrogKey.Emoji"), contentMode: .fit),
         specialKey: "Keyboard.Key.FrogKey",
         showSpaceTitle: false,
         showPrimaryTitle: false,
@@ -383,10 +383,10 @@ extension Theme {
         ),
         shiftButton: .image(UIImage(named: "Keyboard.Key.Horror.Shift"), contentMode: .stretch),
         backspaceButton: .image(UIImage(named: "Keyboard.Key.Horror.Backspace"), contentMode: .stretch),
-        keyboardTypeButton: .image(UIImage(named: "Keyboard.Key.Horror.KeyboardType"), contentMode: .stretch),
+        keyboardTypeButton: .image(UIImage(named: "Keyboard.Key.Horror.KeyboardType"), contentMode: .fit),
         spaceButton: .image(UIImage(named: "Keyboard.Key.Horror.Space"), contentMode: .stretch),
-        primaryButton: .image(UIImage(named: "Keyboard.Key.Horror.Primary"), contentMode: .stretch),
-        emojiButton: .image(UIImage(named: "Keyboard.Key.Horror.Emoji"), contentMode: .stretch),
+        primaryButton: .image(UIImage(named: "Keyboard.Key.Horror.Primary"), contentMode: .fit),
+        emojiButton: .image(UIImage(named: "Keyboard.Key.Horror.Emoji"), contentMode: .fit),
         specialKey: "Keyboard.Key.Horror",
         showSpaceTitle: false,
         showPrimaryTitle: false,
@@ -406,7 +406,7 @@ extension Theme {
         ),
         shiftButton: .image(UIImage(named: "Keyboard.Key.Rainbow.Shift"), contentMode: .stretch),
         backspaceButton: .image(UIImage(named: "Keyboard.Key.Rainbow.Backspace"), contentMode: .stretch),
-        keyboardTypeButton: .image(UIImage(named: "Keyboard.Key.Rainbow.KeyboardType"), contentMode: .stretch),
+        keyboardTypeButton: .image(UIImage(named: "Keyboard.Key.Rainbow.KeyboardType"), contentMode: .fit),
         spaceButton: .image(UIImage(named: "Keyboard.Key.Rainbow.Space"), contentMode: .stretch),
         primaryButton: .image(UIImage(named: "Keyboard.Key.Rainbow.Primary"), contentMode: .fit),
         emojiButton: .image(UIImage(named: "Keyboard.Key.Rainbow.Emoji"), contentMode: .stretch),
@@ -429,7 +429,7 @@ extension Theme {
         ),
         shiftButton: .image(UIImage(named: "Keyboard.Key.Panda.Shift"), contentMode: .stretch),
         backspaceButton: .image(UIImage(named: "Keyboard.Key.Panda.Backspace"), contentMode: .stretch),
-        keyboardTypeButton: .image(UIImage(named: "Keyboard.Key.Panda.KeyboardType"), contentMode: .stretch),
+        keyboardTypeButton: .image(UIImage(named: "Keyboard.Key.Panda.KeyboardType"), contentMode: .fit),
         spaceButton: .image(UIImage(named: "Keyboard.Key.Panda.Space"), contentMode: .stretch),
         primaryButton: .image(UIImage(named: "Keyboard.Key.Panda.Primary"), contentMode: .fit),
         emojiButton: .image(UIImage(named: "Keyboard.Key.Panda.Normal"), contentMode: .stretch),
@@ -454,7 +454,7 @@ extension Theme {
         backspaceButton: .image(UIImage(named: "Keyboard.Key.CatGarden.Backspace"), contentMode: .stretch),
         keyboardTypeButton: .image(UIImage(named: "Keyboard.Key.CatGarden.KeyboardType"), contentMode: .stretch),
         spaceButton: .image(UIImage(named: "Keyboard.Key.CatGarden.Space"), contentMode: .stretch),
-        primaryButton: .image(UIImage(named: "Keyboard.Key.CatGarden.Primary"), contentMode: .stretch),
+        primaryButton: .image(UIImage(named: "Keyboard.Key.CatGarden.Primary"), contentMode: .fit),
         emojiButton: .image(UIImage(named: "Keyboard.Key.CatGarden.Emoji"), contentMode: .fit),
         specialKey: "Keyboard.Key.CatGarden",
         showSpaceTitle: false,
@@ -473,12 +473,12 @@ extension Theme {
             foregroundColor: Color(hex: "#6E3C32"),
             font: .custom("BalsamiqSans-Regular", size: 18)
         ),
-        shiftButton: .image(UIImage(named: "Keyboard.Key.RabbitCute.Shift"), contentMode: .stretch),
-        backspaceButton: .image(UIImage(named: "Keyboard.Key.RabbitCute.Backspace"), contentMode: .stretch),
+        shiftButton: .image(UIImage(named: "Keyboard.Key.RabbitCute.Shift"), contentMode: .fit),
+        backspaceButton: .image(UIImage(named: "Keyboard.Key.RabbitCute.Backspace"), contentMode: .fit),
         keyboardTypeButton: .image(UIImage(named: "Keyboard.Key.RabbitCute.KeyboardType"), contentMode: .stretch),
         spaceButton: .image(UIImage(named: "Keyboard.Key.RabbitCute.Space"), contentMode: .stretch),
-        primaryButton: .image(UIImage(named: "Keyboard.Key.RabbitCute.Primary"), contentMode: .stretch),
-        emojiButton: .image(UIImage(named: "Keyboard.Key.RabbitCute.Emoji"), contentMode: .stretch),
+        primaryButton: .image(UIImage(named: "Keyboard.Key.RabbitCute.Primary"), contentMode: .fit),
+        emojiButton: .image(UIImage(named: "Keyboard.Key.RabbitCute.Emoji"), contentMode: .fit),
         specialKey: "Keyboard.Key.RabbitCute",
         showSpaceTitle: false,
         showPrimaryTitle: false,
@@ -496,6 +496,7 @@ extension Theme {
             foregroundColor: .white,
             font: .custom("EncodeSansSemiExpanded-Medium", size: 18)
         ),
+        spaceButton: .image(UIImage(named: "Keyboard.Key.Zodiac.Space"), contentMode: .stretch),
         primaryButton: .image(UIImage(named: "Keyboard.Key.Zodiac.Primary"), contentMode: .fit),
         specialKey: "Keyboard.Key.Zodiac",
         showSpaceTitle: false,
@@ -514,6 +515,7 @@ extension Theme {
             foregroundColor: Color.white,
             font: .custom("EncodeSansSemiExpanded-Medium", size: 18)
         ),
+        spaceButton: .image(UIImage(named: "Keyboard.Key.NeonChill.Space"), contentMode: .stretch),
         primaryButton: .image(UIImage(named: "Keyboard.Key.NeonChill.Primary"), contentMode: .fit),
         specialKey: "Keyboard.Key.NeonChill",
         showSpaceTitle: false,
@@ -526,7 +528,7 @@ extension Theme {
     )
     
     static var cuteBearRabbit: Theme = .init(
-        id: "5890bfbc-9205-4113-bea1-004054f7fde7",
+        id: "01HYFJBKR6TH8XQJZN2235WHQE",
         button: .init(
             background: .image(UIImage(named: "Keyboard.Key.Beer&Rabbit.Normal")?.pngData() ?? Data(), contentMode: .stretch),
             foregroundColor: Color(hex: "#D5796C"),
@@ -548,7 +550,7 @@ extension Theme {
     )
     
     static var cuteCapypara: Theme = .init(
-        id: "5890bfbc-9205-4113-bea1-004054f7fde7",
+        id: "01HYFJBY4PEJ0SEEC67X6J2W4F",
         button: .init(
             background: .image(UIImage(named: "Keyboard.Key.Capypara.Normal")?.pngData() ?? Data(), contentMode: .stretch),
             foregroundColor: Color(hex: "#AD691D"),
@@ -570,7 +572,7 @@ extension Theme {
     )
     
     static var cuteCoolCat: Theme = .init(
-        id: "5890bfbc-9205-4113-bea1-004054f7fde7",
+        id: "01HYFJC4XNT6MXHRSHDSYEWX3J",
         button: .init(
             background: .image(UIImage(named: "Keyboard.Key.CatBlack&White.Normal")?.pngData() ?? Data(), contentMode: .stretch),
             foregroundColor: Color(hex: "#E2E238"),
@@ -580,7 +582,7 @@ extension Theme {
         backspaceButton: .image(UIImage(named: "Keyboard.Key.CatBlack&White.Backspace"), contentMode: .stretch),
         keyboardTypeButton: .image(UIImage(named: "Keyboard.Key.CatBlack&White.KeyboardType"), contentMode: .stretch),
         spaceButton: .image(UIImage(named: "Keyboard.Key.CatBlack&White.Space"), contentMode: .stretch),
-        primaryButton: .image(UIImage(named: "Keyboard.Key.CatBlack&White.Primary"), contentMode: .stretch),
+        primaryButton: .image(UIImage(named: "Keyboard.Key.CatBlack&White.Primary"), contentMode: .fit),
         specialKey: "Keyboard.Key.CatBlack&White",
         showSpaceTitle: false,
         showPrimaryTitle: false,
@@ -596,7 +598,7 @@ struct CuteTheme_Previews: PreviewProvider {
 
     struct Preview: View {
         
-        var theme: Theme = .cuteCoolCat
+        var theme: Theme = .cuteLazyRabbit
 
         var controller: KeyboardInputViewController = {
             let controller = KeyboardInputViewController.preview
@@ -606,7 +608,7 @@ struct CuteTheme_Previews: PreviewProvider {
 //                .init(text: "Baz")
             ]
             
-            let theme: Theme = .cuteCoolCat
+            let theme: Theme = .cuteLazyRabbit
             
             controller.services.styleProvider = CustomStyleProvider(
                 button: theme.button,
