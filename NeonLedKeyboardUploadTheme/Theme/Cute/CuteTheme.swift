@@ -459,10 +459,10 @@ extension Theme {
         specialKey: "Keyboard.Key.CatGarden",
         showSpaceTitle: false,
         showPrimaryTitle: false,
-        background: .image(UIImage(named: "Keyboard.Key.CatGarden.Background")?.jpegData(compressionQuality: 1) ?? Data()),
+        background: .image(UIImage(named: "Keyboard.Key.CatGarden.Background")?.jpegData(compressionQuality: 0.5) ?? Data()),
         actionCallout: .bright,
         inputCallout: .bright,
-        preview: .image(UIImage(named: "cuteKittyHavenPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
+        preview: .image(UIImage(named: "cuteKittyHavenPreview")?.jpegData(compressionQuality: 0.5) ?? Data(), contentMode: .fit),
         name: "cuteKittyHaven"
     )
     
