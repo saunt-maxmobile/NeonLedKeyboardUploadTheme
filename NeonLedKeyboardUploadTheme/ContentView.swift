@@ -30,6 +30,14 @@ struct ContentView: View {
                 .stroke(Color.black, lineWidth: 5)
                 .frame(width: 300, height: 100)
                 .rainbowAnimation(height: 110, duration: 3, neonLinearAnimation: .RTL([.yellow, .blue, .red, .yellow], 2))
+            
+            Button {
+                print(ThemeHandler.shared.jpegCount)
+                print(ThemeHandler.shared.zipCount)
+            } label: {
+                Text("Show")
+            }
+
         }
         .padding()
     }

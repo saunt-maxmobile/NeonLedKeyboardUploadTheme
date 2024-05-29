@@ -20,7 +20,7 @@ extension Theme {
         ),
         background: .init(backgroundGradient: [Color(hex: "FFDA50"), Color(hex: "FF46DA")]),
         
-        preview: .image(UIImage(named: "gradientPinkPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        preview: .image(UIImage(named: "gradientPinkPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "gradientPink"
     )
     
@@ -34,7 +34,7 @@ extension Theme {
         ),
         background: .init(backgroundGradient: [Color(red: 0.95, green: 0.95, blue: 0.28), Color(red: 0.19, green: 0.71, blue: 0.42)]),
         
-        preview: .image(UIImage(named: "gradientGrassPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        preview: .image(UIImage(named: "gradientGrassPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "gradientGrass"
     )
     
@@ -48,7 +48,7 @@ extension Theme {
         ),
         background: .init(backgroundGradient: [Color(red: 1, green: 0.84, blue: 0.27), Color(red: 1, green: 0.6, blue: 0.3)]),
         
-        preview: .image(UIImage(named: "gradientSunnyPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        preview: .image(UIImage(named: "gradientSunnyPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "gradientSunny"
     )
     
@@ -62,7 +62,7 @@ extension Theme {
         ),
         background: .init(backgroundGradient: [Color(red: 0.96, green: 0.17, blue: 0.52), Color(red: 0.54, green: 0.24, blue: 1)]),
         
-        preview: .image(UIImage(named: "gradientPurplePreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        preview: .image(UIImage(named: "gradientPurplePreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "gradientPurple"
     )
     
@@ -79,7 +79,7 @@ extension Theme {
             Color(red: 0.31, green: 0.68, blue: 1)
         ]),
         
-        preview: .image(UIImage(named: "gradientSkyPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        preview: .image(UIImage(named: "gradientSkyPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "gradientSky"
     )
     
@@ -96,7 +96,7 @@ extension Theme {
             Color(red: 0.54, green: 0.07, blue: 1)
         ]),
         
-        preview: .image(UIImage(named: "gradientSeaPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        preview: .image(UIImage(named: "gradientSeaPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "gradientSea"
     )
     
@@ -113,7 +113,7 @@ extension Theme {
             Color(red: 0.5, green: 1, blue: 0.01)
         ]),
         
-        preview: .image(UIImage(named: "gradientGreenPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        preview: .image(UIImage(named: "gradientGreenPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "gradientGreen"
     )
 }

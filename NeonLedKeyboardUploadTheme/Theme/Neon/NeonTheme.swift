@@ -18,7 +18,7 @@ extension Theme {
             cornerRadius: 8,
             border: .init(color: .white, size: 1)
         ),
-        background: .image(UIImage(named: "neonCyber")?.jpegData(compressionQuality: 0.1) ?? Data()),
+        background: .image(UIImage(named: "neonCyber")?.jpegData(compressionQuality: 1) ?? Data()),
         buttonNeonAnimation: [
             .init(colors: ["#00FFFF", "#FF00F5", "#00FFFF", "#FF00F5"], .right, .conic),
             .init(colors: ["#00FFFF", "#FF00F5", "#00FFFF", "#FF00F5"], .down, .conic),
@@ -26,7 +26,7 @@ extension Theme {
             .init(colors: ["#00FFFF", "#FF00F5", "#00FFFF", "#FF00F5"], .up, .conic),
         ],
         durationAnimation: 2,
-        preview: .image(UIImage(named: "neonCyberPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        preview: .image(UIImage(named: "neonCyberPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "neonCyber"
     )
     
@@ -39,7 +39,7 @@ extension Theme {
             cornerRadius: 8,
             border: .init(color: .white, size: 1)
         ),
-        background: .image(UIImage(named: "neonWaves")?.jpegData(compressionQuality: 0.1) ?? Data()),
+        background: .image(UIImage(named: "neonWaves")?.jpegData(compressionQuality: 1) ?? Data()),
         buttonNeonAnimation: [
             .init(colors: ["#00FFFF", "#01FFE1", "#BD00FF", "#01FFE1", "33FF00", "FEF635", "EB6300"], .right, .conic),
             .init(colors: ["#00FFFF", "#01FFE1", "#BD00FF", "#01FFE1", "33FF00", "FEF635", "EB6300"], .down, .conic),
@@ -47,7 +47,7 @@ extension Theme {
             .init(colors: ["#00FFFF", "#01FFE1", "#BD00FF", "#01FFE1", "33FF00", "FEF635", "EB6300"], .up, .conic),
         ],
         durationAnimation: 1,
-        preview: .image(UIImage(named: "neonWavesPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        preview: .image(UIImage(named: "neonWavesPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "neonWaves"
     )
     
@@ -60,7 +60,7 @@ extension Theme {
             cornerRadius: 8,
             border: .init(color: .white, size: 1)
         ),
-        background: .image(UIImage(named: "neonCyberRoll")?.jpegData(compressionQuality: 0.1) ?? Data()),
+        background: .image(UIImage(named: "neonCyberRoll")?.jpegData(compressionQuality: 1) ?? Data()),
         buttonNeonAnimation: [
             .init(colors: ["#FFFFFF", "#35DAFE", "#FF00D6"], .right, .conic),
             .init(colors: ["#FFFFFF", "#35DAFE", "#FF00D6"], .down, .conic),
@@ -68,7 +68,7 @@ extension Theme {
             .init(colors: ["#FFFFFF", "#35DAFE", "#FF00D6"], .up, .conic),
         ],
         durationAnimation: 1,
-        preview: .image(UIImage(named: "neonCyberRollPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        preview: .image(UIImage(named: "neonCyberRollPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "neonCyberRoll"
     )
     
@@ -81,7 +81,7 @@ extension Theme {
             cornerRadius: 8,
             border: .init(color: .white, size: 1)
         ),
-        background: .image(UIImage(named: "neonColourPower")?.jpegData(compressionQuality: 0.1) ?? Data()),
+        background: .image(UIImage(named: "neonColourPower")?.jpegData(compressionQuality: 1) ?? Data()),
         durationAnimation: 3,
         neonLinearAnimation: .LTR([
             Color(hex: "00FFFF"),
@@ -90,7 +90,7 @@ extension Theme {
             Color(hex: "#FF00D6"),
             Color(hex: "00FFFF"),
         ], 3),
-        preview: .image(UIImage(named: "neonColourPowerPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        preview: .image(UIImage(named: "neonColourPowerPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "neonColourPower"
     )
     
@@ -103,14 +103,14 @@ extension Theme {
             cornerRadius: 8,
             border: .init(color: .white, size: 1)
         ),
-        background: .image(UIImage(named: "neonWater")?.jpegData(compressionQuality: 0.1) ?? Data()),
+        background: .image(UIImage(named: "neonWater")?.jpegData(compressionQuality: 1) ?? Data()),
         durationAnimation: 3,
         neonLinearAnimation: .LTR(
             [Color(red: 0, green: 0.76, blue: 1),
              .white,
              Color(red: 0, green: 0.76, blue: 1)
             ], 3),
-        preview: .image(UIImage(named: "neonWaterPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        preview: .image(UIImage(named: "neonWaterPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "neonWater"
     )
     
@@ -123,7 +123,7 @@ extension Theme {
             cornerRadius: 8,
             border: .init(color: .white, size: 1)
         ),
-        background: .image(UIImage(named: "neonPoly")?.jpegData(compressionQuality: 0.1) ?? Data()),
+        background: .image(UIImage(named: "neonPoly")?.jpegData(compressionQuality: 1) ?? Data()),
         durationAnimation: 3,
         neonLinearAnimation: .LTR([
             Color(hex: "FF00B8"),
@@ -132,7 +132,7 @@ extension Theme {
             Color(hex: "00FFFF"),
             Color(hex: "FF00B8"),
         ], 3),
-        preview: .image(UIImage(named: "neonPolyPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        preview: .image(UIImage(named: "neonPolyPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "neonPoly"
     )
     
@@ -145,7 +145,7 @@ extension Theme {
             cornerRadius: 8,
             border: .init(color: .white, size: 1)
         ),
-        background: .image(UIImage(named: "neonOcean")?.jpegData(compressionQuality: 0.1) ?? Data()),
+        background: .image(UIImage(named: "neonOcean")?.jpegData(compressionQuality: 1) ?? Data()),
         durationAnimation: 3,
         neonLinearAnimation: .LTR([
             Color(hex: "FF00F5"),
@@ -153,7 +153,7 @@ extension Theme {
             Color(hex: "8A3EFF"),
             Color(hex: "FF00F5"),
         ], 3),
-        preview: .image(UIImage(named: "neonOceanPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        preview: .image(UIImage(named: "neonOceanPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "neonOcean"
     )
 }
@@ -168,14 +168,14 @@ extension Theme {
             cornerRadius: 8,
             border: .init(color: Color(hex: "#FF00F5"), size: 2)
         ),
-        background: .image(UIImage(named: "neonDarkLeaf")?.jpegData(compressionQuality: 0.1) ?? Data()),
+        background: .image(UIImage(named: "neonDarkLeaf")?.jpegData(compressionQuality: 1) ?? Data()),
         durationAnimation: 1,
         neonLinearAnimation: .radial(
             [Color(red: 0, green: 1, blue: 1),
              Color(red: 0, green: 0.04, blue: 1),
              .clear
             ]),
-        preview: .image(UIImage(named: "neonDarkLeafPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        preview: .image(UIImage(named: "neonDarkLeafPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "neonDarkLeaf"
     )
     
@@ -188,9 +188,9 @@ extension Theme {
             cornerRadius: 8,
             border: .init(color: Color(hex: "#7636FF"), size: 2)
         ),
-        background: .image(UIImage(named: "neonMysticJungle")?.jpegData(compressionQuality: 0.1) ?? Data()),
+        background: .image(UIImage(named: "neonMysticJungle")?.jpegData(compressionQuality: 1) ?? Data()),
         durationAnimation: 2,
-        preview: .image(UIImage(named: "neonMysticJunglePreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        preview: .image(UIImage(named: "neonMysticJunglePreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "neonMysticJungle"
     )
     
@@ -203,7 +203,7 @@ extension Theme {
             cornerRadius: 8,
             border: .init(color: Color(hex: "#7636FF"), size: 2)
         ),
-        background: .image(UIImage(named: "neonRoofNeon")?.jpegData(compressionQuality: 0.1) ?? Data()),
+        background: .image(UIImage(named: "neonRoofNeon")?.jpegData(compressionQuality: 1) ?? Data()),
         durationAnimation: 3,
         neonLinearAnimation: .radial(
             [Color(hex: "FFFFFF"),
@@ -211,7 +211,7 @@ extension Theme {
              Color(hex: "FF00D6"),
              Color(hex: "FEF635"),
             ]),
-        preview: .image(UIImage(named: "neonRoofNeonPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        preview: .image(UIImage(named: "neonRoofNeonPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "neonRoofNeon"
     )
     
@@ -224,8 +224,8 @@ extension Theme {
             cornerRadius: 8,
             border: .init(color: Color(hex: "#00FFFF"), size: 2)
         ),
-        background: .image(UIImage(named: "neonSummitNeon")?.jpegData(compressionQuality: 0.1) ?? Data()),
-        preview: .image(UIImage(named: "neonSummitNeonPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        background: .image(UIImage(named: "neonSummitNeon")?.jpegData(compressionQuality: 1) ?? Data()),
+        preview: .image(UIImage(named: "neonSummitNeonPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "neonSummitNeon"
     )
     
@@ -238,8 +238,8 @@ extension Theme {
             cornerRadius: 8,
             border: .init(color: Color(hex: "#000AFF"), size: 2)
         ),
-        background: .image(UIImage(named: "neonGlass")?.jpegData(compressionQuality: 0.1) ?? Data()),
-        preview: .image(UIImage(named: "neonGlassPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        background: .image(UIImage(named: "neonGlass")?.jpegData(compressionQuality: 1) ?? Data()),
+        preview: .image(UIImage(named: "neonGlassPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "neonGlass"
     )
     
@@ -252,7 +252,7 @@ extension Theme {
             cornerRadius: 8,
             border: .init(color: Color.white, size: 1)
         ),
-        background: .image(UIImage(named: "neonLed")?.jpegData(compressionQuality: 0.1) ?? Data()),
+        background: .image(UIImage(named: "neonLed")?.jpegData(compressionQuality: 1) ?? Data()),
         actionCallout: .neon,
         inputCallout: .neon,
         durationAnimation: 3,
@@ -263,7 +263,7 @@ extension Theme {
              Color(red: 0.5, green: 1, blue: 0.01),
              Color(red: 0, green: 1, blue: 1),
             ], 5),
-        preview: .image(UIImage(named: "neonLedPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        preview: .image(UIImage(named: "neonLedPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "neonLed"
     )
     
@@ -276,7 +276,7 @@ extension Theme {
             cornerRadius: 8,
             border: .init(color: Color.white, size: 1)
         ),
-        background: .image(UIImage(named: "neonLine")?.jpegData(compressionQuality: 0.1) ?? Data()),
+        background: .image(UIImage(named: "neonLine")?.jpegData(compressionQuality: 1) ?? Data()),
         actionCallout: .neon,
         inputCallout: .neon,
         durationAnimation: 3,
@@ -285,7 +285,7 @@ extension Theme {
              Color(red: 1, green: 0, blue: 0.96),
              .clear
             ]),
-        preview: .image(UIImage(named: "neonLinePreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        preview: .image(UIImage(named: "neonLinePreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "neonLine"
     )
     
@@ -298,10 +298,10 @@ extension Theme {
             cornerRadius: 8,
             border: .init(color: Color.white, size: 2)
         ),
-        background: .image(UIImage(named: "neonVortexGalaxy")?.jpegData(compressionQuality: 0.1) ?? Data()),
+        background: .image(UIImage(named: "neonVortexGalaxy")?.jpegData(compressionQuality: 1) ?? Data()),
         actionCallout: .bright,
         inputCallout: .bright,
-        preview: .image(UIImage(named: "neonVortexGalaxyPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        preview: .image(UIImage(named: "neonVortexGalaxyPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "neonVortexGalaxy"
     )
     
@@ -314,7 +314,7 @@ extension Theme {
             cornerRadius: 25,
             border: .init(color: Color.clear, size: 0)
         ),
-        background: .image(UIImage(named: "neonSpread")?.jpegData(compressionQuality: 0.1) ?? Data()),
+        background: .image(UIImage(named: "neonSpread")?.jpegData(compressionQuality: 1) ?? Data()),
         actionCallout: .neon,
         inputCallout: .neon,
         
@@ -327,7 +327,7 @@ extension Theme {
              Color(red: 0.5, green: 0, blue: 1),
              .clear
             ]),
-        preview: .image(UIImage(named: "neonSpreadPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        preview: .image(UIImage(named: "neonSpreadPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "neonSpread"
     )
     
@@ -340,7 +340,7 @@ extension Theme {
             cornerRadius: 8,
             border: .init(color: Color.clear, size: 0)
         ),
-        background: .image(UIImage(named: "neonFutiristicNight")?.jpegData(compressionQuality: 0.1) ?? Data()),
+        background: .image(UIImage(named: "neonFutiristicNight")?.jpegData(compressionQuality: 1) ?? Data()),
         actionCallout: .neon,
         inputCallout: .neon,
         durationAnimation: 3,
@@ -352,7 +352,7 @@ extension Theme {
              .white,
              .clear
             ]),
-        preview: .image(UIImage(named: "neonFutiristicNightPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        preview: .image(UIImage(named: "neonFutiristicNightPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "neonFutiristicNight"
     )
     
@@ -365,7 +365,7 @@ extension Theme {
             cornerRadius: 8,
             border: .init(color: Color.clear, size: 0)
         ),
-        background: .image(UIImage(named: "neonFantasyNight")?.jpegData(compressionQuality: 0.1) ?? Data()),
+        background: .image(UIImage(named: "neonFantasyNight")?.jpegData(compressionQuality: 1) ?? Data()),
         actionCallout: .neon,
         inputCallout: .neon,
         durationAnimation: 1,
@@ -376,7 +376,7 @@ extension Theme {
              Color(red: 0, green: 0.02, blue: 0.59),
              .clear
             ]),
-        preview: .image(UIImage(named: "neonFantasyNightPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        preview: .image(UIImage(named: "neonFantasyNightPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "neonFantasyNight"
     )
     
@@ -391,7 +391,7 @@ extension Theme {
             shapeType: .HEXAGON
         ),
         edgeInsets: .init(top: 3, left: 1, bottom: 3, right: 1),
-        background: .image(UIImage(named: "neonMargicCircle")?.jpegData(compressionQuality: 0.1) ?? Data()),
+        background: .image(UIImage(named: "neonMargicCircle")?.jpegData(compressionQuality: 1) ?? Data()),
         actionCallout: .neon,
         inputCallout: .neon,
         buttonNeonAnimation: [
@@ -401,7 +401,7 @@ extension Theme {
             .init(colors: ["#00F0FF", "#FFFFFF", "#FA00FF" ], .up, .conic),
         ],
         durationAnimation: 1,
-        preview: .image(UIImage(named: "neonMargicCirclePreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        preview: .image(UIImage(named: "neonMargicCirclePreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "neonMargicCircle"
     )
     
@@ -416,10 +416,10 @@ extension Theme {
             shapeType: .CIRCLE
         ),
         edgeInsets: .init(top: 3, left: 1, bottom: 3, right: 1),
-        background: .image(UIImage(named: "neonMagicLight")?.jpegData(compressionQuality: 0.1) ?? Data()),
+        background: .image(UIImage(named: "neonMagicLight")?.jpegData(compressionQuality: 1) ?? Data()),
         actionCallout: .bright,
         inputCallout: .bright,
-        preview: .image(UIImage(named: "neonMagicLightPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        preview: .image(UIImage(named: "neonMagicLightPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "neonMagicLight"
     )
     
@@ -432,7 +432,7 @@ extension Theme {
             cornerRadius: 10,
             border: .init(color: Color.white, size: 1)
         ),
-        background: .image(UIImage(named: "neonJungle")?.jpegData(compressionQuality: 0.1) ?? Data()),
+        background: .image(UIImage(named: "neonJungle")?.jpegData(compressionQuality: 1) ?? Data()),
         actionCallout: .neon,
         inputCallout: .neon,
         durationAnimation: 5,
@@ -442,7 +442,7 @@ extension Theme {
              Color(red: 1, green: 0, blue: 0.84),
              Color(red: 0, green: 0.94, blue: 1),
             ], 3),
-        preview: .image(UIImage(named: "neonJunglePreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        preview: .image(UIImage(named: "neonJunglePreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "neonJungle"
     )
     
@@ -457,7 +457,7 @@ extension Theme {
             shapeType: .CIRCLE
         ),
         edgeInsets: .init(top: 3, left: 1, bottom: 3, right: 1),
-        background: .image(UIImage(named: "neonPlastic")?.jpegData(compressionQuality: 0.1) ?? Data()),
+        background: .image(UIImage(named: "neonPlastic")?.jpegData(compressionQuality: 1) ?? Data()),
         actionCallout: .neon,
         inputCallout: .neon,
         neonPermission: .init(disableNeonButton: true),
@@ -468,7 +468,7 @@ extension Theme {
              Color(red: 1, green: 0, blue: 0.96),
              .clear
             ]),
-        preview: .image(UIImage(named: "neonPlasticPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        preview: .image(UIImage(named: "neonPlasticPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "neonPlastic"
     )
     
@@ -481,7 +481,7 @@ extension Theme {
             cornerRadius: 10,
             border: .init(color: .white, size: 1)
         ),
-        background: .image(UIImage(named: "neonGlossiness")?.jpegData(compressionQuality: 0.1) ?? Data()),
+        background: .image(UIImage(named: "neonGlossiness")?.jpegData(compressionQuality: 1) ?? Data()),
         actionCallout: .neon,
         inputCallout: .neon,
         
@@ -493,7 +493,7 @@ extension Theme {
              Color(red: 0, green: 0.04, blue: 1),
              .clear
             ]),
-        preview: .image(UIImage(named: "neonGlossinessPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        preview: .image(UIImage(named: "neonGlossinessPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "neonGlossiness"
     )
     
@@ -506,7 +506,7 @@ extension Theme {
             cornerRadius: 25,
             border: .init(color: .white.opacity(0.8), size: 1)
         ),
-        background: .image(UIImage(named: "neonLustre")?.jpegData(compressionQuality: 0.1) ?? Data()),
+        background: .image(UIImage(named: "neonLustre")?.jpegData(compressionQuality: 1) ?? Data()),
         actionCallout: .neon,
         inputCallout: .neon,
         neonPermission: .init(disableNeonButton: true),
@@ -518,7 +518,7 @@ extension Theme {
              Color(red: 0, green: 1, blue: 1),
              .clear
             ]),
-        preview: .image(UIImage(named: "neonLustrePreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        preview: .image(UIImage(named: "neonLustrePreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "neonLustre"
     )
     
@@ -533,10 +533,10 @@ extension Theme {
             shapeType: .CIRCLE
         ),
         edgeInsets: .init(top: 3, left: 1, bottom: 3, right: 1),
-        background: .image(UIImage(named: "neonBalloons")?.jpegData(compressionQuality: 0.1) ?? Data()),
+        background: .image(UIImage(named: "neonBalloons")?.jpegData(compressionQuality: 1) ?? Data()),
         actionCallout: .bright,
         inputCallout: .bright,
-        preview: .image(UIImage(named: "neonBalloonsPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        preview: .image(UIImage(named: "neonBalloonsPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "neonBalloons"
     )
     
@@ -549,7 +549,7 @@ extension Theme {
             cornerRadius: 25,
             border: .init(color: .clear, size: 0)
         ),
-        background: .image(UIImage(named: "neonTriangleNeon")?.jpegData(compressionQuality: 0.1) ?? Data()),
+        background: .image(UIImage(named: "neonTriangleNeon")?.jpegData(compressionQuality: 1) ?? Data()),
         actionCallout: .neon,
         inputCallout: .neon,
         neonPermission: .init(disableNeonCharacter: true), 
@@ -561,7 +561,7 @@ extension Theme {
              Color(hex: "#FA00FF"),
              .clear
             ]),
-        preview: .image(UIImage(named: "neonTriangleNeonPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        preview: .image(UIImage(named: "neonTriangleNeonPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "neonTriangleNeon"
     )
 }

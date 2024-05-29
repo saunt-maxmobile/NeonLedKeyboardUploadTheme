@@ -18,6 +18,9 @@ struct ThemeHandler {
     private let FIREBASE_STORAGE: Storage = Storage.storage()
     private let FILE_MANAGER: FileManager = FileManager.default
     
+    var jpegCount: Int = 0
+    var zipCount: Int = 0
+    
     private init() {}
     
     func saveThemeSection(_ themeSections: [ThemeSection]) {
@@ -63,7 +66,7 @@ struct ThemeHandler {
                             .appendingPathComponent(folderName)
                         FILE_MANAGER.createDirectory(_directoryPath)
                         
-//                        try self.savePreviewImage(theme.imagePreview, directoryPath: _directoryPath)
+                        try self.savePreviewImage(theme.imagePreview, directoryPath: _directoryPath)
                         try self.createZipFolder(folderName: folderName, theme: theme, directoryPath: _directoryPath)
                     } catch {
                         print(error)
@@ -107,9 +110,9 @@ struct ThemeHandler {
         let _zipFilePath = directoryPath.appendingPathComponent(folderName+".zip")
         try Zip.zipFiles(paths: [_directoryFolderPath], zipFilePath: _zipFilePath, password: nil, progress: nil)
         /// upload to storage
-        self.saveThemeDataToStorage(folder: folderName, nameFile: folderName + ".zip", file: _zipFilePath)
+//        self.saveThemeDataToStorage(folder: folderName, nameFile: folderName + ".zip", file: _zipFilePath)
         /// remove theme folder after zip
-        try FILE_MANAGER.removeItem(at: _directoryFolderPath)
+//        try FILE_MANAGER.removeItem(at: _directoryFolderPath)
     }
     
     private func saveThemeDataToStorage(folder: String, nameFile: String, file: URL) {
@@ -125,6 +128,13 @@ struct ThemeHandler {
                 return
             }
             print("save success: \(nameFile)")
+            if nameFile.contains(".jpeg") {
+                ThemeHandler.shared.jpegCount += 1
+            }
+            
+            if nameFile.contains(".zip") {
+                ThemeHandler.shared.zipCount += 1
+            }
         }
     }
 }

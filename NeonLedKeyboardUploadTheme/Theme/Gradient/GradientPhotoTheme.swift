@@ -29,7 +29,7 @@ extension Theme {
             Color(hex: "#FF1212"),
             Color(hex: "#BD00FF")
         ], 2),
-        preview: .image(UIImage(named: "gradientPhotoRainbowPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        preview: .image(UIImage(named: "gradientPhotoRainbowPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "gradientPhotoRainbow"
     )
     
@@ -43,7 +43,7 @@ extension Theme {
         ),
         background: .image(UIImage(named: "gradientPhotoRomantic")?.jpegData(compressionQuality: 0.3) ?? Data()),
         
-        preview: .image(UIImage(named: "gradientPhotoRomanticPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        preview: .image(UIImage(named: "gradientPhotoRomanticPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "gradientPhotoRomantic"
     )
     
@@ -57,7 +57,7 @@ extension Theme {
         ),
         background: .image(UIImage(named: "gradientPhotoUnicorn")?.jpegData(compressionQuality: 0.2) ?? Data()),
         
-        preview: .image(UIImage(named: "gradientPhotoUnicornPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        preview: .image(UIImage(named: "gradientPhotoUnicornPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "gradientPhotoUnicorn"
     )
     
@@ -78,7 +78,7 @@ extension Theme {
              Color(red: 0.98, green: 0, blue: 1),
              Color(red: 0, green: 0.94, blue: 1)
             ], 2),
-        preview: .image(UIImage(named: "gradientPhotoGillterPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        preview: .image(UIImage(named: "gradientPhotoGillterPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "gradientPhotoGillter"
     )
     
@@ -103,7 +103,7 @@ extension Theme {
              Color(red: 0.08, green: 1, blue: 0),
              Color(red: 1, green: 0.42, blue: 0),
             ], 4),
-        preview: .image(UIImage(named: "gradientPhotoColorfullPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        preview: .image(UIImage(named: "gradientPhotoColorfullPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "gradientPhotoColorfull"
     )
 }
@@ -117,7 +117,7 @@ extension Theme {
             cornerRadius: 8,
             border: .init(color: .white.opacity(0.8), size: 1)
         ),
-        background: .image(UIImage(named: "gradientRiver")?.jpegData(compressionQuality: 0.1) ?? Data()),
+        background: .image(UIImage(named: "gradientRiver")?.jpegData(compressionQuality: 1) ?? Data()),
         actionCallout: .neon,
         inputCallout: .neon,
         
@@ -132,7 +132,7 @@ extension Theme {
              Color(red: 1, green: 0, blue: 0.72),
              Color(red: 0, green: 1, blue: 1),
             ], 5),
-        preview: .image(UIImage(named: "gradientRiverPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        preview: .image(UIImage(named: "gradientRiverPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "gradientRiver"
     )
     
@@ -144,10 +144,10 @@ extension Theme {
             cornerRadius: 10,
             border: .init(color: Color(hex: "#000AFF"), size: 1)
         ),
-        background: .image(UIImage(named: "gradientPopPoly")?.jpegData(compressionQuality: 0.1) ?? Data()),
+        background: .image(UIImage(named: "gradientPopPoly")?.jpegData(compressionQuality: 1) ?? Data()),
         actionCallout: .bright,
         inputCallout: .bright,
-        preview: .image(UIImage(named: "gradientPopPolyPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        preview: .image(UIImage(named: "gradientPopPolyPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "gradientPopPoly"
     )
     
@@ -159,10 +159,10 @@ extension Theme {
             cornerRadius: 10,
             border: .init(color: .clear, size: 0)
         ),
-        background: .image(UIImage(named: "gradientHologram")?.jpegData(compressionQuality: 0.1) ?? Data()),
+        background: .image(UIImage(named: "gradientHologram")?.jpegData(compressionQuality: 1) ?? Data()),
         actionCallout: .bright,
         inputCallout: .bright,
-        preview: .image(UIImage(named: "gradientHologramPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        preview: .image(UIImage(named: "gradientHologramPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "gradientHologram"
     )
     
@@ -174,7 +174,7 @@ extension Theme {
             cornerRadius: 10,
             border: .init(color: .white, size: 1)
         ),
-        background: .image(UIImage(named: "gradientVividBlurred")?.jpegData(compressionQuality: 0.1) ?? Data()),
+        background: .image(UIImage(named: "gradientVividBlurred")?.jpegData(compressionQuality: 1) ?? Data()),
         actionCallout: .neon,
         inputCallout: .neon,
         durationAnimation: 5,
@@ -185,7 +185,7 @@ extension Theme {
              Color(hex: "00FFFF"),
              .clear
             ]),
-        preview: .image(UIImage(named: "gradientVividBlurredPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        preview: .image(UIImage(named: "gradientVividBlurredPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "gradientVividBlurred"
     )
     
@@ -198,7 +198,7 @@ extension Theme {
             border: .init(color: .white, size: 5),
             shapeType: .HEXAGON
         ),
-        background: .image(UIImage(named: "gradientVividColorfull")?.jpegData(compressionQuality: 0.1) ?? Data()),
+        background: .image(UIImage(named: "gradientVividColorfull")?.jpegData(compressionQuality: 1) ?? Data()),
         actionCallout: .neon,
         inputCallout: .neon,
         buttonNeonAnimation: [
@@ -208,7 +208,7 @@ extension Theme {
             .init(colors: ["#FF00D6", "#000AFF", ], .up, .conic),
         ],
         durationAnimation: 1,
-        preview: .image(UIImage(named: "gradientVividColorfullPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        preview: .image(UIImage(named: "gradientVividColorfullPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "gradientVividColorfull"
     )
     
@@ -220,7 +220,7 @@ extension Theme {
             cornerRadius: 10,
             border: .init(color: .clear, size: 0)
         ),
-        background: .image(UIImage(named: "gradientDarkUniverse")?.jpegData(compressionQuality: 0.1) ?? Data()),
+        background: .image(UIImage(named: "gradientDarkUniverse")?.jpegData(compressionQuality: 1) ?? Data()),
         actionCallout: .neon,
         inputCallout: .neon,
         
@@ -233,7 +233,7 @@ extension Theme {
              Color(red: 0, green: 0.04, blue: 1),
              .clear
             ]),
-        preview: .image(UIImage(named: "gradientDarkUniversePreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        preview: .image(UIImage(named: "gradientDarkUniversePreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "gradientDarkUniverse"
     )
     
@@ -247,7 +247,7 @@ extension Theme {
             border: .init(color: .clear, size: 0),
             shapeType: .CIRCLE
         ),
-        background: .image(UIImage(named: "gradientVortex")?.jpegData(compressionQuality: 0.1) ?? Data()),
+        background: .image(UIImage(named: "gradientVortex")?.jpegData(compressionQuality: 1) ?? Data()),
         actionCallout: .neon,
         inputCallout: .neon,
         neonPermission: .init(disableNeonButton: true),
@@ -259,7 +259,7 @@ extension Theme {
              Color(red: 1, green: 0.48, blue: 0),
              Color(red: 0, green: 1, blue: 1),
             ], 3),
-        preview: .image(UIImage(named: "gradientVortexPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        preview: .image(UIImage(named: "gradientVortexPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "gradientVortex"
     )
     
@@ -272,7 +272,7 @@ extension Theme {
             cornerRadius: 25,
             border: .init(color: .white, size: 2)
         ),
-        background: .image(UIImage(named: "gradientPolygon")?.jpegData(compressionQuality: 0.1) ?? Data()),
+        background: .image(UIImage(named: "gradientPolygon")?.jpegData(compressionQuality: 1) ?? Data()),
         actionCallout: .bright,
         inputCallout: .bright,
         neonLinearAnimation: .radial(
@@ -282,7 +282,7 @@ extension Theme {
              .white,
              .clear
             ]),
-        preview: .image(UIImage(named: "gradientPolygonPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        preview: .image(UIImage(named: "gradientPolygonPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "gradientPolygon"
     )
     
@@ -295,7 +295,7 @@ extension Theme {
             cornerRadius: 10,
             border: .init(color: .white, size: 2)
         ),
-        background: .image(UIImage(named: "gradientAurora")?.jpegData(compressionQuality: 0.1) ?? Data()),
+        background: .image(UIImage(named: "gradientAurora")?.jpegData(compressionQuality: 1) ?? Data()),
         actionCallout: .neon,
         inputCallout: .neon,
         durationAnimation: 3,
@@ -307,7 +307,7 @@ extension Theme {
              Color(hex: "80FE02"),
              .clear
             ]),
-        preview: .image(UIImage(named: "gradientAuroraPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        preview: .image(UIImage(named: "gradientAuroraPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "gradientAurora"
     )
     
@@ -321,7 +321,7 @@ extension Theme {
             border: .init(color: .white.opacity(0.6), size: 2),
             shapeType: .CIRCLE
         ),
-        background: .image(UIImage(named: "gradientYellowFruits")?.jpegData(compressionQuality: 0.1) ?? Data()),
+        background: .image(UIImage(named: "gradientYellowFruits")?.jpegData(compressionQuality: 1) ?? Data()),
         actionCallout: .neon,
         inputCallout: .neon,
         neonPermission: .init(disableNeonBorder: true, disableNeonButton: true),
@@ -333,7 +333,7 @@ extension Theme {
              Color(red: 1, green: 0.48, blue: 0),
              Color(red: 1, green: 0.48, blue: 0),
             ], 5),
-        preview: .image(UIImage(named: "gradientYellowFruitsPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        preview: .image(UIImage(named: "gradientYellowFruitsPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "gradientYellowFruits"
     )
     
@@ -347,10 +347,10 @@ extension Theme {
             border: .init(color: .clear, size: 0),
             shapeType: .CIRCLE
         ),
-        background: .image(UIImage(named: "gradientPurpleVivid")?.jpegData(compressionQuality: 0.1) ?? Data()),
+        background: .image(UIImage(named: "gradientPurpleVivid")?.jpegData(compressionQuality: 1) ?? Data()),
         actionCallout: .bright,
         inputCallout: .bright,
-        preview: .image(UIImage(named: "gradientPurpleVividPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        preview: .image(UIImage(named: "gradientPurpleVividPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "gradientPurpleVivid"
     )
     
@@ -365,7 +365,7 @@ extension Theme {
             shapeType: .HEXAGON
         ),
         edgeInsets: CodableUIEdgeInsets(top: 3, left: 1, bottom: 3, right: 1),
-        background: .image(UIImage(named: "gradientHexagonBlurred")?.jpegData(compressionQuality: 0.1) ?? Data()),
+        background: .image(UIImage(named: "gradientHexagonBlurred")?.jpegData(compressionQuality: 1) ?? Data()),
         actionCallout: .neon,
         inputCallout: .neon,
         neonPermission: .init(disableNeonBorder: true, disableNeonButton: true),
@@ -375,7 +375,7 @@ extension Theme {
              Color(red: 1, green: 0, blue: 0.72),
              Color(red: 1, green: 0.48, blue: 0),
             ], 3),
-        preview: .image(UIImage(named: "gradientHexagonBlurredPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        preview: .image(UIImage(named: "gradientHexagonBlurredPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "gradientHexagonBlurred"
     )
     
@@ -390,7 +390,7 @@ extension Theme {
             shapeType: .CIRCLE
         ),
         edgeInsets: CodableUIEdgeInsets(top: 3, left: 1, bottom: 3, right: 1),
-        background: .image(UIImage(named: "gradientCircleBlurred")?.jpegData(compressionQuality: 0.1) ?? Data()),
+        background: .image(UIImage(named: "gradientCircleBlurred")?.jpegData(compressionQuality: 1) ?? Data()),
         actionCallout: .neon,
         inputCallout: .neon,
         
@@ -403,7 +403,7 @@ extension Theme {
              Color(red: 0.25, green: 0.73, blue: 0.13),
              Color(red: 0, green: 1, blue: 1),
             ], 5),
-        preview: .image(UIImage(named: "gradientCircleBlurredPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        preview: .image(UIImage(named: "gradientCircleBlurredPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "gradientCircleBlurred"
     )
     
@@ -415,7 +415,7 @@ extension Theme {
             cornerRadius: 25,
             border: .init(color: .clear, size: 0)
         ),
-        background: .image(UIImage(named: "gradientCinema")?.jpegData(compressionQuality: 0.1) ?? Data()),
+        background: .image(UIImage(named: "gradientCinema")?.jpegData(compressionQuality: 1) ?? Data()),
         actionCallout: .neon,
         inputCallout: .neon,
         neonPermission: .init(disableNeonCharacter: true),
@@ -427,7 +427,7 @@ extension Theme {
              Color(red: 1, green: 0.78, blue: 0),
              .clear
             ]),
-        preview: .image(UIImage(named: "gradientCinemaPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        preview: .image(UIImage(named: "gradientCinemaPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "gradientCinema"
     )
 }

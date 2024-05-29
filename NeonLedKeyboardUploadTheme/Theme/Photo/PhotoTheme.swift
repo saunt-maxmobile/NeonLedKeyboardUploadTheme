@@ -18,9 +18,9 @@ extension Theme {
             cornerRadius: 8,
             border: .init(color: .white, size: 2)
         ),
-        background: .image(UIImage(named: "photoCloud")?.jpegData(compressionQuality: 0.1) ?? Data()),
+        background: .image(UIImage(named: "photoCloud")?.jpegData(compressionQuality: 1) ?? Data()),
         
-        preview: .image(UIImage(named: "photoCloudPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        preview: .image(UIImage(named: "photoCloudPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "photoCloud"
     )
     
@@ -32,9 +32,9 @@ extension Theme {
             cornerRadius: 8,
             border: .init(color: .white, size: 2)
         ),
-        background: .image(UIImage(named: "photoPurpleGlitter")?.jpegData(compressionQuality: 0.1) ?? Data()),
+        background: .image(UIImage(named: "photoPurpleGlitter")?.jpegData(compressionQuality: 1) ?? Data()),
         
-        preview: .image(UIImage(named: "photoPurpleGlitterPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        preview: .image(UIImage(named: "photoPurpleGlitterPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "photoPurpleGlitter"
     )
     
@@ -46,9 +46,9 @@ extension Theme {
             cornerRadius: 8,
             border: .init(color: Color(hex: "EE82FF"), size: 2)
         ),
-        background: .image(UIImage(named: "photoDarkPurple")?.jpegData(compressionQuality: 0.1) ?? Data()),
+        background: .image(UIImage(named: "photoDarkPurple")?.jpegData(compressionQuality: 1) ?? Data()),
         
-        preview: .image(UIImage(named: "photoDarkPurplePreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        preview: .image(UIImage(named: "photoDarkPurplePreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "photoDarkPurple"
     )
     
@@ -60,9 +60,9 @@ extension Theme {
             cornerRadius: 8,
             border: .init(color: Color.white, size: 1)
         ),
-        background: .image(UIImage(named: "photoPinkCream")?.jpegData(compressionQuality: 0.1) ?? Data()),
+        background: .image(UIImage(named: "photoPinkCream")?.jpegData(compressionQuality: 1) ?? Data()),
         
-        preview: .image(UIImage(named: "photoPinkCreamPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        preview: .image(UIImage(named: "photoPinkCreamPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "photoPinkCream"
     )
     
@@ -74,9 +74,9 @@ extension Theme {
             cornerRadius: 8,
             border: .init(color: Color(hex: "#5AB9EF"), size: 2)
         ),
-        background: .image(UIImage(named: "photoBlueGlitter")?.jpegData(compressionQuality: 0.1) ?? Data()),
+        background: .image(UIImage(named: "photoBlueGlitter")?.jpegData(compressionQuality: 1) ?? Data()),
         
-        preview: .image(UIImage(named: "photoBlueGlitterPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        preview: .image(UIImage(named: "photoBlueGlitterPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "photoBlueGlitter"
     )
     
@@ -88,9 +88,9 @@ extension Theme {
             cornerRadius: 8,
             border: .init(color: .clear, size: 0)
         ),
-        background: .image(UIImage(named: "photoGalaxy")?.jpegData(compressionQuality: 0.1) ?? Data()),
+        background: .image(UIImage(named: "photoGalaxy")?.jpegData(compressionQuality: 1) ?? Data()),
         
-        preview: .image(UIImage(named: "photoGalaxyPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        preview: .image(UIImage(named: "photoGalaxyPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "photoGalaxy"
     )
     
@@ -102,9 +102,9 @@ extension Theme {
             cornerRadius: 8,
             border: .init(color: .white, size: 1)
         ),
-        background: .image(UIImage(named: "photoBlueNeon")?.jpegData(compressionQuality: 0.1) ?? Data()),
+        background: .image(UIImage(named: "photoBlueNeon")?.jpegData(compressionQuality: 1) ?? Data()),
         
-        preview: .image(UIImage(named: "photoBlueNeonPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        preview: .image(UIImage(named: "photoBlueNeonPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "photoBlueNeon"
     )
     
@@ -116,9 +116,9 @@ extension Theme {
             cornerRadius: 8,
             border: .init(color: .white, size: 1)
         ),
-        background: .image(UIImage(named: "photoColor")?.jpegData(compressionQuality: 0.1) ?? Data()),
+        background: .image(UIImage(named: "photoColor")?.jpegData(compressionQuality: 1) ?? Data()),
         
-        preview: .image(UIImage(named: "photoColorPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        preview: .image(UIImage(named: "photoColorPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "photoColor"
     )
     
@@ -130,9 +130,9 @@ extension Theme {
             cornerRadius: 8,
             border: .init(color: .white, size: 1)
         ),
-        background: .image(UIImage(named: "photoBokeh")?.jpegData(compressionQuality: 0.1) ?? Data()),
+        background: .image(UIImage(named: "photoBokeh")?.jpegData(compressionQuality: 1) ?? Data()),
         
-        preview: .image(UIImage(named: "photoBokehPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        preview: .image(UIImage(named: "photoBokehPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "photoBokeh"
     )
     
@@ -144,9 +144,9 @@ extension Theme {
             cornerRadius: 8,
             border: .init(color: .white, size: 1)
         ),
-        background: .image(UIImage(named: "photoSkyfull")?.jpegData(compressionQuality: 0.1) ?? Data()),
+        background: .image(UIImage(named: "photoSkyfull")?.jpegData(compressionQuality: 1) ?? Data()),
         
-        preview: .image(UIImage(named: "photoSkyfullPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        preview: .image(UIImage(named: "photoSkyfullPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "photoSkyfull"
     )
     
@@ -158,9 +158,9 @@ extension Theme {
             cornerRadius: 8,
             border: .init(color: .clear, size: 0)
         ),
-        background: .image(UIImage(named: "photoDark")?.jpegData(compressionQuality: 0.1) ?? Data()),
+        background: .image(UIImage(named: "photoDark")?.jpegData(compressionQuality: 1) ?? Data()),
         
-        preview: .image(UIImage(named: "photoDarkPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        preview: .image(UIImage(named: "photoDarkPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "photoDark"
     )
     
@@ -172,9 +172,9 @@ extension Theme {
             cornerRadius: 8,
             border: .init(color: .white, size: 1)
         ),
-        background: .image(UIImage(named: "photoWaterColor")?.jpegData(compressionQuality: 0.1) ?? Data()),
+        background: .image(UIImage(named: "photoWaterColor")?.jpegData(compressionQuality: 1) ?? Data()),
         
-        preview: .image(UIImage(named: "photoWaterColorPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        preview: .image(UIImage(named: "photoWaterColorPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "photoWaterColor"
     )
     
@@ -186,9 +186,9 @@ extension Theme {
             cornerRadius: 8,
             border: .init(color: .clear, size: 0)
         ),
-        background: .image(UIImage(named: "photoCool")?.jpegData(compressionQuality: 0.1) ?? Data()),
+        background: .image(UIImage(named: "photoCool")?.jpegData(compressionQuality: 1) ?? Data()),
         
-        preview: .image(UIImage(named: "photoCoolPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        preview: .image(UIImage(named: "photoCoolPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "photoCool"
     )
     
@@ -200,9 +200,9 @@ extension Theme {
             cornerRadius: 8,
             border: .init(color: .clear, size: 0)
         ),
-        background: .image(UIImage(named: "photoMountain")?.jpegData(compressionQuality: 0.1) ?? Data()),
+        background: .image(UIImage(named: "photoMountain")?.jpegData(compressionQuality: 1) ?? Data()),
         
-        preview: .image(UIImage(named: "photoMountainPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        preview: .image(UIImage(named: "photoMountainPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "photoMountain"
     )
     
@@ -214,9 +214,9 @@ extension Theme {
             cornerRadius: 8,
             border: .init(color: .clear, size: 0)
         ),
-        background: .image(UIImage(named: "photoJungle")?.jpegData(compressionQuality: 0.1) ?? Data()),
+        background: .image(UIImage(named: "photoJungle")?.jpegData(compressionQuality: 1) ?? Data()),
         
-        preview: .image(UIImage(named: "photoJunglePreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        preview: .image(UIImage(named: "photoJunglePreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "photoJungle"
     )
 }
@@ -230,11 +230,11 @@ extension Theme {
             cornerRadius: 10,
             border: .init(color: .white, size: 1)
         ),
-        background: .image(UIImage(named: "photoBlueGalaxy")?.jpegData(compressionQuality: 0.1) ?? Data()),
+        background: .image(UIImage(named: "photoBlueGalaxy")?.jpegData(compressionQuality: 1) ?? Data()),
         actionCallout: .bright,
         inputCallout: .bright,
         
-        preview: .image(UIImage(named: "photoBlueGalaxyPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        preview: .image(UIImage(named: "photoBlueGalaxyPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "photoBlueGalaxy"
     )
     
@@ -246,11 +246,11 @@ extension Theme {
             cornerRadius: 10,
             border: .init(color: Color(hex: "#4C3CFF"), size: 2)
         ),
-        background: .image(UIImage(named: "photoMajesticGalaxy")?.jpegData(compressionQuality: 0.1) ?? Data()),
+        background: .image(UIImage(named: "photoMajesticGalaxy")?.jpegData(compressionQuality: 1) ?? Data()),
         actionCallout: .bright,
         inputCallout: .bright,
         
-        preview: .image(UIImage(named: "photoMajesticGalaxyPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        preview: .image(UIImage(named: "photoMajesticGalaxyPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "photoMajesticGalaxy"
     )
     
@@ -262,10 +262,10 @@ extension Theme {
             cornerRadius: 18,
             border: .init(color: .clear, size: 0)
         ),
-        background: .image(UIImage(named: "photoColorWaves")?.jpegData(compressionQuality: 0.1) ?? Data()),
+        background: .image(UIImage(named: "photoColorWaves")?.jpegData(compressionQuality: 1) ?? Data()),
         actionCallout: .bright,
         inputCallout: .bright,
-        preview: .image(UIImage(named: "photoColorWavesPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        preview: .image(UIImage(named: "photoColorWavesPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "photoColorWaves"
     )
     
@@ -277,10 +277,10 @@ extension Theme {
             cornerRadius: 12,
             border: .init(color: Color(hex: "#FFC700"), size: 3)
         ),
-        background: .image(UIImage(named: "photoBlurBokeh")?.jpegData(compressionQuality: 0.1) ?? Data()),
+        background: .image(UIImage(named: "photoBlurBokeh")?.jpegData(compressionQuality: 1) ?? Data()),
         actionCallout: .bright,
         inputCallout: .bright,
-        preview: .image(UIImage(named: "photoBlurBokehPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        preview: .image(UIImage(named: "photoBlurBokehPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "photoBlurBokeh"
     )
     
@@ -292,7 +292,7 @@ extension Theme {
             cornerRadius: 12,
             border: .init(color: .clear, size: 0)
         ),
-        background: .image(UIImage(named: "photoPeculiarCircle")?.jpegData(compressionQuality: 0.1) ?? Data()),
+        background: .image(UIImage(named: "photoPeculiarCircle")?.jpegData(compressionQuality: 1) ?? Data()),
         actionCallout: .neon,
         inputCallout: .neon,
         neonPermission: .init(disableNeonButton: true),
@@ -304,7 +304,7 @@ extension Theme {
             Color(hex: "#000AFF"),
             .clear
         ]),
-        preview: .image(UIImage(named: "photoPeculiarCirclePreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        preview: .image(UIImage(named: "photoPeculiarCirclePreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "photoPeculiarCircle"
     )
     
@@ -316,11 +316,11 @@ extension Theme {
             cornerRadius: 12,
             border: .init(color: .white.opacity(0.7), size: 2)
         ),
-        background: .image(UIImage(named: "photoFantasticStrip")?.jpegData(compressionQuality: 0.1) ?? Data()),
+        background: .image(UIImage(named: "photoFantasticStrip")?.jpegData(compressionQuality: 1) ?? Data()),
         actionCallout: .bright,
         inputCallout: .bright,
         
-        preview: .image(UIImage(named: "photoFantasticStripPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        preview: .image(UIImage(named: "photoFantasticStripPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "photoFantasticStrip"
     )
     
@@ -332,11 +332,11 @@ extension Theme {
             cornerRadius: 10,
             border: .init(color: Color(hex: "#FFD746"), size: 1)
         ),
-        background: .image(UIImage(named: "photoFriendlyLemur")?.jpegData(compressionQuality: 0.1) ?? Data()),
+        background: .image(UIImage(named: "photoFriendlyLemur")?.jpegData(compressionQuality: 1) ?? Data()),
         actionCallout: .bright,
         inputCallout: .bright,
         
-        preview: .image(UIImage(named: "photoFriendlyLemurPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        preview: .image(UIImage(named: "photoFriendlyLemurPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "photoFriendlyLemur"
     )
     
@@ -348,11 +348,11 @@ extension Theme {
             cornerRadius: 10,
             border: .init(color: Color(hex: "#00F0FF"), size: 1)
         ),
-        background: .image(UIImage(named: "photoFunnyHorse")?.jpegData(compressionQuality: 0.1) ?? Data()),
+        background: .image(UIImage(named: "photoFunnyHorse")?.jpegData(compressionQuality: 1) ?? Data()),
         actionCallout: .bright,
         inputCallout: .bright,
         
-        preview: .image(UIImage(named: "photoFunnyHorsePreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        preview: .image(UIImage(named: "photoFunnyHorsePreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "photoFunnyHorse"
     )
     
@@ -364,11 +364,11 @@ extension Theme {
             cornerRadius: 10,
             border: .init(color: Color(hex: "#FF984C"), size: 2)
         ),
-        background: .image(UIImage(named: "photoCuteCorgi")?.jpegData(compressionQuality: 0.1) ?? Data()),
+        background: .image(UIImage(named: "photoCuteCorgi")?.jpegData(compressionQuality: 1) ?? Data()),
         actionCallout: .bright,
         inputCallout: .bright,
         
-        preview: .image(UIImage(named: "photoCuteCorgiPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        preview: .image(UIImage(named: "photoCuteCorgiPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "photoCuteCorgi"
     )
     
@@ -380,11 +380,11 @@ extension Theme {
             cornerRadius: 10,
             border: .init(color: Color(hex: "#FF984C"), size: 1)
         ),
-        background: .image(UIImage(named: "photoCoolCat")?.jpegData(compressionQuality: 0.1) ?? Data()),
+        background: .image(UIImage(named: "photoCoolCat")?.jpegData(compressionQuality: 1) ?? Data()),
         actionCallout: .bright,
         inputCallout: .bright,
         
-        preview: .image(UIImage(named: "photoCoolCatPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        preview: .image(UIImage(named: "photoCoolCatPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "photoCoolCat"
     )
     
@@ -396,11 +396,11 @@ extension Theme {
             cornerRadius: 10,
             border: .init(color: Color(hex: "#729D39"), size: 2)
         ),
-        background: .image(UIImage(named: "photoLoverDog")?.jpegData(compressionQuality: 0.1) ?? Data()),
+        background: .image(UIImage(named: "photoLoverDog")?.jpegData(compressionQuality: 1) ?? Data()),
         actionCallout: .bright,
         inputCallout: .bright,
         
-        preview: .image(UIImage(named: "photoLoverDogPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        preview: .image(UIImage(named: "photoLoverDogPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "photoLoverDog"
     )
     
@@ -412,11 +412,11 @@ extension Theme {
             cornerRadius: 10,
             border: .init(color: Color(hex: "#FFFFFF").opacity(0.5), size: 1)
         ),
-        background: .image(UIImage(named: "photoPuppy")?.jpegData(compressionQuality: 0.1) ?? Data()),
+        background: .image(UIImage(named: "photoPuppy")?.jpegData(compressionQuality: 1) ?? Data()),
         actionCallout: .bright,
         inputCallout: .bright,
         
-        preview: .image(UIImage(named: "photoPuppyPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        preview: .image(UIImage(named: "photoPuppyPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "photoPuppy"
     )
 }

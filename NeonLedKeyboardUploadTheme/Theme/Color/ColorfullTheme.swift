@@ -17,7 +17,7 @@ extension Theme {
             cornerRadius: 8,
             border: .init(color: .white, size: 1)
         ),
-        background: .image(UIImage(named: "colorfullColorPaint")?.jpegData(compressionQuality: 0.1) ?? Data()),
+        background: .image(UIImage(named: "colorfullColorPaint")?.jpegData(compressionQuality: 1) ?? Data()),
         actionCallout: .neon,
         inputCallout: .neon,
         
@@ -30,7 +30,7 @@ extension Theme {
             Color(hex: "#FFFFFF"),
             .clear
         ]),
-        preview: .image(UIImage(named: "colorfullColorPaintPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        preview: .image(UIImage(named: "colorfullColorPaintPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "colorfullColorPaint"
     )
     
@@ -42,11 +42,11 @@ extension Theme {
             cornerRadius: 12,
             border: .init(color: .white, size: 2)
         ),
-        background: .image(UIImage(named: "colorfullTwirl")?.jpegData(compressionQuality: 0.1) ?? Data()),
+        background: .image(UIImage(named: "colorfullTwirl")?.jpegData(compressionQuality: 1) ?? Data()),
         actionCallout: .bright,
         inputCallout: .bright,
         
-        preview: .image(UIImage(named: "colorfullTwirlPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        preview: .image(UIImage(named: "colorfullTwirlPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "colorfullTwirl"
     )
     
@@ -61,7 +61,7 @@ extension Theme {
             shapeType: .HEXAGON
         ),
         edgeInsets: .init(top: 3, left: 1, bottom: 3, right: 1),
-        background: .image(UIImage(named: "colorfullUniverse")?.jpegData(compressionQuality: 0.1) ?? Data()),
+        background: .image(UIImage(named: "colorfullUniverse")?.jpegData(compressionQuality: 1) ?? Data()),
         actionCallout: .neon,
         inputCallout: .neon,
         
@@ -73,7 +73,7 @@ extension Theme {
             .init(colors: ["#FFFFFF", "#FF00D6", "#000AFF"], .up, .conic),
         ],
         durationAnimation: 1,
-        preview: .image(UIImage(named: "colorfullUniversePreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        preview: .image(UIImage(named: "colorfullUniversePreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "colorfullUniverse"
     )
     
@@ -86,7 +86,7 @@ extension Theme {
             border: .init(color: .clear, size: 0),
             shapeType: .CIRCLE
         ),
-        background: .image(UIImage(named: "colorfullLiquid")?.jpegData(compressionQuality: 0.1) ?? Data()),
+        background: .image(UIImage(named: "colorfullLiquid")?.jpegData(compressionQuality: 1) ?? Data()),
         actionCallout: .neon,
         inputCallout: .neon,
         
@@ -100,7 +100,7 @@ extension Theme {
             Color(hex: "FF00D6"),
             Color(hex: "729D39"),
         ], 3),
-        preview: .image(UIImage(named: "colorfullLiquidPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        preview: .image(UIImage(named: "colorfullLiquidPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "colorfullLiquid"
     )
     
@@ -112,7 +112,7 @@ extension Theme {
             cornerRadius: 25,
             border: .init(color: .clear, size: 0)
         ),
-        background: .image(UIImage(named: "colorfullCloud")?.jpegData(compressionQuality: 0.1) ?? Data()),
+        background: .image(UIImage(named: "colorfullCloud")?.jpegData(compressionQuality: 1) ?? Data()),
         actionCallout: .neon,
         inputCallout: .neon,
         
@@ -124,7 +124,7 @@ extension Theme {
             Color(hex: "##000AFF"),
             Color(hex: "#00C2FF"),
         ], 2),
-        preview: .image(UIImage(named: "colorfullCloudPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        preview: .image(UIImage(named: "colorfullCloudPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "colorfullCloud"
     )
     
@@ -136,7 +136,7 @@ extension Theme {
             cornerRadius: 25,
             border: .init(color: .clear, size: 0)
         ),
-        background: .image(UIImage(named: "colorfullFlower")?.jpegData(compressionQuality: 0.1) ?? Data()),
+        background: .image(UIImage(named: "colorfullFlower")?.jpegData(compressionQuality: 1) ?? Data()),
         actionCallout: .neon,
         inputCallout: .neon,
         
@@ -151,7 +151,7 @@ extension Theme {
             Color(hex: "#FA00FF"),
             .clear
         ]),
-        preview: .image(UIImage(named: "colorfullFlowerPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        preview: .image(UIImage(named: "colorfullFlowerPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "colorfullFlower"
     )
     
@@ -163,11 +163,11 @@ extension Theme {
             cornerRadius: 25,
             border: .init(color: .clear, size: 0)
         ),
-        background: .image(UIImage(named: "colorfullLowPoly")?.jpegData(compressionQuality: 0.1) ?? Data()),
+        background: .image(UIImage(named: "colorfullLowPoly")?.jpegData(compressionQuality: 1) ?? Data()),
         actionCallout: .bright,
         inputCallout: .bright,
         
-        preview: .image(UIImage(named: "colorfullLowPolyPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        preview: .image(UIImage(named: "colorfullLowPolyPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "colorfullLowPoly"
     )
     
@@ -180,11 +180,11 @@ extension Theme {
             border: .init(color: .clear, size: 0),
             shapeType: .CIRCLE
         ),
-        background: .image(UIImage(named: "colorfullTropical")?.jpegData(compressionQuality: 0.1) ?? Data()),
+        background: .image(UIImage(named: "colorfullTropical")?.jpegData(compressionQuality: 1) ?? Data()),
         actionCallout: .bright,
         inputCallout: .bright,
         
-        preview: .image(UIImage(named: "colorfullTropicalPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        preview: .image(UIImage(named: "colorfullTropicalPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "colorfullTropical"
     )
     
@@ -199,11 +199,11 @@ extension Theme {
             shapeType: .HEXAGON
         ),
         edgeInsets: .init(top: 3, left: 1, bottom: 3, right: 1),
-        background: .image(UIImage(named: "colorfullWavesStrip")?.jpegData(compressionQuality: 0.1) ?? Data()),
+        background: .image(UIImage(named: "colorfullWavesStrip")?.jpegData(compressionQuality: 1) ?? Data()),
         actionCallout: .bright,
         inputCallout: .bright,
         
-        preview: .image(UIImage(named: "colorfullWavesStripPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        preview: .image(UIImage(named: "colorfullWavesStripPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "colorfullWavesStrip"
     )
     
@@ -215,7 +215,7 @@ extension Theme {
             cornerRadius: 12,
             border: .init(color: .clear, size: 0)
         ),
-        background: .image(UIImage(named: "colorfullColorCurve")?.jpegData(compressionQuality: 0.1) ?? Data()),
+        background: .image(UIImage(named: "colorfullColorCurve")?.jpegData(compressionQuality: 1) ?? Data()),
         actionCallout: .neon,
         inputCallout: .neon,
         
@@ -230,7 +230,7 @@ extension Theme {
             Color(hex: "#FF9500"),
             .clear
         ]),
-        preview: .image(UIImage(named: "colorfullColorCurvePreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        preview: .image(UIImage(named: "colorfullColorCurvePreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "colorfullColorCurve"
     )
     
@@ -242,7 +242,7 @@ extension Theme {
             cornerRadius: 12,
             border: .init(color: .clear, size: 0)
         ),
-        background: .image(UIImage(named: "colorfullCubes")?.jpegData(compressionQuality: 0.1) ?? Data()),
+        background: .image(UIImage(named: "colorfullCubes")?.jpegData(compressionQuality: 1) ?? Data()),
         actionCallout: .neon,
         inputCallout: .neon,
         
@@ -254,7 +254,7 @@ extension Theme {
             Color(hex: "B6F364").opacity(0.6),
             .clear
         ]),
-        preview: .image(UIImage(named: "colorfullCubesPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        preview: .image(UIImage(named: "colorfullCubesPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "colorfullCubes"
     )
 }
@@ -280,7 +280,7 @@ extension Theme {
         background: .color(.white),
         actionCallout: .bright,
         inputCallout: .bright,
-        preview: .image(UIImage(named: "colorfullMyosotis.KeyboardPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        preview: .image(UIImage(named: "colorfullMyosotisPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "colorfullMyosotis"
     )
     
@@ -304,7 +304,7 @@ extension Theme {
         background: .color(.white),
         actionCallout: .bright,
         inputCallout: .bright,
-        preview: .image(UIImage(named: "colorfullLavender.KeyboardPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        preview: .image(UIImage(named: "colorfullLavenderPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "colorfullLavender"
     )
     
@@ -328,7 +328,7 @@ extension Theme {
         background: .color(.white),
         actionCallout: .bright,
         inputCallout: .bright,
-        preview: .image(UIImage(named: "colorfullHibicus.KeyboardPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        preview: .image(UIImage(named: "colorfullHibicusPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "colorfullHibicus"
     )
     
@@ -352,7 +352,7 @@ extension Theme {
         background: .color(.init(hex: "#000577")),
         actionCallout: .bright,
         inputCallout: .bright,
-        preview: .image(UIImage(named: "colorfullMangosteen.KeyboardPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        preview: .image(UIImage(named: "colorfullMangosteenPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "colorfullMangosteen"
     )
     
@@ -376,7 +376,7 @@ extension Theme {
         background: .color(.init(hex: "#000577")),
         actionCallout: .bright,
         inputCallout: .bright,
-        preview: .image(UIImage(named: "colorfullSky.KeyboardPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        preview: .image(UIImage(named: "colorfullSkyPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "colorfullSky"
     )
     
@@ -400,7 +400,7 @@ extension Theme {
         background: .color(.init(hex: "#1C2D4E")),
         actionCallout: .bright,
         inputCallout: .bright,
-        preview: .image(UIImage(named: "colorfullDarkNight.KeyboardPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        preview: .image(UIImage(named: "colorfullDarkNightPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "colorfullDarkNight"
     )
     
@@ -425,7 +425,7 @@ extension Theme {
         background: .color(.init(hex: "#FFFFFF")),
         actionCallout: .bright,
         inputCallout: .bright,
-        preview: .image(UIImage(named: "colorfullMatcha.KeyboardPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        preview: .image(UIImage(named: "colorfullMatchaPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "colorfullMatcha"
     )
     
@@ -449,7 +449,7 @@ extension Theme {
         background: .color(.init(hex: "#FFFFFF")),
         actionCallout: .bright,
         inputCallout: .bright,
-        preview: .image(UIImage(named: "colorfullTulips.KeyboardPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        preview: .image(UIImage(named: "colorfullTulipsPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "colorfullTulips"
     )
     
@@ -473,7 +473,7 @@ extension Theme {
         background: .color(.init(hex: "#2B136D")),
         actionCallout: .bright,
         inputCallout: .bright,
-        preview: .image(UIImage(named: "colorfullCentaurea.KeyboardPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        preview: .image(UIImage(named: "colorfullCentaureaPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "colorfullCentaurea"
     )
     
@@ -496,7 +496,7 @@ extension Theme {
         background: .color(.init(hex: "#000AFF")),
         actionCallout: .bright,
         inputCallout: .bright,
-        preview: .image(UIImage(named: "colorfullIris.KeyboardPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        preview: .image(UIImage(named: "colorfullIrisPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "colorfullIris"
     )
     
@@ -520,7 +520,7 @@ extension Theme {
         background: .color(.init(hex: "#FFFFFF")),
         actionCallout: .bright,
         inputCallout: .bright,
-        preview: .image(UIImage(named: "colorfullRainbow.KeyboardPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        preview: .image(UIImage(named: "colorfullRainbowPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "colorfullRainbow"
     )
 }

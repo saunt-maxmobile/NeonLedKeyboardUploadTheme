@@ -17,7 +17,7 @@ extension Theme {
             cornerRadius: 0,
             border: .init(color: .clear, size: 0)
         ),
-        background: .image(UIImage(named: "portraitBossDog")?.jpegData(compressionQuality: 0.1) ?? Data()),
+        background: .image(UIImage(named: "portraitBossDog")?.jpegData(compressionQuality: 1) ?? Data()),
         actionCallout: .neon,
         inputCallout: .neon,
         
@@ -33,7 +33,7 @@ extension Theme {
             Color(hex: "00F0FF"),
             .clear
         ]),
-        preview: .image(UIImage(named: "portraitBossDogPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        preview: .image(UIImage(named: "portraitBossDogPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "portraitBossDog"
     )
     
@@ -45,7 +45,7 @@ extension Theme {
             cornerRadius: 6,
             border: .init(color: .white, size: 1)
         ),
-        background: .image(UIImage(named: "portraitLionKing")?.jpegData(compressionQuality: 0.1) ?? Data()),
+        background: .image(UIImage(named: "portraitLionKing")?.jpegData(compressionQuality: 1) ?? Data()),
         actionCallout: .neon,
         inputCallout: .neon,
         
@@ -57,7 +57,7 @@ extension Theme {
             Color(hex: "FFFFFF"),
             .clear
         ]),
-        preview: .image(UIImage(named: "portraitLionKingPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        preview: .image(UIImage(named: "portraitLionKingPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "portraitLionKing"
     )
     
@@ -69,7 +69,7 @@ extension Theme {
             cornerRadius: 0,
             border: .init(color: .clear, size: 0)
         ),
-        background: .image(UIImage(named: "portraitRobotic")?.jpegData(compressionQuality: 0.1) ?? Data()),
+        background: .image(UIImage(named: "portraitRobotic")?.jpegData(compressionQuality: 1) ?? Data()),
         actionCallout: .neon,
         inputCallout: .neon,
         
@@ -82,7 +82,7 @@ extension Theme {
             Color(hex: "#00F0FF"),
             .clear
         ]),
-        preview: .image(UIImage(named: "portraitRoboticPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        preview: .image(UIImage(named: "portraitRoboticPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "portraitRobotic"
     )
     
@@ -94,7 +94,7 @@ extension Theme {
             cornerRadius: 0,
             border: .init(color: .clear, size: 0)
         ),
-        background: .image(UIImage(named: "portraitNeonCat")?.jpegData(compressionQuality: 0.1) ?? Data()),
+        background: .image(UIImage(named: "portraitNeonCat")?.jpegData(compressionQuality: 1) ?? Data()),
         actionCallout: .neon,
         inputCallout: .neon,
         
@@ -107,7 +107,7 @@ extension Theme {
             Color(hex: "00F0FF"),
             .clear
         ]),
-        preview: .image(UIImage(named: "portraitNeonCatPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        preview: .image(UIImage(named: "portraitNeonCatPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "portraitNeonCat"
     )
     
@@ -119,7 +119,7 @@ extension Theme {
             cornerRadius: 10,
             border: .init(color: .white, size: 2)
         ),
-        background: .image(UIImage(named: "portraitNeonDog")?.jpegData(compressionQuality: 0.1) ?? Data()),
+        background: .image(UIImage(named: "portraitNeonDog")?.jpegData(compressionQuality: 1) ?? Data()),
         actionCallout: .neon,
         inputCallout: .neon,
         
@@ -131,7 +131,7 @@ extension Theme {
             Color(hex: "FF00F5"),
             .clear
         ]),
-        preview: .image(UIImage(named: "portraitNeonDogPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        preview: .image(UIImage(named: "portraitNeonDogPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "portraitNeonDog"
     )
     
@@ -143,7 +143,7 @@ extension Theme {
             cornerRadius: 10,
             border: .init(color: .clear, size: 0)
         ),
-        background: .image(UIImage(named: "portraitLlama")?.jpegData(compressionQuality: 0.1) ?? Data()),
+        background: .image(UIImage(named: "portraitLlama")?.jpegData(compressionQuality: 1) ?? Data()),
         actionCallout: .neon,
         inputCallout: .neon,
         durationAnimation: 6,
@@ -154,7 +154,7 @@ extension Theme {
             Color(hex: "000AFF"),
             Color(hex: "FF00D6"),
         ], 3),
-        preview: .image(UIImage(named: "portraitLlamaPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        preview: .image(UIImage(named: "portraitLlamaPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "portraitLlama"
     )
     
@@ -166,7 +166,7 @@ extension Theme {
             cornerRadius: 10,
             border: .init(color: .white, size: 2)
         ),
-        background: .image(UIImage(named: "portraitNeonTiger")?.jpegData(compressionQuality: 0.1) ?? Data()),
+        background: .image(UIImage(named: "portraitNeonTiger")?.jpegData(compressionQuality: 1) ?? Data()),
         actionCallout: .neon,
         inputCallout: .neon,
         
@@ -180,7 +180,7 @@ extension Theme {
             Color(hex: "1400FF"),
             Color(hex: "46FF64"),
         ], 5),
-        preview: .image(UIImage(named: "portraitNeonTigerPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        preview: .image(UIImage(named: "portraitNeonTigerPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "portraitNeonTiger"
     )
     
@@ -193,7 +193,7 @@ extension Theme {
             cornerRadius: 10,
             border: .init(color: .clear, size: 0)
         ),
-        background: .image(UIImage(named: "portraitMonkeyFashion")?.jpegData(compressionQuality: 0.1) ?? Data()),
+        background: .image(UIImage(named: "portraitMonkeyFashion")?.jpegData(compressionQuality: 1) ?? Data()),
         actionCallout: .neon,
         inputCallout: .neon,
         neonPermission: .init(disableNeonCharacter: true),
@@ -206,7 +206,7 @@ extension Theme {
             .clear,
 //            .clear,
         ]),
-        preview: .image(UIImage(named: "portraitMonkeyFashionPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        preview: .image(UIImage(named: "portraitMonkeyFashionPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "portraitMonkeyFashion"
     )
 }

@@ -149,6 +149,21 @@
                   endingLineNumber = "400"
                   offsetFromSymbolStart = "16">
                </Location>
+               <Location
+                  uuid = "94359703-4852-4614-853A-DB188C90A975 - 1c1057d2a73b7df"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "one-time initialization function for cuteRainbowGarden"
+                  moduleName = "NeonLedKeyboardUploadTheme"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/maxmobilesoftware/Documents/code/Keyboard/Product/NeonLedKeyboardEditTheme/NeonLedKeyboardUploadTheme/Theme/Cute/CuteTheme.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "400"
+                  endingLineNumber = "400"
+                  offsetFromSymbolStart = "3624">
+               </Location>
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>

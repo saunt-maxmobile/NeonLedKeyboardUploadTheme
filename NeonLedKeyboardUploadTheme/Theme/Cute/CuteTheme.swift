@@ -25,10 +25,10 @@ extension Theme {
         specialKey: "Keyboard.Key.Rainbow1",
         showSpaceTitle: false,
         showPrimaryTitle: false,
-        background: .image(UIImage(named: "Keyboard.Key.Rainbow1.Background")?.jpegData(compressionQuality: 0.1) ?? Data()),
+        background: .image(UIImage(named: "Keyboard.Key.Rainbow1.Background")?.jpegData(compressionQuality: 1) ?? Data()),
         actionCallout: .bright,
         inputCallout: .bright,
-        preview: .image(UIImage(named: "cuteRainbowRabbitPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        preview: .image(UIImage(named: "cuteRainbowRabbitPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "cuteRainbowRabbit"
     )
     
@@ -48,10 +48,10 @@ extension Theme {
         specialKey: "Keyboard.Key.Frog",
         showSpaceTitle: false,
         showPrimaryTitle: false,
-        background: .image(UIImage(named: "Keyboard.Key.Frog.Background")?.jpegData(compressionQuality: 0.1) ?? Data()),
+        background: .image(UIImage(named: "Keyboard.Key.Frog.Background")?.jpegData(compressionQuality: 1) ?? Data()),
         actionCallout: .bright,
         inputCallout: .bright,
-        preview: .image(UIImage(named: "cuteFrogAlonePreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        preview: .image(UIImage(named: "cuteFrogAlonePreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "cuteFrogAlone"
     )
     
@@ -71,10 +71,10 @@ extension Theme {
         specialKey: "Keyboard.Key.Rabbit",
         showSpaceTitle: false,
         showPrimaryTitle: false,
-        background: .image(UIImage(named: "Keyboard.Key.Rabbit.Background")?.jpegData(compressionQuality: 0.1) ?? Data()),
+        background: .image(UIImage(named: "Keyboard.Key.Rabbit.Background")?.jpegData(compressionQuality: 1) ?? Data()),
         actionCallout: .bright,
         inputCallout: .bright,
-        preview: .image(UIImage(named: "cuteBWRabbitPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        preview: .image(UIImage(named: "cuteBWRabbitPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "cuteBWRabbit"
     )
     
@@ -94,10 +94,10 @@ extension Theme {
         specialKey: "Keyboard.Key.Dog",
         showSpaceTitle: false,
         showPrimaryTitle: false,
-        background: .image(UIImage(named: "Keyboard.Key.Dog.Background")?.jpegData(compressionQuality: 0.1) ?? Data()),
+        background: .image(UIImage(named: "Keyboard.Key.Dog.Background")?.jpegData(compressionQuality: 1) ?? Data()),
         actionCallout: .bright,
         inputCallout: .bright,
-        preview: .image(UIImage(named: "cuteDachshundPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        preview: .image(UIImage(named: "cuteDachshundPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "cuteDachshund"
     )
     
@@ -118,10 +118,10 @@ extension Theme {
         specialKey: "Keyboard.Key.Parrot",
         showSpaceTitle: false,
         showPrimaryTitle: false,
-        background: .image(UIImage(named: "Keyboard.Key.Parrot.Background")?.jpegData(compressionQuality: 0.1) ?? Data()),
+        background: .image(UIImage(named: "Keyboard.Key.Parrot.Background")?.jpegData(compressionQuality: 1) ?? Data()),
         actionCallout: .bright,
         inputCallout: .bright,
-        preview: .image(UIImage(named: "cuteSillyParrotPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        preview: .image(UIImage(named: "cuteSillyParrotPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "cuteSillyParrot"
     )
     
@@ -144,7 +144,7 @@ extension Theme {
         background: .color(.white),
         actionCallout: .bright,
         inputCallout: .bright,
-        preview: .image(UIImage(named: "cuteLazyRabbitPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        preview: .image(UIImage(named: "cuteLazyRabbitPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "cuteLazyRabbit"
     )
     
@@ -164,10 +164,10 @@ extension Theme {
         specialKey: "Keyboard.Key.ShibaInu",
         showSpaceTitle: false,
         showPrimaryTitle: false,
-        background: .image(UIImage(named: "Keyboard.Key.ShibaInu.Background")?.jpegData(compressionQuality: 0.1) ?? Data()),
+        background: .image(UIImage(named: "Keyboard.Key.ShibaInu.Background")?.jpegData(compressionQuality: 1) ?? Data()),
         actionCallout: .bright,
         inputCallout: .bright,
-        preview: .image(UIImage(named: "cuteShibaInuPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        preview: .image(UIImage(named: "cuteShibaInuPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "cuteShibaInu"
     )
     
@@ -187,10 +187,10 @@ extension Theme {
         specialKey: "Keyboard.Key.CuteAnimal",
         showSpaceTitle: false,
         showPrimaryTitle: false,
-        background: .image(UIImage(named: "Keyboard.Key.CuteAnimal.Background")?.jpegData(compressionQuality: 0.1) ?? Data()),
+        background: .image(UIImage(named: "Keyboard.Key.CuteAnimal.Background")?.jpegData(compressionQuality: 1) ?? Data()),
         actionCallout: .bright,
         inputCallout: .bright,
-        preview: .image(UIImage(named: "cutePawboardPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        preview: .image(UIImage(named: "cutePawboardPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "cutePawboard"
     )
     
@@ -210,10 +210,10 @@ extension Theme {
         specialKey: "Keyboard.Key.CatLook",
         showSpaceTitle: false,
         showPrimaryTitle: false,
-        background: .image(UIImage(named: "Keyboard.Key.CatLook.Background")?.jpegData(compressionQuality: 0.1) ?? Data()),
+        background: .image(UIImage(named: "Keyboard.Key.CatLook.Background")?.jpegData(compressionQuality: 1) ?? Data()),
         actionCallout: .bright,
         inputCallout: .bright,
-        preview: .image(UIImage(named: "cuteCatlookPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        preview: .image(UIImage(named: "cuteCatlookPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "cuteCatlook"
     )
     
@@ -233,10 +233,10 @@ extension Theme {
         specialKey: "Keyboard.Key.PinkStar",
         showSpaceTitle: false,
         showPrimaryTitle: false,
-        background: .image(UIImage(named: "Keyboard.Key.PinkStar.Background")?.jpegData(compressionQuality: 0.1) ?? Data()),
+        background: .image(UIImage(named: "Keyboard.Key.PinkStar.Background")?.jpegData(compressionQuality: 1) ?? Data()),
         actionCallout: .bright,
         inputCallout: .bright,
-        preview: .image(UIImage(named: "cutePinkStarPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        preview: .image(UIImage(named: "cutePinkStarPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "cutePinkStar"
     )
     
@@ -256,10 +256,10 @@ extension Theme {
         specialKey: "Keyboard.Key.GreenGrass",
         showSpaceTitle: false,
         showPrimaryTitle: false,
-        background: .image(UIImage(named: "Keyboard.Key.GreenGrass.Background")?.jpegData(compressionQuality: 0.1) ?? Data()),
+        background: .image(UIImage(named: "Keyboard.Key.GreenGrass.Background")?.jpegData(compressionQuality: 1) ?? Data()),
         actionCallout: .bright,
         inputCallout: .bright,
-        preview: .image(UIImage(named: "cuteGreenGrassPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        preview: .image(UIImage(named: "cuteGreenGrassPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "cuteGreenGrass"
     )
     
@@ -279,10 +279,10 @@ extension Theme {
         specialKey: "Keyboard.Key.Dusk",
         showSpaceTitle: false,
         showPrimaryTitle: false,
-        background: .image(UIImage(named: "Keyboard.Key.Dusk.Background")?.jpegData(compressionQuality: 0.1) ?? Data()),
+        background: .image(UIImage(named: "Keyboard.Key.Dusk.Background")?.jpegData(compressionQuality: 1) ?? Data()),
         actionCallout: .bright,
         inputCallout: .bright,
-        preview: .image(UIImage(named: "cuteDuskPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        preview: .image(UIImage(named: "cuteDuskPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "cuteDusk"
     )
     
@@ -302,10 +302,10 @@ extension Theme {
         specialKey: "Keyboard.Key.Spring",
         showSpaceTitle: false,
         showPrimaryTitle: false,
-        background: .image(UIImage(named: "Keyboard.Key.Spring.Background")?.jpegData(compressionQuality: 0.1) ?? Data()),
+        background: .image(UIImage(named: "Keyboard.Key.Spring.Background")?.jpegData(compressionQuality: 1) ?? Data()),
         actionCallout: .bright,
         inputCallout: .bright,
-        preview: .image(UIImage(named: "cuteBloomBoardPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        preview: .image(UIImage(named: "cuteBloomBoardPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "cuteBloomBoard"
     )
     
@@ -325,10 +325,10 @@ extension Theme {
         specialKey: "Keyboard.Key.Cat",
         showSpaceTitle: false,
         showPrimaryTitle: false,
-        background: .image(UIImage(named: "Keyboard.Key.Cat.Background")?.jpegData(compressionQuality: 0.1) ?? Data()),
+        background: .image(UIImage(named: "Keyboard.Key.Cat.Background")?.jpegData(compressionQuality: 1) ?? Data()),
         actionCallout: .bright,
         inputCallout: .bright,
-        preview: .image(UIImage(named: "cuteCatGardenPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        preview: .image(UIImage(named: "cuteCatGardenPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "cuteCatGarden"
     )
     
@@ -344,10 +344,10 @@ extension Theme {
         specialKey: "Keyboard.Key.Pixal",
         showSpaceTitle: false,
         showPrimaryTitle: false,
-        background: .image(UIImage(named: "Keyboard.Key.Pixal.Background")?.jpegData(compressionQuality: 0.1) ?? Data()),
+        background: .image(UIImage(named: "Keyboard.Key.Pixal.Background")?.jpegData(compressionQuality: 1) ?? Data()),
         actionCallout: .bright,
         inputCallout: .bright,
-        preview: .image(UIImage(named: "cutePurplePixelPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        preview: .image(UIImage(named: "cutePurplePixelPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "cutePurplePixel"
     )
     
@@ -367,10 +367,10 @@ extension Theme {
         specialKey: "Keyboard.Key.FrogKey",
         showSpaceTitle: false,
         showPrimaryTitle: false,
-        background: .image(UIImage(named: "Keyboard.Key.FrogKey.Background")?.jpegData(compressionQuality: 0.1) ?? Data()),
+        background: .image(UIImage(named: "Keyboard.Key.FrogKey.Background")?.jpegData(compressionQuality: 1) ?? Data()),
         actionCallout: .bright,
         inputCallout: .bright,
-        preview: .image(UIImage(named: "cuteBeneathTheLilyPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        preview: .image(UIImage(named: "cuteBeneathTheLilyPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "cuteBeneathTheLily"
     )
     
@@ -378,7 +378,7 @@ extension Theme {
         id: "563c912c-7799-4a57-a3fc-c658f761bcd3",
         button: .init(
             background: .image(UIImage(named: "Keyboard.Key.Horror.Normal")?.pngData() ?? Data(), contentMode: .stretch),
-            foregroundColor: Color.black,
+            foregroundColor: Color.white,
             font: .custom("Creepster-Regular", size: 18)
         ),
         shiftButton: .image(UIImage(named: "Keyboard.Key.Horror.Shift"), contentMode: .stretch),
@@ -390,10 +390,10 @@ extension Theme {
         specialKey: "Keyboard.Key.Horror",
         showSpaceTitle: false,
         showPrimaryTitle: false,
-        background: .image(UIImage(named: "Keyboard.Key.Horror.Background")?.jpegData(compressionQuality: 0.1) ?? Data()),
+        background: .image(UIImage(named: "Keyboard.Key.Horror.Background")?.jpegData(compressionQuality: 1) ?? Data()),
         actionCallout: .bright,
         inputCallout: .bright,
-        preview: .image(UIImage(named: "cuteScreamboardPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        preview: .image(UIImage(named: "cuteScreamboardPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "cuteScreamboard"
     )
     
@@ -413,10 +413,10 @@ extension Theme {
         specialKey: "Keyboard.Key.Rainbow",
         showSpaceTitle: false,
         showPrimaryTitle: false,
-        background: .image(UIImage(named: "Keyboard.Key.Rainbow.Background")?.jpegData(compressionQuality: 0.1) ?? Data()),
+        background: .image(UIImage(named: "Keyboard.Key.Rainbow.Background")?.jpegData(compressionQuality: 1) ?? Data()),
         actionCallout: .bright,
         inputCallout: .bright,
-        preview: .image(UIImage(named: "cuteRainbowGardenPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        preview: .image(UIImage(named: "cuteRainbowGardenPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "cuteRainbowGarden"
     )
     
@@ -436,10 +436,10 @@ extension Theme {
         specialKey: "Keyboard.Key.Panda",
         showSpaceTitle: false,
         showPrimaryTitle: false,
-        background: .image(UIImage(named: "Keyboard.Key.Panda.Background")?.jpegData(compressionQuality: 0.1) ?? Data()),
+        background: .image(UIImage(named: "Keyboard.Key.Panda.Background")?.jpegData(compressionQuality: 1) ?? Data()),
         actionCallout: .bright,
         inputCallout: .bright,
-        preview: .image(UIImage(named: "cuteHungryPandasPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        preview: .image(UIImage(named: "cuteHungryPandasPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "cuteHungryPandas"
     )
     
@@ -459,10 +459,10 @@ extension Theme {
         specialKey: "Keyboard.Key.CatGarden",
         showSpaceTitle: false,
         showPrimaryTitle: false,
-        background: .image(UIImage(named: "Keyboard.Key.CatGarden.Background")?.jpegData(compressionQuality: 0.1) ?? Data()),
+        background: .image(UIImage(named: "Keyboard.Key.CatGarden.Background")?.jpegData(compressionQuality: 1) ?? Data()),
         actionCallout: .bright,
         inputCallout: .bright,
-        preview: .image(UIImage(named: "cuteKittyHavenPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        preview: .image(UIImage(named: "cuteKittyHavenPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "cuteKittyHaven"
     )
     
@@ -482,10 +482,10 @@ extension Theme {
         specialKey: "Keyboard.Key.RabbitCute",
         showSpaceTitle: false,
         showPrimaryTitle: false,
-        background: .image(UIImage(named: "Keyboard.Key.RabbitCute.Background")?.jpegData(compressionQuality: 0.1) ?? Data()),
+        background: .image(UIImage(named: "Keyboard.Key.RabbitCute.Background")?.jpegData(compressionQuality: 1) ?? Data()),
         actionCallout: .bright,
         inputCallout: .bright,
-        preview: .image(UIImage(named: "cuteBunnehBardPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        preview: .image(UIImage(named: "cuteBunnehBardPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "cuteBunnehBard"
     )
     
@@ -501,10 +501,10 @@ extension Theme {
         specialKey: "Keyboard.Key.Zodiac",
         showSpaceTitle: false,
         showPrimaryTitle: false,
-        background: .image(UIImage(named: "Keyboard.Key.Zodiac.Background")?.jpegData(compressionQuality: 0.1) ?? Data()),
+        background: .image(UIImage(named: "Keyboard.Key.Zodiac.Background")?.jpegData(compressionQuality: 1) ?? Data()),
         actionCallout: .bright,
         inputCallout: .bright,
-        preview: .image(UIImage(named: "cuteZodiacPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        preview: .image(UIImage(named: "cuteZodiacPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "cuteZodiac"
     )
     
@@ -520,10 +520,10 @@ extension Theme {
         specialKey: "Keyboard.Key.NeonChill",
         showSpaceTitle: false,
         showPrimaryTitle: false,
-        background: .image(UIImage(named: "Keyboard.Key.NeonChill.Background")?.jpegData(compressionQuality: 0.1) ?? Data()),
+        background: .image(UIImage(named: "Keyboard.Key.NeonChill.Background")?.jpegData(compressionQuality: 1) ?? Data()),
         actionCallout: .bright,
         inputCallout: .bright,
-        preview: .image(UIImage(named: "cuteSereniKeysPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        preview: .image(UIImage(named: "cuteSereniKeysPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "cuteSereniKeys"
     )
     
@@ -542,10 +542,10 @@ extension Theme {
         specialKey: "Keyboard.Key.Beer&Rabbit",
         showSpaceTitle: false,
         showPrimaryTitle: false,
-        background: .image(UIImage(named: "Keyboard.Key.Beer&Rabbit.Background")?.jpegData(compressionQuality: 0.1) ?? Data()),
+        background: .image(UIImage(named: "Keyboard.Key.Beer&Rabbit.Background")?.jpegData(compressionQuality: 1) ?? Data()),
         actionCallout: .bright,
         inputCallout: .bright,
-        preview: .image(UIImage(named: "cuteBearRabbitPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        preview: .image(UIImage(named: "cuteBearRabbitPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "cuteBearRabbit"
     )
     
@@ -564,10 +564,10 @@ extension Theme {
         specialKey: "Keyboard.Key.Capypara",
         showSpaceTitle: false,
         showPrimaryTitle: false,
-        background: .image(UIImage(named: "Keyboard.Key.Capypara.Background")?.jpegData(compressionQuality: 0.1) ?? Data()),
+        background: .image(UIImage(named: "Keyboard.Key.Capypara.Background")?.jpegData(compressionQuality: 1) ?? Data()),
         actionCallout: .bright,
         inputCallout: .bright,
-        preview: .image(UIImage(named: "cuteCapyparaPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        preview: .image(UIImage(named: "cuteCapyparaPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "cuteCapypara"
     )
     
@@ -586,10 +586,10 @@ extension Theme {
         specialKey: "Keyboard.Key.CatBlack&White",
         showSpaceTitle: false,
         showPrimaryTitle: false,
-        background: .image(UIImage(named: "Keyboard.Key.CatBlack&White.Background")?.jpegData(compressionQuality: 0.1) ?? Data()),
+        background: .image(UIImage(named: "Keyboard.Key.CatBlack&White.Background")?.jpegData(compressionQuality: 1) ?? Data()),
         actionCallout: .bright,
         inputCallout: .bright,
-        preview: .image(UIImage(named: "cuteCoolCatPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        preview: .image(UIImage(named: "cuteCoolCatPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "cuteCoolCat"
     )
 }
@@ -598,7 +598,7 @@ struct CuteTheme_Previews: PreviewProvider {
 
     struct Preview: View {
         
-        var theme: Theme = .cuteLazyRabbit
+        var theme: Theme = .cuteKittyHaven
 
         var controller: KeyboardInputViewController = {
             let controller = KeyboardInputViewController.preview
@@ -608,7 +608,7 @@ struct CuteTheme_Previews: PreviewProvider {
 //                .init(text: "Baz")
             ]
             
-            let theme: Theme = .cuteLazyRabbit
+            let theme: Theme = .cuteKittyHaven
             
             controller.services.styleProvider = CustomStyleProvider(
                 button: theme.button,

@@ -21,7 +21,7 @@ extension Theme {
         actionCallout: .bright,
         inputCallout: .bright,
         
-        preview: .image(UIImage(named: "colorLipPinkPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        preview: .image(UIImage(named: "colorLipPinkPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "colorLipPink"
     )
     
@@ -35,7 +35,7 @@ extension Theme {
         ),
         background: .color(Color(hex: "#99BBAD")),
         
-        preview: .image(UIImage(named: "colorLeafPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        preview: .image(UIImage(named: "colorLeafPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "colorLeaf"
     )
     
@@ -49,7 +49,7 @@ extension Theme {
         ),
         background: .color(Color(hex: "#61C0BF")),
         
-        preview: .image(UIImage(named: "colorCyanPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        preview: .image(UIImage(named: "colorCyanPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "colorCyan"
     )
     
@@ -63,7 +63,7 @@ extension Theme {
         ),
         background: .color(Color(hex: "#99DDCC")),
         
-        preview: .image(UIImage(named: "colorOceanPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        preview: .image(UIImage(named: "colorOceanPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "colorOcean"
     )
     
@@ -77,7 +77,7 @@ extension Theme {
         ),
         background: .color(Color(hex: "#D59BF6")),
         
-        preview: .image(UIImage(named: "colorPurplePreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        preview: .image(UIImage(named: "colorPurplePreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "colorPurple"
     )
     
@@ -91,7 +91,7 @@ extension Theme {
         ),
         background: .color(Color(hex: "#F8B400")),
         
-        preview: .image(UIImage(named: "colorYellowPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        preview: .image(UIImage(named: "colorYellowPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "colorYellow"
     )
     
@@ -105,7 +105,7 @@ extension Theme {
         ),
         background: .color(Color(hex: "#FFCDCD")),
         
-        preview: .image(UIImage(named: "colorLovePreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        preview: .image(UIImage(named: "colorLovePreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "colorLove"
     )
     
@@ -119,7 +119,7 @@ extension Theme {
         ),
         background: .color(Color(hex: "#CFF1EF")),
         
-        preview: .image(UIImage(named: "colorWaterPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        preview: .image(UIImage(named: "colorWaterPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "colorWater"
     )
     
@@ -133,7 +133,7 @@ extension Theme {
         ),
         background: .color(Color(hex: "#729D39")),
         
-        preview: .image(UIImage(named: "colorGreenPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        preview: .image(UIImage(named: "colorGreenPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "colorGreen"
     )
     
@@ -147,7 +147,7 @@ extension Theme {
         ),
         background: .color(Color(hex: "#D57149")),
         
-        preview: .image(UIImage(named: "colorOrangePreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        preview: .image(UIImage(named: "colorOrangePreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "colorOrange"
     )
     
@@ -161,7 +161,7 @@ extension Theme {
         ),
         background: .color(Color(hex: "#678A74")),
         
-        preview: .image(UIImage(named: "colorTreePreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        preview: .image(UIImage(named: "colorTreePreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "colorTree"
     )
     
@@ -175,7 +175,7 @@ extension Theme {
         ),
         background: .color(Color(hex: "#F5B971")),
         
-        preview: .image(UIImage(named: "colorHotPreview")?.jpegData(compressionQuality: 0.1) ?? Data(), contentMode: .fit),
+        preview: .image(UIImage(named: "colorHotPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "colorHot"
     )
 }
