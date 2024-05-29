@@ -16,11 +16,12 @@ struct ConfigDataStorage {
         /// just accept encode for id, name, imagePreview of theme
 //        ThemeHandler.shared.saveThemeSection(themeSections)
         /// accept encode all variable of theme
-//        ThemeHandler.shared.createThemeFolder(themeSections)
+        ThemeHandler.shared.createThemeFolder(themeSections)
     }
     
     var themeSections: [ThemeSection] = [
-        .init(name: "Cute", themes: [.cuteRainbowRabbit, .cuteFrogAlone, .cuteBWRabbit, .cuteDachshund, .cuteSillyParrot, .cuteLazyRabbit, .cuteShibaInu, .cutePawboard, .cuteCatlook, .cutePinkStar, .cuteGreenGrass, .cuteDusk, .cuteBloomBoard, .cuteCatGarden, .cutePurplePixel, .cuteBeneathTheLily, .cuteScreamboard, .cuteRainbowGarden, .cuteHungryPandas, .cuteKittyHaven, .cuteBunnehBard, .cuteZodiac, .cuteSereniKeys, .cuteBearRabbit, .cuteCapypara, .cuteCoolCat]),
+        .init(name: "abc", themes: [.cuteCatGarden])
+//        .init(name: "Cute", themes: [.cuteRainbowRabbit, .cuteFrogAlone, .cuteBWRabbit, .cuteDachshund, .cuteSillyParrot, .cuteLazyRabbit, .cuteShibaInu, .cutePawboard, .cuteCatlook, .cutePinkStar, .cuteGreenGrass, .cuteDusk, .cuteBloomBoard, .cuteCatGarden, .cutePurplePixel, .cuteBeneathTheLily, .cuteScreamboard, .cuteRainbowGarden, .cuteHungryPandas, .cuteKittyHaven, .cuteBunnehBard, .cuteZodiac, .cuteSereniKeys, .cuteBearRabbit, .cuteCapypara, .cuteCoolCat]),
 //        .init(name: "Gradient", themes: [.gradientPink, .gradientGrass, .gradientSunny, .gradientPurple, .gradientSky, .gradientSea, .gradientGreen, .gradientPhotoRainbow, .gradientPhotoRomantic, .gradientPhotoUnicorn, .gradientPhotoGillter, .gradientPhotoColorfull, .gradientRiver, .gradientPopPoly, .gradientHologram, .gradientVividBlurred, .gradientVividColorfull, .gradientDarkUniverse, .gradientVortex, .gradientPolygon, .gradientAurora, .gradientYellowFruits, .gradientPurpleVivid, .gradientHexagonBlurred, .gradientCircleBlurred, .gradientCinema]),
 //        .init(name: "Color", themes: [.colorLipPink, .colorLeaf, .colorCyan, .colorOcean, .colorPurple, .colorYellow, .colorLove, .colorWater, .colorGreen, .colorOrange, .colorTree, .colorHot]),
 //        .init(name: "Photo", themes: [.photoCloud, .photoPurpleGlitter, .photoDarkPurple, .photoPinkCream, .photoBlueGlitter, .photoGalaxy, .photoBlueNeon, .photoColor, .photoBokeh, .photoSkyfull, .photoDark, .photoWaterColor, .photoCool, .photoMountain, .photoJungle, .photoBlueGalaxy, .photoMajesticGalaxy, .photoColorWaves, .photoBlurBokeh, .photoPeculiarCircle, .photoFantasticStrip, .photoFriendlyLemur, .photoFunnyHorse, .photoCuteCorgi, .photoCoolCat, .photoLoverDog, .photoPuppy]),
