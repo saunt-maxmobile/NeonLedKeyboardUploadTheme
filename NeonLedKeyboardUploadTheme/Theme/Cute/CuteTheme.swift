@@ -153,7 +153,7 @@ extension Theme {
         button: .init(
             background: .image(UIImage(named: "Keyboard.Key.ShibaInu.Normal")?.pngData() ?? Data(), contentMode: .stretch),
             foregroundColor: Color(hex: "403131"),
-            font: .custom("RoadRage", size: 15)
+            font: .custom("RoadRage-Regular", size: 15)
         ),
         shiftButton: .image(UIImage(named: "Keyboard.Key.ShibaInu.Shift"), contentMode: .fit),
         backspaceButton: .image(UIImage(named: "Keyboard.Key.ShibaInu.Backspace"), contentMode: .fit),
@@ -598,7 +598,7 @@ struct CuteTheme_Previews: PreviewProvider {
 
     struct Preview: View {
         
-        var theme: Theme = .cuteKittyHaven
+        var theme: Theme = .cuteRainbowRabbit
 
         var controller: KeyboardInputViewController = {
             let controller = KeyboardInputViewController.preview
@@ -608,7 +608,7 @@ struct CuteTheme_Previews: PreviewProvider {
 //                .init(text: "Baz")
             ]
             
-            let theme: Theme = .cuteKittyHaven
+            let theme: Theme = .cuteRainbowRabbit
             
             controller.services.styleProvider = CustomStyleProvider(
                 button: theme.button,

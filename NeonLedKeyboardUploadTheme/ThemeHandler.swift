@@ -110,9 +110,9 @@ struct ThemeHandler {
         let _zipFilePath = directoryPath.appendingPathComponent(folderName+".zip")
         try Zip.zipFiles(paths: [_directoryFolderPath], zipFilePath: _zipFilePath, password: nil, progress: nil)
         /// upload to storage
-//        self.saveThemeDataToStorage(folder: folderName, nameFile: folderName + ".zip", file: _zipFilePath)
+        self.saveThemeDataToStorage(folder: folderName, nameFile: folderName + ".zip", file: _zipFilePath)
         /// remove theme folder after zip
-//        try FILE_MANAGER.removeItem(at: _directoryFolderPath)
+        try FILE_MANAGER.removeItem(at: _directoryFolderPath)
     }
     
     private func saveThemeDataToStorage(folder: String, nameFile: String, file: URL) {
@@ -124,7 +124,7 @@ struct ThemeHandler {
         _themeDataRef.putFile(from: file) { metadata, error in
             guard metadata != nil else {
                 // Uh-oh, an error occurred!
-                print(error)
+                print("error: \(error)")
                 return
             }
             print("save success: \(nameFile)")

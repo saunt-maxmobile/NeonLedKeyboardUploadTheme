@@ -20,7 +20,7 @@ struct ConfigDataStorage {
     }
     
     var themeSections: [ThemeSection] = [
-        .init(name: "abc", themes: [.cuteCatGarden])
+        .init(name: "Cute", themes: [.cuteZodiac, .cuteScreamboard, .cuteBloomBoard])
 //        .init(name: "Cute", themes: [.cuteRainbowRabbit, .cuteFrogAlone, .cuteBWRabbit, .cuteDachshund, .cuteSillyParrot, .cuteLazyRabbit, .cuteShibaInu, .cutePawboard, .cuteCatlook, .cutePinkStar, .cuteGreenGrass, .cuteDusk, .cuteBloomBoard, .cuteCatGarden, .cutePurplePixel, .cuteBeneathTheLily, .cuteScreamboard, .cuteRainbowGarden, .cuteHungryPandas, .cuteKittyHaven, .cuteBunnehBard, .cuteZodiac, .cuteSereniKeys, .cuteBearRabbit, .cuteCapypara, .cuteCoolCat]),
 //        .init(name: "Gradient", themes: [.gradientPink, .gradientGrass, .gradientSunny, .gradientPurple, .gradientSky, .gradientSea, .gradientGreen, .gradientPhotoRainbow, .gradientPhotoRomantic, .gradientPhotoUnicorn, .gradientPhotoGillter, .gradientPhotoColorfull, .gradientRiver, .gradientPopPoly, .gradientHologram, .gradientVividBlurred, .gradientVividColorfull, .gradientDarkUniverse, .gradientVortex, .gradientPolygon, .gradientAurora, .gradientYellowFruits, .gradientPurpleVivid, .gradientHexagonBlurred, .gradientCircleBlurred, .gradientCinema]),
 //        .init(name: "Color", themes: [.colorLipPink, .colorLeaf, .colorCyan, .colorOcean, .colorPurple, .colorYellow, .colorLove, .colorWater, .colorGreen, .colorOrange, .colorTree, .colorHot]),
