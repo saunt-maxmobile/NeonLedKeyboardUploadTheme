@@ -16,7 +16,7 @@ extension Theme {
             foregroundColor: Color(hex: "#E43977"),
             font: .custom("Inter-Medium", size: 18),
             cornerRadius: 8,
-            border: .init(color: .white, size: 2)
+            border: .init(color: .white, size: 1)
         ),
         background: .image(UIImage(named: "photoCloud")?.jpegData(compressionQuality: 1) ?? Data()),
         
@@ -26,11 +26,11 @@ extension Theme {
     
     static var photoPurpleGlitter: Theme = .init(id: "08CE51C5-2C48-4D16-86E4-B1473561A735",
         button: .init(
-            background: .color(Color.white.opacity(0.3)),
+            background: .color(.clear),
             foregroundColor: Color.white,
             font: .custom("Inter-Medium", size: 18),
             cornerRadius: 8,
-            border: .init(color: .white, size: 2)
+            border: .init(color: .white, size: 1)
         ),
         background: .image(UIImage(named: "photoPurpleGlitter")?.jpegData(compressionQuality: 1) ?? Data()),
         
@@ -44,7 +44,7 @@ extension Theme {
             foregroundColor: Color(hex: "EE82FF"),
             font: .custom("Inter-Medium", size: 18),
             cornerRadius: 8,
-            border: .init(color: Color(hex: "EE82FF"), size: 2)
+            border: .init(color: Color(hex: "EE82FF"), size: 1)
         ),
         background: .image(UIImage(named: "photoDarkPurple")?.jpegData(compressionQuality: 1) ?? Data()),
         
@@ -72,7 +72,7 @@ extension Theme {
             foregroundColor: Color(hex: "#0F73AC"),
             font: .custom("Inter-Medium", size: 18),
             cornerRadius: 8,
-            border: .init(color: Color(hex: "#5AB9EF"), size: 2)
+            border: .init(color: Color(hex: "#5AB9EF"), size: 1)
         ),
         background: .image(UIImage(named: "photoBlueGlitter")?.jpegData(compressionQuality: 1) ?? Data()),
         
@@ -244,7 +244,7 @@ extension Theme {
             foregroundColor: Color(hex: "#00F0FF"),
             font: .custom("Inter-Medium", size: 18),
             cornerRadius: 10,
-            border: .init(color: Color(hex: "#4C3CFF"), size: 2)
+            border: .init(color: Color(hex: "#4C3CFF"), size: 1)
         ),
         background: .image(UIImage(named: "photoMajesticGalaxy")?.jpegData(compressionQuality: 1) ?? Data()),
         actionCallout: .bright,
@@ -254,7 +254,8 @@ extension Theme {
         name: "photoMajesticGalaxy"
     )
     
-    static var photoColorWaves: Theme = .init(id: "3D81027A-7128-4B50-8ED2-EDF475DD48B2",
+    static var photoColorWaves: Theme = .init(
+        id: "3D81027A-7128-4B50-8ED2-EDF475DD48B2",
         button: .init(
             background: .color(.white),
             foregroundColor: Color(hex: "#FF00D6"),
@@ -265,6 +266,15 @@ extension Theme {
         background: .image(UIImage(named: "photoColorWaves")?.jpegData(compressionQuality: 1) ?? Data()),
         actionCallout: .bright,
         inputCallout: .bright,
+        neonPermission: .init(disableNeonButton: true),
+        neonLinearAnimation: .radial([
+            Color(hex: "#FF00D6"),
+            Color(hex: "#00FFFF"),
+            Color(hex: "#00FFFF"),
+            Color(hex: "#000AFF"),
+            Color(hex: "#000AFF"),
+            .clear
+        ]),
         preview: .image(UIImage(named: "photoColorWavesPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "photoColorWaves"
     )
@@ -275,7 +285,7 @@ extension Theme {
             foregroundColor: Color(hex: "#80FE02"),
             font: .custom("Inter-Medium", size: 18),
             cornerRadius: 12,
-            border: .init(color: Color(hex: "#FFC700"), size: 3)
+            border: .init(color: Color(hex: "#FFC700"), size: 1)
         ),
         background: .image(UIImage(named: "photoBlurBokeh")?.jpegData(compressionQuality: 1) ?? Data()),
         actionCallout: .bright,
@@ -299,7 +309,8 @@ extension Theme {
         durationAnimation: 3,
         neonLinearAnimation: .radial([
             Color(hex: "#FFFFFF"),
-            Color(hex: "#FFFFFF"),
+            Color(hex: "#00F0FF"),
+            Color(hex: "#00F0FF"),
             Color(hex: "#000AFF"),
             Color(hex: "#000AFF"),
             .clear
@@ -362,7 +373,7 @@ extension Theme {
             foregroundColor: Color(hex: "#FFD746"),
             font: .custom("Inter-Medium", size: 18),
             cornerRadius: 10,
-            border: .init(color: Color(hex: "#FF984C"), size: 2)
+            border: .init(color: Color(hex: "#FF984C"), size: 1)
         ),
         background: .image(UIImage(named: "photoCuteCorgi")?.jpegData(compressionQuality: 1) ?? Data()),
         actionCallout: .bright,
@@ -425,7 +436,7 @@ struct PhotoTheme_Previews: PreviewProvider {
 
     struct Preview: View {
         
-        let theme: Theme = .photoFunnyHorse
+        let theme: Theme = .photoPeculiarCircle
         
         var controller: KeyboardInputViewController = {
             let controller = KeyboardInputViewController.preview
@@ -435,7 +446,7 @@ struct PhotoTheme_Previews: PreviewProvider {
                 //                .init(text: "Baz")
             ]
             
-            let theme: Theme = .photoFunnyHorse
+            let theme: Theme = .photoPeculiarCircle
             
             controller.services.styleProvider = CustomKeyStyleProvider(buttonStyle: theme.button, actionCallout: theme.actionCallout ?? .bright, inputCallout: theme.inputCallout ?? .bright, keyboardContext: controller.state.keyboardContext)
             

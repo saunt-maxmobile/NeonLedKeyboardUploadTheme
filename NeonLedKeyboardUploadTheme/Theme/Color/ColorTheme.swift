@@ -101,7 +101,7 @@ extension Theme {
             foregroundColor: Color(hex: "#E75681"),
             font: .body,
             cornerRadius: 8,
-            border: .init(color: Color(hex: "#FA98B0"), size: 2)
+            border: .init(color: Color(hex: "#FA98B0"), size: 1)
         ),
         background: .color(Color(hex: "#FFCDCD")),
         
@@ -115,7 +115,7 @@ extension Theme {
             foregroundColor: Color(hex: "#008585"),
             font: .body,
             cornerRadius: 8,
-            border: .init(color: Color(hex: "#008585").opacity(0.5), size: 2)
+            border: .init(color: Color(hex: "#008585").opacity(0.5), size: 1)
         ),
         background: .color(Color(hex: "#CFF1EF")),
         
@@ -184,7 +184,7 @@ struct ColorTheme_Previews: PreviewProvider {
 
     struct Preview: View {
         
-        var theme: Theme = .colorHot
+        var theme: Theme = .colorWater
         
         var controller: KeyboardInputViewController = {
             let controller = KeyboardInputViewController.preview
@@ -194,7 +194,7 @@ struct ColorTheme_Previews: PreviewProvider {
                 //                .init(text: "Baz")
             ]
             
-            let theme: Theme = .colorHot
+            let theme: Theme = .colorWater
             
             controller.services.styleProvider = CustomKeyStyleProvider(buttonStyle: theme.button, actionCallout: theme.actionCallout ?? .bright, inputCallout: theme.inputCallout ?? .bright, keyboardContext: controller.state.keyboardContext)
             

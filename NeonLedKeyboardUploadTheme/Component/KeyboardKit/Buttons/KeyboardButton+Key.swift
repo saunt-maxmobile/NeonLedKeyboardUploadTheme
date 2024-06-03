@@ -38,8 +38,8 @@ public extension KeyboardButton {
         private let isPressed: Bool
         
         public var body: some View {
-            
-            if style.shapeType == .SQUARE {
+            switch style.shapeType {
+            case .SQUARE :
                 RoundedRectangle(cornerRadius: cornerRadius)
                     .strokeBorder(borderColor, lineWidth: borderLineWidth)
                     .background(style.background?.backgroundView)
@@ -47,8 +47,15 @@ public extension KeyboardButton {
                     .overlay(isPressed ? style.pressedOverlayColor : .clear)
                     .cornerRadius(cornerRadius)
                     .overlay(KeyboardButton.Shadow(style: style))
-            } else {
-//                MyAnyShape(style.shapeType.getShapeType)
+            case .CIRCLESHAPE:
+                RoundedRectangle(cornerRadius: 90)
+                    .strokeBorder(borderColor, lineWidth: borderLineWidth)
+                    .background(style.background?.backgroundView)
+                    .background(backgroundColor)
+                    .overlay(isPressed ? style.pressedOverlayColor : .clear)
+                    .cornerRadius(cornerRadius)
+                    .overlay(KeyboardButton.Shadow(style: style))
+            default:
                 style.shapeType.toShape
                     .stroke(lineWidth: borderLineWidth)
                     .foregroundStyle(borderColor)

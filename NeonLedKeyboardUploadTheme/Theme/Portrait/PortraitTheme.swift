@@ -26,8 +26,10 @@ extension Theme {
         durationAnimation: 4,
         neonLinearAnimation: .radial([
             Color(hex: "FFD746"),
-            Color(hex: "FFD746"),
+//            Color(hex: "FFD746"),
             Color(hex: "FFFFFF"),
+            Color(hex: "FFFFFF"),
+            Color(hex: "4200FF"),
             Color(hex: "4200FF"),
             Color(hex: "00F0FF"),
             Color(hex: "00F0FF"),
@@ -53,7 +55,10 @@ extension Theme {
         neonLinearAnimation: .radial([
             Color(hex: "00F0FF"),
             Color(hex: "FF00F5"),
+            Color(hex: "FF00F5"),
             Color(hex: "FFD746"),
+            Color(hex: "FFD746"),
+            Color(hex: "FFFFFF"),
             Color(hex: "FFFFFF"),
             .clear
         ]),
@@ -76,7 +81,6 @@ extension Theme {
         neonPermission: .init(disableNeonButton: true),
         durationAnimation: 6,
         neonLinearAnimation: .radial([
-            Color(hex: "#FF00D6"),
             Color(hex: "#FF00D6"),
             Color(hex: "#00F0FF"),
             Color(hex: "#00F0FF"),
@@ -104,6 +108,8 @@ extension Theme {
         neonLinearAnimation: .radial([
             Color(hex: "FF00D6"),
             Color(hex: "#FFFFFF"),
+            Color(hex: "#FFFFFF"),
+            Color(hex: "00F0FF"),
             Color(hex: "00F0FF"),
             .clear
         ]),

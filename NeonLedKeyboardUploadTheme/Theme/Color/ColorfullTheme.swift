@@ -26,7 +26,8 @@ extension Theme {
         durationAnimation: 5,
         neonLinearAnimation: .radial([
             Color(hex: "#000AFF"),
-            Color(hex: "#000AFF"),
+//            Color(hex: "#000AFF"),
+            Color(hex: "#FFFFFF"),
             Color(hex: "#FFFFFF"),
             .clear
         ]),
@@ -145,10 +146,10 @@ extension Theme {
         durationAnimation: 3,
         neonLinearAnimation: .radial([
             Color(hex: "FEF635"),
-            Color(hex: "FEF635"),
+//            Color(hex: "FEF635"),
             Color(hex: "FA00FF"),
             Color(hex: "FA00FF"),
-            Color(hex: "#FA00FF"),
+//            Color(hex: "#FA00FF"),
             .clear
         ]),
         preview: .image(UIImage(named: "colorfullFlowerPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
@@ -223,7 +224,7 @@ extension Theme {
 //        disableNeonAnimationButton: true,
         neonLinearAnimation: .radial([
             Color(hex: "000AFF"),
-            Color(hex: "000AFF"),
+//            Color(hex: "000AFF"),
             Color(hex: "FA00FF"),
             Color(hex: "FA00FF"),
             Color(hex: "#FF9500"),
@@ -249,9 +250,9 @@ extension Theme {
         neonPermission: .init(disableNeonCharacter: true),
 //        disableNeonAnimationCharacter: true,
         neonLinearAnimation: .radial([
-            Color(hex: "FFFFFF").opacity(0.6),
-            Color(hex: "B6F364").opacity(0.6),
-            Color(hex: "B6F364").opacity(0.6),
+            Color(hex: "FFFFFF"),
+            Color(hex: "B6F364"),
+            Color(hex: "B6F364"),
             .clear
         ]),
         preview: .image(UIImage(named: "colorfullCubesPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),

@@ -66,7 +66,7 @@ struct ThemeHandler {
                             .appendingPathComponent(folderName)
                         FILE_MANAGER.createDirectory(_directoryPath)
                         
-                        try self.savePreviewImage(theme.imagePreview, directoryPath: _directoryPath)
+//                        try self.savePreviewImage(theme.imagePreview, directoryPath: _directoryPath)
                         try self.createZipFolder(folderName: folderName, theme: theme, directoryPath: _directoryPath)
                     } catch {
                         print(error)

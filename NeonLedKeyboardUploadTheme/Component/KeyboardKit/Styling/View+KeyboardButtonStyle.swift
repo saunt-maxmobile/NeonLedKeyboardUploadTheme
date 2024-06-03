@@ -17,10 +17,20 @@ public extension View {
        - style: The style to apply.
      */
     func keyboardButtonStyle(_ style: KeyboardStyle.Button) -> some View {
-        self.background(KeyboardButton.Key(style: style))
-            .clipShape(style.shapeType.toShape)
-            .foregroundColor(style.foregroundColor)
-            .font(style.font?.font)
+        Group {
+            switch style.shapeType {
+            case .CIRCLESHAPE:
+                self.background(KeyboardButton.Key(style: style))
+                    .clipShape(RoundedRectangle(cornerRadius: 90))
+                    .foregroundColor(style.foregroundColor)
+                    .font(style.font?.font)
+            default:
+                self.background(KeyboardButton.Key(style: style))
+                    .clipShape(style.shapeType.toShape)
+                    .foregroundColor(style.foregroundColor)
+                    .font(style.font?.font)
+            }
+        }
     }
 }
 

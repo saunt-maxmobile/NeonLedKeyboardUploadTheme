@@ -1110,10 +1110,11 @@ struct SystemKeyboard_Previews: PreviewProvider {
                         services: controller.services,
                         themeObject: [],
                         neonPermission: .init(
-                            disableNeonCharacter: true,
-//                            disableNeonBorder: true
-                            disableNeonButton: true
+//                            disableNeonCharacter: true,
+                            disableNeonBorder: true
+//                            disableNeonButton: true
                         ),
+                        neonLinearAnimation: .LTR(nil, 2),
                         effect: .init(name: "Effect.CatUp", duration: 800),
                         buttonContent: { param in
                             switch param.item.action {

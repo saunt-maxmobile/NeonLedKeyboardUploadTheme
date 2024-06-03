@@ -39,7 +39,7 @@ extension Theme {
             foregroundColor: Color(hex: "#FF37EB"),
             font: .body,
             cornerRadius: 8,
-            border: .init(color: Color(hex: "#FF78E9"), size: 2)
+            border: .init(color: Color(hex: "#FF78E9"), size: 1)
         ),
         background: .image(UIImage(named: "gradientPhotoRomantic")?.jpegData(compressionQuality: 0.3) ?? Data()),
         
@@ -53,7 +53,7 @@ extension Theme {
             foregroundColor: Color.white,
             font: .body,
             cornerRadius: 8,
-            border: .init(color: Color.white, size: 2)
+            border: .init(color: Color.white, size: 1)
         ),
         background: .image(UIImage(named: "gradientPhotoUnicorn")?.jpegData(compressionQuality: 0.2) ?? Data()),
         
@@ -63,7 +63,7 @@ extension Theme {
     
     static var gradientPhotoGillter: Theme = .init(id: "91869E51-A506-4B64-B52D-64CD55D40D35",
         button: .init(
-            background: .color(Color(hex: "#7D00C5").opacity(0.6)),
+            background: .color(Color(hex: "#7D00C5")),
             foregroundColor: Color.white,
             font: .body,
             cornerRadius: 8,
@@ -74,9 +74,9 @@ extension Theme {
         neonPermission: .init(disableNeonCharacter: true),
         durationAnimation: 10,
         neonLinearAnimation: .LTR(
-            [Color(red: 0, green: 0.94, blue: 1),
-             Color(red: 0.98, green: 0, blue: 1),
-             Color(red: 0, green: 0.94, blue: 1)
+            [Color(hex: "#00F0FF"),
+             Color(hex: "#FA00FF"),
+             Color(hex: "#00F0FF"),
             ], 2),
         preview: .image(UIImage(named: "gradientPhotoGillterPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "gradientPhotoGillter"
@@ -84,7 +84,7 @@ extension Theme {
     
     static var gradientPhotoColorfull: Theme = .init(id: "84D40263-085D-4F1C-AAB8-C5593B350A82",
         button: .init(
-            background: .color(Color(hex: "#7D00C5").opacity(0.6)),
+            background: .color(Color(hex: "#7D00C5").opacity(0.8)),
             foregroundColor: Color.white,
             font: .body,
             cornerRadius: 8,
@@ -96,12 +96,12 @@ extension Theme {
 //        disableNeonAnimationCharacter: true,
         durationAnimation: 5,
         neonLinearAnimation: .LTR(
-            [Color(red: 1, green: 0.42, blue: 0),
-             Color(red: 1, green: 0, blue: 0.96),
-             Color(red: 0, green: 0.04, blue: 1),
-             Color(red: 0, green: 1, blue: 1),
-             Color(red: 0.08, green: 1, blue: 0),
-             Color(red: 1, green: 0.42, blue: 0),
+            [Color(hex: "#FF6B00"),
+             Color(hex: "#FF00F5"),
+             Color(hex: "#000AFF"),
+             Color(hex: "#00FFFF"),
+             Color(hex: "#14FF00"),
+             Color(hex: "#FF6B00"),
             ], 4),
         preview: .image(UIImage(named: "gradientPhotoColorfullPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "gradientPhotoColorfull"
@@ -120,8 +120,7 @@ extension Theme {
         background: .image(UIImage(named: "gradientRiver")?.jpegData(compressionQuality: 1) ?? Data()),
         actionCallout: .neon,
         inputCallout: .neon,
-        
-        neonPermission: .init(disableNeonButton: true),
+        neonPermission: .init(disableNeonBorder: true, disableNeonButton: true),
 //        disableNeonAnimationButton: true,
         durationAnimation: 5,
         neonLinearAnimation: .LTR(
@@ -172,7 +171,7 @@ extension Theme {
             foregroundColor: .white,
             font: .custom("Roboto-Medium", size: 18),
             cornerRadius: 10,
-            border: .init(color: .white, size: 1)
+            border: .init(color: .white, size: 2)
         ),
         background: .image(UIImage(named: "gradientVividBlurred")?.jpegData(compressionQuality: 1) ?? Data()),
         actionCallout: .neon,
@@ -180,32 +179,34 @@ extension Theme {
         durationAnimation: 5,
         neonLinearAnimation: .radial(
             [Color(hex: "FF984C"),
-             Color(hex: "FF984C"),
              Color(hex: "00FFFF"),
              Color(hex: "00FFFF"),
+             Color(hex: "78cfab"),
              .clear
             ]),
         preview: .image(UIImage(named: "gradientVividBlurredPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "gradientVividBlurred"
     )
     
-    static var gradientVividColorfull: Theme = .init(id: "3F1E732D-9F4E-421B-9D59-F5B2DA73EBEA",
+    static var gradientVividColorfull: Theme = .init(
+        id: "3F1E732D-9F4E-421B-9D59-F5B2DA73EBEA",
         button: .init(
             background: .color(.clear),
             foregroundColor: .white,
             font: .custom("Roboto-Medium", size: 18),
             cornerRadius: 10,
-            border: .init(color: .white, size: 5),
+            border: .init(color: .white, size: 2),
             shapeType: .HEXAGON
         ),
+        edgeInsets: .init(top: 3, left: 1, bottom: 3, right: 1),
         background: .image(UIImage(named: "gradientVividColorfull")?.jpegData(compressionQuality: 1) ?? Data()),
         actionCallout: .neon,
         inputCallout: .neon,
         buttonNeonAnimation: [
             .init(colors: ["#000AFF", "#FF00D6"], .right, .conic),
-            .init(colors: ["#FF00D6", "#000AFF", ], .down, .conic),
+            .init(colors: ["#000AFF", "#FF00D6", ], .down, .conic),
             .init(colors: ["#000AFF", "#FF00D6", ], .left, .conic),
-            .init(colors: ["#FF00D6", "#000AFF", ], .up, .conic),
+            .init(colors: ["#000AFF", "#FF00D6", ], .up, .conic),
         ],
         durationAnimation: 1,
         preview: .image(UIImage(named: "gradientVividColorfullPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
@@ -228,9 +229,10 @@ extension Theme {
         durationAnimation: 5,
         neonLinearAnimation: .radial(
             [Color(red: 0, green: 1, blue: 1),
-             Color(red: 0, green: 1, blue: 1),
+//             Color(red: 0, green: 1, blue: 1),
              Color(red: 0, green: 0.04, blue: 1),
              Color(red: 0, green: 0.04, blue: 1),
+             Color(hex: "007dff"),
              .clear
             ]),
         preview: .image(UIImage(named: "gradientDarkUniversePreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
@@ -258,7 +260,7 @@ extension Theme {
 //             Color(red: 0, green: 1, blue: 1),
              Color(red: 1, green: 0.48, blue: 0),
              Color(red: 0, green: 1, blue: 1),
-            ], 3),
+            ], 1),
         preview: .image(UIImage(named: "gradientVortexPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "gradientVortex"
     )
@@ -270,16 +272,17 @@ extension Theme {
             foregroundColor: .white,
             font: .custom("Roboto-Medium", size: 18),
             cornerRadius: 25,
-            border: .init(color: .white, size: 2)
+            border: .init(color: .white, size: 1)
         ),
         background: .image(UIImage(named: "gradientPolygon")?.jpegData(compressionQuality: 1) ?? Data()),
         actionCallout: .bright,
         inputCallout: .bright,
         neonLinearAnimation: .radial(
             [Color(red: 0.5, green: 1, blue: 0.01),
-             Color(red: 0.5, green: 1, blue: 0.01),
+//             Color(red: 0.5, green: 1, blue: 0.01),
              .white,
              .white,
+             Color(hex: "befe7e"),
              .clear
             ]),
         preview: .image(UIImage(named: "gradientPolygonPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
@@ -293,7 +296,7 @@ extension Theme {
             foregroundColor: .white,
             font: .custom("Roboto-Medium", size: 18),
             cornerRadius: 10,
-            border: .init(color: .white, size: 2)
+            border: .init(color: .white, size: 1)
         ),
         background: .image(UIImage(named: "gradientAurora")?.jpegData(compressionQuality: 1) ?? Data()),
         actionCallout: .neon,
@@ -301,10 +304,10 @@ extension Theme {
         durationAnimation: 3,
         neonLinearAnimation: .radial(
             [.white,
-             .white,
+//             .white,
              Color(hex: "80FE02"),
              Color(hex: "80FE02"),
-             Color(hex: "80FE02"),
+//             Color(hex: "c3ff88"),
              .clear
             ]),
         preview: .image(UIImage(named: "gradientAuroraPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
@@ -332,7 +335,7 @@ extension Theme {
              .white,
              Color(red: 1, green: 0.48, blue: 0),
              Color(red: 1, green: 0.48, blue: 0),
-            ], 5),
+            ], 2),
         preview: .image(UIImage(named: "gradientYellowFruitsPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "gradientYellowFruits"
     )
@@ -361,10 +364,10 @@ extension Theme {
             foregroundColor: .white,
             font: .custom("Roboto-Medium", size: 18),
             cornerRadius: 12,
-            border: .init(color: .white, size: 5),
+            border: .init(color: .white, size: 2),
             shapeType: .HEXAGON
         ),
-        edgeInsets: CodableUIEdgeInsets(top: 3, left: 1, bottom: 3, right: 1),
+        edgeInsets: .init(top: 3, left: 1, bottom: 3, right: 1),
         background: .image(UIImage(named: "gradientHexagonBlurred")?.jpegData(compressionQuality: 1) ?? Data()),
         actionCallout: .neon,
         inputCallout: .neon,
@@ -374,7 +377,7 @@ extension Theme {
             [Color(red: 1, green: 0.48, blue: 0),
              Color(red: 1, green: 0, blue: 0.72),
              Color(red: 1, green: 0.48, blue: 0),
-            ], 3),
+            ], 1),
         preview: .image(UIImage(named: "gradientHexagonBlurredPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "gradientHexagonBlurred"
     )
@@ -402,7 +405,7 @@ extension Theme {
              Color(red: 0, green: 1, blue: 1),
              Color(red: 0.25, green: 0.73, blue: 0.13),
              Color(red: 0, green: 1, blue: 1),
-            ], 5),
+            ], 1),
         preview: .image(UIImage(named: "gradientCircleBlurredPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "gradientCircleBlurred"
     )
@@ -422,7 +425,7 @@ extension Theme {
         durationAnimation: 4,
         neonLinearAnimation: .radial(
             [Color(red: 0.21, green: 1, blue: 0.01),
-             Color(red: 0.21, green: 1, blue: 0.01),
+//             Color(red: 0.21, green: 1, blue: 0.01),
              Color(red: 1, green: 0.78, blue: 0),
              Color(red: 1, green: 0.78, blue: 0),
              .clear

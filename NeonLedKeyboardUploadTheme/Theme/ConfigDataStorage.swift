@@ -15,12 +15,15 @@ struct ConfigDataStorage {
 //        self.converToJson()
         /// just accept encode for id, name, imagePreview of theme
 //        ThemeHandler.shared.saveThemeSection(themeSections)
+        
         /// accept encode all variable of theme
-        ThemeHandler.shared.createThemeFolder(themeSections)
+//        ThemeHandler.shared.createThemeFolder(themeSections)
     }
     
     var themeSections: [ThemeSection] = [
-        .init(name: "Cute", themes: [.cuteZodiac, .cuteScreamboard, .cuteBloomBoard])
+//        .init(name: "Cute", themes: [
+//            .neonJungle, .neonOcean, .cuteDachshund
+//        ])
 //        .init(name: "Cute", themes: [.cuteRainbowRabbit, .cuteFrogAlone, .cuteBWRabbit, .cuteDachshund, .cuteSillyParrot, .cuteLazyRabbit, .cuteShibaInu, .cutePawboard, .cuteCatlook, .cutePinkStar, .cuteGreenGrass, .cuteDusk, .cuteBloomBoard, .cuteCatGarden, .cutePurplePixel, .cuteBeneathTheLily, .cuteScreamboard, .cuteRainbowGarden, .cuteHungryPandas, .cuteKittyHaven, .cuteBunnehBard, .cuteZodiac, .cuteSereniKeys, .cuteBearRabbit, .cuteCapypara, .cuteCoolCat]),
 //        .init(name: "Gradient", themes: [.gradientPink, .gradientGrass, .gradientSunny, .gradientPurple, .gradientSky, .gradientSea, .gradientGreen, .gradientPhotoRainbow, .gradientPhotoRomantic, .gradientPhotoUnicorn, .gradientPhotoGillter, .gradientPhotoColorfull, .gradientRiver, .gradientPopPoly, .gradientHologram, .gradientVividBlurred, .gradientVividColorfull, .gradientDarkUniverse, .gradientVortex, .gradientPolygon, .gradientAurora, .gradientYellowFruits, .gradientPurpleVivid, .gradientHexagonBlurred, .gradientCircleBlurred, .gradientCinema]),
 //        .init(name: "Color", themes: [.colorLipPink, .colorLeaf, .colorCyan, .colorOcean, .colorPurple, .colorYellow, .colorLove, .colorWater, .colorGreen, .colorOrange, .colorTree, .colorHot]),

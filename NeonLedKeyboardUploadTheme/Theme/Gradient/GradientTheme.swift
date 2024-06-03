@@ -54,11 +54,11 @@ extension Theme {
     
     static var gradientPurple: Theme = .init(id: "AD885F1E-A16D-41F9-9A33-2A07956C810C",
         button: .init(
-            background: .color(.white.opacity(0.2)),
+            background: .color(.clear),
             foregroundColor: .white,
             font: .body,
             cornerRadius: 8,
-            border: .init(color: .white, size: 1)
+            border: .init(color: .white, size: 2)
         ),
         background: .init(backgroundGradient: [Color(red: 0.96, green: 0.17, blue: 0.52), Color(red: 0.54, green: 0.24, blue: 1)]),
         
@@ -122,7 +122,7 @@ struct Gradient_Previews: PreviewProvider {
 
     struct Preview: View {
         
-        var theme: Theme = .gradientGreen
+        var theme: Theme = .gradientPurple
 
         var controller: KeyboardInputViewController = {
             let controller = KeyboardInputViewController.preview
@@ -132,7 +132,7 @@ struct Gradient_Previews: PreviewProvider {
 //                .init(text: "Baz")
             ]
             
-            let theme: Theme = .gradientGreen
+            let theme: Theme = .gradientPurple
             
             controller.services.styleProvider = CustomKeyStyleProvider(buttonStyle: theme.button, actionCallout: theme.actionCallout ?? .bright, inputCallout: theme.inputCallout ?? .bright, keyboardContext: controller.state.keyboardContext)
             

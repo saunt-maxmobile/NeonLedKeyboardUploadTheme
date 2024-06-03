@@ -57,7 +57,7 @@ class CustomStyleProvider: StandardKeyboardStyleProvider {
             if style.shapeType == .CIRCLE {
                 switch action {
                 case .primary(_), .space:
-                    style.shapeType = .CIRCLESHAPE
+                    style.shapeType = .ROUNDEDSQUARE
                     break
                 default:
                     break

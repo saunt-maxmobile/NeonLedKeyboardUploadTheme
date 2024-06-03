@@ -109,7 +109,7 @@ extension Theme {
             [Color(red: 0, green: 0.76, blue: 1),
              .white,
              Color(red: 0, green: 0.76, blue: 1)
-            ], 3),
+            ], 2),
         preview: .image(UIImage(named: "neonWaterPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "neonWater"
     )
@@ -166,12 +166,13 @@ extension Theme {
             foregroundColor: Color.white,
             font: .custom("Inter-Medium", size: 18),
             cornerRadius: 8,
-            border: .init(color: Color(hex: "#FF00F5"), size: 2)
+            border: .init(color: Color(hex: "#FF00F5"), size: 1)
         ),
         background: .image(UIImage(named: "neonDarkLeaf")?.jpegData(compressionQuality: 1) ?? Data()),
-        durationAnimation: 1,
+        neonPermission: .init(disableNeonBorder: true),
         neonLinearAnimation: .radial(
             [Color(red: 0, green: 1, blue: 1),
+             Color(red: 0, green: 0.04, blue: 1),
              Color(red: 0, green: 0.04, blue: 1),
              .clear
             ]),
@@ -186,10 +187,9 @@ extension Theme {
             foregroundColor: Color(hex: "#00FFFF"),
             font: .custom("Inter-Medium", size: 18),
             cornerRadius: 8,
-            border: .init(color: Color(hex: "#7636FF"), size: 2)
+            border: .init(color: Color(hex: "#7636FF"), size: 1)
         ),
         background: .image(UIImage(named: "neonMysticJungle")?.jpegData(compressionQuality: 1) ?? Data()),
-        durationAnimation: 2,
         preview: .image(UIImage(named: "neonMysticJunglePreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "neonMysticJungle"
     )
@@ -201,15 +201,19 @@ extension Theme {
             foregroundColor: Color(hex: "#00FFFF"),
             font: .custom("Inter-Medium", size: 18),
             cornerRadius: 8,
-            border: .init(color: Color(hex: "#7636FF"), size: 2)
+            border: .init(color: Color(hex: "#7636FF"), size: 1)
         ),
         background: .image(UIImage(named: "neonRoofNeon")?.jpegData(compressionQuality: 1) ?? Data()),
         durationAnimation: 3,
         neonLinearAnimation: .radial(
             [Color(hex: "FFFFFF"),
              Color(hex: "00FFFF"),
+             Color(hex: "00FFFF"),
+             Color(hex: "FF00D6"),
              Color(hex: "FF00D6"),
              Color(hex: "FEF635"),
+             Color(hex: "FEF635"),
+             .clear
             ]),
         preview: .image(UIImage(named: "neonRoofNeonPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "neonRoofNeon"
@@ -222,7 +226,7 @@ extension Theme {
             foregroundColor: Color(hex: "#00FFFF"),
             font: .custom("Inter-Medium", size: 18),
             cornerRadius: 8,
-            border: .init(color: Color(hex: "#00FFFF"), size: 2)
+            border: .init(color: Color(hex: "#00FFFF"), size: 1)
         ),
         background: .image(UIImage(named: "neonSummitNeon")?.jpegData(compressionQuality: 1) ?? Data()),
         preview: .image(UIImage(named: "neonSummitNeonPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
@@ -236,7 +240,7 @@ extension Theme {
             foregroundColor: Color(hex: "#00F0FF"),
             font: .custom("Inter-Medium", size: 18),
             cornerRadius: 8,
-            border: .init(color: Color(hex: "#000AFF"), size: 2)
+            border: .init(color: Color(hex: "#000AFF"), size: 1)
         ),
         background: .image(UIImage(named: "neonGlass")?.jpegData(compressionQuality: 1) ?? Data()),
         preview: .image(UIImage(named: "neonGlassPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
@@ -262,7 +266,7 @@ extension Theme {
              Color(red: 1, green: 0.96, blue: 0.21),
              Color(red: 0.5, green: 1, blue: 0.01),
              Color(red: 0, green: 1, blue: 1),
-            ], 5),
+            ], 2),
         preview: .image(UIImage(named: "neonLedPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "neonLed"
     )
@@ -270,19 +274,20 @@ extension Theme {
     static var neonLine: Theme = .init(
         id: "175FE043-5754-4A03-B3CA-A09C0689788F",
         button: .init(
-            background: .color(.clear),
+            background: .color(Color(hex: "#000AFF").opacity(0.3)),
             foregroundColor: Color.white,
             font: .custom("Inter-Medium", size: 18),
             cornerRadius: 8,
-            border: .init(color: Color.white, size: 1)
+            border: .init(color: Color(hex: "#FF00F5"), size: 1)
         ),
         background: .image(UIImage(named: "neonLine")?.jpegData(compressionQuality: 1) ?? Data()),
         actionCallout: .neon,
         inputCallout: .neon,
-        durationAnimation: 3,
+        neonPermission: .init(disableNeonBorder: true, disableNeonButton: true),
         neonLinearAnimation: .radial(
-            [Color(red: 0, green: 0.94, blue: 1),
-             Color(red: 1, green: 0, blue: 0.96),
+            [Color(hex: "#00F0FF"),
+             Color(hex: "#FF00F5"),
+             Color(hex: "#FF00F5"),
              .clear
             ]),
         preview: .image(UIImage(named: "neonLinePreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
@@ -296,7 +301,7 @@ extension Theme {
             foregroundColor: Color.white,
             font: .custom("Inter-Medium", size: 18),
             cornerRadius: 8,
-            border: .init(color: Color.white, size: 2)
+            border: .init(color: Color.white, size: 1)
         ),
         background: .image(UIImage(named: "neonVortexGalaxy")?.jpegData(compressionQuality: 1) ?? Data()),
         actionCallout: .bright,
@@ -322,7 +327,7 @@ extension Theme {
         durationAnimation: 3,
         neonLinearAnimation: .radial(
             [Color(red: 0, green: 1, blue: 1),
-             Color(red: 0, green: 1, blue: 1),
+//             Color(red: 0, green: 1, blue: 1),
              Color(red: 0.5, green: 0, blue: 1),
              Color(red: 0.5, green: 0, blue: 1),
              .clear
@@ -347,8 +352,12 @@ extension Theme {
         neonLinearAnimation: .radial(
             [.white,
              Color(red: 1, green: 0.96, blue: 0.21),
+             Color(red: 1, green: 0.96, blue: 0.21),
+             Color(red: 1, green: 0, blue: 0.84),
              Color(red: 1, green: 0, blue: 0.84),
              Color(red: 0, green: 1, blue: 1),
+             Color(red: 0, green: 1, blue: 1),
+             .white,
              .white,
              .clear
             ]),
@@ -368,11 +377,14 @@ extension Theme {
         background: .image(UIImage(named: "neonFantasyNight")?.jpegData(compressionQuality: 1) ?? Data()),
         actionCallout: .neon,
         inputCallout: .neon,
-        durationAnimation: 1,
+        durationAnimation: 3,
         neonLinearAnimation: .radial(
             [.white,
              Color(red: 0, green: 1, blue: 1),
+             Color(red: 0, green: 1, blue: 1),
              Color(red: 0, green: 0.04, blue: 1),
+             Color(red: 0, green: 0.04, blue: 1),
+             Color(red: 0, green: 0.02, blue: 0.59),
              Color(red: 0, green: 0.02, blue: 0.59),
              .clear
             ]),
@@ -387,7 +399,7 @@ extension Theme {
             foregroundColor: Color.white,
             font: .custom("Inter-Medium", size: 18),
             cornerRadius: 25,
-            border: .init(color: Color.white, size: 5),
+            border: .init(color: Color.white, size: 2),
             shapeType: .HEXAGON
         ),
         edgeInsets: .init(top: 3, left: 1, bottom: 3, right: 1),
@@ -409,10 +421,10 @@ extension Theme {
         id: "1A18A62A-8B79-42A2-BA95-F6CA68997B9F",
         button: .init(
             background: .color(Color(hex: "#000AFF")),
-            foregroundColor: Color.white,
+            foregroundColor: Color(hex: "#00FFFF"),
             font: .custom("Inter-Medium", size: 18),
             cornerRadius: 25,
-            border: .init(color: Color.white, size: 3),
+            border: .init(color: Color(hex: "#00FFFF"), size: 2),
             shapeType: .CIRCLE
         ),
         edgeInsets: .init(top: 3, left: 1, bottom: 3, right: 1),
@@ -465,7 +477,7 @@ extension Theme {
         neonLinearAnimation: .radial(
             [Color(red: 1, green: 0.96, blue: 0.21),
              Color(red: 0, green: 1, blue: 1),
-             Color(red: 1, green: 0, blue: 0.96),
+             Color(red: 0, green: 1, blue: 1),
              .clear
             ]),
         preview: .image(UIImage(named: "neonPlasticPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
@@ -488,7 +500,6 @@ extension Theme {
         durationAnimation: 2,
         neonLinearAnimation: .radial(
             [Color(red: 0, green: 1, blue: 1),
-             Color(red: 0, green: 1, blue: 1),
              Color(red: 0, green: 0.04, blue: 1),
              Color(red: 0, green: 0.04, blue: 1),
              .clear
@@ -513,7 +524,6 @@ extension Theme {
         durationAnimation: 3,
         neonLinearAnimation: .radial(
             [Color(red: 1, green: 0, blue: 0.96),
-             Color(red: 1, green: 0, blue: 0.96),
              Color(red: 0, green: 1, blue: 1),
              Color(red: 0, green: 1, blue: 1),
              .clear
@@ -556,7 +566,6 @@ extension Theme {
         durationAnimation: 3,
         neonLinearAnimation: .radial(
             [Color(hex: "#00F0FF"),
-             Color(hex: "#00F0FF"),
              Color(hex: "#FA00FF"),
              Color(hex: "#FA00FF"),
              .clear
@@ -570,7 +579,7 @@ struct NeonTheme_Previews: PreviewProvider {
     
     struct Preview: View {
         
-        let theme: Theme = .neonTriangleNeon
+        let theme: Theme = .neonMagicLight
         
         var controller: KeyboardInputViewController = {
             let controller = KeyboardInputViewController.preview
@@ -580,7 +589,7 @@ struct NeonTheme_Previews: PreviewProvider {
                 //                .init(text: "Baz")
             ]
             
-            let theme: Theme = .neonTriangleNeon
+            let theme: Theme = .neonMagicLight
             
             controller.services.styleProvider = CustomKeyStyleProvider(buttonStyle: theme.button, actionCallout: theme.actionCallout ?? .bright, inputCallout: theme.inputCallout ?? .bright, keyboardContext: controller.state.keyboardContext)
             
