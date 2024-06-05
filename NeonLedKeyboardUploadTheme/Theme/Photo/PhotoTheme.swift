@@ -270,8 +270,6 @@ extension Theme {
         neonLinearAnimation: .radial([
             Color(hex: "#FF00D6"),
             Color(hex: "#00FFFF"),
-            Color(hex: "#00FFFF"),
-            Color(hex: "#000AFF"),
             Color(hex: "#000AFF"),
             .clear
         ]),
@@ -306,14 +304,10 @@ extension Theme {
         actionCallout: .neon,
         inputCallout: .neon,
         neonPermission: .init(disableNeonButton: true),
-        durationAnimation: 3,
         neonLinearAnimation: .radial([
             Color(hex: "#FFFFFF"),
             Color(hex: "#00F0FF"),
-            Color(hex: "#00F0FF"),
             Color(hex: "#000AFF"),
-            Color(hex: "#000AFF"),
-            .clear
         ]),
         preview: .image(UIImage(named: "photoPeculiarCirclePreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "photoPeculiarCircle"
@@ -325,7 +319,7 @@ extension Theme {
             foregroundColor: Color(hex: "#000AFF"),
             font: .custom("Inter-Medium", size: 18),
             cornerRadius: 12,
-            border: .init(color: .white.opacity(0.7), size: 2)
+            border: .init(color: .white.opacity(0.7), size: 1)
         ),
         background: .image(UIImage(named: "photoFantasticStrip")?.jpegData(compressionQuality: 1) ?? Data()),
         actionCallout: .bright,
@@ -405,7 +399,7 @@ extension Theme {
             foregroundColor: Color(hex: "#729D39"),
             font: .custom("Inter-Medium", size: 18),
             cornerRadius: 10,
-            border: .init(color: Color(hex: "#729D39"), size: 2)
+            border: .init(color: Color(hex: "#729D39"), size: 1)
         ),
         background: .image(UIImage(named: "photoLoverDog")?.jpegData(compressionQuality: 1) ?? Data()),
         actionCallout: .bright,

@@ -7,6 +7,7 @@
 
 import Foundation
 import SwiftUI
+import Combine
 
 extension View {
     func rainbowAnimation(height: CGFloat, duration: Double, neonLinearAnimation: NeonLinearAnimation, animationValueObjects: [AnimationValueObject]? = nil) -> some View {
@@ -35,14 +36,16 @@ struct RainbowAnimation: ViewModifier {
     }
 
     @State var smallZoom = false
+    
+    @State private var colorIndex = 0
+    @State private var colors: [Color] = []
+    @State private var colorLinear: [Color] = []
+    
+    let timer = Timer.publish(every: 0.12,
+                                   on: .main,
+                                  in: .common).autoconnect()
 
     func body(content: Content) -> some View {
-        
-        let gradient = LinearGradient(gradient: Gradient(colors: hueColors+hueColors), startPoint: .leading, endPoint: .trailing)
-        
-        let verticalGradient = LinearGradient(gradient: Gradient(colors: hueColors+hueColors), startPoint: .top, endPoint: .bottom)
-        
-        let radialGradient = RadialGradient(gradient: Gradient(colors: hueColors + hueColors + hueColors + hueColors), center: .center, startRadius: 0, endRadius: 180)
         
         VStack {
         }
@@ -147,29 +150,15 @@ struct RainbowAnimation: ViewModifier {
                             .allowsHitTesting(false)
                     }
                 case .radial(let colors):
-                    if let colors {
-                        RadialGradient(colors: colors, center: .center, startRadius: 0, endRadius: proxy.size.height / 2)
-                            .frame(width: proxy.size.width, height: proxy.size.height)
-//                            .clipShape(Circle())
-                            .scaleEffect(self.isOn ? (proxy.size.width/proxy.size.height) * CGFloat(colors.count) * radialConstant : (proxy.size.width/proxy.size.height) * radialConstant, anchor: .center)
-                        
-                        RadialGradient(colors: colors, center: .center, startRadius: 0, endRadius: proxy.size.height / 2)
-                            .frame(width: proxy.size.width, height: proxy.size.height)
-//                            .clipShape(Circle())
-                            .scaleEffect(self.isOn ? (proxy.size.width/proxy.size.height) * radialConstant : 0, anchor: .center)
-                    } else {
-                        RadialGradient(gradient: Gradient(colors: hueColors + hueColors + hueColors + hueColors), center: .center, startRadius: 0, endRadius: 180)
-                            .frame(width: proxy.size.width, height: proxy.size.height)
-                            .clipShape(Circle())
-                            .scaleEffect(self.isOn ? (proxy.size.width/proxy.size.height) * 4 : (proxy.size.width/proxy.size.height), anchor: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                            .allowsHitTesting(false)
-                        
-                        RadialGradient(gradient: Gradient(colors: hueColors + hueColors + hueColors + hueColors), center: .center, startRadius: 0, endRadius: 180)
-                            .frame(width: proxy.size.width, height: proxy.size.height)
-                            .clipShape(Circle())
-                            .scaleEffect(self.smallZoom ? (proxy.size.width/proxy.size.height) : 0, anchor: .center)
-                            .allowsHitTesting(false)
+                    VStack {
+                        RadialGradient(colors: self.colors,
+                                       center: .center,
+                                       startRadius: 10,
+                                       endRadius: 200)
+                            .animation(Animation.easeInOut.speed(0.12),
+                                       value: colorIndex)
                     }
+                    .frame(maxWidth: .infinity, maxHeight: .infinity)
                 default:
                     Group{}
                 }
@@ -177,6 +166,11 @@ struct RainbowAnimation: ViewModifier {
         })
         .mask(content)
         .onAppear {
+            if case .radial(let array) = neonLinearAnimation {
+                guard let array else { return }
+                colorLinear = array.flatMap { Array(repeating: $0, count: 6) }
+                colors = colorLinear.indices.map { colorLinear.wrap(index: (1 - $0)) }
+            }
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.1, execute: {
                 withAnimation(self.animation) {
                     self.isOn = true
@@ -185,6 +179,21 @@ struct RainbowAnimation: ViewModifier {
             })
         }
         .allowsHitTesting(false)
+        .onReceive(timer) { _ in
+            colors = colorList()
+        }
+    }
+    
+    func colorList() -> [Color] {
+        colorIndex += 1
+        return colorLinear.indices.map  { colorLinear.wrap(index: (colorIndex - $0)) }
+    }
+}
+
+extension Array {
+    func wrap(index: Int) -> Element {
+        let wrappedIndex = index >= 0 ? index % self.count : self.count + index % self.count
+        return self[wrappedIndex]
     }
 }
 
@@ -201,7 +210,12 @@ struct RainbowAnimation: ViewModifier {
             .inset(by: 5)
 //            .stroke(Color.black, lineWidth: 5)
             .frame(width: 430, height: 276)
-            .rainbowAnimation(height: 100, duration: 2, neonLinearAnimation: .radial([.black, .red, .red,.clear]))
+            .rainbowAnimation(height: 100, duration: 2, neonLinearAnimation: .radial(
+                [
+                    Color(hex: "#00FFFF"),
+                    Color(hex: "#000AFF"),
+                ]
+            ))
             
         
         RoundedRectangle(cornerRadius: 10)

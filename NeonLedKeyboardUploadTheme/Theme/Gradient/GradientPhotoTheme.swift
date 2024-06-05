@@ -171,18 +171,14 @@ extension Theme {
             foregroundColor: .white,
             font: .custom("Roboto-Medium", size: 18),
             cornerRadius: 10,
-            border: .init(color: .white, size: 2)
+            border: .init(color: .white, size: 1)
         ),
         background: .image(UIImage(named: "gradientVividBlurred")?.jpegData(compressionQuality: 1) ?? Data()),
         actionCallout: .neon,
         inputCallout: .neon,
-        durationAnimation: 5,
         neonLinearAnimation: .radial(
             [Color(hex: "FF984C"),
              Color(hex: "00FFFF"),
-             Color(hex: "00FFFF"),
-             Color(hex: "78cfab"),
-             .clear
             ]),
         preview: .image(UIImage(named: "gradientVividBlurredPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "gradientVividBlurred"
@@ -226,14 +222,9 @@ extension Theme {
         inputCallout: .neon,
         
         neonPermission: .init(disableNeonCharacter: true),
-        durationAnimation: 5,
         neonLinearAnimation: .radial(
-            [Color(red: 0, green: 1, blue: 1),
-//             Color(red: 0, green: 1, blue: 1),
-             Color(red: 0, green: 0.04, blue: 1),
-             Color(red: 0, green: 0.04, blue: 1),
-             Color(hex: "007dff"),
-             .clear
+            [Color(hex: "#00FFFF"),
+             Color(hex: "#000AFF"),
             ]),
         preview: .image(UIImage(named: "gradientDarkUniversePreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "gradientDarkUniverse"
@@ -278,12 +269,8 @@ extension Theme {
         actionCallout: .bright,
         inputCallout: .bright,
         neonLinearAnimation: .radial(
-            [Color(red: 0.5, green: 1, blue: 0.01),
-//             Color(red: 0.5, green: 1, blue: 0.01),
+            [Color(hex: "#80FE02"),
              .white,
-             .white,
-             Color(hex: "befe7e"),
-             .clear
             ]),
         preview: .image(UIImage(named: "gradientPolygonPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "gradientPolygon"
@@ -301,14 +288,9 @@ extension Theme {
         background: .image(UIImage(named: "gradientAurora")?.jpegData(compressionQuality: 1) ?? Data()),
         actionCallout: .neon,
         inputCallout: .neon,
-        durationAnimation: 3,
         neonLinearAnimation: .radial(
             [.white,
-//             .white,
              Color(hex: "80FE02"),
-             Color(hex: "80FE02"),
-//             Color(hex: "c3ff88"),
-             .clear
             ]),
         preview: .image(UIImage(named: "gradientAuroraPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "gradientAurora"
@@ -321,7 +303,7 @@ extension Theme {
             foregroundColor: .white,
             font: .custom("Roboto-Medium", size: 18),
             cornerRadius: 25,
-            border: .init(color: .white.opacity(0.6), size: 2),
+            border: .init(color: .white.opacity(0.6), size: 1),
             shapeType: .CIRCLE
         ),
         background: .image(UIImage(named: "gradientYellowFruits")?.jpegData(compressionQuality: 1) ?? Data()),
@@ -422,13 +404,10 @@ extension Theme {
         actionCallout: .neon,
         inputCallout: .neon,
         neonPermission: .init(disableNeonCharacter: true),
-        durationAnimation: 4,
+        durationAnimation: 5,
         neonLinearAnimation: .radial(
-            [Color(red: 0.21, green: 1, blue: 0.01),
-//             Color(red: 0.21, green: 1, blue: 0.01),
-             Color(red: 1, green: 0.78, blue: 0),
-             Color(red: 1, green: 0.78, blue: 0),
-             .clear
+            [Color(hex: "#34FE02"),
+             Color(hex: "#FFC700"),
             ]),
         preview: .image(UIImage(named: "gradientCinemaPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "gradientCinema"

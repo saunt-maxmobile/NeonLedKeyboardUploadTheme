@@ -27,8 +27,8 @@
             filePath = "NeonLedKeyboardUploadTheme/Theme/Neon/NeonTheme.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "582"
-            endingLineNumber = "582"
+            startingLineNumber = "549"
+            endingLineNumber = "549"
             landmarkName = "Preview"
             landmarkType = "14">
             <Locations>
@@ -90,6 +90,36 @@
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "582"
                   endingLineNumber = "582"
+                  offsetFromSymbolStart = "40">
+               </Location>
+               <Location
+                  uuid = "6DFC1AE5-F8A8-433E-B903-6B930F3E3CE1 - 4c580ca984b0513d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NeonLedKeyboardUploadTheme.NeonTheme_Previews.Preview.init() -&gt; NeonLedKeyboardUploadTheme.NeonTheme_Previews.Preview"
+                  moduleName = "NeonLedKeyboardUploadTheme"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/maxmobilesoftware/Documents/code/Keyboard/Product/NeonLedKeyboardEditTheme/NeonLedKeyboardUploadTheme/Theme/Neon/NeonTheme.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "549"
+                  endingLineNumber = "549"
+                  offsetFromSymbolStart = "56">
+               </Location>
+               <Location
+                  uuid = "6DFC1AE5-F8A8-433E-B903-6B930F3E3CE1 - 6ac9ef402be7e3b0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NeonLedKeyboardUploadTheme.NeonTheme_Previews.Preview.init(controller: NeonLedKeyboardUploadTheme.KeyboardInputViewController) -&gt; NeonLedKeyboardUploadTheme.NeonTheme_Previews.Preview"
+                  moduleName = "NeonLedKeyboardUploadTheme"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/maxmobilesoftware/Documents/code/Keyboard/Product/NeonLedKeyboardEditTheme/NeonLedKeyboardUploadTheme/Theme/Neon/NeonTheme.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "549"
+                  endingLineNumber = "549"
                   offsetFromSymbolStart = "40">
                </Location>
             </Locations>
@@ -207,8 +237,8 @@
             filePath = "NeonLedKeyboardUploadTheme/Theme/Gradient/GradientPhotoTheme.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "442"
-            endingLineNumber = "442"
+            startingLineNumber = "421"
+            endingLineNumber = "421"
             landmarkName = "Preview"
             landmarkType = "14">
             <Locations>
@@ -242,6 +272,21 @@
                   endingLineNumber = "0"
                   offsetFromSymbolStart = "36">
                </Location>
+               <Location
+                  uuid = "E4A41AE5-870A-4F1E-9300-C28591BCD446 - de65008b1f9b24b2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NeonLedKeyboardUploadTheme.GradientPhotoTheme_Previews.Preview.init() -&gt; NeonLedKeyboardUploadTheme.GradientPhotoTheme_Previews.Preview"
+                  moduleName = "NeonLedKeyboardUploadTheme"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/maxmobilesoftware/Documents/code/Keyboard/Product/NeonLedKeyboardEditTheme/NeonLedKeyboardUploadTheme/Theme/Gradient/GradientPhotoTheme.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "421"
+                  endingLineNumber = "421"
+                  offsetFromSymbolStart = "56">
+               </Location>
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
@@ -255,10 +300,42 @@
             filePath = "NeonLedKeyboardUploadTheme/Theme/Gradient/GradientPhotoTheme.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "452"
-            endingLineNumber = "452"
+            startingLineNumber = "431"
+            endingLineNumber = "431"
             landmarkName = "controller"
             landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CCE06CD5-1463-430C-9C9C-D13357A6F66D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NeonLedKeyboardUploadTheme/ThemeHandler.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "122"
+            endingLineNumber = "122"
+            landmarkName = "saveThemeDataToStorage(folder:nameFile:file:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3C7DA3CE-192E-4B96-8C08-A3A637613EDB"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NeonLedKeyboardUploadTheme/ThemeHandler.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "125"
+            endingLineNumber = "125"
+            landmarkName = "saveThemeDataToStorage(folder:nameFile:file:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

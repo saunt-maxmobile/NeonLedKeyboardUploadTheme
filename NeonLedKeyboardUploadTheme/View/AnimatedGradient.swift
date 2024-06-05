@@ -31,7 +31,18 @@ struct AnimatedGradient: UIViewRepresentable {
 }
 
 #Preview(body: {
-    AnimatedGradient()
+    AnimatedGradient(
+        animationValues: [
+            (colors: ["#FEAC5E", "#C779D0", "#fcb045"], .upLeft, .radial),
+            (colors: ["#C779D0", "#fcb045", "#FEAC5E"], .downRight, .radial),
+//            (colors: ["#C779D0", "#fcb045", "#FEAC5E"], .upLeft, .radial),
+//            (colors: ["#fcb045", "#FEAC5E", "#C779D0"], .upLeft, .radial),
+            
+//            .init(colors: ["#FEAC5E", "#C779D0", "#fcb045"], .down, .radial),
+//            .init(colors: ["#43cea2", "#185a9d"], .down, .radial),
+//            .init(colors: ["#003973", "#E5E5BE"], .downRight, .radial)
+        ]
+    )
 })
 
 struct BindingAnimationView: UIViewRepresentable {

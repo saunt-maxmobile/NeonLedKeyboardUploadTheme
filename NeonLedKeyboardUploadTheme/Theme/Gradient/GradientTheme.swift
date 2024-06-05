@@ -58,7 +58,7 @@ extension Theme {
             foregroundColor: .white,
             font: .body,
             cornerRadius: 8,
-            border: .init(color: .white, size: 2)
+            border: .init(color: .white, size: 1)
         ),
         background: .init(backgroundGradient: [Color(red: 0.96, green: 0.17, blue: 0.52), Color(red: 0.54, green: 0.24, blue: 1)]),
         

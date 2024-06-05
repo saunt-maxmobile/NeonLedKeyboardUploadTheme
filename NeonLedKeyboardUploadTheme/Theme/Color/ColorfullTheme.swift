@@ -23,13 +23,9 @@ extension Theme {
         
         neonPermission: .init(disableNeonCharacter: true),
 //        disableNeonAnimationCharacter: true,
-        durationAnimation: 5,
         neonLinearAnimation: .radial([
             Color(hex: "#000AFF"),
-//            Color(hex: "#000AFF"),
             Color(hex: "#FFFFFF"),
-            Color(hex: "#FFFFFF"),
-            .clear
         ]),
         preview: .image(UIImage(named: "colorfullColorPaintPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "colorfullColorPaint"
@@ -41,7 +37,7 @@ extension Theme {
             foregroundColor: Color.white,
             font: .body,
             cornerRadius: 12,
-            border: .init(color: .white, size: 2)
+            border: .init(color: .white, size: 1)
         ),
         background: .image(UIImage(named: "colorfullTwirl")?.jpegData(compressionQuality: 1) ?? Data()),
         actionCallout: .bright,
@@ -55,17 +51,16 @@ extension Theme {
         id: "F0CFEDC8-E9EB-4095-A2F9-14F6E0AE7D40",
         button: .init(
             background: .color(.clear),
-            foregroundColor: Color.white,
+            foregroundColor: Color(hex: "#000AFF"),
             font: .body,
             cornerRadius: 25,
-            border: .init(color: .white, size: 5),
+            border: .init(color: .white, size: 2),
             shapeType: .HEXAGON
         ),
-        edgeInsets: .init(top: 3, left: 1, bottom: 3, right: 1),
+        edgeInsets: .init(top: 3, left: 0, bottom: 3, right: 0),
         background: .image(UIImage(named: "colorfullUniverse")?.jpegData(compressionQuality: 1) ?? Data()),
         actionCallout: .neon,
         inputCallout: .neon,
-        
         neonPermission: .init(disableNeonCharacter: true),
         buttonNeonAnimation: [
             .init(colors: ["#FFFFFF", "#FF00D6", "#000AFF"], .right, .conic),
@@ -100,7 +95,7 @@ extension Theme {
             Color(hex: "729D39"),
             Color(hex: "FF00D6"),
             Color(hex: "729D39"),
-        ], 3),
+        ], 2),
         preview: .image(UIImage(named: "colorfullLiquidPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "colorfullLiquid"
     )
@@ -110,7 +105,7 @@ extension Theme {
             background: .color(.white.opacity(0.5)),
             foregroundColor: Color.white,
             font: .body,
-            cornerRadius: 25,
+            cornerRadius: 12,
             border: .init(color: .clear, size: 0)
         ),
         background: .image(UIImage(named: "colorfullCloud")?.jpegData(compressionQuality: 1) ?? Data()),
@@ -143,14 +138,9 @@ extension Theme {
         
         neonPermission: .init(disableNeonCharacter: true),
 //        disableNeonAnimationCharacter: true,
-        durationAnimation: 3,
         neonLinearAnimation: .radial([
             Color(hex: "FEF635"),
-//            Color(hex: "FEF635"),
             Color(hex: "FA00FF"),
-            Color(hex: "FA00FF"),
-//            Color(hex: "#FA00FF"),
-            .clear
         ]),
         preview: .image(UIImage(named: "colorfullFlowerPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "colorfullFlower"
@@ -158,16 +148,21 @@ extension Theme {
     
     static var colorfullLowPoly: Theme = .init(id: "F899D3DB-D3E1-4FC6-82F8-348D667A60F2",
         button: .init(
-            background: .color(.white.opacity(0.3)),
+            background: .color(.white.opacity(0.5)),
             foregroundColor: Color(hex: "#000AFF"),
             font: .body,
-            cornerRadius: 25,
+            cornerRadius: 12,
             border: .init(color: .clear, size: 0)
         ),
         background: .image(UIImage(named: "colorfullLowPoly")?.jpegData(compressionQuality: 1) ?? Data()),
         actionCallout: .bright,
         inputCallout: .bright,
-        
+        neonPermission: .init(disableNeonButton: true),
+        neonLinearAnimation: .LTR([
+            Color(hex: "#FF00F5"),
+            Color(hex: "#000AFF"),
+            
+        ], 2),
         preview: .image(UIImage(named: "colorfullLowPolyPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "colorfullLowPoly"
     )
@@ -199,7 +194,7 @@ extension Theme {
             border: .init(color: Color(hex: "#FF94AE"), size: 2),
             shapeType: .HEXAGON
         ),
-        edgeInsets: .init(top: 3, left: 1, bottom: 3, right: 1),
+        edgeInsets: .init(top: 3, left: 0, bottom: 3, right: 0),
         background: .image(UIImage(named: "colorfullWavesStrip")?.jpegData(compressionQuality: 1) ?? Data()),
         actionCallout: .bright,
         inputCallout: .bright,
@@ -224,12 +219,8 @@ extension Theme {
 //        disableNeonAnimationButton: true,
         neonLinearAnimation: .radial([
             Color(hex: "000AFF"),
-//            Color(hex: "000AFF"),
-            Color(hex: "FA00FF"),
             Color(hex: "FA00FF"),
             Color(hex: "#FF9500"),
-            Color(hex: "#FF9500"),
-            .clear
         ]),
         preview: .image(UIImage(named: "colorfullColorCurvePreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "colorfullColorCurve"
@@ -252,8 +243,6 @@ extension Theme {
         neonLinearAnimation: .radial([
             Color(hex: "FFFFFF"),
             Color(hex: "B6F364"),
-            Color(hex: "B6F364"),
-            .clear
         ]),
         preview: .image(UIImage(named: "colorfullCubesPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "colorfullCubes"
@@ -276,8 +265,7 @@ extension Theme {
         primaryButton: .color(.init(hex: "#BBE7FF")),
         emojiButton: .color(.init(hex: "#0085FF")),
         specialKey: "colorfullMyosotis",
-        showSpaceTitle: false,
-        showPrimaryTitle: false,
+        // edgeInsets: .init(top: 1, left: 1, bottom: 1, right: 1),
         background: .color(.white),
         actionCallout: .bright,
         inputCallout: .bright,
@@ -300,8 +288,7 @@ extension Theme {
         primaryButton: .color(.init(hex: "#E4D3FF")),
         emojiButton: .color(.init(hex: "#8A3EFF")),
         specialKey: "colorfullLavender",
-        showSpaceTitle: false,
-        showPrimaryTitle: false,
+        // edgeInsets: .init(top: 1, left: 1, bottom: 1, right: 1),
         background: .color(.white),
         actionCallout: .bright,
         inputCallout: .bright,
@@ -324,8 +311,7 @@ extension Theme {
         primaryButton: .color(.init(hex: "#FF95A6")),
         emojiButton: .color(.init(hex: "#2CCDFF")),
         specialKey: "colorfullHibicus",
-        showSpaceTitle: false,
-        showPrimaryTitle: false,
+        // edgeInsets: .init(top: 1, left: 1, bottom: 1, right: 1),
         background: .color(.white),
         actionCallout: .bright,
         inputCallout: .bright,
@@ -348,8 +334,7 @@ extension Theme {
         primaryButton: .color(.init(hex: "#8A3EFF")),
         emojiButton: .color(.init(hex: "#FF00F5")),
         specialKey: "colorfullMangosteen",
-        showSpaceTitle: false,
-        showPrimaryTitle: false,
+        // edgeInsets: .init(top: 1, left: 1, bottom: 1, right: 1),
         background: .color(.init(hex: "#000577")),
         actionCallout: .bright,
         inputCallout: .bright,
@@ -372,8 +357,7 @@ extension Theme {
         primaryButton: .color(.init(hex: "#66BFFF")),
         emojiButton: .color(.init(hex: "#66BFFF")),
         specialKey: "colorfullSky",
-        showSpaceTitle: false,
-        showPrimaryTitle: false,
+        // edgeInsets: .init(top: 1, left: 1, bottom: 1, right: 1),
         background: .color(.init(hex: "#000577")),
         actionCallout: .bright,
         inputCallout: .bright,
@@ -396,8 +380,7 @@ extension Theme {
         primaryButton: .color(.init(hex: "#105DF4")),
         emojiButton: .color(.init(hex: "#105DF4")),
         specialKey: "colorfullDarkNight",
-        showSpaceTitle: false,
-        showPrimaryTitle: false,
+        // edgeInsets: .init(top: 1, left: 1, bottom: 1, right: 1),
         background: .color(.init(hex: "#1C2D4E")),
         actionCallout: .bright,
         inputCallout: .bright,
@@ -420,8 +403,6 @@ extension Theme {
         primaryButton: .color(.init(hex: "#90B46A")),
         emojiButton: .color(.init(hex: "#90B46A")),
         specialKey: "colorfullMatcha",
-        showSpaceTitle: false,
-        showPrimaryTitle: false,
         edgeInsets: .init(top: 3, left: 1, bottom: 3, right: 1),
         background: .color(.init(hex: "#FFFFFF")),
         actionCallout: .bright,
@@ -445,8 +426,7 @@ extension Theme {
         primaryButton: .color(.init(hex: "#74DBAF")),
         emojiButton: .color(.init(hex: "#74DBAF")),
         specialKey: "colorfullTulips",
-        showSpaceTitle: false,
-        showPrimaryTitle: false,
+        // edgeInsets: .init(top: 1, left: 1, bottom: 1, right: 1),
         background: .color(.init(hex: "#FFFFFF")),
         actionCallout: .bright,
         inputCallout: .bright,
@@ -469,8 +449,7 @@ extension Theme {
         primaryButton: .color(.init(hex: "#000AFF")),
         emojiButton: .color(.init(hex: "#000AFF")),
         specialKey: "colorfullCentaurea",
-        showSpaceTitle: false,
-        showPrimaryTitle: false,
+        // edgeInsets: .init(top: 1, left: 1, bottom: 1, right: 1),
         background: .color(.init(hex: "#2B136D")),
         actionCallout: .bright,
         inputCallout: .bright,
@@ -492,8 +471,7 @@ extension Theme {
         spaceButton: .color(.init(hex: "#EFF0FF")),
         primaryButton: .color(.init(hex: "#66BFFF")),
         emojiButton: .color(.init(hex: "#66BFFF")),
-        showSpaceTitle: false,
-        showPrimaryTitle: false,
+        // edgeInsets: .init(top: 1, left: 1, bottom: 1, right: 1),
         background: .color(.init(hex: "#000AFF")),
         actionCallout: .bright,
         inputCallout: .bright,
@@ -516,8 +494,7 @@ extension Theme {
         primaryButton: .color(.init(hex: "#51B6FF")),
         emojiButton: .color(.init(hex: "#51B6FF")),
         specialKey: "colorfullRainbow",
-        showSpaceTitle: false,
-        showPrimaryTitle: false,
+        // edgeInsets: .init(top: 1, left: 1, bottom: 1, right: 1),
         background: .color(.init(hex: "#FFFFFF")),
         actionCallout: .bright,
         inputCallout: .bright,
