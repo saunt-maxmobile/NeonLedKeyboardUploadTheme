@@ -222,7 +222,8 @@ extension Theme {
 }
 
 extension Theme {
-    static var photoBlueGalaxy: Theme = .init(id: "28FF5563-60D4-4615-9262-2C41FA7633C9",
+    static var photoBlueGalaxy: Theme = .init(
+        id: "28FF5563-60D4-4615-9262-2C41FA7633C9",
         button: .init(
             background: .color(.clear),
             foregroundColor: Color.white,
@@ -233,7 +234,10 @@ extension Theme {
         background: .image(UIImage(named: "photoBlueGalaxy")?.jpegData(compressionQuality: 1) ?? Data()),
         actionCallout: .bright,
         inputCallout: .bright,
-        
+        neonLinearAnimation: .radial([
+            Color(hex: "#FFFFFF"),
+            Color(hex: "#00F0FF")
+        ]),
         preview: .image(UIImage(named: "photoBlueGalaxyPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "photoBlueGalaxy"
     )

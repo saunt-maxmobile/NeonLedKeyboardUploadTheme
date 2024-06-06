@@ -125,13 +125,12 @@ extension Theme {
         ),
         background: .image(UIImage(named: "neonPoly")?.jpegData(compressionQuality: 1) ?? Data()),
         durationAnimation: 3,
-        neonLinearAnimation: .LTR([
+        neonLinearAnimation: .radial([
             Color(hex: "FF00B8"),
             Color(hex: "FFFFFF"),
             Color(hex: "0057FF"),
             Color(hex: "00FFFF"),
-            Color(hex: "FF00B8"),
-        ], 3),
+        ]),
         preview: .image(UIImage(named: "neonPolyPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "neonPoly"
     )
@@ -147,12 +146,11 @@ extension Theme {
         ),
         background: .image(UIImage(named: "neonOcean")?.jpegData(compressionQuality: 1) ?? Data()),
         durationAnimation: 3,
-        neonLinearAnimation: .LTR([
+        neonLinearAnimation: .radial([
             Color(hex: "FF00F5"),
             Color(hex: "00FFFF"),
             Color(hex: "8A3EFF"),
-            Color(hex: "FF00F5"),
-        ], 3),
+        ]),
         preview: .image(UIImage(named: "neonOceanPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
         name: "neonOcean"
     )

@@ -97,7 +97,7 @@ extension Theme {
     
     static var colorLove: Theme = .init(id: "AC2F69DD-5CF6-4863-86ED-E48BE32CCB1A",
         button: .init(
-            background: .color(Color(hex: "#FA98B0").opacity(0.3)),
+            background: .color(Color(hex: "#FFDCDC")),
             foregroundColor: Color(hex: "#E75681"),
             font: .body,
             cornerRadius: 8,
@@ -184,7 +184,7 @@ struct ColorTheme_Previews: PreviewProvider {
 
     struct Preview: View {
         
-        var theme: Theme = .colorWater
+        var theme: Theme = .colorLove
         
         var controller: KeyboardInputViewController = {
             let controller = KeyboardInputViewController.preview
@@ -194,7 +194,7 @@ struct ColorTheme_Previews: PreviewProvider {
                 //                .init(text: "Baz")
             ]
             
-            let theme: Theme = .colorWater
+            let theme: Theme = .colorLove
             
             controller.services.styleProvider = CustomKeyStyleProvider(buttonStyle: theme.button, actionCallout: theme.actionCallout ?? .bright, inputCallout: theme.inputCallout ?? .bright, keyboardContext: controller.state.keyboardContext)
             
