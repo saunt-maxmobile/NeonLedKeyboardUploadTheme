@@ -9,7 +9,8 @@ import Foundation
 import SwiftUI
 
 extension Theme {
-    static var portraitBossDog: Theme = .init(id: "27F09144-7E6F-4119-A1B3-452D6A66BC5C",
+    static var portraitBossDog: Theme = .init(
+        id: "27F09144-7E6F-4119-A1B3-452D6A66BC5C",
         button: .init(
             background: .color(.clear),
             foregroundColor: .white,
@@ -31,10 +32,13 @@ extension Theme {
             .clear
         ]),
         preview: .image(UIImage(named: "portraitBossDogPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
-        name: "portraitBossDog"
+        name: "portraitBossDog",
+        iconColor: Color(hex: "#00F0FF"),
+        requiredPremium: false
     )
     
-    static var portraitLionKing: Theme = .init(id: "1B277E27-3EA1-4A05-8C54-2D9D5AA60EE9",
+    static var portraitLionKing: Theme = .init(
+        id: "1B277E27-3EA1-4A05-8C54-2D9D5AA60EE9",
         button: .init(
             background: .color(.clear),
             foregroundColor: Color(hex: "#00F0FF"),
@@ -53,10 +57,13 @@ extension Theme {
             Color(hex: "FFFFFF"),
         ]),
         preview: .image(UIImage(named: "portraitLionKingPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
-        name: "portraitLionKing"
+        name: "portraitLionKing",
+        iconColor: Color(hex: "#00F0FF"),
+        requiredPremium: false
     )
     
-    static var portraitRobotic: Theme = .init(id: "793F0F2F-01DF-49D4-8900-032CD2DF111A",
+    static var portraitRobotic: Theme = .init(
+        id: "793F0F2F-01DF-49D4-8900-032CD2DF111A",
         button: .init(
             background: .color(Color(hex: "#4200FF").opacity(0.15)),
             foregroundColor: .white,
@@ -74,10 +81,13 @@ extension Theme {
             Color(hex: "#00F0FF"),
         ]),
         preview: .image(UIImage(named: "portraitRoboticPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
-        name: "portraitRobotic"
+        name: "portraitRobotic",
+        iconColor: Color(hex: "#00F0FF"),
+        requiredPremium: false
     )
     
-    static var portraitNeonCat: Theme = .init(id: "93898696-C9B9-4990-AFF1-CF7310B1C9B8",
+    static var portraitNeonCat: Theme = .init(
+        id: "93898696-C9B9-4990-AFF1-CF7310B1C9B8",
         button: .init(
             background: .color(.clear),
             foregroundColor: .white,
@@ -98,10 +108,13 @@ extension Theme {
             .clear
         ]),
         preview: .image(UIImage(named: "portraitNeonCatPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
-        name: "portraitNeonCat"
+        name: "portraitNeonCat",
+        iconColor: Color(hex: "#00F0FF"),
+        requiredPremium: false
     )
     
-    static var portraitNeonDog: Theme = .init(id: "9AED4A01-037E-4A24-BF4B-67DEB69F5EE9",
+    static var portraitNeonDog: Theme = .init(
+        id: "9AED4A01-037E-4A24-BF4B-67DEB69F5EE9",
         button: .init(
             background: .color(.clear),
             foregroundColor: .white,
@@ -120,10 +133,12 @@ extension Theme {
             Color(hex: "FF00F5"),
         ]),
         preview: .image(UIImage(named: "portraitNeonDogPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
-        name: "portraitNeonDog"
+        name: "portraitNeonDog",
+        iconColor: Color(hex: "#FFFFFF")
     )
     
-    static var portraitLlama: Theme = .init(id: "90C90D9E-383B-48D7-BC48-24BAA0EDFE56",
+    static var portraitLlama: Theme = .init(
+        id: "90C90D9E-383B-48D7-BC48-24BAA0EDFE56",
         button: .init(
             background: .color(.clear),
             foregroundColor: .white,
@@ -143,10 +158,12 @@ extension Theme {
             Color(hex: "FF00D6"),
         ], 3),
         preview: .image(UIImage(named: "portraitLlamaPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
-        name: "portraitLlama"
+        name: "portraitLlama",
+        iconColor: Color(hex: "#FF00D6")
     )
     
-    static var portraitNeonTiger: Theme = .init(id: "D7F62533-096E-48A9-A774-58AF4E537D90",
+    static var portraitNeonTiger: Theme = .init(
+        id: "D7F62533-096E-48A9-A774-58AF4E537D90",
         button: .init(
             background: .color(.clear),
             foregroundColor: .white,
@@ -169,7 +186,8 @@ extension Theme {
             Color(hex: "46FF64"),
         ], 5),
         preview: .image(UIImage(named: "portraitNeonTigerPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
-        name: "portraitNeonTiger"
+        name: "portraitNeonTiger",
+        iconColor: Color(hex: "#32C2FD")
     )
     
     static var portraitMonkeyFashion: Theme = .init(
@@ -191,7 +209,8 @@ extension Theme {
             Color(hex: "#00FFFF"),
         ]),
         preview: .image(UIImage(named: "portraitMonkeyFashionPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
-        name: "portraitMonkeyFashion"
+        name: "portraitMonkeyFashion",
+        iconColor: Color(hex: "#00FFFF")
     )
 }
 

@@ -9,7 +9,8 @@ import Foundation
 import SwiftUI
 
 extension Theme {
-    static var colorLipPink: Theme = .init(id: "F46D7C22-770F-4989-BB27-770FDC7025E3",
+    static var colorLipPink: Theme = .init(
+        id: "F46D7C22-770F-4989-BB27-770FDC7025E3",
         button: .init(
             background: .color(Color.white.opacity(0.5)),
             foregroundColor: Color.white,
@@ -22,10 +23,13 @@ extension Theme {
         inputCallout: .bright,
         
         preview: .image(UIImage(named: "colorLipPinkPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
-        name: "colorLipPink"
+        name: "colorLipPink",
+        iconColor: Color(hex: "#FFFFFF"),
+        requiredPremium: false
     )
     
-    static var colorLeaf: Theme = .init(id: "388A0463-D80D-4976-B2E9-6359FC4CD395",
+    static var colorLeaf: Theme = .init(
+        id: "388A0463-D80D-4976-B2E9-6359FC4CD395",
         button: .init(
             background: .color(Color(hex: "#168469").opacity(0.5)),
             foregroundColor: Color.white,
@@ -36,10 +40,13 @@ extension Theme {
         background: .color(Color(hex: "#99BBAD")),
         
         preview: .image(UIImage(named: "colorLeafPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
-        name: "colorLeaf"
+        name: "colorLeaf",
+        iconColor: Color(hex: "#579F8B"),
+        requiredPremium: false
     )
     
-    static var colorCyan: Theme = .init(id: "AE7420EA-40BF-4E3B-A765-3EAA2C2A4E1E",
+    static var colorCyan: Theme = .init(
+        id: "AE7420EA-40BF-4E3B-A765-3EAA2C2A4E1E",
         button: .init(
             background: .color(Color.white.opacity(0.5)),
             foregroundColor: Color.white,
@@ -50,10 +57,13 @@ extension Theme {
         background: .color(Color(hex: "#61C0BF")),
         
         preview: .image(UIImage(named: "colorCyanPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
-        name: "colorCyan"
+        name: "colorCyan",
+        iconColor: Color(hex: "#90D3D2"),
+        requiredPremium: false
     )
     
-    static var colorOcean: Theme = .init(id: "E2B5EB86-F27F-41CE-B52C-EA7437A82B7B",
+    static var colorOcean: Theme = .init(
+        id: "E2B5EB86-F27F-41CE-B52C-EA7437A82B7B",
         button: .init(
             background: .color(Color(hex: "#006660").opacity(0.3)),
             foregroundColor: Color.white,
@@ -64,10 +74,13 @@ extension Theme {
         background: .color(Color(hex: "#99DDCC")),
         
         preview: .image(UIImage(named: "colorOceanPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
-        name: "colorOcean"
+        name: "colorOcean",
+        iconColor: Color(hex: "#6BBAAC"),
+        requiredPremium: false
     )
     
-    static var colorPurple: Theme = .init(id: "22272F81-BC5F-454B-B100-97061D26DCD0",
+    static var colorPurple: Theme = .init(
+        id: "22272F81-BC5F-454B-B100-97061D26DCD0",
         button: .init(
             background: .color(Color(hex: "#8400B2").opacity(0.8)),
             foregroundColor: Color.white,
@@ -78,10 +91,12 @@ extension Theme {
         background: .color(Color(hex: "#D59BF6")),
         
         preview: .image(UIImage(named: "colorPurplePreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
-        name: "colorPurple"
+        name: "colorPurple",
+        iconColor: Color(hex: "#941FC0")
     )
     
-    static var colorYellow: Theme = .init(id: "81D92543-6E6B-4E73-8B8F-14F3620D71C8",
+    static var colorYellow: Theme = .init(
+        id: "81D92543-6E6B-4E73-8B8F-14F3620D71C8",
         button: .init(
             background: .color(Color.white.opacity(0.5)),
             foregroundColor: Color.white,
@@ -92,10 +107,12 @@ extension Theme {
         background: .color(Color(hex: "#F8B400")),
         
         preview: .image(UIImage(named: "colorYellowPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
-        name: "colorYellow"
+        name: "colorYellow",
+        iconColor: Color(hex: "#FACB4C")
     )
     
-    static var colorLove: Theme = .init(id: "AC2F69DD-5CF6-4863-86ED-E48BE32CCB1A",
+    static var colorLove: Theme = .init(
+        id: "AC2F69DD-5CF6-4863-86ED-E48BE32CCB1A",
         button: .init(
             background: .color(Color(hex: "#FFDCDC")),
             foregroundColor: Color(hex: "#E75681"),
@@ -106,10 +123,12 @@ extension Theme {
         background: .color(Color(hex: "#FFCDCD")),
         
         preview: .image(UIImage(named: "colorLovePreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
-        name: "colorLove"
+        name: "colorLove",
+        iconColor: Color(hex: "#E75681")
     )
     
-    static var colorWater: Theme = .init(id: "25FC7C82-14C3-4096-BBC1-02888037ED67",
+    static var colorWater: Theme = .init(
+        id: "25FC7C82-14C3-4096-BBC1-02888037ED67",
         button: .init(
             background: .color(Color.white.opacity(0.3)),
             foregroundColor: Color(hex: "#008585"),
@@ -120,10 +139,12 @@ extension Theme {
         background: .color(Color(hex: "#CFF1EF")),
         
         preview: .image(UIImage(named: "colorWaterPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
-        name: "colorWater"
+        name: "colorWater",
+        iconColor: Color(hex: "#008585")
     )
     
-    static var colorGreen: Theme = .init(id: "13BEA090-5BCE-4843-A17B-453C77467E54",
+    static var colorGreen: Theme = .init(
+        id: "13BEA090-5BCE-4843-A17B-453C77467E54",
         button: .init(
             background: .color(Color(hex: "#407000")),
             foregroundColor: Color.white,
@@ -134,10 +155,12 @@ extension Theme {
         background: .color(Color(hex: "#729D39")),
         
         preview: .image(UIImage(named: "colorGreenPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
-        name: "colorGreen"
+        name: "colorGreen",
+        iconColor: Color(hex: "#407000")
     )
     
-    static var colorOrange: Theme = .init(id: "29313504-CC01-4F6A-85F4-C6582FB1E962",
+    static var colorOrange: Theme = .init(
+        id: "29313504-CC01-4F6A-85F4-C6582FB1E962",
         button: .init(
             background: .color(Color.white),
             foregroundColor: Color(hex: "#BC4616"),
@@ -148,10 +171,12 @@ extension Theme {
         background: .color(Color(hex: "#D57149")),
         
         preview: .image(UIImage(named: "colorOrangePreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
-        name: "colorOrange"
+        name: "colorOrange",
+        iconColor: Color(hex: "#FFFFFF")
     )
     
-    static var colorTree: Theme = .init(id: "0E92A295-107B-4F36-BDDE-6F6E13522BE4",
+    static var colorTree: Theme = .init(
+        id: "0E92A295-107B-4F36-BDDE-6F6E13522BE4",
         button: .init(
             background: .color(Color.white.opacity(0.4)),
             foregroundColor: Color.white,
@@ -162,10 +187,12 @@ extension Theme {
         background: .color(Color(hex: "#678A74")),
         
         preview: .image(UIImage(named: "colorTreePreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
-        name: "colorTree"
+        name: "colorTree",
+        iconColor: Color(hex: "#A4B9AC")
     )
     
-    static var colorHot: Theme = .init(id: "D5D81DE4-6F04-42EB-8D97-BAF77C310EB2",
+    static var colorHot: Theme = .init(
+        id: "D5D81DE4-6F04-42EB-8D97-BAF77C310EB2",
         button: .init(
             background: .color(Color.white),
             foregroundColor: Color(hex: "#D17200"),
@@ -176,7 +203,8 @@ extension Theme {
         background: .color(Color(hex: "#F5B971")),
         
         preview: .image(UIImage(named: "colorHotPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
-        name: "colorHot"
+        name: "colorHot",
+        iconColor: Color(hex: "#FFFFFF")
     )
 }
 

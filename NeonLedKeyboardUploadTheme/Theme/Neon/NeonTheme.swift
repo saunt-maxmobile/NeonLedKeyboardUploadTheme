@@ -27,7 +27,9 @@ extension Theme {
         ],
         durationAnimation: 2,
         preview: .image(UIImage(named: "neonCyberPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
-        name: "neonCyber"
+        name: "neonCyber",
+        iconColor: Color(hex: "#F10CF5"),
+        requiredPremium: false
     )
     
     static var neonWaves : Theme = .init(
@@ -48,7 +50,9 @@ extension Theme {
         ],
         durationAnimation: 1,
         preview: .image(UIImage(named: "neonWavesPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
-        name: "neonWaves"
+        name: "neonWaves",
+        iconColor: Color(hex: "#04FFD4"),
+        requiredPremium: false
     )
     
     static var neonCyberRoll: Theme = .init(
@@ -69,7 +73,9 @@ extension Theme {
         ],
         durationAnimation: 1,
         preview: .image(UIImage(named: "neonCyberRollPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
-        name: "neonCyberRoll"
+        name: "neonCyberRoll",
+        iconColor: Color(hex: "#3ED9FD"),
+        requiredPremium: false
     )
     
     static var neonColourPower: Theme = .init(
@@ -91,7 +97,9 @@ extension Theme {
             Color(hex: "00FFFF"),
         ], 3),
         preview: .image(UIImage(named: "neonColourPowerPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
-        name: "neonColourPower"
+        name: "neonColourPower",
+        iconColor: Color(hex: "#FFC01D"),
+        requiredPremium: false
     )
     
     static var neonWater: Theme = .init(
@@ -111,7 +119,8 @@ extension Theme {
              Color(red: 0, green: 0.76, blue: 1)
             ], 2),
         preview: .image(UIImage(named: "neonWaterPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
-        name: "neonWater"
+        name: "neonWater",
+        iconColor: Color(hex: "#FFFFFF")
     )
     
     static var neonPoly: Theme = .init(
@@ -132,7 +141,8 @@ extension Theme {
             Color(hex: "00FFFF"),
         ]),
         preview: .image(UIImage(named: "neonPolyPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
-        name: "neonPoly"
+        name: "neonPoly",
+        iconColor: Color(hex: "#FFFFFF")
     )
     
     static var neonOcean: Theme = .init(
@@ -152,7 +162,8 @@ extension Theme {
             Color(hex: "8A3EFF"),
         ]),
         preview: .image(UIImage(named: "neonOceanPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
-        name: "neonOcean"
+        name: "neonOcean",
+        iconColor: Color(hex: "#FFFFFF")
     )
 }
 
@@ -173,7 +184,8 @@ extension Theme {
              Color(red: 0, green: 0.04, blue: 1),
             ]),
         preview: .image(UIImage(named: "neonDarkLeafPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
-        name: "neonDarkLeaf"
+        name: "neonDarkLeaf",
+        iconColor: Color(hex: "#F300EA")
     )
     
     static var neonMysticJungle: Theme = .init(
@@ -187,7 +199,8 @@ extension Theme {
         ),
         background: .image(UIImage(named: "neonMysticJungle")?.jpegData(compressionQuality: 1) ?? Data()),
         preview: .image(UIImage(named: "neonMysticJunglePreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
-        name: "neonMysticJungle"
+        name: "neonMysticJungle",
+        iconColor: Color(hex: "#00FFFF")
     )
     
     static var neonRoofNeon: Theme = .init(
@@ -207,7 +220,8 @@ extension Theme {
              Color(hex: "FEF635"),
             ]),
         preview: .image(UIImage(named: "neonRoofNeonPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
-        name: "neonRoofNeon"
+        name: "neonRoofNeon",
+        iconColor: Color(hex: "#FDF536")
     )
     
     static var neonSummitNeon: Theme = .init(
@@ -221,7 +235,8 @@ extension Theme {
         ),
         background: .image(UIImage(named: "neonSummitNeon")?.jpegData(compressionQuality: 1) ?? Data()),
         preview: .image(UIImage(named: "neonSummitNeonPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
-        name: "neonSummitNeon"
+        name: "neonSummitNeon",
+        iconColor: Color(hex: "#01E3F0")
     )
     
     static var neonGlass: Theme = .init(
@@ -235,7 +250,8 @@ extension Theme {
         ),
         background: .image(UIImage(named: "neonGlass")?.jpegData(compressionQuality: 1) ?? Data()),
         preview: .image(UIImage(named: "neonGlassPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
-        name: "neonGlass"
+        name: "neonGlass",
+        iconColor: Color(hex: "#00F0FF")
     )
     
     static var neonLed: Theme = .init(
@@ -259,7 +275,8 @@ extension Theme {
              Color(red: 0, green: 1, blue: 1),
             ], 2),
         preview: .image(UIImage(named: "neonLedPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
-        name: "neonLed"
+        name: "neonLed",
+        iconColor: Color(hex: "#85FC05")
     )
     
     static var neonLine: Theme = .init(
@@ -280,7 +297,8 @@ extension Theme {
              Color(hex: "#FF00F5"),
             ]),
         preview: .image(UIImage(named: "neonLinePreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
-        name: "neonLine"
+        name: "neonLine",
+        iconColor: Color(hex: "#FF00F5")
     )
     
     static var neonVortexGalaxy: Theme = .init(
@@ -296,7 +314,8 @@ extension Theme {
         actionCallout: .bright,
         inputCallout: .bright,
         preview: .image(UIImage(named: "neonVortexGalaxyPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
-        name: "neonVortexGalaxy"
+        name: "neonVortexGalaxy",
+        iconColor: Color(hex: "#FFFFFF")
     )
     
     static var neonSpread: Theme = .init(
@@ -318,7 +337,8 @@ extension Theme {
              Color(hex: "#8000FF"),
             ]),
         preview: .image(UIImage(named: "neonSpreadPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
-        name: "neonSpread"
+        name: "neonSpread",
+        iconColor: Color(hex: "#8000FF")
     )
     
     static var neonFutiristicNight: Theme = .init(
@@ -341,7 +361,8 @@ extension Theme {
              .white,
             ]),
         preview: .image(UIImage(named: "neonFutiristicNightPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
-        name: "neonFutiristicNight"
+        name: "neonFutiristicNight",
+        iconColor: Color(hex: "#FEF747")
     )
     
     static var neonFantasyNight: Theme = .init(
@@ -363,7 +384,8 @@ extension Theme {
              Color(red: 0, green: 0.02, blue: 0.59),
             ]),
         preview: .image(UIImage(named: "neonFantasyNightPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
-        name: "neonFantasyNight"
+        name: "neonFantasyNight",
+        iconColor: Color(hex: "#FFFFFF")
     )
     
     static var neonMargicCircle: Theme = .init(
@@ -388,7 +410,8 @@ extension Theme {
         ],
         durationAnimation: 1,
         preview: .image(UIImage(named: "neonMargicCirclePreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
-        name: "neonMargicCircle"
+        name: "neonMargicCircle",
+        iconColor: Color(hex: "#FFFFFF")
     )
     
     static var neonMagicLight: Theme = .init(
@@ -406,7 +429,8 @@ extension Theme {
         actionCallout: .bright,
         inputCallout: .bright,
         preview: .image(UIImage(named: "neonMagicLightPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
-        name: "neonMagicLight"
+        name: "neonMagicLight",
+        iconColor: Color(hex: "#000AFF")
     )
     
     static var neonJungle: Theme = .init(
@@ -429,7 +453,8 @@ extension Theme {
              Color(red: 0, green: 0.94, blue: 1),
             ], 3),
         preview: .image(UIImage(named: "neonJunglePreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
-        name: "neonJungle"
+        name: "neonJungle",
+        iconColor: Color(hex: "#FFFFFF")
     )
     
     static var neonPlasticBling: Theme = .init(
@@ -453,7 +478,8 @@ extension Theme {
              Color(hex: "#FF00F5"),
             ]),
         preview: .image(UIImage(named: "neonPlasticPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
-        name: "neonPlastic"
+        name: "neonPlastic",
+        iconColor: Color(hex: "#FFFFFF")
     )
     
     static var neonGlossiness: Theme = .init(
@@ -475,7 +501,8 @@ extension Theme {
              Color(hex: "#000AFF"),
             ]),
         preview: .image(UIImage(named: "neonGlossinessPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
-        name: "neonGlossiness"
+        name: "neonGlossiness",
+        iconColor: Color(hex: "#000AFF")
     )
     
     static var neonLustre: Theme = .init(
@@ -496,7 +523,8 @@ extension Theme {
              Color(hex: "#00FFFF"),
             ]),
         preview: .image(UIImage(named: "neonLustrePreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
-        name: "neonLustre"
+        name: "neonLustre",
+        iconColor: Color(hex: "#FFFFFF")
     )
     
     static var neonBalloons: Theme = .init(
@@ -514,7 +542,8 @@ extension Theme {
         actionCallout: .bright,
         inputCallout: .bright,
         preview: .image(UIImage(named: "neonBalloonsPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
-        name: "neonBalloons"
+        name: "neonBalloons",
+        iconColor: Color(hex: "#C363FB")
     )
     
     static var neonTriangleNeon: Theme = .init(
@@ -536,7 +565,8 @@ extension Theme {
              Color(hex: "#000AFF"),
             ]),
         preview: .image(UIImage(named: "neonTriangleNeonPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
-        name: "neonTriangleNeon"
+        name: "neonTriangleNeon",
+        iconColor: Color(hex: "#FA00FF")
     )
 }
 

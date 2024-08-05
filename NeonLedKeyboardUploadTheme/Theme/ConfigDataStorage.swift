@@ -13,31 +13,21 @@ struct ConfigDataStorage {
     
     private init() {
 //        self.converToJson()
-        /// just accept encode for id, name, imagePreview of theme
+        /// just accept encode for id, name, preview, imagePreview, requiredPremium of theme
 //        ThemeHandler.shared.saveThemeSection(themeSections)
         
         /// accept encode all variable of theme
-//        ThemeHandler.shared.createThemeFolder(themeSections)
+        ThemeHandler.shared.createThemeFolder(themeSections)
     }
     
     var themeSections: [ThemeSection] = [
-//        .init(name: "Cute", themes: [
-//            .colorfullMyosotis, .colorfullLavender, .colorfullHibicus, .colorfullMangosteen, .colorfullSky, .colorfullDarkNight, .colorfullMatcha, .colorfullTulips, .colorfullCentaurea, .colorfullIris, .colorfullRainbow
-//        ]),
-//        .init(name: "Radial", themes: [
-//            .gradientVividBlurred, .gradientDarkUniverse, .gradientPolygon, .gradientAurora, .gradientCinema, 
-//                .colorfullColorPaint, .colorfullFlower, .colorfullColorCurve, .colorfullCubes,
-//            .portraitBossDog, .portraitLionKing, .portraitRobotic, .portraitNeonCat, .portraitNeonDog, .portraitMonkeyFashion,
-//            .neonDarkLeaf, .neonRoofNeon, .neonLine, .neonSpread, .neonFutiristicNight, .neonFantasyNight, .neonPlasticBling, .neonGlossiness, .neonLustre, .neonTriangleNeon,
-//            .photoColorWaves, .photoPeculiarCircle
-//        ])
-//        .init(name: "Cute", themes: [.cuteRainbowRabbit, .cuteFrogAlone, .cuteBWRabbit, .cuteDachshund, .cuteSillyParrot, .cuteLazyRabbit, .cuteShibaInu, .cutePawboard, .cuteCatlook, .cutePinkStar, .cuteGreenGrass, .cuteDusk, .cuteBloomBoard, .cuteCatGarden, .cutePurplePixel, .cuteBeneathTheLily, .cuteScreamboard, .cuteRainbowGarden, .cuteHungryPandas, .cuteKittyHaven, .cuteBunnehBard, .cuteZodiac, .cuteSereniKeys, .cuteBearRabbit, .cuteCapypara, .cuteCoolCat]),
-//        .init(name: "Gradient", themes: [.gradientPink, .gradientGrass, .gradientSunny, .gradientPurple, .gradientSky, .gradientSea, .gradientGreen, .gradientPhotoRainbow, .gradientPhotoRomantic, .gradientPhotoUnicorn, .gradientPhotoGillter, .gradientPhotoColorfull, .gradientRiver, .gradientPopPoly, .gradientHologram, .gradientVividBlurred, .gradientVividColorfull, .gradientDarkUniverse, .gradientVortex, .gradientPolygon, .gradientAurora, .gradientYellowFruits, .gradientPurpleVivid, .gradientHexagonBlurred, .gradientCircleBlurred, .gradientCinema]),
-//        .init(name: "Color", themes: [.colorLipPink, .colorLeaf, .colorCyan, .colorOcean, .colorPurple, .colorYellow, .colorLove, .colorWater, .colorGreen, .colorOrange, .colorTree, .colorHot]),
-//        .init(name: "Photo", themes: [.photoCloud, .photoPurpleGlitter, .photoDarkPurple, .photoPinkCream, .photoBlueGlitter, .photoGalaxy, .photoBlueNeon, .photoColor, .photoBokeh, .photoSkyfull, .photoDark, .photoWaterColor, .photoCool, .photoMountain, .photoJungle, .photoBlueGalaxy, .photoMajesticGalaxy, .photoColorWaves, .photoBlurBokeh, .photoPeculiarCircle, .photoFantasticStrip, .photoFriendlyLemur, .photoFunnyHorse, .photoCuteCorgi, .photoCoolCat, .photoLoverDog, .photoPuppy]),
-//        .init(name: "Neon", themes: [.neonCyber, .neonWaves, .neonCyberRoll, .neonColourPower, .neonWater, .neonPoly, .neonOcean, .neonDarkLeaf, .neonMysticJungle, .neonRoofNeon, .neonSummitNeon, .neonGlass, .neonLed, .neonLine, .neonVortexGalaxy, .neonSpread, .neonFutiristicNight, .neonFantasyNight, .neonMargicCircle, .neonMagicLight, .neonJungle, .neonPlasticBling, .neonGlossiness, .neonLustre, .neonBalloons, .neonTriangleNeon]),
-//        .init(name: "Portrait", themes: [.portraitBossDog, .portraitLionKing, .portraitRobotic, .portraitNeonCat, .portraitNeonDog, .portraitLlama, .portraitNeonTiger, .portraitMonkeyFashion]),
-//        .init(name: "Colorfull", themes: [.colorfullColorPaint, .colorfullTwirl, .colorfullUniverse, .colorfullLiquid, .colorfullCloud, .colorfullFlower, .colorfullLowPoly, .colorfullTropical, .colorfullWavesStrip, .colorfullColorCurve, .colorfullCubes, ]),
+        .init(name: "Cute", themes: [.cuteRainbowRabbit, .cuteFrogAlone, .cuteBWRabbit, .cuteDachshund, .cuteSillyParrot, .cuteLazyRabbit, .cuteShibaInu, .cutePawboard, .cuteCatlook, .cutePinkStar, .cuteGreenGrass, .cuteDusk, .cuteBloomBoard, .cuteCatGarden, .cutePurplePixel, .cuteBeneathTheLily, .cuteScreamboard, .cuteRainbowGarden, .cuteHungryPandas, .cuteKittyHaven, .cuteBunnehBard, .cuteZodiac, .cuteSereniKeys, .cuteBearRabbit, .cuteCapypara, .cuteCoolCat]), // 26 themes
+        .init(name: "Gradient", themes: [.gradientPink, .gradientGrass, .gradientSunny, .gradientPurple, .gradientSky, .gradientSea, .gradientGreen, .gradientPhotoRainbow, .gradientPhotoRomantic, .gradientPhotoUnicorn, .gradientPhotoGillter, .gradientPhotoColorfull, .gradientRiver, .gradientPopPoly, .gradientHologram, .gradientVividBlurred, .gradientVividColorfull, .gradientDarkUniverse, .gradientVortex, .gradientPolygon, .gradientAurora, .gradientYellowFruits, .gradientPurpleVivid, .gradientHexagonBlurred, .gradientCircleBlurred, .gradientCinema]), // 26 themes
+        .init(name: "Color", themes: [.colorLipPink, .colorLeaf, .colorCyan, .colorOcean, .colorPurple, .colorYellow, .colorLove, .colorWater, .colorGreen, .colorOrange, .colorTree, .colorHot]), // 12 themes
+        .init(name: "Photo", themes: [.photoCloud, .photoPurpleGlitter, .photoDarkPurple, .photoPinkCream, .photoBlueGlitter, .photoGalaxy, .photoBlueNeon, .photoColor, .photoBokeh, .photoSkyfull, .photoDark, .photoWaterColor, .photoCool, .photoMountain, .photoJungle, .photoBlueGalaxy, .photoMajesticGalaxy, .photoColorWaves, .photoBlurBokeh, .photoPeculiarCircle, .photoFantasticStrip, .photoFriendlyLemur, .photoFunnyHorse, .photoCuteCorgi, .photoCoolCat, .photoLoverDog, .photoPuppy]), // 27 themes
+        .init(name: "Neon", themes: [.neonCyber, .neonWaves, .neonCyberRoll, .neonColourPower, .neonWater, .neonPoly, .neonOcean, .neonDarkLeaf, .neonMysticJungle, .neonRoofNeon, .neonSummitNeon, .neonGlass, .neonLed, .neonLine, .neonVortexGalaxy, .neonSpread, .neonFutiristicNight, .neonFantasyNight, .neonMargicCircle, .neonMagicLight, .neonJungle, .neonPlasticBling, .neonGlossiness, .neonLustre, .neonBalloons, .neonTriangleNeon]), // 26 themes
+        .init(name: "Portrait", themes: [.portraitBossDog, .portraitLionKing, .portraitRobotic, .portraitNeonCat, .portraitNeonDog, .portraitLlama, .portraitNeonTiger, .portraitMonkeyFashion]), // 8 themes
+        .init(name: "Colorfull", themes: [.colorfullColorPaint, .colorfullTwirl, .colorfullUniverse, .colorfullLiquid, .colorfullCloud, .colorfullFlower, .colorfullLowPoly, .colorfullTropical, .colorfullWavesStrip, .colorfullColorCurve, .colorfullCubes, ]), // 11 themes
     ]
     
     var themeAuto: [ThemeAuto] = [

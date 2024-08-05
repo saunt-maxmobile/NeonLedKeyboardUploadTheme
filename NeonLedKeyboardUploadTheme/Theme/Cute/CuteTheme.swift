@@ -29,7 +29,9 @@ extension Theme {
         actionCallout: .bright,
         inputCallout: .bright,
         preview: .image(UIImage(named: "cuteRainbowRabbitPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
-        name: "cuteRainbowRabbit"
+        name: "cuteRainbowRabbit",
+        iconColor: Color(hex: "#655757"),
+        requiredPremium: false
     )
     
     static var cuteFrogAlone: Theme = .init(
@@ -52,7 +54,9 @@ extension Theme {
         actionCallout: .bright,
         inputCallout: .bright,
         preview: .image(UIImage(named: "cuteFrogAlonePreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
-        name: "cuteFrogAlone"
+        name: "cuteFrogAlone",
+        iconColor: Color(hex: "#A7DF93"),
+        requiredPremium: false
     )
     
     static var cuteBWRabbit: Theme = .init(
@@ -75,7 +79,9 @@ extension Theme {
         actionCallout: .bright,
         inputCallout: .bright,
         preview: .image(UIImage(named: "cuteBWRabbitPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
-        name: "cuteBWRabbit"
+        name: "cuteBWRabbit",
+        iconColor: Color(hex: "#FFFFFF"),
+        requiredPremium: false
     )
     
     static var cuteDachshund: Theme = .init(
@@ -98,7 +104,9 @@ extension Theme {
         actionCallout: .bright,
         inputCallout: .bright,
         preview: .image(UIImage(named: "cuteDachshundPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
-        name: "cuteDachshund"
+        name: "cuteDachshund",
+        iconColor: Color(hex: "#341F0C"),
+        requiredPremium: false
     )
     
     static var cuteSillyParrot: Theme = .init(
@@ -122,7 +130,8 @@ extension Theme {
         actionCallout: .bright,
         inputCallout: .bright,
         preview: .image(UIImage(named: "cuteSillyParrotPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
-        name: "cuteSillyParrot"
+        name: "cuteSillyParrot",
+        iconColor: Color(hex: "#A1BF38")
     )
     
     static var cuteLazyRabbit: Theme = .init(
@@ -145,7 +154,8 @@ extension Theme {
         actionCallout: .bright,
         inputCallout: .bright,
         preview: .image(UIImage(named: "cuteLazyRabbitPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
-        name: "cuteLazyRabbit"
+        name: "cuteLazyRabbit",
+        iconColor: Color(hex: "#E8A660")
     )
     
     static var cuteShibaInu: Theme = .init(
@@ -168,7 +178,8 @@ extension Theme {
         actionCallout: .bright,
         inputCallout: .bright,
         preview: .image(UIImage(named: "cuteShibaInuPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
-        name: "cuteShibaInu"
+        name: "cuteShibaInu",
+        iconColor: Color(hex: "#403131")
     )
     
     static var cutePawboard: Theme = .init(
@@ -191,7 +202,8 @@ extension Theme {
         actionCallout: .bright,
         inputCallout: .bright,
         preview: .image(UIImage(named: "cutePawboardPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
-        name: "cutePawboard"
+        name: "cutePawboard",
+        iconColor: Color(hex: "#575757")
     )
     
     static var cuteCatlook: Theme = .init(
@@ -214,7 +226,8 @@ extension Theme {
         actionCallout: .bright,
         inputCallout: .bright,
         preview: .image(UIImage(named: "cuteCatlookPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
-        name: "cuteCatlook"
+        name: "cuteCatlook",
+        iconColor: Color(hex: "#F8A6AA")
     )
     
     static var cutePinkStar: Theme = .init(
@@ -237,7 +250,8 @@ extension Theme {
         actionCallout: .bright,
         inputCallout: .bright,
         preview: .image(UIImage(named: "cutePinkStarPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
-        name: "cutePinkStar"
+        name: "cutePinkStar",
+        iconColor: Color(hex: "#FFFFFF")
     )
     
     static var cuteGreenGrass: Theme = .init(
@@ -260,7 +274,8 @@ extension Theme {
         actionCallout: .bright,
         inputCallout: .bright,
         preview: .image(UIImage(named: "cuteGreenGrassPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
-        name: "cuteGreenGrass"
+        name: "cuteGreenGrass",
+        iconColor: Color(hex: "#729D39")
     )
     
     static var cuteDusk: Theme = .init(
@@ -283,7 +298,8 @@ extension Theme {
         actionCallout: .bright,
         inputCallout: .bright,
         preview: .image(UIImage(named: "cuteDuskPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
-        name: "cuteDusk"
+        name: "cuteDusk",
+        iconColor: Color(hex: "#FFFFFF")
     )
     
     static var cuteBloomBoard: Theme = .init(
@@ -306,7 +322,8 @@ extension Theme {
         actionCallout: .bright,
         inputCallout: .bright,
         preview: .image(UIImage(named: "cuteBloomBoardPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
-        name: "cuteBloomBoard"
+        name: "cuteBloomBoard",
+        iconColor: Color(hex: "#E16241")
     )
     
     static var cuteCatGarden: Theme = .init(
@@ -329,7 +346,8 @@ extension Theme {
         actionCallout: .bright,
         inputCallout: .bright,
         preview: .image(UIImage(named: "cuteCatGardenPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
-        name: "cuteCatGarden"
+        name: "cuteCatGarden",
+        iconColor: Color(hex: "#502C13")
     )
     
     static var cutePurplePixel: Theme = .init(
@@ -348,7 +366,8 @@ extension Theme {
         actionCallout: .bright,
         inputCallout: .bright,
         preview: .image(UIImage(named: "cutePurplePixelPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
-        name: "cutePurplePixel"
+        name: "cutePurplePixel",
+        iconColor: Color(hex: "#000000")
     )
     
     static var cuteBeneathTheLily: Theme = .init(
@@ -371,7 +390,8 @@ extension Theme {
         actionCallout: .bright,
         inputCallout: .bright,
         preview: .image(UIImage(named: "cuteBeneathTheLilyPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
-        name: "cuteBeneathTheLily"
+        name: "cuteBeneathTheLily",
+        iconColor: Color(hex: "#A9C300")
     )
     
     static var cuteScreamboard: Theme = .init(
@@ -394,7 +414,8 @@ extension Theme {
         actionCallout: .bright,
         inputCallout: .bright,
         preview: .image(UIImage(named: "cuteScreamboardPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
-        name: "cuteScreamboard"
+        name: "cuteScreamboard",
+        iconColor: Color(hex: "#FFFFFF")
     )
     
     static var cuteRainbowGarden: Theme = .init(
@@ -417,7 +438,8 @@ extension Theme {
         actionCallout: .bright,
         inputCallout: .bright,
         preview: .image(UIImage(named: "cuteRainbowGardenPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
-        name: "cuteRainbowGarden"
+        name: "cuteRainbowGarden",
+        iconColor: Color(hex: "#FF706C")
     )
     
     static var cuteHungryPandas: Theme = .init(
@@ -440,7 +462,8 @@ extension Theme {
         actionCallout: .bright,
         inputCallout: .bright,
         preview: .image(UIImage(named: "cuteHungryPandasPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
-        name: "cuteHungryPandas"
+        name: "cuteHungryPandas",
+        iconColor: Color(hex: "#343345")
     )
     
     static var cuteKittyHaven: Theme = .init(
@@ -463,7 +486,8 @@ extension Theme {
         actionCallout: .bright,
         inputCallout: .bright,
         preview: .image(UIImage(named: "cuteKittyHavenPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
-        name: "cuteKittyHaven"
+        name: "cuteKittyHaven",
+        iconColor: Color(hex: "#FEBE33")
     )
     
     static var cuteBunnehBard: Theme = .init(
@@ -486,7 +510,8 @@ extension Theme {
         actionCallout: .bright,
         inputCallout: .bright,
         preview: .image(UIImage(named: "cuteBunnehBardPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
-        name: "cuteBunnehBard"
+        name: "cuteBunnehBard",
+        iconColor: Color(hex: "#6E3C32")
     )
     
     static var cuteZodiac: Theme = .init(
@@ -505,7 +530,8 @@ extension Theme {
         actionCallout: .bright,
         inputCallout: .bright,
         preview: .image(UIImage(named: "cuteZodiacPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
-        name: "cuteZodiac"
+        name: "cuteZodiac",
+        iconColor: Color(hex: "#FFFFFF")
     )
     
     static var cuteSereniKeys: Theme = .init(
@@ -524,7 +550,8 @@ extension Theme {
         actionCallout: .bright,
         inputCallout: .bright,
         preview: .image(UIImage(named: "cuteSereniKeysPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
-        name: "cuteSereniKeys"
+        name: "cuteSereniKeys",
+        iconColor: Color(hex: "#FFFFFF")
     )
     
     static var cuteBearRabbit: Theme = .init(
@@ -546,7 +573,8 @@ extension Theme {
         actionCallout: .bright,
         inputCallout: .bright,
         preview: .image(UIImage(named: "cuteBearRabbitPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
-        name: "cuteBearRabbit"
+        name: "cuteBearRabbit",
+        iconColor: Color(hex: "#D5796C")
     )
     
     static var cuteCapypara: Theme = .init(
@@ -568,7 +596,8 @@ extension Theme {
         actionCallout: .bright,
         inputCallout: .bright,
         preview: .image(UIImage(named: "cuteCapyparaPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
-        name: "cuteCapypara"
+        name: "cuteCapypara",
+        iconColor: Color(hex: "#AD691D")
     )
     
     static var cuteCoolCat: Theme = .init(
@@ -590,7 +619,8 @@ extension Theme {
         actionCallout: .bright,
         inputCallout: .bright,
         preview: .image(UIImage(named: "cuteCoolCatPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
-        name: "cuteCoolCat"
+        name: "cuteCoolCat",
+        iconColor: Color(hex: "#E2E238")
     )
 }
 

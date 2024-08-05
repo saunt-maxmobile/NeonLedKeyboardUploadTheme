@@ -8,7 +8,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.SymbolicBreakpoint">
          <BreakpointContent
             uuid = "1D87EE4E-8720-4E72-A872-80955DF60B91"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             symbolName = ""
@@ -18,118 +18,10 @@
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "6DFC1AE5-F8A8-433E-B903-6B930F3E3CE1"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "NeonLedKeyboardUploadTheme/Theme/Neon/NeonTheme.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "547"
-            endingLineNumber = "547"
-            landmarkName = "Preview"
-            landmarkType = "14">
-            <Locations>
-               <Location
-                  uuid = "6DFC1AE5-F8A8-433E-B903-6B930F3E3CE1 - 4c580ca984b05615"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "NeonLedKeyboardUploadTheme.NeonTheme_Previews.Preview.init() -&gt; NeonLedKeyboardUploadTheme.NeonTheme_Previews.Preview"
-                  moduleName = "NeonLedKeyboardUploadTheme"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/maxmobilesoftware/Documents/code/Keyboard/Product/NeonLedKeyboardEditTheme/NeonLedKeyboardUploadTheme/Theme/Neon/NeonTheme.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "573"
-                  endingLineNumber = "573"
-                  offsetFromSymbolStart = "56">
-               </Location>
-               <Location
-                  uuid = "6DFC1AE5-F8A8-433E-B903-6B930F3E3CE1 - 6ac9ef402be7e498"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "NeonLedKeyboardUploadTheme.NeonTheme_Previews.Preview.init(controller: NeonLedKeyboardUploadTheme.KeyboardInputViewController) -&gt; NeonLedKeyboardUploadTheme.NeonTheme_Previews.Preview"
-                  moduleName = "NeonLedKeyboardUploadTheme"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/maxmobilesoftware/Documents/code/Keyboard/Product/NeonLedKeyboardEditTheme/NeonLedKeyboardUploadTheme/Theme/Neon/NeonTheme.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "573"
-                  endingLineNumber = "573"
-                  offsetFromSymbolStart = "40">
-               </Location>
-               <Location
-                  uuid = "6DFC1AE5-F8A8-433E-B903-6B930F3E3CE1 - 4c580ca984b055fe"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "NeonLedKeyboardUploadTheme.NeonTheme_Previews.Preview.init() -&gt; NeonLedKeyboardUploadTheme.NeonTheme_Previews.Preview"
-                  moduleName = "NeonLedKeyboardUploadTheme"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/maxmobilesoftware/Documents/code/Keyboard/Product/NeonLedKeyboardEditTheme/NeonLedKeyboardUploadTheme/Theme/Neon/NeonTheme.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "582"
-                  endingLineNumber = "582"
-                  offsetFromSymbolStart = "56">
-               </Location>
-               <Location
-                  uuid = "6DFC1AE5-F8A8-433E-B903-6B930F3E3CE1 - 6ac9ef402be7e773"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "NeonLedKeyboardUploadTheme.NeonTheme_Previews.Preview.init(controller: NeonLedKeyboardUploadTheme.KeyboardInputViewController) -&gt; NeonLedKeyboardUploadTheme.NeonTheme_Previews.Preview"
-                  moduleName = "NeonLedKeyboardUploadTheme"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/maxmobilesoftware/Documents/code/Keyboard/Product/NeonLedKeyboardEditTheme/NeonLedKeyboardUploadTheme/Theme/Neon/NeonTheme.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "582"
-                  endingLineNumber = "582"
-                  offsetFromSymbolStart = "40">
-               </Location>
-               <Location
-                  uuid = "6DFC1AE5-F8A8-433E-B903-6B930F3E3CE1 - 4c580ca984b0513d"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "NeonLedKeyboardUploadTheme.NeonTheme_Previews.Preview.init() -&gt; NeonLedKeyboardUploadTheme.NeonTheme_Previews.Preview"
-                  moduleName = "NeonLedKeyboardUploadTheme"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/maxmobilesoftware/Documents/code/Keyboard/Product/NeonLedKeyboardEditTheme/NeonLedKeyboardUploadTheme/Theme/Neon/NeonTheme.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "549"
-                  endingLineNumber = "549"
-                  offsetFromSymbolStart = "56">
-               </Location>
-               <Location
-                  uuid = "6DFC1AE5-F8A8-433E-B903-6B930F3E3CE1 - 6ac9ef402be7e3b0"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "NeonLedKeyboardUploadTheme.NeonTheme_Previews.Preview.init(controller: NeonLedKeyboardUploadTheme.KeyboardInputViewController) -&gt; NeonLedKeyboardUploadTheme.NeonTheme_Previews.Preview"
-                  moduleName = "NeonLedKeyboardUploadTheme"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/maxmobilesoftware/Documents/code/Keyboard/Product/NeonLedKeyboardEditTheme/NeonLedKeyboardUploadTheme/Theme/Neon/NeonTheme.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "549"
-                  endingLineNumber = "549"
-                  offsetFromSymbolStart = "40">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.SymbolicBreakpoint">
          <BreakpointContent
             uuid = "0FC553E6-0DB7-40B7-8E2E-D3E81987A59A"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             symbolName = ""
@@ -142,7 +34,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.SymbolicBreakpoint">
          <BreakpointContent
             uuid = "F1A717F1-597A-493D-9A5D-E4CCC6220994"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             symbolName = ""
@@ -155,7 +47,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.SymbolicBreakpoint">
          <BreakpointContent
             uuid = "D9365784-EEC0-45FC-8BF4-EDD131F32C52"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             symbolName = ""
@@ -167,174 +59,64 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "94359703-4852-4614-853A-DB188C90A975"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "NeonLedKeyboardUploadTheme/Theme/Cute/CuteTheme.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "400"
-            endingLineNumber = "400"
-            landmarkName = "cuteRainbowGarden"
-            landmarkType = "24">
-            <Locations>
-               <Location
-                  uuid = "94359703-4852-4614-853A-DB188C90A975 - 1c1057d2a73b7df"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "one-time initialization function for cuteRainbowGarden"
-                  moduleName = "NeonLedKeyboardUploadTheme"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/maxmobilesoftware/Documents/code/Keyboard/Product/NeonLedKeyboardEditTheme/NeonLedKeyboardUploadTheme/Theme/Cute/CuteTheme.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "400"
-                  endingLineNumber = "400"
-                  offsetFromSymbolStart = "3628">
-               </Location>
-               <Location
-                  uuid = "94359703-4852-4614-853A-DB188C90A975 - 2bd2e849cd50a04a"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "NeonLedKeyboardUploadTheme.Theme.cuteRainbowGarden.unsafeMutableAddressor : NeonLedKeyboardUploadTheme.Theme"
-                  moduleName = "NeonLedKeyboardUploadTheme"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/maxmobilesoftware/Documents/code/Keyboard/Product/NeonLedKeyboardEditTheme/NeonLedKeyboardUploadTheme/Theme/Cute/CuteTheme.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "400"
-                  endingLineNumber = "400"
-                  offsetFromSymbolStart = "16">
-               </Location>
-               <Location
-                  uuid = "94359703-4852-4614-853A-DB188C90A975 - 1c1057d2a73b7df"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "one-time initialization function for cuteRainbowGarden"
-                  moduleName = "NeonLedKeyboardUploadTheme"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/maxmobilesoftware/Documents/code/Keyboard/Product/NeonLedKeyboardEditTheme/NeonLedKeyboardUploadTheme/Theme/Cute/CuteTheme.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "400"
-                  endingLineNumber = "400"
-                  offsetFromSymbolStart = "3624">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "E4A41AE5-870A-4F1E-9300-C28591BCD446"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "NeonLedKeyboardUploadTheme/Theme/Gradient/GradientPhotoTheme.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "421"
-            endingLineNumber = "421"
-            landmarkName = "Preview"
-            landmarkType = "14">
-            <Locations>
-               <Location
-                  uuid = "E4A41AE5-870A-4F1E-9300-C28591BCD446 - de65008b1f9b19e7"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "NeonLedKeyboardUploadTheme.GradientPhotoTheme_Previews.Preview.init() -&gt; NeonLedKeyboardUploadTheme.GradientPhotoTheme_Previews.Preview"
-                  moduleName = "NeonLedKeyboardUploadTheme"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/maxmobilesoftware/Documents/code/Keyboard/Product/NeonLedKeyboardEditTheme/NeonLedKeyboardUploadTheme/Theme/Gradient/GradientPhotoTheme.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "442"
-                  endingLineNumber = "442"
-                  offsetFromSymbolStart = "56">
-               </Location>
-               <Location
-                  uuid = "E4A41AE5-870A-4F1E-9300-C28591BCD446 - 69c5ea1d37a06154"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "default argument 0 of NeonLedKeyboardUploadTheme.GradientPhotoTheme_Previews.Preview.init(theme: NeonLedKeyboardUploadTheme.Theme, controller: NeonLedKeyboardUploadTheme.KeyboardInputViewController) -&gt; NeonLedKeyboardUploadTheme.GradientPhotoTheme_Previews.Preview"
-                  moduleName = "NeonLedKeyboardUploadTheme"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/maxmobilesoftware/Documents/code/Keyboard/Product/NeonLedKeyboardEditTheme/NeonLedKeyboardUploadTheme/Theme/Gradient/GradientPhotoTheme.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "36">
-               </Location>
-               <Location
-                  uuid = "E4A41AE5-870A-4F1E-9300-C28591BCD446 - de65008b1f9b24b2"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "NeonLedKeyboardUploadTheme.GradientPhotoTheme_Previews.Preview.init() -&gt; NeonLedKeyboardUploadTheme.GradientPhotoTheme_Previews.Preview"
-                  moduleName = "NeonLedKeyboardUploadTheme"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/maxmobilesoftware/Documents/code/Keyboard/Product/NeonLedKeyboardEditTheme/NeonLedKeyboardUploadTheme/Theme/Gradient/GradientPhotoTheme.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "421"
-                  endingLineNumber = "421"
-                  offsetFromSymbolStart = "56">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "BA5BD20D-EF72-45F5-B554-E69B71C8E30A"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "NeonLedKeyboardUploadTheme/Theme/Gradient/GradientPhotoTheme.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "431"
-            endingLineNumber = "431"
-            landmarkName = "controller"
-            landmarkType = "24">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "CCE06CD5-1463-430C-9C9C-D13357A6F66D"
+            uuid = "C762A6D5-11A9-447F-BF65-871C93AC2BCA"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "NeonLedKeyboardUploadTheme/ThemeHandler.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "122"
-            endingLineNumber = "122"
-            landmarkName = "saveThemeDataToStorage(folder:nameFile:file:)"
+            startingLineNumber = "49"
+            endingLineNumber = "49"
+            landmarkName = "saveThemeSectionToStorage(_:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "C762A6D5-11A9-447F-BF65-871C93AC2BCA - dce141aa4ace0267"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NeonLedKeyboardUploadTheme.ThemeHandler.saveThemeSectionToStorage(Foundation.Data) -&gt; ()"
+                  moduleName = "NeonLedKeyboardUploadTheme"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/maxmobilesoftware/Documents/code/Keyboard/Product/NeonLedKeyboardEditTheme/NeonLedKeyboardUploadTheme/ThemeHandler.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "49"
+                  endingLineNumber = "49"
+                  offsetFromSymbolStart = "380">
+               </Location>
+               <Location
+                  uuid = "C762A6D5-11A9-447F-BF65-871C93AC2BCA - 8828aedc3d8f191d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;FirebaseStorage.StorageMetadata&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in NeonLedKeyboardUploadTheme.ThemeHandler.saveThemeSectionToStorage(Foundation.Data) -&gt; ()"
+                  moduleName = "NeonLedKeyboardUploadTheme"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/maxmobilesoftware/Documents/code/Keyboard/Product/NeonLedKeyboardEditTheme/NeonLedKeyboardUploadTheme/ThemeHandler.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "50"
+                  endingLineNumber = "50"
+                  offsetFromSymbolStart = "56">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "3C7DA3CE-192E-4B96-8C08-A3A637613EDB"
-            shouldBeEnabled = "Yes"
+            uuid = "BE3C1942-B1BE-4F5E-AF6C-FA62EFF5FCCA"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "NeonLedKeyboardUploadTheme/ThemeHandler.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "125"
-            endingLineNumber = "125"
-            landmarkName = "saveThemeDataToStorage(folder:nameFile:file:)"
+            startingLineNumber = "115"
+            endingLineNumber = "115"
+            landmarkName = "createZipFolder(folderName:theme:directoryPath:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

@@ -21,10 +21,13 @@ extension Theme {
         background: .init(backgroundGradient: [Color(hex: "FFDA50"), Color(hex: "FF46DA")]),
         
         preview: .image(UIImage(named: "gradientPinkPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
-        name: "gradientPink"
+        name: "gradientPink",
+        iconColor: Color(hex: "#FFFFFF"),
+        requiredPremium: false
     )
     
-    static var gradientGrass: Theme = .init(id: "73A24440-687B-49C8-B91C-20074D8A3E37",
+    static var gradientGrass: Theme = .init(
+        id: "73A24440-687B-49C8-B91C-20074D8A3E37",
         button: .init(
             background: .color(Color.white.opacity(0.3)),
             foregroundColor: .white,
@@ -35,10 +38,13 @@ extension Theme {
         background: .init(backgroundGradient: [Color(red: 0.95, green: 0.95, blue: 0.28), Color(red: 0.19, green: 0.71, blue: 0.42)]),
         
         preview: .image(UIImage(named: "gradientGrassPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
-        name: "gradientGrass"
+        name: "gradientGrass",
+        iconColor: Color(hex: "#FFFFFF"),
+        requiredPremium: false
     )
     
-    static var gradientSunny: Theme = .init(id: "B3E7540D-E7EC-4F00-9A8A-E7FA729809B3",
+    static var gradientSunny: Theme = .init(
+        id: "B3E7540D-E7EC-4F00-9A8A-E7FA729809B3",
         button: .init(
             background: .color(Color.white.opacity(0.3)),
             foregroundColor: .white,
@@ -49,10 +55,13 @@ extension Theme {
         background: .init(backgroundGradient: [Color(red: 1, green: 0.84, blue: 0.27), Color(red: 1, green: 0.6, blue: 0.3)]),
         
         preview: .image(UIImage(named: "gradientSunnyPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
-        name: "gradientSunny"
+        name: "gradientSunny",
+        iconColor: Color(hex: "#FFFFFF"),
+        requiredPremium: false
     )
     
-    static var gradientPurple: Theme = .init(id: "AD885F1E-A16D-41F9-9A33-2A07956C810C",
+    static var gradientPurple: Theme = .init(
+        id: "AD885F1E-A16D-41F9-9A33-2A07956C810C",
         button: .init(
             background: .color(.clear),
             foregroundColor: .white,
@@ -63,10 +72,13 @@ extension Theme {
         background: .init(backgroundGradient: [Color(red: 0.96, green: 0.17, blue: 0.52), Color(red: 0.54, green: 0.24, blue: 1)]),
         
         preview: .image(UIImage(named: "gradientPurplePreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
-        name: "gradientPurple"
+        name: "gradientPurple",
+        iconColor: Color(hex: "#FFFFFF"),
+        requiredPremium: false
     )
     
-    static var gradientSky: Theme = .init(id: "89C5049E-6E8D-4E64-B84D-96FE8BAE758D",
+    static var gradientSky: Theme = .init(
+        id: "89C5049E-6E8D-4E64-B84D-96FE8BAE758D",
         button: .init(
             background: .color(.white.opacity(0.3)),
             foregroundColor: .white,
@@ -80,7 +92,8 @@ extension Theme {
         ]),
         
         preview: .image(UIImage(named: "gradientSkyPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
-        name: "gradientSky"
+        name: "gradientSky",
+        iconColor: Color(hex: "#01B2CA")
     )
     
     static var gradientSea: Theme = .init(id: "3C40E4F1-7DC7-4935-9419-708179140814",
@@ -97,7 +110,8 @@ extension Theme {
         ]),
         
         preview: .image(UIImage(named: "gradientSeaPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
-        name: "gradientSea"
+        name: "gradientSea",
+                                          iconColor: Color(hex: "#FFFFFF")
     )
     
     static var gradientGreen: Theme = .init(id: "73B09851-033D-442B-9773-007DFC58B88B",
@@ -114,7 +128,8 @@ extension Theme {
         ]),
         
         preview: .image(UIImage(named: "gradientGreenPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
-        name: "gradientGreen"
+        name: "gradientGreen",
+                                            iconColor: Color(hex: "#FFFFFF")
     )
 }
 

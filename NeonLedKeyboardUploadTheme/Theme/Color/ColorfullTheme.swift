@@ -9,7 +9,8 @@ import Foundation
 import SwiftUI
 
 extension Theme {
-    static var colorfullColorPaint: Theme = .init(id: "67508716-AE79-4D52-AFF9-E7EB140BC2A7",
+    static var colorfullColorPaint: Theme = .init(
+        id: "67508716-AE79-4D52-AFF9-E7EB140BC2A7",
         button: .init(
             background: .color(Color.white.opacity(0.5)),
             foregroundColor: Color.white,
@@ -28,15 +29,18 @@ extension Theme {
             Color(hex: "#FFFFFF"),
         ]),
         preview: .image(UIImage(named: "colorfullColorPaintPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
-        name: "colorfullColorPaint"
+        name: "colorfullColorPaint",
+        iconColor: Color(hex: "#FFFFFF"),
+        requiredPremium: false
     )
     
-    static var colorfullTwirl: Theme = .init(id: "7A993663-689D-4A3F-8327-B9AC14B3E8DB",
+    static var colorfullTwirl: Theme = .init(
+        id: "7A993663-689D-4A3F-8327-B9AC14B3E8DB",
         button: .init(
             background: .color(.clear),
             foregroundColor: Color.white,
             font: .body,
-            cornerRadius: 12,
+            cornerRadius: 8,
             border: .init(color: .white, size: 1)
         ),
         background: .image(UIImage(named: "colorfullTwirl")?.jpegData(compressionQuality: 1) ?? Data()),
@@ -44,7 +48,9 @@ extension Theme {
         inputCallout: .bright,
         
         preview: .image(UIImage(named: "colorfullTwirlPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
-        name: "colorfullTwirl"
+        name: "colorfullTwirl",
+        iconColor: Color(hex: "#FFFFFF"),
+        requiredPremium: false
     )
     
     static var colorfullUniverse: Theme = .init(
@@ -70,10 +76,13 @@ extension Theme {
         ],
         durationAnimation: 1,
         preview: .image(UIImage(named: "colorfullUniversePreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
-        name: "colorfullUniverse"
+        name: "colorfullUniverse",
+        iconColor: Color(hex: "#FF49E2"),
+        requiredPremium: false
     )
     
-    static var colorfullLiquid: Theme = .init(id: "F2F6F4F1-BC4E-4240-A45A-542B02013366",
+    static var colorfullLiquid: Theme = .init(
+        id: "F2F6F4F1-BC4E-4240-A45A-542B02013366",
         button: .init(
             background: .color(.white),
             foregroundColor: Color.white,
@@ -97,15 +106,18 @@ extension Theme {
             Color(hex: "729D39"),
         ], 2),
         preview: .image(UIImage(named: "colorfullLiquidPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
-        name: "colorfullLiquid"
+        name: "colorfullLiquid",
+        iconColor: Color(hex: "#FFF6E8"),
+        requiredPremium: false
     )
     
-    static var colorfullCloud: Theme = .init(id: "FEE1831C-1C84-4C76-8BEF-19884AAF9CF1",
+    static var colorfullCloud: Theme = .init(
+        id: "FEE1831C-1C84-4C76-8BEF-19884AAF9CF1",
         button: .init(
             background: .color(.white.opacity(0.5)),
             foregroundColor: Color.white,
             font: .body,
-            cornerRadius: 12,
+            cornerRadius: 8,
             border: .init(color: .clear, size: 0)
         ),
         background: .image(UIImage(named: "colorfullCloud")?.jpegData(compressionQuality: 1) ?? Data()),
@@ -117,16 +129,18 @@ extension Theme {
         durationAnimation: 3,
         neonLinearAnimation: .LTR([
             Color(hex: "#00C2FF"),
-            Color(hex: "##000AFF"),
+            Color(hex: "#000AFF"),
             Color(hex: "#00C2FF"),
         ], 2),
         preview: .image(UIImage(named: "colorfullCloudPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
-        name: "colorfullCloud"
+        name: "colorfullCloud",
+        iconColor: Color(hex: "#FFFFFF")
     )
     
-    static var colorfullFlower: Theme = .init(id: "DDCC211D-A1FF-46B0-97CE-4124B1DF26A4",
+    static var colorfullFlower: Theme = .init(
+        id: "DDCC211D-A1FF-46B0-97CE-4124B1DF26A4",
         button: .init(
-            background: .color(.white.opacity(0.5)),
+            background: .color(.white),
             foregroundColor: Color.white,
             font: .body,
             cornerRadius: 25,
@@ -143,31 +157,34 @@ extension Theme {
             Color(hex: "FA00FF"),
         ]),
         preview: .image(UIImage(named: "colorfullFlowerPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
-        name: "colorfullFlower"
+        name: "colorfullFlower",
+        iconColor: Color(hex: "#FA00FF")
     )
     
-    static var colorfullLowPoly: Theme = .init(id: "F899D3DB-D3E1-4FC6-82F8-348D667A60F2",
+    static var colorfullLowPoly: Theme = .init(
+        id: "F899D3DB-D3E1-4FC6-82F8-348D667A60F2",
         button: .init(
             background: .color(.white.opacity(0.5)),
             foregroundColor: Color(hex: "#000AFF"),
             font: .body,
-            cornerRadius: 12,
+            cornerRadius: 8,
             border: .init(color: .clear, size: 0)
         ),
         background: .image(UIImage(named: "colorfullLowPoly")?.jpegData(compressionQuality: 1) ?? Data()),
         actionCallout: .bright,
         inputCallout: .bright,
         neonPermission: .init(disableNeonButton: true),
-        neonLinearAnimation: .LTR([
+        neonLinearAnimation: .radial([
             Color(hex: "#FF00F5"),
             Color(hex: "#000AFF"),
-            
-        ], 2),
+        ]),
         preview: .image(UIImage(named: "colorfullLowPolyPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
-        name: "colorfullLowPoly"
+        name: "colorfullLowPoly",
+        iconColor: Color(hex: "#000AFF")
     )
     
-    static var colorfullTropical: Theme = .init(id: "F7C7E5E9-CD1E-434D-A7E4-6289F333CFBE",
+    static var colorfullTropical: Theme = .init(
+        id: "F7C7E5E9-CD1E-434D-A7E4-6289F333CFBE",
         button: .init(
             background: .color(Color(hex: "#3300FF").opacity(0.8)),
             foregroundColor: .white,
@@ -181,7 +198,8 @@ extension Theme {
         inputCallout: .bright,
         
         preview: .image(UIImage(named: "colorfullTropicalPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
-        name: "colorfullTropical"
+        name: "colorfullTropical",
+        iconColor: Color(hex: "#5C13DB")
     )
     
     static var colorfullWavesStrip: Theme = .init(
@@ -200,15 +218,17 @@ extension Theme {
         inputCallout: .bright,
         
         preview: .image(UIImage(named: "colorfullWavesStripPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
-        name: "colorfullWavesStrip"
+        name: "colorfullWavesStrip",
+        iconColor: Color(hex: "#FFA1B1")
     )
     
-    static var colorfullColorCurve: Theme = .init(id: "ACBD65E6-198F-4EDF-90CF-9BEFC35ADD39",
+    static var colorfullColorCurve: Theme = .init(
+        id: "ACBD65E6-198F-4EDF-90CF-9BEFC35ADD39",
         button: .init(
             background: .color(.white.opacity(0.8)),
             foregroundColor: .white,
             font: .body,
-            cornerRadius: 12,
+            cornerRadius: 8,
             border: .init(color: .clear, size: 0)
         ),
         background: .image(UIImage(named: "colorfullColorCurve")?.jpegData(compressionQuality: 1) ?? Data()),
@@ -223,15 +243,17 @@ extension Theme {
             Color(hex: "#FF9500"),
         ]),
         preview: .image(UIImage(named: "colorfullColorCurvePreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
-        name: "colorfullColorCurve"
+        name: "colorfullColorCurve",
+        iconColor: Color(hex: "#FFFFFF")
     )
     
-    static var colorfullCubes: Theme = .init(id: "08CCB351-5BC6-4809-822F-9F22872CDA10",
+    static var colorfullCubes: Theme = .init(
+        id: "08CCB351-5BC6-4809-822F-9F22872CDA10",
         button: .init(
             background: .color(Color(hex: "#B6F364").opacity(0.6)),
             foregroundColor: .white,
             font: .body,
-            cornerRadius: 12,
+            cornerRadius: 8,
             border: .init(color: .clear, size: 0)
         ),
         background: .image(UIImage(named: "colorfullCubes")?.jpegData(compressionQuality: 1) ?? Data()),
@@ -245,7 +267,8 @@ extension Theme {
             Color(hex: "B6F364"),
         ]),
         preview: .image(UIImage(named: "colorfullCubesPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
-        name: "colorfullCubes"
+        name: "colorfullCubes",
+        iconColor: Color(hex: "#FFFFFF")
     )
 }
 
@@ -507,7 +530,7 @@ struct Colorfull_Previews: PreviewProvider {
 
     struct Preview: View {
 
-        var theme: Theme = .colorfullIris
+        var theme: Theme = .colorfullCloud
 
         var controller: KeyboardInputViewController = {
             let controller = KeyboardInputViewController.preview
@@ -517,7 +540,7 @@ struct Colorfull_Previews: PreviewProvider {
 //                .init(text: "Baz")
             ]
 
-            let theme: Theme = .colorfullIris
+            let theme: Theme = .colorfullCloud
 
             controller.services.styleProvider = CustomStyleProvider(
                 button: theme.button,

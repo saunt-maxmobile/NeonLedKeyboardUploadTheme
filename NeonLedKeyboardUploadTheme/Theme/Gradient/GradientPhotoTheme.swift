@@ -9,7 +9,8 @@ import Foundation
 import SwiftUI
 
 extension Theme {
-    static var gradientPhotoRainbow: Theme = .init(id: "A6DE5639-3D29-4192-B1B6-1502E6975616",
+    static var gradientPhotoRainbow: Theme = .init(
+        id: "A6DE5639-3D29-4192-B1B6-1502E6975616",
         button: .init(
             background: .color(.white),
             foregroundColor: Color.white,
@@ -30,10 +31,12 @@ extension Theme {
             Color(hex: "#BD00FF")
         ], 2),
         preview: .image(UIImage(named: "gradientPhotoRainbowPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
-        name: "gradientPhotoRainbow"
+        name: "gradientPhotoRainbow",
+        iconColor: Color(hex: "#FFFFFF")
     )
     
-    static var gradientPhotoRomantic: Theme = .init(id: "DF83DD37-7238-4691-B04E-02E19087DC4B",
+    static var gradientPhotoRomantic: Theme = .init(
+        id: "DF83DD37-7238-4691-B04E-02E19087DC4B",
         button: .init(
             background: .color(.white.opacity(0.3)),
             foregroundColor: Color(hex: "#FF37EB"),
@@ -44,10 +47,12 @@ extension Theme {
         background: .image(UIImage(named: "gradientPhotoRomantic")?.jpegData(compressionQuality: 0.3) ?? Data()),
         
         preview: .image(UIImage(named: "gradientPhotoRomanticPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
-        name: "gradientPhotoRomantic"
+        name: "gradientPhotoRomantic",
+        iconColor: Color(hex: "#FF37EB")
     )
     
-    static var gradientPhotoUnicorn: Theme = .init(id: "B5678ADD-3D7D-4EF6-BB45-A7076C4E7E08",
+    static var gradientPhotoUnicorn: Theme = .init(
+        id: "B5678ADD-3D7D-4EF6-BB45-A7076C4E7E08",
         button: .init(
             background: .color(Color(hex: "#7D00C5").opacity(0.6)),
             foregroundColor: Color.white,
@@ -58,10 +63,12 @@ extension Theme {
         background: .image(UIImage(named: "gradientPhotoUnicorn")?.jpegData(compressionQuality: 0.2) ?? Data()),
         
         preview: .image(UIImage(named: "gradientPhotoUnicornPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
-        name: "gradientPhotoUnicorn"
+        name: "gradientPhotoUnicorn",
+        iconColor: Color(hex: "#7F5FDC")
     )
     
-    static var gradientPhotoGillter: Theme = .init(id: "91869E51-A506-4B64-B52D-64CD55D40D35",
+    static var gradientPhotoGillter: Theme = .init(
+        id: "91869E51-A506-4B64-B52D-64CD55D40D35",
         button: .init(
             background: .color(Color(hex: "#7D00C5")),
             foregroundColor: Color.white,
@@ -79,10 +86,12 @@ extension Theme {
              Color(hex: "#00F0FF"),
             ], 2),
         preview: .image(UIImage(named: "gradientPhotoGillterPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
-        name: "gradientPhotoGillter"
+        name: "gradientPhotoGillter",
+        iconColor: Color(hex: "#7F5FDC")
     )
     
-    static var gradientPhotoColorfull: Theme = .init(id: "84D40263-085D-4F1C-AAB8-C5593B350A82",
+    static var gradientPhotoColorfull: Theme = .init(
+        id: "84D40263-085D-4F1C-AAB8-C5593B350A82",
         button: .init(
             background: .color(Color(hex: "#7D00C5").opacity(0.8)),
             foregroundColor: Color.white,
@@ -104,12 +113,14 @@ extension Theme {
              Color(hex: "#FF6B00"),
             ], 4),
         preview: .image(UIImage(named: "gradientPhotoColorfullPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
-        name: "gradientPhotoColorfull"
+        name: "gradientPhotoColorfull",
+        iconColor: Color(hex: "#FFFFFF")
     )
 }
 
 extension Theme {
-    static var gradientRiver: Theme = .init(id: "2E103B09-6B34-4EE1-B1B4-EAB8291D9064",
+    static var gradientRiver: Theme = .init(
+        id: "2E103B09-6B34-4EE1-B1B4-EAB8291D9064",
         button: .init(
             background: .color(.white.opacity(0.3 )),
             foregroundColor: Color.white,
@@ -132,10 +143,12 @@ extension Theme {
              Color(red: 0, green: 1, blue: 1),
             ], 5),
         preview: .image(UIImage(named: "gradientRiverPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
-        name: "gradientRiver"
+        name: "gradientRiver",
+        iconColor: Color(hex: "#FFFFFF")
     )
     
-    static var gradientPopPoly: Theme = .init(id: "3F71723D-972D-495E-969C-E72F4BED5311",
+    static var gradientPopPoly: Theme = .init(
+        id: "3F71723D-972D-495E-969C-E72F4BED5311",
         button: .init(
             background: .color(.clear),
             foregroundColor: Color.white,
@@ -147,10 +160,12 @@ extension Theme {
         actionCallout: .bright,
         inputCallout: .bright,
         preview: .image(UIImage(named: "gradientPopPolyPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
-        name: "gradientPopPoly"
+        name: "gradientPopPoly",
+        iconColor: Color(hex: "#000AFF")
     )
     
-    static var gradientHologram: Theme = .init(id: "D3DF0848-065B-4BB4-BC0A-806D086A2233",
+    static var gradientHologram: Theme = .init(
+        id: "D3DF0848-065B-4BB4-BC0A-806D086A2233",
         button: .init(
             background: .color(.white.opacity(0.5)),
             foregroundColor: Color(hex: "#FA00FF"),
@@ -162,10 +177,12 @@ extension Theme {
         actionCallout: .bright,
         inputCallout: .bright,
         preview: .image(UIImage(named: "gradientHologramPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
-        name: "gradientHologram"
+        name: "gradientHologram",
+        iconColor: Color(hex: "#FA00FF")
     )
     
-    static var gradientVividBlurred: Theme = .init(id: "00E9C202-B1E1-4AB0-915C-3A048D05070A",
+    static var gradientVividBlurred: Theme = .init(
+        id: "00E9C202-B1E1-4AB0-915C-3A048D05070A",
         button: .init(
             background: .color(.clear),
             foregroundColor: .white,
@@ -181,7 +198,8 @@ extension Theme {
              Color(hex: "00FFFF"),
             ]),
         preview: .image(UIImage(named: "gradientVividBlurredPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
-        name: "gradientVividBlurred"
+        name: "gradientVividBlurred",
+        iconColor: Color(hex: "#00FFFF")
     )
     
     static var gradientVividColorfull: Theme = .init(
@@ -206,10 +224,12 @@ extension Theme {
         ],
         durationAnimation: 1,
         preview: .image(UIImage(named: "gradientVividColorfullPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
-        name: "gradientVividColorfull"
+        name: "gradientVividColorfull",
+        iconColor: Color(hex: "#5C06F0")
     )
     
-    static var gradientDarkUniverse: Theme = .init(id: "6D09BBDD-A70B-421E-84BF-2731A8458B6A",
+    static var gradientDarkUniverse: Theme = .init(
+        id: "6D09BBDD-A70B-421E-84BF-2731A8458B6A",
         button: .init(
             background: .color(.white),
             foregroundColor: .white,
@@ -227,7 +247,8 @@ extension Theme {
              Color(hex: "#000AFF"),
             ]),
         preview: .image(UIImage(named: "gradientDarkUniversePreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
-        name: "gradientDarkUniverse"
+        name: "gradientDarkUniverse",
+        iconColor: Color(hex: "#000AFF")
     )
     
     static var gradientVortex: Theme = .init(
@@ -253,7 +274,8 @@ extension Theme {
              Color(red: 0, green: 1, blue: 1),
             ], 1),
         preview: .image(UIImage(named: "gradientVortexPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
-        name: "gradientVortex"
+        name: "gradientVortex",
+        iconColor: Color(hex: "#FFFFFF")
     )
     
     static var gradientPolygon: Theme = .init(
@@ -273,7 +295,8 @@ extension Theme {
              .white,
             ]),
         preview: .image(UIImage(named: "gradientPolygonPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
-        name: "gradientPolygon"
+        name: "gradientPolygon",
+        iconColor: Color(hex: "#FFFFFF")
     )
     
     static var gradientAurora: Theme = .init(
@@ -293,7 +316,8 @@ extension Theme {
              Color(hex: "80FE02"),
             ]),
         preview: .image(UIImage(named: "gradientAuroraPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
-        name: "gradientAurora"
+        name: "gradientAurora",
+        iconColor: Color(hex: "#FFFFFF")
     )
     
     static var gradientYellowFruits: Theme = .init(
@@ -319,7 +343,8 @@ extension Theme {
              Color(red: 1, green: 0.48, blue: 0),
             ], 2),
         preview: .image(UIImage(named: "gradientYellowFruitsPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
-        name: "gradientYellowFruits"
+        name: "gradientYellowFruits",
+        iconColor: Color(hex: "#7CC300")
     )
     
     static var gradientPurpleVivid: Theme = .init(
@@ -336,7 +361,8 @@ extension Theme {
         actionCallout: .bright,
         inputCallout: .bright,
         preview: .image(UIImage(named: "gradientPurpleVividPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
-        name: "gradientPurpleVivid"
+        name: "gradientPurpleVivid",
+        iconColor: Color(hex: "#FEF635")
     )
     
     static var gradientHexagonBlurred: Theme = .init(
@@ -361,7 +387,8 @@ extension Theme {
              Color(red: 1, green: 0.48, blue: 0),
             ], 1),
         preview: .image(UIImage(named: "gradientHexagonBlurredPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
-        name: "gradientHexagonBlurred"
+        name: "gradientHexagonBlurred",
+        iconColor: Color(hex: "#FF4255")
     )
     
     static var gradientCircleBlurred: Theme = .init(
@@ -389,10 +416,12 @@ extension Theme {
              Color(red: 0, green: 1, blue: 1),
             ], 1),
         preview: .image(UIImage(named: "gradientCircleBlurredPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
-        name: "gradientCircleBlurred"
+        name: "gradientCircleBlurred",
+        iconColor: Color(hex: "#000DFF")
     )
     
-    static var gradientCinema: Theme = .init(id: "597DA35E-DBE2-4C59-A1EB-36DBD7D469F2",
+    static var gradientCinema: Theme = .init(
+        id: "597DA35E-DBE2-4C59-A1EB-36DBD7D469F2",
         button: .init(
             background: .color(Color(hex: "#34FE02")),
             foregroundColor: Color(hex: "#2D5A00"),
@@ -410,7 +439,8 @@ extension Theme {
              Color(hex: "#FFC700"),
             ]),
         preview: .image(UIImage(named: "gradientCinemaPreview")?.jpegData(compressionQuality: 1) ?? Data(), contentMode: .fit),
-        name: "gradientCinema"
+        name: "gradientCinema",
+        iconColor: Color(hex: "#FFC700")
     )
 }
 

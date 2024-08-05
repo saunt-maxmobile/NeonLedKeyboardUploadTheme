@@ -40,6 +40,8 @@ public struct Theme: Codable, Equatable, Identifiable {
     var preview: KeyboardStyle.Background?
     var name: String
     var imagePreview: String
+    var iconColor: Color?
+    var requiredPremium: Bool?
     
     private enum CodingKeys: String, CodingKey {
         case id = "id"
@@ -69,6 +71,8 @@ public struct Theme: Codable, Equatable, Identifiable {
         case preview = "preview"
         case name = "name"
         case imagePreview = "imagePreview"
+        case iconColor = "iconColor"
+        case requiredPremium = "requiredPremium"
     }
     
     public init(from decoder: Decoder) throws {
@@ -101,6 +105,8 @@ public struct Theme: Codable, Equatable, Identifiable {
         self.preview                = try values.decodeIfPresent(KeyboardStyle.Background.self, forKey: .preview)
         self.name                   = try values.decode(String.self, forKey: .name)
         self.imagePreview           = try values.decode(String.self, forKey: .imagePreview)
+        self.iconColor              = try values.decodeIfPresent(Color.self, forKey: .iconColor)
+        self.requiredPremium        = try values.decodeIfPresent(Bool.self, forKey: .requiredPremium)
     }
     
     public func encode(to encoder: Encoder) throws {
@@ -108,7 +114,9 @@ public struct Theme: Codable, Equatable, Identifiable {
         
 //        try container.encodeIfPresent(id, forKey: .id)
 //        try container.encodeIfPresent(name, forKey: .name)
+//        try container.encodeIfPresent(preview, forKey: .preview)
 //        try container.encodeIfPresent(imagePreview, forKey: .imagePreview)
+//        try container.encodeIfPresent(requiredPremium, forKey: .requiredPremium)
         
         try container.encodeIfPresent(id, forKey: .id)
         try container.encodeIfPresent(button, forKey: .button)
@@ -137,6 +145,8 @@ public struct Theme: Codable, Equatable, Identifiable {
         try container.encodeIfPresent(preview, forKey: .preview)
         try container.encodeIfPresent(name, forKey: .name)
         try container.encodeIfPresent(imagePreview, forKey: .imagePreview)
+        try container.encodeIfPresent(iconColor, forKey: .iconColor)
+        try container.encodeIfPresent(requiredPremium, forKey: .requiredPremium)
     }
     
     /// - Parameters:
@@ -176,7 +186,9 @@ public struct Theme: Codable, Equatable, Identifiable {
         effect: EffectModel? = nil,
         len: EffectModel? = nil,
         preview: KeyboardStyle.Background? = .color(.blue),
-        name: String
+        name: String,
+        iconColor: Color? = nil,
+        requiredPremium: Bool? = true
     ) {
         self.id = id
         self.button = button
@@ -186,6 +198,7 @@ public struct Theme: Codable, Equatable, Identifiable {
         self.spaceButton = spaceButton
         self.primaryButton = primaryButton
         self.emojiButton = emojiButton
+        self.iconColor = iconColor
         self.specialKey = specialKey
         self.showSpaceTitle = showSpaceTitle
         self.showPrimaryTitle = showPrimaryTitle
@@ -204,6 +217,7 @@ public struct Theme: Codable, Equatable, Identifiable {
         self.preview = preview
         self.name = name
         self.imagePreview = name + "Preview"
+        self.requiredPremium = requiredPremium
     }
     
     func toJsonString() -> String? {
