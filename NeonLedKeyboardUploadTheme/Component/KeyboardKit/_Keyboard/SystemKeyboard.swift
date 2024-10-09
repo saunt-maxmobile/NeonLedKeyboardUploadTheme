@@ -54,7 +54,9 @@ public struct SystemKeyboard<
         duration: Double = 5,
         effect: EffectModel? = nil,
         specialKey: String? = nil,
+        iconColor: Color? = nil,
         disableTopButton: Bool = false,
+        hiddenTabbar: Bool = false,
         @ViewBuilder buttonContent: @escaping ButtonContentBuilder,
         @ViewBuilder buttonView: @escaping ButtonViewBuilder,
         @ViewBuilder emojiKeyboard: @escaping EmojiKeyboardBuilder,
@@ -73,12 +75,14 @@ public struct SystemKeyboard<
             duration: duration,
             effect: effect,
             specialKey: specialKey,
+            iconColor: iconColor,
             keyboardContext: state.keyboardContext,
             autocompleteContext: state.autocompleteContext,
             calloutContext: state.calloutContext,
             feedbackConfiguration: state.feedbackConfiguration,
             renderBackground: renderBackground,
             disableTopButton: disableTopButton,
+            hiddenTabbar: hiddenTabbar,
             buttonContent: buttonContent,
             buttonView: buttonView,
             emojiKeyboard: emojiKeyboard,
@@ -115,12 +119,14 @@ public struct SystemKeyboard<
         duration: Double,
         effect: EffectModel?,
         specialKey: String?,
+        iconColor: Color?,
         keyboardContext: KeyboardContext,
         autocompleteContext: AutocompleteContext,
         calloutContext: CalloutContext?,
         feedbackConfiguration: FeedbackConfiguration,
         renderBackground: Bool = true,
         disableTopButton: Bool = false,
+        hiddenTabbar: Bool,
         @ViewBuilder buttonContent: @escaping ButtonContentBuilder,
         @ViewBuilder buttonView: @escaping ButtonViewBuilder,
         @ViewBuilder emojiKeyboard: @escaping EmojiKeyboardBuilder,
@@ -150,6 +156,8 @@ public struct SystemKeyboard<
         self.effect = effect
         self.specialKey = specialKey
         self.disableTopButton = disableTopButton
+        self.hiddenTabbar = hiddenTabbar
+        self.iconColor = iconColor
     }
 
     /// This typealias defines a button content builder.
@@ -233,9 +241,13 @@ public struct SystemKeyboard<
     private let animationValueObjects: [AnimationValueObject]?
     private let duration: Double
     private let effect: EffectModel?
+    private let iconColor: Color?
     private let specialKey: String?
-    private let tabbarHeight: CGFloat = 50
+    private var tabbarHeight: CGFloat {
+        return 50
+    }
     private let disableTopButton: Bool
+    private let hiddenTabbar: Bool
 
     public typealias AutocompleteToolbarAction = (Autocomplete.Suggestion) -> Void
     
@@ -306,7 +318,7 @@ private extension SystemKeyboard {
         VStack {
         }
         .frame(maxWidth: .infinity)
-        .frame(height: layoutConfig.rowHeight * 4 + tabbarHeight + 10)
+        .frame(height: layoutConfig.rowHeight * 4 + (hiddenTabbar ? 0 : tabbarHeight + 10))
         .overlay(GeometryReader(content: bodyContent))
     }
     
@@ -315,18 +327,25 @@ private extension SystemKeyboard {
     }
     
     func bodyContent(for size: CGSize) -> some View {
-        VStack(spacing: 0) {
-            sceneView(size)
-        }
+        sceneView(size)
     }
     
 //    MARK: Keyboard View
     @ViewBuilder
     private func keyboard(_ size: CGSize) -> some View {
         Group {
+            if neonPermission.disableNeonButton && neonPermission.disableNeonBorder && neonPermission.disableNeonCharacter {
+                systemKeyboardOverlay(for: size, enableAction: true)
+            } else
             if neonPermission.disableNeonCharacter && neonPermission.disableNeonButton && !neonPermission.disableNeonBorder {
                 keyboardEnableNeonCharacter(size)
             } else
+            if !neonPermission.disableNeonCharacter && !neonPermission.disableNeonButton && neonPermission.disableNeonBorder {
+                keyboardDisableNeonCharacter(size)
+            } else
+//            if !neonPermission.disableNeonCharacter && !neonPermission.disableNeonButton && !neonPermission.disableNeonBorder {
+//                systemKeyboardOverlay(for: size, overlayKeyboard: true)
+//            } else
             if neonPermission.disableNeonCharacter {
                 keyboardDisableNeonCharacter(size)
             } else {
@@ -546,7 +565,8 @@ extension SystemKeyboard {
                     Image(tab.icon)
                         .resizable()
                         .scaledToFit()
-                        .frame(width: 24)
+                        .foregroundColor(iconColor ?? Color(hex: "#FF9B63"))
+                        .frame(width: tabbarHeight * 0.65)
                         .padding(.horizontal, 5)
                         .onTapGesture {
                             currentKeyboardTab = tab
@@ -1116,6 +1136,7 @@ struct SystemKeyboard_Previews: PreviewProvider {
                         ),
                         neonLinearAnimation: .LTR(nil, 2),
                         effect: .init(name: "Effect.CatUp", duration: 800),
+                        iconColor: .red,
                         buttonContent: { param in
                             switch param.item.action {
                             case .backspace:

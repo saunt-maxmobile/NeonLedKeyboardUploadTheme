@@ -28,7 +28,9 @@
 		<string>Poppins-Medium.ttf</string>
 		<string>Inter-Medium.ttf</string>
 		<string>Creepster-Regular.ttf</string>
-		<string>Road_Rage.otf</string>
+        <string>Road_Rage.otf</string>
+        <string>LilitaOne-Regular.ttf</string>
+		<string>MochiyPopOne-Regular.ttf</string>
 	</array>
 </dict>
 </plist>
