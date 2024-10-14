@@ -14,13 +14,19 @@ struct ConfigDataStorage {
     private init() {
 //        self.converToJson()
         /// just accept encode for id, name, preview, imagePreview, requiredPremium of theme
-//        ThemeHandler.shared.saveThemeSection(themeSections)
+        ThemeHandler.shared.saveThemeSection(themeSections)
         
         /// accept encode all variable of theme
-        ThemeHandler.shared.createThemeFolder(themeSections)
+//        ThemeHandler.shared.createThemeFolder(themeSections)
     }
     
     var themeSections: [ThemeSection] = [
+        .init(name: "Halloween", themes: [
+            .halloweenBlackHalloween, .halloweenSpookyKeys, .halloweenCastleKey, .halloweenTowerKey, .halloweenMysticKey, .halloweenCuteGhost, .halloweenGhostlyClick, .halloweenGothicCastle, .halloweenMoonLight, .halloweenEerieOrange
+        ]),
+        .init(name: "Cute", themes: [
+            .cuteRainbowUnicord, .cuteCandyCute, .cuteMilkTea, .cuteHandWash, .cuteNutsheel, .cuteFlorkMeme, .cuteDonut, .cuteWaveColor, .cuteDreamBaby
+        ]),
 //        .init(name: "Cute", themes: [.cuteRainbowRabbit, .cuteFrogAlone, .cuteBWRabbit, .cuteDachshund, .cuteSillyParrot, .cuteLazyRabbit, .cuteShibaInu, .cutePawboard, .cuteCatlook, .cutePinkStar, .cuteGreenGrass, .cuteDusk, .cuteBloomBoard, .cuteCatGarden, .cutePurplePixel, .cuteBeneathTheLily, .cuteScreamboard, .cuteRainbowGarden, .cuteHungryPandas, .cuteKittyHaven, .cuteBunnehBard, .cuteZodiac, .cuteSereniKeys, .cuteBearRabbit, .cuteCapypara, .cuteCoolCat]), // 26 themes
 //        .init(name: "Gradient", themes: [.gradientPink, .gradientGrass, .gradientSunny, .gradientPurple, .gradientSky, .gradientSea, .gradientGreen, .gradientPhotoRainbow, .gradientPhotoRomantic, .gradientPhotoUnicorn, .gradientPhotoGillter, .gradientPhotoColorfull, .gradientRiver, .gradientPopPoly, .gradientHologram, .gradientVividBlurred, .gradientVividColorfull, .gradientDarkUniverse, .gradientVortex, .gradientPolygon, .gradientAurora, .gradientYellowFruits, .gradientPurpleVivid, .gradientHexagonBlurred, .gradientCircleBlurred, .gradientCinema]), // 26 themes
 //        .init(name: "Color", themes: [.colorLipPink, .colorLeaf, .colorCyan, .colorOcean, .colorPurple, .colorYellow, .colorLove, .colorWater, .colorGreen, .colorOrange, .colorTree, .colorHot]), // 12 themes

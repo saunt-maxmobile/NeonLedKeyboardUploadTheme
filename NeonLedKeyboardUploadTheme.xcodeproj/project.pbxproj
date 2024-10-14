@@ -30,6 +30,8 @@
 		831A60D12BF2183D0015F305 /* SairaStencilOne-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 831A60D02BF2183D0015F305 /* SairaStencilOne-Regular.ttf */; };
 		831A60D32BF219180015F305 /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 831A60D22BF219180015F305 /* Poppins-Medium.ttf */; };
 		831A60D52BF21ABC0015F305 /* Inter-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 831A60D42BF21ABC0015F305 /* Inter-Medium.ttf */; };
+		8334034F2CBCAEAA0004226F /* HalloweenTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8334034E2CBCAEAA0004226F /* HalloweenTheme.swift */; };
+		833403512CBCC66F0004226F /* Righteous-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 833403502CBCC66F0004226F /* Righteous-Regular.ttf */; };
 		834EC9792B5E614D001517C8 /* ThemeHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834EC9782B5E614D001517C8 /* ThemeHandler.swift */; };
 		834EC97B2B5E6191001517C8 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834EC97A2B5E6191001517C8 /* String+Extension.swift */; };
 		834EC97D2B5E61CC001517C8 /* FileManager+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834EC97C2B5E61CC001517C8 /* FileManager+Extension.swift */; };
@@ -337,6 +339,8 @@
 		831A60D02BF2183D0015F305 /* SairaStencilOne-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SairaStencilOne-Regular.ttf"; sourceTree = "<group>"; };
 		831A60D22BF219180015F305 /* Poppins-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Medium.ttf"; sourceTree = "<group>"; };
 		831A60D42BF21ABC0015F305 /* Inter-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Medium.ttf"; sourceTree = "<group>"; };
+		8334034E2CBCAEAA0004226F /* HalloweenTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HalloweenTheme.swift; sourceTree = "<group>"; };
+		833403502CBCC66F0004226F /* Righteous-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Righteous-Regular.ttf"; sourceTree = "<group>"; };
 		834EC9782B5E614D001517C8 /* ThemeHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeHandler.swift; sourceTree = "<group>"; };
 		834EC97A2B5E6191001517C8 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		834EC97C2B5E61CC001517C8 /* FileManager+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileManager+Extension.swift"; sourceTree = "<group>"; };
@@ -694,6 +698,7 @@
 				831A60CA2BF1F1C20015F305 /* ElsieSwashCaps-Regular.ttf */,
 				831A60A82BF1B92D0015F305 /* EncodeSansSemiExpanded-Medium.ttf */,
 				835639372C903A3700E217D0 /* MochiyPopOne-Regular.ttf */,
+				833403502CBCC66F0004226F /* Righteous-Regular.ttf */,
 				835639352C902C4200E217D0 /* LilitaOne-Regular.ttf */,
 				831A60BC2BF1C7E70015F305 /* fontspring-demo-ceraroundpro-regular.otf */,
 				831A60C82BF1F0DB0015F305 /* Gaegu-Regular.ttf */,
@@ -717,6 +722,14 @@
 				83A7D6C92BFAEAE000AB4053 /* Road_Rage.otf */,
 			);
 			path = Font;
+			sourceTree = "<group>";
+		};
+		8334034D2CBCAE940004226F /* Halloween */ = {
+			isa = PBXGroup;
+			children = (
+				8334034E2CBCAEAA0004226F /* HalloweenTheme.swift */,
+			);
+			path = Halloween;
 			sourceTree = "<group>";
 		};
 		834EC97E2B5E61D0001517C8 /* Core */ = {
@@ -1276,6 +1289,7 @@
 		83A95EB32B58CEEF007D3F58 /* Theme */ = {
 			isa = PBXGroup;
 			children = (
+				8334034D2CBCAE940004226F /* Halloween */,
 				836B68AF2BE5F7E600F569D6 /* Cute */,
 				83A95EB42B58CEEF007D3F58 /* Gradient */,
 				83A95EB72B58CEEF007D3F58 /* Color */,
@@ -1537,6 +1551,7 @@
 				831A60BF2BF1C9BA0015F305 /* BalsamiqSans-Regular.ttf in Resources */,
 				831A60B92BF1C59C0015F305 /* Sansation_Regular.ttf in Resources */,
 				83A95AB82B58C65F007D3F58 /* GoogleService-Info.plist in Resources */,
+				833403512CBCC66F0004226F /* Righteous-Regular.ttf in Resources */,
 				831A60BD2BF1C7E70015F305 /* fontspring-demo-ceraroundpro-regular.otf in Resources */,
 				831A60AF2BF1BDC20015F305 /* ArchitectsDaughter-Regular.ttf in Resources */,
 				831A60D12BF2183D0015F305 /* SairaStencilOne-Regular.ttf in Resources */,
@@ -1621,6 +1636,7 @@
 				83A95E782B58CC2A007D3F58 /* Locale+Flag.swift in Sources */,
 				838550412B58E010007599A5 /* CustomStyleProvider.swift in Sources */,
 				83A95DE82B58CC2A007D3F58 /* Autocomplete+Suggestion.swift in Sources */,
+				8334034F2CBCAEAA0004226F /* HalloweenTheme.swift in Sources */,
 				83A95E5E2B58CC2A007D3F58 /* Styling+KeyboardAppearanceViewModifier.swift in Sources */,
 				83A95E432B58CC2A007D3F58 /* Gestures+Defaults.swift in Sources */,
 				83A95E732B58CC2A007D3F58 /* KeyboardInputViewController+State.swift in Sources */,
