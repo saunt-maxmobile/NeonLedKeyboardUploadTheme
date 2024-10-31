@@ -13,8 +13,8 @@ import Zip
 struct ThemeHandler {
     static var shared: ThemeHandler = .init()
     
-//    private let THEME_SECTION_URL = FileManager.default.getLocalDirectory(to: .ThemeSection).appendingPathComponent(AppConfiguration.shared.themeSectionJson)
-    private let THEME_SECTION_URL = FileManager.default.getLocalDirectory(to: .ThemeSection).appendingPathComponent(AppConfiguration.shared.themeSectionJsonTest)
+    private let THEME_SECTION_URL = FileManager.default.getLocalDirectory(to: .ThemeSection).appendingPathComponent(AppConfiguration.shared.themeSectionJson)
+//    private let THEME_SECTION_URL = FileManager.default.getLocalDirectory(to: .ThemeSection).appendingPathComponent(AppConfiguration.shared.themeSectionJsonTest)
     private let THEME_DIRECTORY_URL: URL = FileManager.default.getLocalDirectory(to: .Theme)
     private let FIREBASE_STORAGE: Storage = Storage.storage()
     private let FILE_MANAGER: FileManager = FileManager.default
@@ -43,8 +43,8 @@ struct ThemeHandler {
     private func saveThemeSectionToStorage(_ data: Data) {
         let _themeSectionRef = FIREBASE_STORAGE.reference()
             .child("ThemeSection")
-//            .child(AppConfiguration.shared.themeSectionJson)
-            .child(AppConfiguration.shared.themeSectionJsonTest)
+            .child(AppConfiguration.shared.themeSectionJson)
+//            .child(AppConfiguration.shared.themeSectionJsonTest)
         
         _themeSectionRef.putData(data) { metadata, error in
             guard metadata != nil else {

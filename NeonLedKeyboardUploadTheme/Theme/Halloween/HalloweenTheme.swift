@@ -89,7 +89,7 @@ extension Theme {
     )
     
     static var halloweenCastleKey: Theme = .init(
-        id: "01JA4CBSVYQG227DG5Y9GGQTPD",
+        id: "01JA4ZNKXX2X8VG1P9C4G64HN0",
         button: .init(
             background: .color(
                 .white.opacity(0.45)
@@ -176,7 +176,7 @@ extension Theme {
                 "Roboto-Medium",
                 size: 18
             ),
-            cornerRadius: 4,
+            cornerRadius: 8,
             border: .init(color: .white, size: 1)
         ),
         background: .image(
@@ -197,7 +197,7 @@ extension Theme {
             contentMode: .fit
         ),
         name: "halloweenMysticKey",
-        iconColor: Color(hex: "05DAD2")
+        iconColor: Color(hex: "FF8413")
     )
     
     static var halloweenCuteGhost: Theme = .init(
@@ -247,7 +247,7 @@ extension Theme {
             ),
             foregroundColor: Color(hex: "FF00FF"),
             font: .custom(
-                "Roboto-Medium",
+                "Roboto-Black",
                 size: 18
             ),
             cornerRadius: 10
@@ -391,7 +391,7 @@ extension Theme {
             contentMode: .fit
         ),
         name: "halloweenEerieOrange",
-        iconColor: Color(hex: "040404")
+        iconColor: Color(hex: "FF4D49")
     )
     
 }

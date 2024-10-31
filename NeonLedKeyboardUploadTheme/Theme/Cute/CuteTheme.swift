@@ -663,7 +663,7 @@ extension Theme {
         ),
         name: "cuteRainbowUnicorn",
         iconColor: Color(
-            hex: "#8EF82C"
+            hex: "#C549EB"
         ),
         requiredPremium: false
     )
@@ -686,7 +686,7 @@ extension Theme {
             cornerRadius: 46,
             border: .init(
                 color: .white,
-                size: 2
+                size: 1
             )
         ),
         background: .image(
@@ -783,7 +783,7 @@ extension Theme {
             cornerRadius: 8,
             border: .init(
                 color: .white,
-                size: 2
+                size: 1
             )
         ),
         background: .image(
@@ -805,7 +805,7 @@ extension Theme {
         ),
         name: "cuteHandWash",
         iconColor: Color(
-            hex: "#8838ED"
+            hex: "#FF5A5A"
         )
     )
     
@@ -848,7 +848,7 @@ extension Theme {
         ),
         name: "cuteNutsheel",
         iconColor: Color(
-            hex: "#FFE576"
+            hex: "#FAA829"
         )
     )
     

@@ -14,10 +14,10 @@ struct ConfigDataStorage {
     private init() {
 //        self.converToJson()
         /// just accept encode for id, name, preview, imagePreview, requiredPremium of theme
-        ThemeHandler.shared
-            .saveThemeSection(
-                themeSections
-            )
+//        ThemeHandler.shared
+//            .saveThemeSection(
+//                themeSections
+//            )
         
         /// accept encode all variable of theme
 //        ThemeHandler.shared.createThemeFolder(themeSections)
@@ -68,7 +68,7 @@ struct ConfigDataStorage {
                 .cuteBearRabbit,
                 .cuteCapypara,
                 .cuteCoolCat,
-                // + 9 themes
+//                // + 9 themes
                 .cuteRainbowUnicord,
                 .cuteCandyCute,
                 .cuteMilkTea,

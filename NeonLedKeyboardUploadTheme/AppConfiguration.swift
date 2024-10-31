@@ -10,8 +10,8 @@ import Foundation
 final class AppConfiguration: NSObject {
     static let shared: AppConfiguration = AppConfiguration()
     
-//    let themeSectionJson = "ThemeSection.json"
-    let themeSectionJsonTest = "themeSectionJsonTest.json"
+    let themeSectionJson = "ThemeSection.json"
+//    let themeSectionJsonTest = "themeSectionJsonTest.json"
     
     func getThemeSectionJson(_ version: String) -> String {
         return "ThemeSection\(version).json"

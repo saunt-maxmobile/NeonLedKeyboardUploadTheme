@@ -32,6 +32,7 @@
 		831A60D52BF21ABC0015F305 /* Inter-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 831A60D42BF21ABC0015F305 /* Inter-Medium.ttf */; };
 		8334034F2CBCAEAA0004226F /* HalloweenTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8334034E2CBCAEAA0004226F /* HalloweenTheme.swift */; };
 		833403512CBCC66F0004226F /* Righteous-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 833403502CBCC66F0004226F /* Righteous-Regular.ttf */; };
+		8334035C2CBD060F0004226F /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8334035B2CBD060F0004226F /* Roboto-Black.ttf */; };
 		834EC9792B5E614D001517C8 /* ThemeHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834EC9782B5E614D001517C8 /* ThemeHandler.swift */; };
 		834EC97B2B5E6191001517C8 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834EC97A2B5E6191001517C8 /* String+Extension.swift */; };
 		834EC97D2B5E61CC001517C8 /* FileManager+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834EC97C2B5E61CC001517C8 /* FileManager+Extension.swift */; };
@@ -341,6 +342,7 @@
 		831A60D42BF21ABC0015F305 /* Inter-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Medium.ttf"; sourceTree = "<group>"; };
 		8334034E2CBCAEAA0004226F /* HalloweenTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HalloweenTheme.swift; sourceTree = "<group>"; };
 		833403502CBCC66F0004226F /* Righteous-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Righteous-Regular.ttf"; sourceTree = "<group>"; };
+		8334035B2CBD060F0004226F /* Roboto-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Black.ttf"; sourceTree = "<group>"; };
 		834EC9782B5E614D001517C8 /* ThemeHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeHandler.swift; sourceTree = "<group>"; };
 		834EC97A2B5E6191001517C8 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		834EC97C2B5E61CC001517C8 /* FileManager+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileManager+Extension.swift"; sourceTree = "<group>"; };
@@ -712,6 +714,7 @@
 				831A60D22BF219180015F305 /* Poppins-Medium.ttf */,
 				831A60D42BF21ABC0015F305 /* Inter-Medium.ttf */,
 				831A60CC2BF205DE0015F305 /* Roboto-Medium.ttf */,
+				8334035B2CBD060F0004226F /* Roboto-Black.ttf */,
 				831A60CE2BF2175B0015F305 /* Rye-Regular.ttf */,
 				831A60D02BF2183D0015F305 /* SairaStencilOne-Regular.ttf */,
 				831A60B82BF1C59C0015F305 /* Sansation_Regular.ttf */,
@@ -1532,6 +1535,7 @@
 				831A60C12BF1CF020015F305 /* minecraft_font.ttf in Resources */,
 				83A95DFE2B58CC2A007D3F58 /* Colors.xcassets in Resources */,
 				83A95AB12B58C611007D3F58 /* Preview Assets.xcassets in Resources */,
+				8334035C2CBD060F0004226F /* Roboto-Black.ttf in Resources */,
 				835639382C903A3700E217D0 /* MochiyPopOne-Regular.ttf in Resources */,
 				835639362C902C4200E217D0 /* LilitaOne-Regular.ttf in Resources */,
 				831A60C32BF1D1230015F305 /* GamjaFlower-Regular.ttf in Resources */,
